@@ -76,30 +76,36 @@ function switchThemeByUrl() {
 function changeImage(themeMode = 'light') {
 
     const icon = document.querySelector('#btnSwitch img');
+    var images = document.querySelectorAll('img.dark');
 
 
     if (themeMode === "dark") {
 
         icon.src = './assets/images/icon/sun.svg';
-        var images = document.querySelectorAll('img.dark');
 
         for (var i = 0; i < images.length; i++) {
-            var oldSrc = images[i].src;
-            oldSrc = oldSrc.replace("-dark.", ".");
-            var oldIndex = oldSrc.lastIndexOf(".");
-            var baseName = oldSrc.slice(0, oldIndex);
-            var extension = oldSrc.slice(oldIndex);
-            var newSrc = baseName + "-dark" + extension;
-            images[i].src = newSrc;
+            var normalSrc = images[i].dataset.normalSrc || images[i].src.replace("-dark.", ".");
+            images[i].dataset.normalSrc = normalSrc;
+
+            var oldIndex = normalSrc.lastIndexOf(".");
+            var baseName = normalSrc.slice(0, oldIndex);
+            var extension = normalSrc.slice(oldIndex);
+            var darkSrc = baseName + "-dark" + extension;
+
+            images[i].onerror = function () {
+                this.onerror = null;
+                this.src = this.dataset.normalSrc;
+            };
+            images[i].src = darkSrc;
         }
     } else {
         icon.src = './assets/images/icon/moon.svg';
-        var images = document.querySelectorAll('img.dark');
 
         for (var i = 0; i < images.length; i++) {
-            var oldSrc = images[i].src;
-            var newSrc = oldSrc.replace("-dark.", ".");
-            images[i].src = newSrc;
+            images[i].onerror = null;
+            var normalSrc = images[i].dataset.normalSrc || images[i].src.replace("-dark.", ".");
+            images[i].dataset.normalSrc = normalSrc;
+            images[i].src = normalSrc;
         }
     }
 
