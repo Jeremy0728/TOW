@@ -48,11 +48,18 @@ sass assets/sass/style.scss assets/css/style.css --style=expanded --source-map -
 - No dejar cambios solo en Sass si el HTML sigue cargando el CSS compilado viejo.
 - El template usa `@import` y RFS legacy. Dart Sass muestra deprecations si no se usa `--quiet`; esas advertencias no bloquean la compilacion actual.
 - `assets/sass/style.scss` importa `vendors/nice-select` y `pages/home`; en esta build se restauraron como parciales vacios porque el CSS distribuido no contenia reglas de esos imports.
+- `sass-migrator 2.5.7` esta disponible globalmente para conversiones Sass controladas. Usar primero `--dry-run`; no ejecutar una migracion masiva de `module`/`division` sin revisar el diff.
+
+Ejemplo seguro:
+
+```powershell
+sass-migrator module --dry-run assets/sass/style.scss
+```
 
 ## Riesgos Conocidos
 
 - El template descargado no trae un `package.json` documentado para compilar Sass.
-- El compilador Sass disponible en esta terminal es global, no dependencia local del proyecto.
+- El compilador Sass y Sass Migrator disponibles en esta terminal son globales, no dependencias locales del proyecto.
 - Hay muchas secciones legacy que no forman parte de la landing Figma.
 - Figma entrega assets con URLs temporales; deben descargarse y renombrarse antes de depender de ellos.
 - El archivo root `decisions.md` es referencia heredada y no debe usarse como fuente canonica.

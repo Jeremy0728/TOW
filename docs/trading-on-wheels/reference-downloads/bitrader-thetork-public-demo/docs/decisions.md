@@ -58,6 +58,8 @@ assets/sass/
 - Implicacion: `assets/sass/style.scss` sigue siendo el entrypoint.
 - Implicacion: el CSS publicado vive en `assets/css/style.css`; despues de tocar Sass hay que regenerar o sincronizar el CSS compilado.
 - Decision: Sass CLI queda como herramienta de compilacion en terminal. Comando desde la raiz del template: `sass assets/sass/style.scss assets/css/style.css --style=expanded --source-map --quiet`.
+- Decision: Sass Migrator queda instalado globalmente para conversiones/migraciones controladas. Version verificada: `sass-migrator 2.5.7`.
+- Implicacion: usar `sass-migrator` primero con `--dry-run`; no convertir masivamente `@import` a `@use` ni division legacy sin una tarea explicita y revision visual posterior.
 - Decision: `vendors/_nice-select.scss` y `pages/_home.scss` existen como parciales vacios porque `style.scss` los importaba y el CSS distribuido no contenia reglas de esos imports.
 
 ## 5. Responsabilidades De Sass
@@ -207,6 +209,7 @@ assets/sass/
 ### 2026-06-01
 
 - Se instalo Sass CLI global (`sass 1.100.0`) para compilar SCSS desde terminal.
+- Se instalo Sass Migrator global (`sass-migrator 2.5.7`) para conversiones/migraciones controladas de Sass.
 - Se restauraron `assets/sass/vendors/_nice-select.scss` y `assets/sass/pages/_home.scss` como parciales vacios para que `assets/sass/style.scss` compile sin alterar el CSS heredado.
 - Se ejecuto el primer pase de migracion de colores dark en `assets/sass/abstracts/_variables.scss`, se cubrieron glows verdes hardcodeados en `assets/sass/themes/_theme.scss` y se regenero `assets/css/style.css`.
 - Se verifico que Figma usa `Anton Regular` y `Montserrat Regular/Medium/Bold/ExtraBold`; luego el nodo `2:2` agrego `Montserrat SemiBold` y `Black` como pesos necesarios. `Geist Mono` queda excluida del sitio.
