@@ -56,9 +56,11 @@ Este documento es la fuente de decisiones para agentes trabajando en esta build.
 ```
 
 - Implicacion: no crear `assets/sass` ni migrar a SCSS sin una tarea explicita.
-- Implicacion: si se edita CSS directamente, `css/custom.css` debe quedar como la verdad publicada.
-- Decision aplicada: la primera conversion corrige directamente `css/custom.css`, porque esa es la base real del template.
-- Implicacion: no se usa `css/tow-overrides.css` ni `body.tow-landing`; los cambios se integran a los tokens y selectores existentes.
+- Implicacion: `css/custom.css` se mantiene como base del template y no se reescribe para resolver una seccion TOW aislada.
+- Decision actualizada: `index-tow.html` usa `css/tow-overrides.css` como capa scoped cargada despues de `css/custom.css`.
+- Regla de scope: antes de adaptar una seccion, copiar al scope el selector base relevante de `css/custom.css`, prefijarlo con `.tow-index-page` y modificar solo las propiedades necesarias.
+- Implicacion: el scope permitido para esa capa es `body.tow-index-page`; no se debe aplicar a paginas internas salvo decision explicita.
+- Implicacion: no crear reglas que ignoren la base existente si hay un selector equivalente en `css/custom.css`.
 
 ## 5. Orden De Migracion
 
@@ -80,7 +82,7 @@ Este documento es la fuente de decisiones para agentes trabajando en esta build.
 - `js/function.js`: inicializaciones del template.
 - `images/**`: imagenes, SVGs, logos y fondos usados por HTML/CSS.
 - `webfonts/**`: Font Awesome local.
-- Implicacion: cambios visuales propios deben caer en `css/custom.css`, no en CSS vendor ni en capas paralelas, salvo decision explicita posterior.
+- Implicacion: cambios globales propios pueden caer en `css/custom.css`; cambios TOW de `index-tow.html` deben caer en `css/tow-overrides.css` copiando y adaptando la base existente.
 
 ## 7. Politica De Tokens
 
@@ -204,7 +206,7 @@ White: #FFFFFF
 
 - Se corrigio el rumbo de Fase 1 para trabajar sobre la base real del template: `css/custom.css`.
 - Se reemplazo el import de Google Fonts en `index.html`: `Inter` + `Onest` sale, `Bebas Neue` + `Carlito` entra.
-- Se elimino el enfoque de `css/tow-overrides.css` y `body.tow-landing`.
+- Se recupero el enfoque scoped para `index-tow.html`: `css/tow-overrides.css` cargado despues de `css/custom.css` y limitado a `body.tow-index-page`.
 - Se aplico el primer pase de colores y tipografia directamente en `css/custom.css`: variables base, body/headings, botones, section titles, header/nav, hero, pricing, CTA, footer y hardcodes verdes principales.
 - Se verifico estaticamente con `git diff --check` y busqueda de referencias. El navegador integrado no pudo abrir la pagina porque el runtime `node_repl` fallo con `windows sandbox failed: spawn setup refresh`.
 - Se creo la documentacion operativa de Leadz basada en el metodo documental de Bitrader, sin copiar sus decisiones visuales ni tecnicas.

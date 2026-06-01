@@ -89,13 +89,15 @@ Riesgos:
 
 ### Opcion B - Crear Una Capa Paralela
 
-Usar cuando el objetivo inicial sea solo `index.html`.
+Usar cuando el objetivo inicial sea solo `index-tow.html`.
 
 Requisitos:
 
 - Cargar despues de `css/custom.css`.
 - Preferir un scope de pagina.
 - Tocar HTML solo para agregar la clase y el link CSS.
+- Copiar el selector base desde `css/custom.css`, prefijarlo con `.tow-index-page` y adaptar solo las propiedades necesarias.
+- Mantener `css/custom.css` como base: no duplicar una seccion completa si solo se necesita ajustar un selector.
 
 Ventajas:
 
@@ -103,7 +105,7 @@ Ventajas:
 - Evita romper paginas internas.
 - Permite comparar contra el template original.
 
-Decision aplicada: se descarta la Opcion B para Fase 1. Los colores y tipografias se corrigen en `css/custom.css`, que es la base real del template.
+Decision aplicada para `index-tow.html`: usar Opcion B con `css/tow-overrides.css` cargado despues de `css/custom.css`.
 
 ## Paso 4 - Adaptar Header Y Hero
 

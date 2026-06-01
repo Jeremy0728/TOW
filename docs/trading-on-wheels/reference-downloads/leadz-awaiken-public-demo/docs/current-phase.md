@@ -51,7 +51,7 @@ No tocar todavia:
 - [x] Crear carpeta `docs/` en Leadz.
 - [x] Crear documentacion canonica de Leadz.
 - [x] Crear orden canonico de exportacion en `docs/export-order.md`.
-- [x] Aprobar politica de CSS: corregir la base en `css/custom.css`, sin hoja paralela.
+- [x] Aprobar politica de CSS: mantener `css/custom.css` como base y usar scope para `index-tow.html`.
 - [x] Pasar a Fase 1.
 
 ## Implementacion De Fase 1
@@ -60,10 +60,10 @@ Fase 1: actualizar tema y tipografia de Leadz hacia TOW.
 
 Checklist inicial:
 
-- [x] Reemplazar import de Google Fonts en `index.html` por `Bebas Neue` + `Carlito`.
-- [x] Quitar cualquier scope/override paralelo de `index.html`.
-- [x] Actualizar `--default-font` y `--accent-font` en `css/custom.css`.
-- [x] Mapear `--accent-color` a `#F7C600`.
+- [x] Reemplazar import de Google Fonts en `index-tow.html` por `Bebas Neue` + `Carlito`.
+- [x] Crear scope `body.tow-index-page` mediante `css/tow-overrides.css`.
+- [x] Cargar `css/tow-overrides.css` despues de `css/custom.css`.
+- [x] Definir regla: copiar selector base de `custom.css`, prefijar con `.tow-index-page` y adaptar.
 - [x] Definir estrategia para fondos negros sin romper paginas internas.
 - [x] Primer pase de colores para topbar/header/nav/botones.
 - [x] Primer pase de colores y tipografia para hero.
@@ -80,8 +80,9 @@ Checklist inicial:
 
 La fase 1 se considera lista cuando:
 
-- `index.html` carga `Bebas Neue` + `Carlito`.
-- `css/custom.css` contiene los tokens base TOW y las fuentes TOW.
+- `index-tow.html` carga `Bebas Neue` + `Carlito`.
+- `css/custom.css` queda como base del template.
+- `css/tow-overrides.css` contiene solo reglas scoped copiadas/adaptadas desde la base.
 - Topbar, header, hero, offers, CTA y footer usan la paleta TOW base.
 - Desktop y mobile se verifican en navegador.
 

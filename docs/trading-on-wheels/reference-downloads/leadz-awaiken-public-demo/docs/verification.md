@@ -72,6 +72,6 @@ No hay compilacion Sass documentada en Leadz. No ejecutar comandos de build inve
 - `git diff --check` paso para `index.html` y `css/custom.css`.
 - Se confirmo que `index.html` carga `Bebas Neue` + `Carlito`.
 - Se confirmo que `index.html` solo carga `css/custom.css` como CSS propio.
-- Se confirmo que no existe `css/tow-overrides.css`.
+- `index-tow.html` carga `css/tow-overrides.css` despues de `css/custom.css` para aislar el scope TOW.
 - Se confirmo que `css/custom.css` contiene tokens TOW y cubre hero, offers, CTA y footer desde la base.
 - Verificacion en navegador pendiente: el navegador integrado fallo antes de cargar la pagina por `windows sandbox failed: spawn setup refresh`.
