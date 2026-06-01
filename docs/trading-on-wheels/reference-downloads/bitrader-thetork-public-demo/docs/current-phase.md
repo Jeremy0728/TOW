@@ -52,6 +52,7 @@ No tocar todavia:
 - [x] Confirmar que `Montserrat` queda como fuente base para `$title-font` y `$text-font`, dejando `Anton` solo para titulares display.
 - [x] Instalar Sass CLI global para compilar desde terminal: `sass 1.100.0`.
 - [x] Instalar Sass Migrator global para conversiones controladas: `sass-migrator 2.5.7`.
+- [x] Crear setup Node local de Bitrader con `package.json`, `package-lock.json`, `sass:build` y `sass:watch`.
 - [x] Restaurar imports SCSS faltantes con parciales vacios controlados: `vendors/_nice-select.scss` y `pages/_home.scss`.
 - [x] Mapear tokens dark actuales a paleta TOW.
 - [x] Ajustar `[data-bs-theme="dark"]` para que el fondo base sea negro TOW.

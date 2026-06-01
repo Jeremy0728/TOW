@@ -38,7 +38,13 @@ El servidor debe servir esa carpeta como raiz.
 
 Si se cambia Sass:
 
-- Regenerar `assets/css/style.css` con Sass CLI:
+- Regenerar `assets/css/style.css` desde la carpeta `bitrader-thetork-public-demo/` con el script local de Node:
+
+```powershell
+npm run sass:build
+```
+
+El script ejecuta:
 
 ```powershell
 sass assets/sass/style.scss assets/css/style.css --style=expanded --source-map --quiet
@@ -59,7 +65,7 @@ sass-migrator module --dry-run assets/sass/style.scss
 ## Riesgos Conocidos
 
 - El template descargado no trae un `package.json` documentado para compilar Sass.
-- El compilador Sass y Sass Migrator disponibles en esta terminal son globales, no dependencias locales del proyecto.
+- Sass tambien queda instalado como devDependency local de Bitrader. Sass Migrator sigue global por ahora.
 - Hay muchas secciones legacy que no forman parte de la landing Figma.
 - Figma entrega assets con URLs temporales; deben descargarse y renombrarse antes de depender de ellos.
 - El archivo root `decisions.md` es referencia heredada y no debe usarse como fuente canonica.
