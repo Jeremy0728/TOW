@@ -145,6 +145,10 @@
     h2 {
       @extend %text-capitalize;
       color: $thm-title-color;
+      font-family: $text-font;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: 0;
 
       span {
         color: $thm-secondary-color;  

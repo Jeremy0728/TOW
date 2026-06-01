@@ -22,10 +22,11 @@ Figma usa:
 
 ### Politica
 
-- Reemplazar el import actual de `Anek Telugu` + `Open Sans` por solo las familias necesarias.
+- El import anterior de `Anek Telugu` + `Open Sans` ya fue reemplazado por `Anton` + `Montserrat`.
 - No agregar otras fuentes ni pesos no usados por Figma.
 - Mantener la base del template: variables `$title-font` y `$text-font` siguen existiendo.
 - Recomendacion tecnica: usar `Montserrat` como fuente base para `$title-font` y `$text-font`; aplicar `Anton` solo en selectores display donde corresponda.
+- Estado actual: ejecutado en Sass; `npm run build` recompila `assets/css/style.css`.
 
 ### Import Propuesto
 
@@ -141,10 +142,20 @@ Al final del proyecto, cuando los assets queden aprobados:
 
 Por cada iteracion:
 
-- Verificar cambio visual en `index--theme_dark.html`.
+- Verificar cambio visual en `index-tow.html` mientras la propuesta nueva este aislada.
+- Si se tocan estilos compartidos, verificar tambien `index--theme_dark.html`.
 - Verificar que no se rompen assets.
 - Verificar que Sass y CSS compilado estan sincronizados.
 - Actualizar `docs/current-phase.md` y `docs/decisions.md` si cambia el plan.
+
+## Paso 7 - Propuesta Aislada De Landing
+
+Estado actual: iniciado.
+
+- `index-tow.html` es la pagina de propuesta basada en el index, sin reemplazar el original.
+- `assets/sass/pages/_tow-index.scss` contiene estilos especificos bajo `.tow-page`.
+- Los assets se consumen desde `assets/figma/` mientras siguen en staging.
+- La aprobacion visual de esta pagina define que assets pasan luego a rutas finales y que estructura HTML se migra al index principal.
 
 ## Preguntas Pendientes
 

@@ -57,7 +57,8 @@ assets/sass/
 - Implicacion: no crear una carpeta `assets/scss` ni renombrar parciales mientras el template use `assets/sass`.
 - Implicacion: `assets/sass/style.scss` sigue siendo el entrypoint.
 - Implicacion: el CSS publicado vive en `assets/css/style.css`; despues de tocar Sass hay que regenerar o sincronizar el CSS compilado.
-- Decision: Bitrader tiene setup Node local con `package.json` y `package-lock.json`. Comando principal desde la raiz del template: `npm run sass:build`.
+- Decision: Bitrader tiene setup Node local con `package.json` y `package-lock.json`. Comando principal de desarrollo desde la raiz del template: `npm run watch`.
+- Decision: compilacion puntual desde la raiz del template: `npm run build`.
 - Decision: `sass` queda como devDependency local para que la compilacion no dependa solo del binario global.
 - Decision: Sass CLI global puede seguir usandose como fallback. Comando directo desde la raiz del template: `sass assets/sass/style.scss assets/css/style.css --style=expanded --source-map --quiet`.
 - Decision: Sass Migrator queda instalado globalmente para conversiones/migraciones controladas. Version verificada: `sass-migrator 2.5.7`.
@@ -105,9 +106,11 @@ assets/sass/
 - Estado: vigente.
 - Decision: la referencia Figma usa solo `Anton` y `Montserrat` para la vista objetivo. El nodo `2:2` es la guia tipografica.
 - Decision: usar solo las fuentes y pesos necesarios confirmados: `Anton 400`; `Montserrat 400, 500, 600, 700, 800, 900`.
-- Implicacion: reemplazar el import actual de `Anek Telugu` + `Open Sans` en `base/_fonts.scss` sin agregar familias extra.
+- Decision aplicada: el import anterior de `Anek Telugu` + `Open Sans` fue reemplazado por `Anton` + `Montserrat` en `base/_fonts.scss`.
 - Decision: `Montserrat` queda como fuente base para `$title-font` y `$text-font`; `Anton` se reserva para titulares display donde Figma lo exige.
 - Implicacion: mantener la base original de variables Sass, cambiando sus valores en vez de crear un sistema nuevo de fuentes.
+- Decision aplicada: se agrega `$display-font: 'Anton'` y se usa en hero `.banner__content-heading` y en heading de pricing/ofertas. La base global de `body`, headings, nav, cards, botones y CTA queda en `Montserrat`.
+- Implicacion: `letter-spacing` se mantiene en `0` en implementacion CSS para evitar tracking negativo o deformaciones responsive.
 - Implicacion: no agregar `Geist Mono`; solo aparece en chips/anotaciones del style frame.
 
 ## 8. Tema Visual Dark
@@ -132,7 +135,11 @@ assets/sass/
 ## 9. HTML Actual Y Landing Objetivo
 
 - Estado: vigente.
-- Decision: `index--theme_dark.html` es la pagina de trabajo inicial.
+- Decision: `index--theme_dark.html` fue la pagina de trabajo inicial para validar tema, pero la rearmada pesada se prueba ahora en una pagina nueva: `index-tow.html`.
+- Decision: `index.html`, `index--theme_dark.html` y el resto de paginas originales quedan intactas mientras se valida la propuesta.
+- Decision: `index-tow.html` usa `data-bs-theme="dark"`, conserva dependencias CSS/JS vendor del template y evita `assets/js/custom.js` porque ese script asume markup legacy completo. La pagina nueva usa un script minimo para preloader, AOS y scroll-to-top.
+- Decision: el sitemap de primera prueba TOW queda aislado en paginas nuevas: `index-tow.html`, `membership.html`, `course.html`, `competitions.html` y `about-oscar.html`; el CTA superior `Join Now` apunta a `signup.html`.
+- Implicacion: no reemplazar todavia `price.html`, `service-details.html`, `about.html` ni otras paginas legacy de Bitrader para esta prueba rapida.
 - Estructura HTML actual relevante:
   - Header: `.header-section.header-section--style2`.
   - Hero: `.banner.banner--style1`.
@@ -148,6 +155,7 @@ assets/sass/
   - CTA: Become a Gurman Wheeler.
   - Footer.
 - Implicacion: el HTML actual tiene secciones extra heredadas del template. No eliminarlas en la fase de tema salvo que la tarea pida limpiar la landing.
+- Implicacion: cualquier ajuste agresivo de layout o contenido se prueba primero en `index-tow.html`; solo se migra al index original cuando se apruebe.
 
 ## 10. Assets Prioritarios
 
@@ -155,6 +163,8 @@ assets/sass/
 - Decision: los assets se reemplazan despues de la primera pasada de Sass.
 - Decision: todos los assets descargados desde Figma/MCP se guardan primero en `assets/figma/` con manifest.
 - Decision: si un asset Figma reemplaza una ruta existente, el archivo actual se conserva en la misma carpeta con sufijo `-original`.
+- Decision: durante la rearmada pesada se trabaja sobre `index-tow.html` como pagina propuesta; las demas paginas del template quedan para el cierre.
+- Decision: assets puramente decorativos de Figma como lineas, dividers, underlines y algunos bullets pueden quedar staged, pero se prefiere implementarlos en CSS si no aportan contenido visual unico.
 - Implicacion: el staging Figma no es estructura final; al cierre se decide si los assets migran a `assets/images/tow/` u otra ruta definitiva.
 - Prioridad:
   1. Logo TOW negativo para header/footer/preloader/favicon/OG.
@@ -193,7 +203,8 @@ assets/sass/
 
 - Estado: vigente.
 - Decision: la verificacion minima despues de cambios visuales es:
-  - Revisar que `index--theme_dark.html` carga sin assets rotos visibles.
+  - Revisar que `index-tow.html` carga sin assets rotos visibles durante la fase de propuesta.
+  - Revisar que `index--theme_dark.html` no se rompio si se tocan estilos compartidos.
   - Revisar desktop y mobile.
   - Confirmar que `assets/css/style.css` refleja los cambios Sass.
   - Confirmar que no se rompen header, hero, cards, CTA ni footer.
@@ -212,7 +223,14 @@ assets/sass/
 
 - Se instalo Sass CLI global (`sass 1.100.0`) para compilar SCSS desde terminal.
 - Se instalo Sass Migrator global (`sass-migrator 2.5.7`) para conversiones/migraciones controladas de Sass.
-- Se creo setup Node local de Bitrader con scripts `sass:build` y `sass:watch`; `npm run sass:build` compila correctamente.
+- Se creo setup Node local de Bitrader con scripts `build`, `watch`, `sass:build` y `sass:watch`; `npm run build` compila correctamente y `npm run watch` queda como comando de desarrollo.
+- Se creo `index-tow.html` como pagina propuesta aislada basada en la estructura del index, usando assets de `assets/figma/` y sin reemplazar todavia el index original.
+- Se armo el sitemap minimo TOW en paginas aisladas: `membership.html`, `course.html`, `competitions.html` y `about-oscar.html`, copiando la estructura de `index-tow.html` y manteniendo assets definidos en cada HTML.
+- Se agrego `docs/tow-sitemap.md` con el mapa de navegacion, rol de cada pagina y secciones copiadas para la primera prueba.
+- Se agrego `assets/sass/pages/_tow-index.scss` y se importo desde `assets/sass/style.scss`; todos los selectores de la propuesta quedan encapsulados bajo `.tow-page`.
+- Se descargo la tanda completa de assets expuestos por Figma MCP para el nodo `161:557` en `assets/figma/` y se registro en `assets/figma/manifest.md`.
+- Se verifico el preloader manual: `assets/images/logo/preloader.png` ahora contiene el simbolo TOW amarillo/azul; `preloader-o.png` conserva el preloader verde anterior.
+- Se ejecuto el primer pase tipografico: Google Fonts ahora carga `Anton` + `Montserrat`; `$title-font` y `$text-font` usan `Montserrat`; `$display-font` usa `Anton`; hero y pricing/ofertas reciben display font; CTA/cards/nav quedan en `Montserrat`.
 - Se restauraron `assets/sass/vendors/_nice-select.scss` y `assets/sass/pages/_home.scss` como parciales vacios para que `assets/sass/style.scss` compile sin alterar el CSS heredado.
 - Se ejecuto el primer pase de migracion de colores dark en `assets/sass/abstracts/_variables.scss`, se cubrieron glows verdes hardcodeados en `assets/sass/themes/_theme.scss` y se regenero `assets/css/style.css`.
 - Se verifico que Figma usa `Anton Regular` y `Montserrat Regular/Medium/Bold/ExtraBold`; luego el nodo `2:2` agrego `Montserrat SemiBold` y `Black` como pesos necesarios. `Geist Mono` queda excluida del sitio.

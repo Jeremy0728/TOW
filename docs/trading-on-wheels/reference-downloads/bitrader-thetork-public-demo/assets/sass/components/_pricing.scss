@@ -2,6 +2,15 @@
     @extend %of-hidden,
     %p-rel;
 
+    .section-header {
+        h2 {
+            font-family: $display-font;
+            font-weight: 400;
+            line-height: 1.12;
+            letter-spacing: 0;
+        }
+    }
+
     &__item {
         @extend %p-rel;
         z-index: 2;
@@ -43,10 +52,16 @@
 
             h6 {
                 text-transform: uppercase;
+                font-family: $text-font;
+                font-weight: 700;
+                letter-spacing: 0;
             }
 
             h3 {
                 color: $secondary-color;
+                font-family: $text-font;
+                font-weight: 700;
+                letter-spacing: 0;
 
                 span {
                     @extend %text-semibold;

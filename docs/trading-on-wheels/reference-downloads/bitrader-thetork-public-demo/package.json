@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "npm run sass:build",
+    "watch": "npm run sass:watch",
     "sass:build": "sass assets/sass/style.scss assets/css/style.css --style=expanded --source-map --quiet",
     "sass:watch": "sass assets/sass/style.scss assets/css/style.css --style=expanded --source-map --watch"
   },

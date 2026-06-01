@@ -2,11 +2,11 @@
 
 ## Fase Vigente
 
-Fase 1: actualizar el modo dark del template desde Sass para acercar Bitrader al lenguaje visual Trading On Wheels sin romper la mecanica light/dark heredada.
+Fase 1.5: crear una propuesta aislada de landing TOW sobre Bitrader, usando el tema dark ya orientado y los assets staged de Figma sin reemplazar todavia el index original.
 
 ## Objetivo
 
-Transformar el modo `[data-bs-theme="dark"]` crypto/green actual en una base visual TOW:
+Transformar el modo `[data-bs-theme="dark"]` crypto/green actual en una base visual TOW y validar una nueva propuesta de landing en `index-tow.html`:
 
 - Fondo negro `#0c0c0d`.
 - Paneles/cards `#141414`.
@@ -19,7 +19,7 @@ Transformar el modo `[data-bs-theme="dark"]` crypto/green actual en una base vis
 
 ## Alcance De Fase 1
 
-Tocar primero:
+Tocado primero:
 
 - `assets/sass/abstracts/_variables.scss`, seccion `[data-bs-theme="dark"]`
 - `assets/sass/base/_fonts.scss`
@@ -41,10 +41,11 @@ Politica de fuentes:
 No tocar todavia:
 
 - Reescritura completa de `:root` light si no es necesaria para el dark look.
-- Reemplazo masivo de imagenes.
-- Limpieza completa de secciones HTML.
+- Reemplazo masivo de imagenes en rutas finales.
+- Limpieza completa de secciones HTML originales.
 - Refactor de clases.
 - Introduccion de framework o build system nuevo.
+- Sustituir `index.html` o `index--theme_dark.html` con la propuesta.
 
 ## Checklist De Implementacion
 
@@ -57,7 +58,7 @@ No tocar todavia:
 - [x] Mapear tokens dark actuales a paleta TOW.
 - [x] Ajustar `[data-bs-theme="dark"]` para que el fondo base sea negro TOW.
 - [x] Cubrir sombras/fondos verdes hardcodeados con overrides en `themes/_theme.scss` dentro de dark.
-- [ ] Ajustar tipografia base y display headings.
+- [x] Ajustar tipografia base y display headings.
 - [ ] Ajustar botones `.trk-btn` a yellow fill y yellow outline.
 - [ ] Ajustar header oscuro, borde amarillo y nav compacto.
 - [ ] Ajustar hero/banner a look Figma aunque use assets temporales.
@@ -83,9 +84,16 @@ La fase 1 se considera lista cuando:
 
 - [x] Crear `assets/figma/`.
 - [x] Crear `assets/figma/manifest.md`.
-- [ ] Descargar assets MCP/Figma a staging.
+- [x] Descargar assets MCP/Figma a staging.
+- [x] Crear `index-tow.html` como propuesta aislada basada en el index.
+- [x] Agregar `assets/sass/pages/_tow-index.scss` con estilos encapsulados bajo `.tow-page`.
+- [x] Usar en la propuesta: logo negativo, hero, cards/icons/bullets, Oscar portrait, wheel overlay y social icons desde `assets/figma/`.
+- [x] Armar sitemap minimo de primera prueba: `index-tow.html`, `membership.html`, `course.html`, `competitions.html`, `about-oscar.html` y CTA a `signup.html`.
+- [x] Documentar el sitemap en `docs/tow-sitemap.md`.
 - [ ] Definir primera tanda de reemplazos con backup `*-original`.
+- [ ] Revisar visualmente `index-tow.html` en desktop.
+- [ ] Revisar visualmente `index-tow.html` en mobile.
 
 ## Siguiente Fase
 
-Fase 2: reemplazar assets principales segun `docs/assets-plan.md`.
+Fase 2: revisar la propuesta `index-tow.html`, aprobar o ajustar secciones y despues decidir que assets migran de `assets/figma/` a rutas finales.
