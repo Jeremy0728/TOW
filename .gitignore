@@ -1,0 +1,19 @@
+# Keep this repo scoped to the two static reference demos for now.
+/*
+
+!.gitignore
+!README.md
+!netlify.toml
+!docs/
+
+docs/*
+!docs/trading-on-wheels/
+
+docs/trading-on-wheels/*
+!docs/trading-on-wheels/reference-downloads/
+
+docs/trading-on-wheels/reference-downloads/*
+!docs/trading-on-wheels/reference-downloads/bitrader-thetork-public-demo/
+!docs/trading-on-wheels/reference-downloads/bitrader-thetork-public-demo/**
+!docs/trading-on-wheels/reference-downloads/leadz-awaiken-public-demo/
+!docs/trading-on-wheels/reference-downloads/leadz-awaiken-public-demo/**
