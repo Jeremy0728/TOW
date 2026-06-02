@@ -11252,7 +11252,6 @@ body.tow-page {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.96;
-  text-transform: uppercase;
 }
 .tow-hero__content h1 span {
   color: var(--tow-yellow);

@@ -96,7 +96,7 @@ Requisitos:
 - Cargar despues de `css/custom.css`.
 - Preferir un scope de pagina.
 - Tocar HTML solo para agregar la clase y el link CSS.
-- Copiar el selector base desde `css/custom.css`, prefijarlo con `.tow-index-page` y adaptar solo las propiedades necesarias.
+- Copiar el selector base desde `css/custom.css`, prefijarlo con `.tow-page` y adaptar solo las propiedades necesarias.
 - Mantener `css/custom.css` como base: no duplicar una seccion completa si solo se necesita ajustar un selector.
 
 Ventajas:

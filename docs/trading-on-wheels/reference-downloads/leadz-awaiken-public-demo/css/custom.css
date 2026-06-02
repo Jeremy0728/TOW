@@ -52,11 +52,11 @@
 /************************************/	
 
 :root{
-	--primary-color			: #14202E;
+	--primary-color			: #040404;
 	--secondary-color		: #FAFAFA;
 	--text-color			: #828282;
-	--accent-color			: #D8E28C;
-	--dark-color			: #114A43;
+	--accent-color			: #F7C600;
+	--dark-color			: #3968b1;
 	--white-color			: #FFFFFF;
 	--divider-color			: #E3E3E3;
 	--dark-divider-color	: #FFFFFF1A;
@@ -355,7 +355,7 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background-color: var(--dark-color);
+	background-color: #040404;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -803,7 +803,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .hero{
-	background: radial-gradient(45.15% 42.05% at 49.04% 57.08%, rgba(17, 74, 67, 0) 0.01%, #114A43 100%), url('../images/section-bg.svg');
+	background: radial-gradient(45.15% 42.05% at 49.04% 57.08%, rgba(0, 0, 0, 0) 0.01%, #0c0c0da4 100%), url('../images/section-bg.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -1727,7 +1727,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-features.bg-section{
-	background: radial-gradient(45.15% 42.05% at 49.04% 57.08%, rgba(17, 74, 67, 0) 0.01%, #114A43 100%), url('../images/section-bg.svg');
+	background: radial-gradient(45.15% 42.05% at 49.04% 57.08%, rgba(0, 0, 0, 0) 0.01%, #0c0c0da4 100%), url('../images/section-bg.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1957,7 +1957,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .cta-box.bg-section{
-	background: radial-gradient(45.15% 42.05% at 49.04% 57.08%, rgba(17, 74, 67, 0) 0.01%, #114A43 100%), url(../images/section-bg.svg);
+	background: radial-gradient(45.15% 42.05% at 49.04% 57.08%, #f7c60000 0.01%, #F7C600 100%), url(../images/section-bg-yellow.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -2317,7 +2317,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .main-footer.bg-section{
-	background: radial-gradient(39.27% 31.11% at 49.13% 41.46%, rgba(17, 74, 67, 0) 0.01%, #114A43 100%), url(../images/section-bg.svg);
+	background: radial-gradient(39.27% 31.11% at 49.13% 41.46%, rgba(0, 0, 0, 0) 0.01%, #0c0c0d 100%), url(../images/section-bg.svg);
 	background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -2340,6 +2340,7 @@ header.main-header .header-sticky.active{
 
 .footer-links h3{
 	font-size: 18px;
+	letter-spacing: 0.05em;
 	font-weight: 600;
 	text-transform: capitalize;
 	color: var(--white-color);
@@ -2430,7 +2431,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(17, 74, 67, 0) 0.01%, #114A43 100%), url('../images/section-bg.svg');
+	background: radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(0, 0, 0, 0) 0.01%, #0c0c0da4 100%), url('../images/section-bg.svg');
     background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -2879,7 +2880,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-process.bg-section{
-    background: radial-gradient(53.2% 49.55% at 49.2% 49.75%, rgba(17, 74, 67, 0) 0.01%, #114A43 100%), url('../images/section-bg.svg');
+    background: radial-gradient(53.2% 49.55% at 49.2% 49.75%,  rgba(0, 0, 0, 0) 0.01%, #0c0c0da4 100%), url('../images/section-bg.svg');
     background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;

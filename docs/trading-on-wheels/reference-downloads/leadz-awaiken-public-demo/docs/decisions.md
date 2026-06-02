@@ -58,8 +58,8 @@ Este documento es la fuente de decisiones para agentes trabajando en esta build.
 - Implicacion: no crear `assets/sass` ni migrar a SCSS sin una tarea explicita.
 - Implicacion: `css/custom.css` se mantiene como base del template y no se reescribe para resolver una seccion TOW aislada.
 - Decision actualizada: `index-tow.html` usa `css/tow-overrides.css` como capa scoped cargada despues de `css/custom.css`.
-- Regla de scope: antes de adaptar una seccion, copiar al scope el selector base relevante de `css/custom.css`, prefijarlo con `.tow-index-page` y modificar solo las propiedades necesarias.
-- Implicacion: el scope permitido para esa capa es `body.tow-index-page`; no se debe aplicar a paginas internas salvo decision explicita.
+- Regla de scope: antes de adaptar una seccion, copiar al scope el selector base relevante de `css/custom.css`, prefijarlo con `.tow-page` y modificar solo las propiedades necesarias.
+- Implicacion: el scope permitido para esa capa es `body.tow-page`; `body.tow-index-page` solo se usa como modificador de la Home.
 - Implicacion: no crear reglas que ignoren la base existente si hay un selector equivalente en `css/custom.css`.
 
 ## 5. Orden De Migracion
@@ -206,7 +206,7 @@ White: #FFFFFF
 
 - Se corrigio el rumbo de Fase 1 para trabajar sobre la base real del template: `css/custom.css`.
 - Se reemplazo el import de Google Fonts en `index.html`: `Inter` + `Onest` sale, `Bebas Neue` + `Carlito` entra.
-- Se recupero el enfoque scoped para `index-tow.html`: `css/tow-overrides.css` cargado despues de `css/custom.css` y limitado a `body.tow-index-page`.
+- Se recupero el enfoque scoped para paginas TOW: `css/tow-overrides.css` cargado despues de `css/custom.css` y limitado a `body.tow-page`.
 - Se aplico el primer pase de colores y tipografia directamente en `css/custom.css`: variables base, body/headings, botones, section titles, header/nav, hero, pricing, CTA, footer y hardcodes verdes principales.
 - Se verifico estaticamente con `git diff --check` y busqueda de referencias. El navegador integrado no pudo abrir la pagina porque el runtime `node_repl` fallo con `windows sandbox failed: spawn setup refresh`.
 - Se creo la documentacion operativa de Leadz basada en el metodo documental de Bitrader, sin copiar sus decisiones visuales ni tecnicas.

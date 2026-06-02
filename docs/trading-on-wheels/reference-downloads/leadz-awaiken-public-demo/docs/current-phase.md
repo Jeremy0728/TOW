@@ -61,9 +61,9 @@ Fase 1: actualizar tema y tipografia de Leadz hacia TOW.
 Checklist inicial:
 
 - [x] Reemplazar import de Google Fonts en `index-tow.html` por `Bebas Neue` + `Carlito`.
-- [x] Crear scope `body.tow-index-page` mediante `css/tow-overrides.css`.
+- [x] Crear scope `body.tow-page` mediante `css/tow-overrides.css`.
 - [x] Cargar `css/tow-overrides.css` despues de `css/custom.css`.
-- [x] Definir regla: copiar selector base de `custom.css`, prefijar con `.tow-index-page` y adaptar.
+- [x] Definir regla: copiar selector base de `custom.css`, prefijar con `.tow-page` y adaptar.
 - [x] Definir estrategia para fondos negros sin romper paginas internas.
 - [x] Primer pase de colores para topbar/header/nav/botones.
 - [x] Primer pase de colores y tipografia para hero.
