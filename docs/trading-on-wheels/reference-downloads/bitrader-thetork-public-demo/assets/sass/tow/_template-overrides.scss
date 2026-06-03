@@ -222,6 +222,48 @@
     border-color: var(--tow-yellow);
     color: var(--tow-bg);
   }
+
+  .tow-section-heading {
+    max-width: 920px;
+    margin-inline: auto;
+    text-align: center;
+
+    h2,
+    h2 span {
+      font-family: var(--tow-font-display);
+      font-size: 68px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.02;
+      text-transform: none;
+    }
+
+    h2 {
+      color: var(--tow-white);
+    }
+
+    h2 span {
+      color: var(--tow-yellow);
+    }
+
+    p {
+      color: var(--tow-white);
+      font-family: var(--tow-font-body);
+      font-size: 18px;
+      line-height: 1.55;
+      margin-inline: auto;
+      max-width: 780px;
+    }
+  }
+
+  .tow-section-heading--left {
+    margin-inline: 0;
+    text-align: left;
+
+    p {
+      margin-inline: 0;
+    }
+  }
 }
 
 @include breakpoint(max-xl) {
@@ -231,6 +273,13 @@
         h1 {
           font-size: 78px;
         }
+      }
+    }
+
+    .tow-section-heading {
+      h2,
+      h2 span {
+        font-size: 58px;
       }
     }
   }
@@ -249,6 +298,13 @@
 
       .tow-membership-banner__copy {
         font-size: 18px;
+      }
+    }
+
+    .tow-section-heading {
+      h2,
+      h2 span {
+        font-size: 50px;
       }
     }
   }
@@ -277,6 +333,17 @@
         }
       }
     }
+
+    .tow-section-heading {
+      h2,
+      h2 span {
+        font-size: 42px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 }
 
@@ -291,6 +358,13 @@
 
       .tow-membership-banner__copy {
         font-size: 16px;
+      }
+    }
+
+    .tow-section-heading {
+      h2,
+      h2 span {
+        font-size: 36px;
       }
     }
   }
