@@ -1,18 +1,33 @@
 /*
 Trading On Wheels page scope.
-Copy the relevant custom.css selector first, prefix it with .tow-page,
-then adapt only the properties needed for the TOW section.
+- .tow-page scopes TOW overrides without touching custom.css.
+- .tow-skin-* owns replaceable brand accents.
+- .tow-theme-* owns page surfaces, text, overlays, and dividers.
 */
 
 body.tow-page{
 	--tow-black: #000000;
+	--tow-white: #ffffff;
+	--tow-yellow: var(--tow-accent-primary);
+	--tow-blue: var(--tow-accent-secondary);
+	--tow-green: var(--tow-accent-success);
+	--accent-color: var(--tow-yellow);
+	background-color: var(--tow-bg);
+	color: var(--tow-text);
+}
+
+body.tow-skin-default{
+	--tow-accent-primary: #f7c600;
+	--tow-accent-secondary: #2757a6;
+	--tow-accent-success: #498734;
+}
+
+body.tow-theme-dark{
 	--tow-bg: #000000;
 	--tow-surface: #141414;
 	--tow-surface-2: #191919;
-	--tow-yellow: #f7c600;
-	--tow-blue: #2757a6;
-	--tow-green: #498734;
-	--tow-white: #ffffff;
+	--tow-heading: #ffffff;
+	--tow-text: #ffffff;
 	--tow-muted: #908f8f;
 	--tow-soft: #aeb8ba;
 	--tow-header-bg: rgba(20, 32, 46, 0.48);
@@ -24,8 +39,25 @@ body.tow-page{
 	--tow-hero-wash-end: rgba(7, 16, 18, 0);
 	--tow-hero-wash-tablet: rgba(7, 16, 18, 0.94);
 	--tow-hero-wash-tablet-end: rgba(7, 16, 18, 0.3);
-	--accent-color: var(--tow-yellow);
-	background-color: var(--tow-bg);
+}
+
+body.tow-theme-light{
+	--tow-bg: #ffffff;
+	--tow-surface: #ffffff;
+	--tow-surface-2: #f6f6f6;
+	--tow-heading: #101010;
+	--tow-text: #303030;
+	--tow-muted: #646464;
+	--tow-soft: #5f6a6d;
+	--tow-header-bg: rgba(20, 32, 46, 0.88);
+	--tow-header-bg-solid: rgba(20, 32, 46, 0.96);
+	--tow-header-bg-tablet: rgba(20, 32, 46, 0.94);
+	--tow-divider: rgba(0, 0, 0, 0.12);
+	--tow-button-border: rgba(0, 0, 0, 0.16);
+	--tow-hero-wash: rgba(7, 16, 18, 0.88);
+	--tow-hero-wash-end: rgba(7, 16, 18, 0);
+	--tow-hero-wash-tablet: rgba(7, 16, 18, 0.94);
+	--tow-hero-wash-tablet-end: rgba(7, 16, 18, 0.3);
 }
 
 .tow-page .topbar{
@@ -121,6 +153,39 @@ body.tow-page{
 	padding: 0 48px 0 28px;
 	font-size: 18px;
 	text-transform: uppercase;
+}
+
+.tow-page .header-btn{
+	align-items: center;
+}
+
+.tow-page .tow-theme-toggle{
+	position: fixed;
+	right: 28px;
+	bottom: 28px;
+	z-index: 1200;
+	width: 96px;
+	height: 48px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--tow-yellow);
+	border-radius: 50px;
+	background: var(--tow-black);
+	color: var(--tow-white);
+	box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26);
+	font-family: var(--accent-font);
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+
+.tow-page .tow-theme-toggle:hover,
+.tow-page .tow-theme-toggle:focus{
+	background: var(--tow-yellow);
+	color: var(--tow-black);
 }
 
 .tow-page .hero.hero-image{
@@ -264,7 +329,7 @@ body.tow-page{
 }
 
 .tow-page .our-pricing .section-title h2{
-	color: var(--tow-white);
+	color: var(--tow-heading);
 	text-transform: uppercase;
 	max-width: 670px;
 }
@@ -656,7 +721,7 @@ body.tow-page{
 }
 
 .tow-page .tow-final-cta{
-	background: var(--tow-black);
+	background: var(--tow-bg);
 	padding: 72px 0 78px;
 }
 
