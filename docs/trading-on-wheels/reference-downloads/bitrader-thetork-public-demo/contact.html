@@ -34,7 +34,7 @@
           <img src="./assets/figma/logo-negative.png" alt="Trading On Wheels">
         </a>
 
-        <nav class="tow-header__nav" aria-label="Primary navigation">
+        <nav class="tow-header__nav menu" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="membership.html">Membership</a>
           <a href="course.html">Course</a>
@@ -46,27 +46,42 @@
           <span>Join Now</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
+
+        <button class="header-bar d-lg-none header-bar--style1 tow-header__menu-toggle" type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
   <!-- ================> Page header start here <================== -->
-  <section class="page-header bg--cover" style="background-image:url(./assets/images/header/1.png)">
-    <div class="container">
-      <div class="page-header__content" data-aos="fade-right" data-aos-duration="1000">
-        <h2>Join Now</h2>
-        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Join Now</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="page-header__shape">
-        <span class="page-header__shape-item page-header__shape-item--1"><img src="./assets/images/header/2.png"
-            alt="shape-icon"></span>
-      </div>
-    </div>
-  </section>
+  <section class="tow-hero tow-join-hero" id="home">
+        <div class="tow-hero__media" aria-hidden="true">
+          <img src="./assets/images/banner/home4/joinbanner.png" alt="">
+        </div>
+        <div class="tow-hero__overlay"></div>
+
+        <div class="tow-container">
+          <div class="tow-hero__content" data-aos="fade-up" data-aos-duration="700">
+            <p class="tow-eyebrow">Trading On Wheels</p>
+            <h1>Follow the moves <span>Learn the logic</span></h1>
+            <p class="tow-hero__copy">Join the Trading On Wheels membership to see how the Gurman Method is applied in real market conditions — with structure, discipline, and a system behind every decision.</p>
+            <div class="tow-actions">
+              <a class="tow-btn tow-btn--primary" href="membership.html">
+                <span>Join Membership</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="tow-btn tow-btn--outline" href="course.html">
+                <span>Explore Course</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
   <!-- ================> Page header end here <================== -->
 
   <!-- ===============>> Contact section start here <<================= -->
@@ -92,9 +107,7 @@
                       <span><img src="./assets/images/contact/1.png" alt="contact-icon" class="dark"></span>
                     </div>
                     <div class="contact__item-content">
-                      <p>membership</p>
-                      <p>Limited founding access</p>
-                      <p>100 members only</p>
+                      <p>(+65) 652 68 15 64</p>
                     </div>
                   </div>
                 </div>
@@ -104,19 +117,14 @@
                       <span><img src="./assets/images/contact/2.png" alt="contact-icon" class="dark"></span>
                     </div>
                     <div class="contact__item-content">
-                      <p>support@tradingonwheels.com</p>
-                      <p>community@tradingonwheels.com</p>
+                      <p>info@tradingonwheels.com</p>
                     </div>
                   </div>
                 </div>
                 <div class="contact__item" data-aos="fade-right" data-aos-duration="1200">
                   <div class="contact__item-inner">
-                    <div class="contact__item-thumb">
-                      <span><img src="./assets/images/contact/3.png" alt="contact-icon" class="dark"></span>
-                    </div>
                     <div class="contact__item-content">
-                      <p>next step</p>
-                      <p>Join the waitlist and choose Membership, Course or Competitions.</p>
+                      <p>Whatever’s on your mind, hit me up! Fill out the form, and I’ll get back to you faster than you can say “financial freedom.” Let’s make some magic happen.</p>
                     </div>
                   </div>
                 </div>
@@ -166,8 +174,7 @@
       </div>
     </div>
     <div class="contact__shape">
-      <span class="contact__shape-item contact__shape-item--1"><img src="./assets/images/contact/4.png"
-          alt="shape-icon"></span>
+     
       <span class="contact__shape-item contact__shape-item--2"> <span></span> </span>
     </div>
   </div>

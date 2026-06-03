@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// Scoped TOW base. Original Bitrader pages remain untouched unless body.tow-page
+// is present.
+// -----------------------------------------------------------------------------
+
+body.tow-page {
+  --tow-bg: #{$tow-color-bg};
+  --tow-surface: #{$tow-color-surface};
+  --tow-surface-2: #{$tow-color-surface-2};
+  --tow-yellow: #{$tow-color-yellow};
+  --tow-blue: #{$tow-color-blue};
+  --tow-green: #{$tow-color-green};
+  --tow-white: #{$tow-color-white};
+  --tow-muted: #{$tow-color-muted};
+  --tow-border: #{$tow-color-border};
+  --tow-font-body: #{$tow-font-body};
+  --tow-font-heading: #{$tow-font-heading};
+  --tow-font-display: #{$tow-font-display};
+
+  background: var(--tow-bg);
+  color: var(--tow-white);
+  font-family: var(--tow-font-body);
+  overflow-x: hidden;
+}
+
+.tow-page {
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--tow-font-heading);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .preloader {
+    background-color: var(--tow-bg);
+  }
+
+  .scrollToTop {
+    background-color: var(--tow-yellow);
+    color: var(--tow-bg);
+  }
+}
+

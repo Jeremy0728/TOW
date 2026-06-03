@@ -1,6 +1,9 @@
 // =================== preloader js  ================== //
 document.addEventListener('DOMContentLoaded', function () {
     var preloader = document.querySelector('.preloader');
+    if (!preloader) {
+        return;
+    }
     preloader.style.transition = 'opacity 0.5s ease';
     // Hide the preloader 1 second (1000 milliseconds) after DOM content is loaded
     setTimeout(function () {
@@ -19,23 +22,25 @@ const colorSwitcher = document.getElementById('btnSwitch');
 
 
 switchThemeByUrl();
-updateThemeColor(localStorage.getItem('theme'))
+updateThemeColor(localStorage.getItem('theme') || document.documentElement.getAttribute('data-bs-theme') || 'light')
 
 
-colorSwitcher.addEventListener('click', () => {
+if (colorSwitcher) {
+    colorSwitcher.addEventListener('click', () => {
 
-    const theme = localStorage.getItem('theme');
+        const theme = localStorage.getItem('theme');
 
-    if (theme && theme === 'dark') {
+        if (theme && theme === 'dark') {
 
-        updateThemeColor('light');
+            updateThemeColor('light');
 
-    } else {
-        updateThemeColor('dark');
+        } else {
+            updateThemeColor('dark');
 
-    }
+        }
 
-});
+    });
+}
 
 function updateThemeColor(themeMode = 'light') {
 
@@ -43,10 +48,14 @@ function updateThemeColor(themeMode = 'light') {
     localStorage.setItem('theme', themeMode)
 
     if (themeMode === 'dark') {
-        colorSwitcher.classList.add('dark-switcher');
+        if (colorSwitcher) {
+            colorSwitcher.classList.add('dark-switcher');
+        }
 
     } else {
-        colorSwitcher.classList.remove('dark-switcher');
+        if (colorSwitcher) {
+            colorSwitcher.classList.remove('dark-switcher');
+        }
     }
 
     changeImage(themeMode);
@@ -81,7 +90,9 @@ function changeImage(themeMode = 'light') {
 
     if (themeMode === "dark") {
 
-        icon.src = './assets/images/icon/sun.svg';
+        if (icon) {
+            icon.src = './assets/images/icon/sun.svg';
+        }
 
         for (var i = 0; i < images.length; i++) {
             var normalSrc = images[i].dataset.normalSrc || images[i].src.replace("-dark.", ".");
@@ -99,7 +110,9 @@ function changeImage(themeMode = 'light') {
             images[i].src = darkSrc;
         }
     } else {
-        icon.src = './assets/images/icon/moon.svg';
+        if (icon) {
+            icon.src = './assets/images/icon/moon.svg';
+        }
 
         for (var i = 0; i < images.length; i++) {
             images[i].onerror = null;
@@ -158,13 +171,17 @@ menuLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
         e.stopPropagation(); // prevent the event from bubbling up to parent elements
         var element = link.parentElement;
+        var childMenu = element ? element.querySelector("ul") : null;
         if (parseInt(window.innerWidth, 10) < 1200) {
+            if (!childMenu) {
+                return;
+            }
             if (element.classList.contains("open")) {
                 element.classList.remove("open");
-                element.querySelector("ul").style.display = "none";
+                childMenu.style.display = "none";
             } else {
                 element.classList.add("open");
-                element.querySelector("ul").style.display = "block";
+                childMenu.style.display = "block";
             }
         }
     });
@@ -174,13 +191,17 @@ menuLinks.forEach(function (link) {
 
 
 // Toggle header bar on click
-var headerBar = document.querySelector(".header-bar");
-headerBar.addEventListener("click", function () {
-    headerBar.classList.toggle("active");
-    var menu = document.querySelector(".menu");
-    if (menu) {
-        menu.classList.toggle("active");
-    }
+var headerBars = document.querySelectorAll(".header-bar");
+headerBars.forEach(function (headerBar) {
+    headerBar.addEventListener("click", function () {
+        headerBar.classList.toggle("active");
+        var header = headerBar.closest("header");
+        var menu = header ? header.querySelector(".menu") : document.querySelector(".menu");
+        if (menu) {
+            var isActive = menu.classList.toggle("active");
+            headerBar.setAttribute("aria-expanded", isActive ? "true" : "false");
+        }
+    });
 });
 
 
@@ -188,13 +209,15 @@ headerBar.addEventListener("click", function () {
 
 //Header
 var fixedTop = document.querySelector("header");
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-        fixedTop.classList.add("header-fixed", "fadeInUp");
-    } else {
-        fixedTop.classList.remove("header-fixed", "fadeInUp");
-    }
-});
+if (fixedTop) {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            fixedTop.classList.add("header-fixed", "fadeInUp");
+        } else {
+            fixedTop.classList.remove("header-fixed", "fadeInUp");
+        }
+    });
+}
 
 
 // =================== header js end here =================== //
@@ -203,7 +226,9 @@ window.addEventListener("scroll", function () {
 
 
 //Animation on Scroll initializing
-AOS.init();
+if (typeof AOS !== 'undefined') {
+    AOS.init();
+}
 
 
 
@@ -211,176 +236,188 @@ AOS.init();
 // =================== custom trk slider js here =================== //
 
 // component slider here
-const Partner = new Swiper('.partner__slider', {
-    spaceBetween: 24,
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 2,
-    breakpoints: {
-        576: {
-            slidesPerView: 3,
+if (typeof Swiper !== 'undefined' && document.querySelector('.partner__slider')) {
+    const Partner = new Swiper('.partner__slider', {
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 2,
+        breakpoints: {
+            576: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            992: {
+                slidesPerView: 5,
+                spaceBetween: 15,
+            },
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 25,
+            },
         },
-        768: {
-            slidesPerView: 4,
+        autoplay: {
+            delay: 1,
+            disableOnInteraction: true,
         },
-        992: {
-            slidesPerView: 5,
-            spaceBetween: 15,
-        },
-        1200: {
-            slidesPerView: 6,
-            spaceBetween: 25,
-        },
-    },
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: true,
-    },
-    speed: 2000,
-});
+        speed: 2000,
+    });
+}
 
 
 
 // blog  slider here
-const blog = new Swiper('.blog__slider', {
-    spaceBetween: 24,
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 1,
-    breakpoints: {
-        576: {
-            slidesPerView: 1,
+if (typeof Swiper !== 'undefined' && document.querySelector('.blog__slider')) {
+    const blog = new Swiper('.blog__slider', {
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 1,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
         },
-        768: {
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 3,
-        },
-        1200: {
-            slidesPerView: 3,
-        }
-    },
 
-    autoplay: true,
-    speed: 500,
-    navigation: {
-        nextEl: ".blog__slider-next",
-        prevEl: ".blog__slider-prev",
-    },
-});
+        autoplay: true,
+        speed: 500,
+        navigation: {
+            nextEl: ".blog__slider-next",
+            prevEl: ".blog__slider-prev",
+        },
+    });
+}
 
 // testimonial slider
 
-const testimonial = new Swiper('.testimonial__slider', {
-    spaceBetween: 24,
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 1,
-    breakpoints: {
-        576: {
-            slidesPerView: 1,
+if (typeof Swiper !== 'undefined' && document.querySelector('.testimonial__slider')) {
+    const testimonial = new Swiper('.testimonial__slider', {
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 1,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+            },
         },
-        768: {
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 2,
-        },
-        1200: {
-            slidesPerView: 2,
-            spaceBetween: 25,
-        },
-    },
 
-    autoplay: true,
-    speed: 500,
+        autoplay: true,
+        speed: 500,
 
-    navigation: {
-        nextEl: ".testimonial__slider-next",
-        prevEl: ".testimonial__slider-prev",
-    },
-});
+        navigation: {
+            nextEl: ".testimonial__slider-next",
+            prevEl: ".testimonial__slider-prev",
+        },
+    });
+}
 
 
 // testimonial slider 2
-const testimonial2 = new Swiper('.testimonial__slider2', {
-    spaceBetween: 24,
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 1,
-    breakpoints: {
-        576: {
-            slidesPerView: 1,
+if (typeof Swiper !== 'undefined' && document.querySelector('.testimonial__slider2')) {
+    const testimonial2 = new Swiper('.testimonial__slider2', {
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 1,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
         },
-        768: {
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 3,
-        },
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 25,
-        },
-    },
 
-    autoplay: true,
-    speed: 500,
+        autoplay: true,
+        speed: 500,
 
-    navigation: {
-        nextEl: ".testimonial__slider-next",
-        prevEl: ".testimonial__slider-prev",
-    },
-});
+        navigation: {
+            nextEl: ".testimonial__slider-next",
+            prevEl: ".testimonial__slider-prev",
+        },
+    });
+}
 
 
 
 // testimonial slider
 
-const testimonial3 = new Swiper('.testimonial__slider3', {
-    spaceBetween: 24,
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 1,
-    autoplay: true,
-    speed: 500,
-});
+if (typeof Swiper !== 'undefined' && document.querySelector('.testimonial__slider3')) {
+    const testimonial3 = new Swiper('.testimonial__slider3', {
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 1,
+        autoplay: true,
+        speed: 500,
+    });
+}
 
 // roadmap slider 
-const roadmapSlider = new Swiper('.roadmap__slider', {
+if (typeof Swiper !== 'undefined' && document.querySelector('.roadmap__slider')) {
+    const roadmapSlider = new Swiper('.roadmap__slider', {
 
-    grabCursor: true,
-    // loop: true,
-    slidesPerView: 1,
-    breakpoints: {
-        576: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        },
-        1200: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-        },
-        1400: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-        }
+        grabCursor: true,
+        // loop: true,
+        slidesPerView: 1,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            }
 
-    },
+        },
 
-    autoplay: true,
-    speed: 500,
+        autoplay: true,
+        speed: 500,
 
-});
+    });
+}
 
 // =================== custom trk slider end here =================== //
 
@@ -430,7 +467,9 @@ if (scrollToTop) {
 
 
 // =================== count start here =================== //
-new PureCounter();
+if (typeof PureCounter !== 'undefined') {
+    new PureCounter();
+}
 // =================== count end here =================== //
 
 

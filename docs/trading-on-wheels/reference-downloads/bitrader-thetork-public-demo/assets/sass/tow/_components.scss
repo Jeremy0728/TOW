@@ -1,0 +1,272 @@
+.tow-btn {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 10px;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 1;
+  min-height: 44px;
+  padding: 0 22px;
+  text-transform: uppercase;
+  transition: $transition;
+  white-space: nowrap;
+
+  svg,
+  i {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+.tow-btn--primary {
+  background: var(--tow-yellow);
+  border-color: var(--tow-yellow);
+  color: var(--tow-bg);
+
+  &:hover {
+    background: var(--tow-white);
+    border-color: var(--tow-white);
+    color: var(--tow-bg);
+  }
+}
+
+.tow-btn--outline {
+  background: rgba(12, 12, 13, 0.4);
+  border-color: var(--tow-yellow);
+  color: var(--tow-white);
+
+  &:hover {
+    background: var(--tow-yellow);
+    color: var(--tow-bg);
+  }
+}
+
+.tow-btn--dark {
+  background: var(--tow-blue);
+  border-color: var(--tow-blue);
+  color: var(--tow-white);
+
+  &:hover {
+    background: var(--tow-white);
+    border-color: var(--tow-white);
+    color: var(--tow-bg);
+  }
+}
+
+.tow-btn--card {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--button-color, var(--tow-bg));
+  margin-top: auto;
+  min-height: 42px;
+  padding-inline: 26px;
+  width: fit-content;
+
+  &:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
+    color: var(--button-color, var(--tow-bg));
+    transform: translateY(-2px);
+  }
+}
+
+.tow-offer-card {
+  --accent: var(--tow-yellow);
+  --button-color: var(--tow-bg);
+
+  background: var(--tow-surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 430px;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 0.28s ease;
+  }
+
+  &::after {
+    background: var(--accent);
+    border-radius: 999px;
+    content: "";
+    height: 8px;
+    left: 12px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 0;
+    transform: translateY(-2px);
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    z-index: 2;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  h3 {
+    color: var(--accent);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: var(--tow-white);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tow-btn--card {
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.tow-offer-card--membership {
+  &::before {
+    background:
+      linear-gradient(180deg, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.94)),
+      linear-gradient(90deg, rgba(20, 20, 20, 0.34), rgba(20, 20, 20, 0.72)),
+      url("../figma/offer-card-membership.png") center bottom / cover no-repeat;
+  }
+}
+
+.tow-offer-card--course {
+  --accent: var(--tow-blue);
+  --button-color: var(--tow-white);
+
+  &::before {
+    background:
+      linear-gradient(180deg, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.94)),
+      linear-gradient(90deg, rgba(20, 20, 20, 0.32), rgba(20, 20, 20, 0.72)),
+      url("../figma/course-card.png") center bottom / cover no-repeat;
+  }
+}
+
+.tow-offer-card--competitions {
+  --accent: var(--tow-green);
+  --button-color: var(--tow-white);
+
+  &::before {
+    background:
+      linear-gradient(180deg, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.94)),
+      linear-gradient(90deg, rgba(20, 20, 20, 0.32), rgba(20, 20, 20, 0.72)),
+      url("../figma/competition-card.png") center bottom / cover no-repeat;
+  }
+}
+
+.tow-offer-card__top {
+  align-items: center;
+  border-bottom: 1px solid var(--accent);
+  display: flex;
+  gap: 16px;
+  margin-bottom: 26px;
+  padding-bottom: 20px;
+}
+
+.tow-offer-card__icon {
+  align-items: center;
+  background: var(--accent);
+  border-radius: 50%;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 68px;
+  justify-content: center;
+  width: 68px;
+
+  img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 35px;
+  }
+}
+
+.tow-offer-card--course .tow-offer-card__icon img {
+  height: 100%;
+  width: 35px;
+}
+
+.tow-offer-card--competitions .tow-offer-card__icon img {
+  height: 100%;
+  width: 35px;
+}
+
+.tow-offer-card__list {
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+
+  li {
+    align-items: center;
+    color: var(--tow-white);
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 10px;
+    line-height: 1.45;
+  }
+
+  img {
+    flex: 0 0 auto;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@include breakpoint(max-md) {
+  .tow-offer-card {
+    padding: 24px;
+  }
+}
+
+@include breakpoint(max-sm) {
+  .tow-actions {
+    .tow-btn {
+      width: 100%;
+    }
+  }
+
+  .tow-offer-card__top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tow-offer-card {
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+

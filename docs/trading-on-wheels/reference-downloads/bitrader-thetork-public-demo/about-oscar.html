@@ -34,7 +34,7 @@
           <img src="./assets/figma/logo-negative.png" alt="Trading On Wheels">
         </a>
 
-        <nav class="tow-header__nav" aria-label="Primary navigation">
+        <nav class="tow-header__nav menu" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="membership.html">Membership</a>
           <a href="course.html">Course</a>
@@ -46,105 +46,159 @@
           <span>Join Now</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
+
+        <button class="header-bar d-lg-none header-bar--style1 tow-header__menu-toggle" type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
   <!-- ================> Page header start here <================== -->
-  <section class="page-header bg--cover" style="background-image:url(./assets/images/header/1.png)">
-    <div class="container">
-      <div class="page-header__content" data-aos="fade-right" data-aos-duration="1000">
-        <h2>About Oscar</h2>
-        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About Oscar</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="page-header__shape">
-        <span class="page-header__shape-item page-header__shape-item--1"><img src="./assets/images/header/2.png"
-            alt="shape-icon"></span>
+  <section class="tow-oscar-hero" id="home">
+    <div class="tow-container">
+      <div class="tow-oscar-hero__inner">
+        <div class="tow-oscar-hero__media" data-aos="fade-right" data-aos-duration="700">
+          <img src="./assets/images/about/oscar.png" alt="Oscar Gurman">
+        </div>
+
+        <div class="tow-oscar-hero__content" data-aos="fade-up" data-aos-duration="700">
+          <p class="tow-eyebrow">Founder / Educator / Trader</p>
+          <h1>Oscar Gurman <span>is not here to sell hype.</span></h1>
+          <span class="tow-oscar-hero__rule" aria-hidden="true"></span>
+          <p class="tow-oscar-hero__copy">He teaches a system.</p>
+          <a class="tow-btn tow-btn--primary" href="course.html">
+            <span>Learn the Method</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <!-- ================> Page header end here <================== -->
-
-  <!-- ===============>> team details section start here <<================= -->
-  <div class="team team--details padding-top padding-bottom bg-color-3">
+<!-- ========== Roadmap Section start Here========== -->
+  <section class="roadmap roadmap--style1 padding-top padding-bottom bg-color tow-oscar-roadmap" id="roadmap">
     <div class="container">
-      <div class="team__wrapper">
-        <div class="row g-5 align-items-center">
-          <div class="col-md-5">
-            <div class="team__thumb">
-              <img src="./assets/images/team-details/1.png" alt="Team Image">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="team__content">
-              <h3>Oscar</h3>
-              <p class="designation">Founder, Trading On Wheels</p>
-              <p class="info">Oscar founded Trading On Wheels and created the Gurman Method to help traders stop
-                renting their time and build a repeatable process around the Wheel Strategy.</p>
-
-              <p>
-                From the wheel to structured income, the focus is discipline, risk before entry and a practical routine
-                that traders can review and repeat with clarity.
-              </p>
-
-              <ul class="social mt-30">
-                <li class="social__item">
-                  <a href="#" class="social__link social__link--style2"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link social__link--style2 "><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link social__link--style2"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link social__link--style2"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li class="social__item">
-                  <a href="contact.html" class="social__link social__link--style2 d-sm-none d-md-block"><i
-                      class="fab fa-twitter"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="section-header section-header--max50">
+        <h2 class="mb-10 mt-minus-5">Oscar's <span>Teaching Style</span></h2>
+        <p>Direct, practical, and built around repeatable process instead of hype.</p>
       </div>
-    </div>
-  </div>
-  <!-- ===============>> team details section end here <<================= -->
+      <div class="roadmap__wrapper">
+        <div class="row gy-4 gy-md-0 gx-5">
+          <div class="col-md-6 offset-md-6">
+            <div class="roadmap__item ms-md-4 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
+              <div class="roadmap__item-inner">
+                <div class="roadmap__item-content">
+                  <div class="roadmap__item-header">
+                    <h3>Direct</h3>
+                    <span>01</span>
+                  </div>
+                  <p>No sugarcoating. No filler. Straight to what works and what doesn't.</p>
+                </div>
+              </div>
 
-  <!-- ===============>> cta section start here <<================= -->
-  <section class="cta padding-top padding-bottom  bg-color">
-    <div class="container">
-      <div class="cta__wrapper">
-        <div class="cta__newsletter justify-content-center">
-          <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000">
-            <div class="cta__thumb">
-              <img src="./assets/images/cta/3.png" alt="cta-thumb">
             </div>
-            <div class="cta__subscribe">
-              <h2> <span>Start owning</span> your time today.</h2>
-              <p>Limited to 100 Founding Members. Choose your path and build a repeatable Wheel Strategy routine.</p>
-              <div class="d-flex flex-wrap gap-3">
-                <a class="trk-btn trk-btn--large trk-btn--secondary2" href="contact.html">get started today</a>
-                <a class="trk-btn trk-btn--outline" href="membership.html">view membership</a>
+          </div>
+          <div class="col-md-6">
+            <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init aos-animate" data-aos="fade-right"
+              data-aos-duration="800">
+              <div class="roadmap__item-inner">
+                <div class="roadmap__item-content">
+                  <div class="roadmap__item-header">
+                    <h3>Practical</h3>
+                    <span>02</span>
+                  </div>
+                  <p>Every lesson is built around real trades and real market conditions.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-6">
+            <div class="roadmap__item ms-md-4 aos-init" data-aos="fade-left" data-aos-duration="800">
+              <div class="roadmap__item-inner">
+                <div class="roadmap__item-content">
+                  <div class="roadmap__item-header">
+                    <h3>No Hype</h3>
+                    <span>03</span>
+                  </div>
+                  <p>Zero promises of overnight success. This is about repeatable process, not lottery tickets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init" data-aos="fade-right"
+              data-aos-duration="800">
+              <div class="roadmap__item-inner">
+                <div class="roadmap__item-content">
+                  <div class="roadmap__item-header">
+                    <h3>Method-Driven</h3>
+                    <span>04</span>
+                  </div>
+                  <p>The Gurman Method isn't theory. It's a tested system applied consistently.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-6">
+            <div class="roadmap__item ms-md-4 aos-init" data-aos="fade-left" data-aos-duration="800">
+              <div class="roadmap__item-inner">
+                <div class="roadmap__item-content">
+                  <div class="roadmap__item-header">
+                    <h3>Focused on Discipline</h3>
+                    <span>05</span>
+                  </div>
+                  <p>Trading success comes from discipline, not luck. That's the foundation of everything taught here.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="cta__shape">
-          <span class="cta__shape-item cta__shape-item--1"><img src="./assets/images/cta/2.png" alt="shape icon"></span>
-          <span class="cta__shape-item cta__shape-item--2"><img src="./assets/images/cta/4.png" alt="shape icon"></span>
-          <span class="cta__shape-item cta__shape-item--3"><img src="./assets/images/cta/5.png" alt="shape icon"></span>
+      </div>
+      <blockquote class="tow-teaching__quote" data-aos="fade-up" data-aos-duration="700">
+        <p>"I don't teach hope. I teach process. Process beats hope every time."</p>
+        <cite>Oscar Gurman</cite>
+      </blockquote>
+    </div>
+    <div class="roadmap__shape">
+      <span class="roadmap__shape-item roadmap__shape-item--1"> <span></span> </span>
+      <span class="roadmap__shape-item roadmap__shape-item--2"> <img src="./assets/images/icon/1.png" alt="shape-icon">
+      </span>
+    </div>
+  </section>
+  <!-- ========== Roadmap Section Ends Here========== -->
+
+  <!-- ===============>> cta section start here <<================= -->
+  <section class="cta padding-bottom bg-color tow-about-cta">
+    <div class="container">
+      <div class="cta__wrapper">
+        <div class="cta__newsletter justify-content-center">
+          <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000">
+            <div class="cta__subscribe">
+              <h2>Learn the method directly from Oscar.</h2>
+              <p>Join the membership to see how the Gurman Method is applied in real markets. Or start with the course to learn the system from the ground up.</p>
+              <div class="tow-about-cta__actions">
+                <a class="tow-btn tow-btn--dark" href="membership.html">
+                  <span>Join Membership</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="tow-btn tow-btn--dark" href="course.html">
+                  <span>Take the Course</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ===============>> cta section start here <<================= -->
+  <!-- ===============>> cta section end here <<================= -->
 
 <footer class="tow-footer">
     <div class="tow-container">

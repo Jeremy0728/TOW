@@ -868,36 +868,36 @@
         %of-hidden;
         @include background-cover;
         padding-block-start: 110px;
-        padding-block-end: 240px;
+        padding-block-end: 110px;
 
         @include breakpoint(sm) {
             padding-block-start: 140px;
-            padding-block-end: 250px;
+            padding-block-end: 80px;
         }
 
         @include breakpoint(md) {
             padding-block-start: 170px;
-            padding-block-end: 260px;
+            padding-block-end: 85px;
         }
 
         @include breakpoint(lg) {
             padding-block-start: 180px;
-            padding-block-end: 270px;
+            padding-block-end: 90px;
         }
 
         @include breakpoint(xl) {
             padding-block-start: 208px;
-            padding-block-end: 280px;
+            padding-block-end: 104px;
         }
 
         @include breakpoint(xxl) {
             padding-block-start: 208px;
-            padding-block-end: 290px;
+            padding-block-end: 104px;
         }
 
         @include breakpoint(xxxl) {
             padding-block-start: 208px;
-            padding-block-end: 317px;
+            padding-block-end: 104px;
         }
 
         .banner {

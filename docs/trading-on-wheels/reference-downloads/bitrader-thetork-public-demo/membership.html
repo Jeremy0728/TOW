@@ -34,7 +34,7 @@
           <img src="./assets/figma/logo-negative.png" alt="Trading On Wheels">
         </a>
 
-        <nav class="tow-header__nav" aria-label="Primary navigation">
+        <nav class="tow-header__nav menu" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a class="is-active" href="membership.html">Membership</a>
           <a href="course.html">Course</a>
@@ -46,157 +46,141 @@
           <span>Join Now</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
+
+        <button class="header-bar d-lg-none header-bar--style1 tow-header__menu-toggle" type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
-  <!-- ================> Page header start here <================== -->
-  <section class="page-header bg--cover" style="background-image:url(./assets/images/header/1.png)">
+ 
+
+  <!-- ===============>> Banner section start here <<================= -->
+  <section class="banner banner--style4 bg--cover tow-membership-banner"
+    style="background-image: url(./assets/images/banner/home4/1.png)">
     <div class="container">
-      <div class="page-header__content" data-aos="fade-right" data-aos-duration="1000">
-        <h2>Membership</h2>
-        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Membership</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="page-header__shape">
-        <span class="page-header__shape-item page-header__shape-item--1"><img src="./assets/images/header/2.png"
-            alt="shape-icon"></span>
+      <div class="banner__wrapper">
+        <div class="row justify-content-center">
+          <div class="col-md-10 justify-content-center">
+            <div class="banner__content" data-aos="fade-up" data-aos-duration="800">
+              <p class="tow-eyebrow">The Private Trading Room</p>
+              <h1>Follow the moves.<span>Learn the logic.</span></h1>
+              <span class="tow-membership-banner__rule" aria-hidden="true"></span>
+              <p class="tow-hero__copy tow-membership-banner__copy">Join the Trading On Wheels membership to see how the Gurman Method is
+                applied in real market conditions, with structure, discipline, and a system behind every decision.</p>
+              <div class="tow-actions tow-membership-banner__actions">
+                <a href="contact.html" class="tow-btn tow-btn--primary">
+                  <span>Join the Membership</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#membership" class="tow-btn tow-btn--outline">
+                  <span>See What's Inside</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- ================> Page header end here <================== -->
+  <!-- ===============>> Banner section end here <<================= -->
 
-  <!-- ===============>> Pricing section start here <<================= -->
-  <section class="pricing padding-top padding-bottom">
+  <!-- ===============>> Service section start here <<================= -->
+  <section class="service padding-top padding-bottom">
     <div class="section-header section-header--max50">
-      <h2 class="mb-10 mt-minus-5">Choose your <span>TOW path</span></h2>
-      <p>Private TOW community access, the Gurman Method course and demo-account competitions in one clear structure.</p>
+      <h2 class="mb-10 mt-minus-5"><span>What you</span> Get inside</h2>
+      <p>Everything inside the membership is built to help you understand the logic behind the Gurman Method, follow market context, review trade decisions, and build discipline before execution.</p>
     </div>
     <div class="container">
-      <div class="pricing__wrapper">
+      <div class="service__wrapper">
         <div class="row g-4 align-items-center">
-          <div class="col-md-6 col-lg-4">
-            <div class="pricing__item" data-aos="fade-right" data-aos-duration="1000">
-              <div class="pricing__item-inner">
-                <div class="pricing__item-content">
-
-                  <!-- pricing top part -->
-                  <div class="pricing__item-top">
-                    <h6 class="mb-15">membership</h6>
-                    <h3 class="mb-25">$100/<span>per month</span> </h3>
-                  </div>
-
-                  <!-- pricing middle part -->
-                  <div class="pricing__item-middle">
-                    <ul class="pricing__list">
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Gurman Dome</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Signals</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Scoring</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Trade Cards</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Private Community</li>
-                    </ul>
-
-                  </div>
-
-                  <!-- pricing bottom part -->
-                  <div class="pricing__item-bottom">
-                    <a href="contact.html" class="trk-btn trk-btn--outline">join now</a>
-                  </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
+              <div class="service__item-inner text-center">
+                <div class="service__item-thumb mb-30">
+                  <img class="dark" src="./assets/images/service/1.png" alt="service-icon">
+                </div>
+                <div class="service__item-content">
+                  <h5> <a class="stretched-link" href="#">Course Training</a> </h5>
+                  <p class="mb-0">Learn the foundations of options, the Wheel Strategy, trade selection, and the full
+                    Gurman Method through a structured step-by-step course.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="pricing__item " data-aos="fade-up" data-aos-duration="1000">
-              <div class="pricing__item-inner active">
-                <div class="pricing__item-content">
-
-                  <!-- pricing top part -->
-                  <div class="pricing__item-top">
-                    <h6 class="mb-15">course</h6>
-                    <h3 class="mb-25">Gurman/<span>Method</span> </h3>
-                  </div>
-
-                  <!-- pricing middle part -->
-                  <div class="pricing__item-middle">
-                    <ul class="pricing__list">
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Step-by-step training</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Beginner to Wheeler</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Wheel Strategy</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Risk Management</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Lifetime Access</li>
-                    </ul>
-
-                  </div>
-
-                  <!-- pricing bottom part -->
-                  <div class="pricing__item-bottom">
-                    <a href="contact.html" class="trk-btn trk-btn--outline active">enroll now</a>
-                  </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
+              <div class="service__item-inner text-center">
+                <div class="service__item-thumb mb-30">
+                  <img class="dark" src="./assets/images/service/2.png" alt="service-icon">
+                </div>
+                <div class="service__item-content">
+                  <h5> <a class="stretched-link" href="#">Membership Community</a> </h5>
+                  <p class="mb-0">Access a private trading room focused on market context, trade logic, weekly reviews,
+                    and disciplined learning with other serious traders.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="pricing__item" data-aos="fade-left" data-aos-duration="1000">
-              <div class="pricing__item-inner">
-                <div class="pricing__item-content">
-
-                  <!-- pricing top part -->
-                  <div class="pricing__item-top">
-                    <h6 class="mb-15">competitions</h6>
-                    <h3 class="mb-25">Trade/<span>Challenges</span> </h3>
-                  </div>
-
-                  <!-- pricing middle part -->
-                  <div class="pricing__item-middle">
-                    <ul class="pricing__list">
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        University Challenges</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        TOW Global Championship</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Rankings</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Hall of Fame</li>
-                      <li class="pricing__list-item"><span><img src="./assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                        Demo Accounts Only</li>
-                    </ul>
-
-                  </div>
-
-                  <!-- pricing bottom part -->
-                  <div class="pricing__item-bottom">
-                    <a href="contact.html" class="trk-btn trk-btn--outline">join competition</a>
-                  </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+              <div class="service__item-inner text-center">
+                <div class="service__item-thumb mb-30">
+                  <img class="dark" src="./assets/images/service/3.png" alt="service-icon">
+                </div>
+                <div class="service__item-content">
+                  <h5> <a class="stretched-link" href="#">Market Breakdowns</a> </h5>
+                  <p class="mb-0">Receive regular market analysis focused on sectors, volatility, and conditions that
+                    matter for applying the Wheel Strategy with structure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
+              <div class="service__item-inner text-center">
+                <div class="service__item-thumb mb-30">
+                  <img class="dark" src="./assets/images/service/4.png" alt="service-icon">
+                </div>
+                <div class="service__item-content">
+                  <h5> <a class="stretched-link" href="#">Trade Logic Reviews</a>
+                  </h5>
+                  <p class="mb-0">Understand the reasoning behind setup selection, strike choices, position management,
+                    and risk decisions before any trade is considered.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
+              <div class="service__item-inner text-center">
+                <div class="service__item-thumb mb-30">
+                  <img class="dark" src="./assets/images/service/5.png" alt="service-icon">
+                </div>
+                <div class="service__item-content">
+                  <h5> <a class="stretched-link" href="#">Risk Management</a> </h5>
+                  <p class="mb-0">Build a process around position sizing, portfolio exposure, drawdown control, and
+                    disciplined execution before focusing on returns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+              <div class="service__item-inner text-center">
+                <div class="service__item-thumb mb-30">
+                  <img class="dark" src="./assets/images/service/6.png" alt="service-icon">
+                </div>
+                <div class="service__item-content">
+                  <h5> <a class="stretched-link" href="#">Trading Competitions</a>
+                  </h5>
+                  <p class="mb-0">Join structured demo trading challenges designed to test consistency, rule compliance,
+                    risk control, and execution under pressure.</p>
                 </div>
               </div>
             </div>
@@ -204,41 +188,146 @@
         </div>
       </div>
     </div>
-    <div class="pricing__shape">
-      <span class="pricing__shape-item pricing__shape-item--1"> <span></span> </span>
-      <span class="pricing__shape-item pricing__shape-item--2"> <img src="./assets/images/icon/1.png" alt="shape-icon">
-      </span>
+  </section>
+  <!-- ===============>> Service section start here <<================= -->
+  <!-- ===============>> Cite section start here <<================= -->
+   <section class="about about--style1 ">
+    <div class="container">
+      <div class="about__wrapper">
+        <div class="row gx-5  gy-4 gy-sm-0  align-items-center">
+          <div class="col-lg-6">
+            <div class="about__thumb pe-lg-5 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
+              <div class="about__thumb-inner">
+                <div class="about__thumb-image floating-content">
+                  <img class="dark" src="assets/images/about/1-dark.png" alt="about-image">
+                  <div class="floating-content__top-left aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="floating-content__item">
+                      <h3> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="0">10+</span>
+                        Years
+                      </h3>
+                      <p>Consulting Experience</p>
+                    </div>
+                  </div>
+                  <div class="floating-content__bottom-right aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="floating-content__item">
+                      <h3> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="0">25</span>K+
+                      </h3>
+                      <p>Satisfied Customers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about__content aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
+              <div class="about__content-inner">
+                <h2>Learn the <span>logic before</span> you follow the move</h2>
+
+                <p class="mb-0">The membership is not built around blind signals. It is designed to show how Oscar applies the Gurman Method in real market conditions, so members can understand the reasoning behind each setup, each risk decision, and each review. </p>
+                <a href="about.html" class="trk-btn trk-btn--border trk-btn--primary">See What’s Inside</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- ===============>> Pricing section start here <<================= -->
+  <!-- ===============>> Cite section start here <<================= -->
+ 
+  
+
+
+  <section class="tow-section tow-offers" aria-labelledby="tow-offers-title">
+        <div class="tow-container">
+          <div class="tow-section__header">
+            <div>
+              <p class="tow-eyebrow">Start With The Wheel</p>
+              <h2 id="tow-offers-title">Choose the path that fits your next move.</h2>
+            </div>
+            <p>The guide structure is preserved, while the visual system follows the TOW palette, section hierarchy and
+              product accents from Figma.</p>
+          </div>
+
+          <div class="tow-offers__grid">
+            <article class="tow-offer-card tow-offer-card--membership" id="membership">
+              <div class="tow-offer-card__top">
+                <span class="tow-offer-card__icon">
+                  <img src="./assets/figma/offer-icon-membership.svg" alt="">
+                </span>
+                <div>
+                  <h3>Membership</h3>
+                  <p>$100 / month</p>
+                </div>
+              </div>
+              <ul class="tow-offer-card__list">
+                <li><img src="./assets/figma/check-bullet-membership.svg" alt="">Gurman Dome</li>
+                <li><img src="./assets/figma/check-bullet-membership.svg" alt="">Signals</li>
+                <li><img src="./assets/figma/check-bullet-membership.svg" alt="">Scoring</li>
+                <li><img src="./assets/figma/check-bullet-membership.svg" alt="">Trade Cards</li>
+                <li><img src="./assets/figma/check-bullet-membership.svg" alt="">Private Community</li>
+              </ul>
+              <a class="tow-btn tow-btn--card" href="membership.html">View Membership</a>
+            </article>
+
+            <article class="tow-offer-card tow-offer-card--course" id="course">
+              <div class="tow-offer-card__top">
+                <span class="tow-offer-card__icon">
+                  <img src="./assets/figma/offer-icon-course.svg" alt="">
+                </span>
+                <div>
+                  <h3>Course</h3>
+                  <p>Gurman Method</p>
+                </div>
+              </div>
+              <ul class="tow-offer-card__list">
+                <li><img src="./assets/figma/check-bullet-course.svg" alt="">Step-by-step training</li>
+                <li><img src="./assets/figma/check-bullet-course.svg" alt="">Beginner to Wheeler</li>
+                <li><img src="./assets/figma/check-bullet-course.svg" alt="">Wheel Strategy</li>
+                <li><img src="./assets/figma/check-bullet-course.svg" alt="">Risk Management</li>
+                <li><img src="./assets/figma/check-bullet-course.svg" alt="">Lifetime Access</li>
+              </ul>
+              <a class="tow-btn tow-btn--card" href="course.html">View Course</a>
+            </article>
+
+            <article class="tow-offer-card tow-offer-card--competitions" id="competitions">
+              <div class="tow-offer-card__top">
+                <span class="tow-offer-card__icon">
+                  <img src="./assets/figma/offer-icon-competitions.svg" alt="">
+                </span>
+                <div>
+                  <h3>Competitions</h3>
+                  <p>Learn. Trade. Compete.</p>
+                </div>
+              </div>
+              <ul class="tow-offer-card__list">
+                <li><img src="./assets/figma/check-bullet-competitions.svg" alt="">University Challenges</li>
+                <li><img src="./assets/figma/check-bullet-competitions.svg" alt="">TOW Global Championship</li>
+                <li><img src="./assets/figma/check-bullet-competitions.svg" alt="">Rankings</li>
+                <li><img src="./assets/figma/check-bullet-competitions.svg" alt="">Hall of Fame</li>
+                <li><img src="./assets/figma/check-bullet-competitions.svg" alt="">Demo Accounts Only</li>
+              </ul>
+              <a class="tow-btn tow-btn--card" href="competitions.html">View Competitions</a>
+            </article>
+          </div>
+        </div>
+      </section>  
 
   <!-- ===============>> cta section start here <<================= -->
-  <section class="cta padding-top padding-bottom  bg-color">
-    <div class="container">
-      <div class="cta__wrapper">
-        <div class="cta__newsletter justify-content-center">
-          <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000">
-            <div class="cta__thumb">
-              <img src="./assets/images/cta/3.png" alt="cta-thumb">
+  <section class="tow-section tow-cta" id="join-now" aria-labelledby="tow-cta-title">
+        <div class="tow-container">
+          <div class="tow-cta__panel">
+            <div>
+              <h2 id="tow-cta-title">Become a Gurman Wheeler</h2>
+              <p>Limited to 100 Founding Members</p>
             </div>
-            <div class="cta__subscribe">
-              <h2> <span>Start owning</span> your time today.</h2>
-              <p>Limited to 100 Founding Members. Choose your path and build a repeatable Wheel Strategy routine.</p>
-              <div class="d-flex flex-wrap gap-3">
-                <a class="trk-btn trk-btn--large trk-btn--secondary2" href="contact.html">get started today</a>
-                <a class="trk-btn trk-btn--outline" href="course.html">explore our services</a>
-              </div>
-            </div>
+            <a class="tow-btn tow-btn--dark" href="contact.html">
+              <span>Join Now</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="cta__shape">
-          <span class="cta__shape-item cta__shape-item--1"><img src="./assets/images/cta/2.png" alt="shape icon"></span>
-          <span class="cta__shape-item cta__shape-item--2"><img src="./assets/images/cta/4.png" alt="shape icon"></span>
-          <span class="cta__shape-item cta__shape-item--3"><img src="./assets/images/cta/5.png" alt="shape icon"></span>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
   <!-- ===============>> cta section start here <<================= -->
 
 <footer class="tow-footer">

@@ -1,0 +1,297 @@
+// -----------------------------------------------------------------------------
+// TOW color bridge for Bitrader components still used on inner pages.
+// -----------------------------------------------------------------------------
+
+.tow-page {
+  .tow-membership-banner,
+  .tow-course-banner,
+  .tow-competitions-banner {
+    background-position: center top;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      background:
+        
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        linear-gradient(
+          180deg,
+          rgba(12, 12, 13, 0.04) 0%,
+          rgba(12, 12, 13, 0.18) 34%,
+          rgba(12, 12, 13, 0.76) 76%,
+          var(--tow-bg) 100%
+        ),
+        linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+      content: "";
+      inset: 0;
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .container,
+    .banner__shape {
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner__content {
+      margin-inline: auto;
+      max-width: 980px;
+      text-align: center;
+
+      h1 {
+        color: var(--tow-white);
+        font-family: var(--tow-font-display);
+        font-size: 92px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 0.98;
+        margin: 0;
+        text-transform: none;
+
+        span {
+          color: var(--tow-yellow);
+          display: block;
+        }
+      }
+    }
+
+    .tow-eyebrow {
+      color: var(--tow-yellow);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 1.4;
+      margin-bottom: 28px;
+      opacity: 1;
+      text-transform: uppercase;
+    }
+
+    .tow-membership-banner__rule {
+      background: var(--tow-yellow);
+      display: block;
+      height: 2px;
+      margin: 32px auto 34px;
+      width: 88px;
+    }
+
+    .tow-membership-banner__copy {
+      color: var(--tow-white);
+      font-family: var(--tow-font-body);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.55;
+      margin-inline: auto;
+      max-width: 900px;
+      opacity: 1;
+    }
+
+    .tow-membership-banner__actions {
+      justify-content: center;
+      margin-top: 46px;
+    }
+  }
+
+  .tow-course-banner {
+    .banner__content {
+      h1 {
+        span {
+          color: var(--tow-blue);
+        }
+      }
+    }
+
+    .tow-membership-banner__rule {
+      background: var(--tow-blue);
+    }
+
+    .tow-btn--primary {
+      background: var(--tow-blue);
+      border-color: var(--tow-blue);
+      color: var(--tow-white);
+
+      &:hover {
+        background: var(--tow-white);
+        border-color: var(--tow-white);
+        color: var(--tow-bg);
+      }
+    }
+  }
+
+  .tow-competitions-banner {
+    .banner__content {
+      h1 {
+        span {
+          color: var(--tow-green);
+        }
+      }
+    }
+
+    .tow-membership-banner__rule {
+      background: var(--tow-green);
+    }
+
+    .tow-btn--primary {
+      background: var(--tow-green);
+      border-color: var(--tow-green);
+      color: var(--tow-white);
+
+      &:hover {
+        background: var(--tow-white);
+        border-color: var(--tow-white);
+        color: var(--tow-bg);
+      }
+    }
+  }
+
+  .page-header {
+    border-bottom: 1px solid var(--tow-border);
+  }
+
+  .service__item-content h5,
+  .service__item-content h5 a {
+    font-family: var(--tow-font-display);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.05;
+    padding-bottom: 20px;
+  }
+
+  .service {
+    > .container {
+      max-width: 1180px;
+    }
+
+    .section-header,
+    .section-header--max50 {
+      max-width: 920px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-header {
+      h2,
+      h2 span {
+        font-family: var(--tow-font-display);
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.02;
+      }
+
+      p {
+        max-width: 780px;
+        margin-inline: auto;
+      }
+    }
+  }
+
+  .page-header__content h2,
+  .section-header h2,
+  .service-details__content h3,
+  .team-details__content h3,
+  .contact__form h3,
+  .contact__social h3 {
+    color: var(--tow-white);
+  }
+
+  .cta:not(.tow-about-cta) .cta__subscribe h2 {
+    color: var(--tow-white);
+  }
+
+  .section-header h2 span,
+  .page-header .breadcrumb-item.active,
+  .pricing__item-top h3,
+  .subtitle p,
+  .contact__social h3 span,
+  .contact__item-content p a:hover {
+    color: var(--tow-yellow);
+  }
+
+  .pricing__item-inner.active,
+  .service__item-inner:hover,
+  .contact__item-inner:hover {
+    border-color: var(--tow-yellow);
+  }
+
+  .trk-btn--primary,
+  .trk-btn--outline.active,
+  .trk-btn--secondary2 {
+    background-color: var(--tow-yellow);
+    border-color: var(--tow-yellow);
+    color: var(--tow-bg);
+  }
+}
+
+@include breakpoint(max-xl) {
+  .tow-page {
+    .tow-membership-banner {
+      .banner__content {
+        h1 {
+          font-size: 78px;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(max-lg) {
+  .tow-page {
+    .tow-membership-banner {
+      .banner__content {
+        max-width: 820px;
+
+        h1 {
+          font-size: 66px;
+        }
+      }
+
+      .tow-membership-banner__copy {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include breakpoint(max-md) {
+  .tow-page {
+    .tow-membership-banner {
+      .banner__content {
+        h1 {
+          font-size: 52px;
+        }
+      }
+
+      .tow-eyebrow {
+        margin-bottom: 20px;
+      }
+
+      .tow-membership-banner__actions {
+        align-items: stretch;
+        flex-direction: column;
+
+        .tow-btn {
+          min-width: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(max-sm) {
+  .tow-page {
+    .tow-membership-banner {
+      .banner__content {
+        h1 {
+          font-size: 42px;
+        }
+      }
+
+      .tow-membership-banner__copy {
+        font-size: 16px;
+      }
+    }
+  }
+}

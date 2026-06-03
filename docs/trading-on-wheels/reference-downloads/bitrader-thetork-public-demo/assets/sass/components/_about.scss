@@ -37,17 +37,17 @@
             }
 
             &::after {
-                position: absolute;
-                content: "";
-                top: 60%;
-                left: 50%;
-                height: 200px;
-                width: 200px;
-                backdrop-filter: blur(10px);
-                filter: blur(70px);
-                background-color: $about-img-bg-shadow;
-                transform: translate(-50%, -50%);
-                z-index: -1;
+                //position: absolute;
+                ///content: "";
+                ///top: 60%;
+                //left: 50%;
+                //height: 200px;
+                //width: 200px;
+                //backdrop-filter: blur(10px);
+                //filter: blur(70px);
+                //background-color: $about-img-bg-shadow;
+                //transform: translate(-50%, -50%);
+                //z-index: -1;
             }
         }
 
