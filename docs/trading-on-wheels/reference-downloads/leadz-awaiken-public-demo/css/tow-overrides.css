@@ -1462,6 +1462,10 @@ body.tow-theme-light.tow-competitions-page .page-header-box ol .breadcrumb-item 
 	color: var(--tow-white);
 }
 
+.tow-competitions-page .section-title h2 span{
+	color: var(--tow-yellow);
+}
+
 .tow-page .page-pricing{
 	background: var(--tow-bg);
 	padding: 92px 0;
@@ -1504,16 +1508,13 @@ body.tow-theme-light .page-services .section-title-content p{
 }
 
 .tow-page .page-services .service-item{
-	background: #121314;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+
 	border-radius: 8px;
 	overflow: hidden;
 	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
 }
 
 body.tow-theme-light .page-services .service-item{
-	background: var(--tow-surface);
-	border-color: var(--tow-divider);
 	box-shadow: var(--tow-light-shadow);
 }
 
@@ -1523,20 +1524,11 @@ body.tow-theme-light .page-services .service-item{
 	font-weight: 500;
 	line-height: 1;
 	text-transform: uppercase;
-	color: var(--tow-white);
+	color: var(--tow-yellow);
 }
 
-body.tow-theme-light .page-services .service-content h3{
-	color: var(--tow-heading);
-}
+body.tow-theme-light
 
-.tow-page .page-services .service-content p{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-light .page-services .service-content p{
-	color: var(--tow-text);
-}
 
 .tow-page:not(.tow-index-page) .cta-box.bg-section{
 	background: var(--tow-yellow);
@@ -1560,6 +1552,26 @@ body.tow-theme-light .page-services .service-content p{
 	text-transform: uppercase;
 }
 
+.tow-pricing-page .cta-box-image{
+	min-height: 440px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.tow-pricing-page .cta-box-image figure{
+	width: 100%;
+	margin: 0;
+}
+
+.tow-pricing-page .cta-box-image img{
+	width: min(100%, 440px);
+	max-height: 540px;
+	display: block;
+	object-fit: contain;
+	border-radius: 0;
+}
+
 .tow-page:not(.tow-index-page) .section-title h3{
 	font-family: var(--accent-font);
 	font-weight: 500;
@@ -1569,7 +1581,7 @@ body.tow-theme-light .page-services .service-content p{
 }
 
 .tow-page:not(.tow-index-page) .section-title h3::before{
-	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
+	background: url(../images/icon-sub-heading-primary.svg) no-repeat;
 }
 
 body.tow-theme-light:not(.tow-index-page) .section-title h3{
@@ -1620,26 +1632,7 @@ body.tow-theme-light:not(.tow-index-page) .contact-info-content p{
 	background: var(--tow-bg);
 }
 
-.tow-page .service-sidebar,
-.tow-page .case-study-sidebar,
-.tow-page .contact-info-item,
-.tow-page .contact-form,
-.tow-page .faqs-item-content{
-	background: #121314;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 8px;
-	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
-}
 
-body.tow-theme-light .service-sidebar,
-body.tow-theme-light .case-study-sidebar,
-body.tow-theme-light .contact-info-item,
-body.tow-theme-light .contact-form,
-body.tow-theme-light .faqs-item-content{
-	background: var(--tow-surface);
-	border-color: var(--tow-divider);
-	box-shadow: var(--tow-light-shadow);
-}
 
 .tow-page .service-sidebar h3,
 .tow-page .case-study-sidebar h3,
@@ -1717,26 +1710,7 @@ body.tow-theme-light .case-study-deatil-content p{
 	color: var(--tow-yellow);
 }
 
-.tow-page .service-entry-list,
-.tow-page .service-features-list,
-.tow-page .why-choose-service-item,
-.tow-page .case-study-approch-box,
-.tow-page .case-study-item{
-	background: #121314;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 8px;
-	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
-}
 
-body.tow-theme-light .service-entry-list,
-body.tow-theme-light .service-features-list,
-body.tow-theme-light .why-choose-service-item,
-body.tow-theme-light .case-study-approch-box,
-body.tow-theme-light .case-study-item{
-	background: var(--tow-surface);
-	border-color: var(--tow-divider);
-	box-shadow: var(--tow-light-shadow);
-}
 
 .tow-page .why-choose-service-no h3{
 	color: var(--tow-yellow);
@@ -1816,10 +1790,7 @@ body.tow-theme-light .case-study-approch-item p{
 .tow-about-page .process-step-item,
 .tow-about-page .client-logo,
 .tow-about-page .faqs-item{
-	background: #121314;
-	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 8px;
-	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
 }
 
 body.tow-theme-light.tow-about-page .about-company-item,
@@ -1830,13 +1801,10 @@ body.tow-theme-light.tow-about-page .about-approach-investment,
 body.tow-theme-light.tow-about-page .process-step-item,
 body.tow-theme-light.tow-about-page .client-logo,
 body.tow-theme-light.tow-about-page .faqs-item{
-	background: var(--tow-surface);
 	border-color: var(--tow-divider);
-	box-shadow: var(--tow-light-shadow);
 }
 
 .tow-about-page .about-company-item:hover{
-	border-color: rgba(247, 198, 0, 0.52);
 	transform: translateY(-4px);
 }
 

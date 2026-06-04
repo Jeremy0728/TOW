@@ -326,6 +326,20 @@ body{
 	right: auto;
 }
 
+.btn-highlighted.btn-black{
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+
+.btn-highlighted.btn-black::before{
+	background: var(--white-color);
+}
+
+.btn-highlighted.btn-black:hover{
+	background: var(--white-color);
+	color: var(--primary-color);
+}
+
 #magic-cursor{
 	position: absolute;
     width: 10px !important;
@@ -3057,7 +3071,7 @@ header.main-header .header-sticky.active{
     left: 0;
     right: 0;
     background-color: var(--primary-color);
-    opacity: 20%;
+    opacity: 40%;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -4582,7 +4596,7 @@ header.main-header .header-sticky.active{
 .company-history-year h2{
 	font-size: 60px;
     color: var(--white-color);
-    background: -webkit-linear-gradient(270deg, #1D4E49 0%, rgba(255, 255, 255, 0) 127.56%);
+    background: -webkit-linear-gradient(270deg, #2757a6 0%, rgba(255, 255, 255, 0) 127.56%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
 }
