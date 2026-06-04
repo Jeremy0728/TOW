@@ -92,6 +92,7 @@ h6{
 	margin :0;
 	font-family: var(--accent-font);
 	font-weight: 600;
+	letter-spacing: 0.02em;
 	line-height: 1.2em;
 	color: var(--primary-color);
 }
@@ -465,6 +466,7 @@ body{
 
 .section-title h2{
 	font-size: 46px;
+	letter-spacing: 0.02em;
 	margin-bottom: 0;
 	cursor: none;
 }

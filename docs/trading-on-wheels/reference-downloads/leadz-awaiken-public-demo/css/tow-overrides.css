@@ -44,20 +44,33 @@ body.tow-theme-dark{
 body.tow-theme-light{
 	--tow-bg: #ffffff;
 	--tow-surface: #ffffff;
-	--tow-surface-2: #f6f6f6;
-	--tow-heading: #101010;
-	--tow-text: #303030;
-	--tow-muted: #646464;
-	--tow-soft: #5f6a6d;
-	--tow-header-bg: rgba(20, 32, 46, 0.88);
-	--tow-header-bg-solid: rgba(20, 32, 46, 0.96);
-	--tow-header-bg-tablet: rgba(20, 32, 46, 0.94);
-	--tow-divider: rgba(0, 0, 0, 0.12);
-	--tow-button-border: rgba(0, 0, 0, 0.16);
-	--tow-hero-wash: rgba(7, 16, 18, 0.88);
-	--tow-hero-wash-end: rgba(7, 16, 18, 0);
-	--tow-hero-wash-tablet: rgba(7, 16, 18, 0.94);
-	--tow-hero-wash-tablet-end: rgba(7, 16, 18, 0.3);
+	--tow-surface-2: #f5f7fa;
+	--tow-heading: #101923;
+	--tow-text: #22303a;
+	--tow-muted: #58636d;
+	--tow-soft: #6f7880;
+	--tow-header-bg: rgba(255, 255, 255, 0.88);
+	--tow-header-bg-solid: rgba(255, 255, 255, 0.98);
+	--tow-header-bg-tablet: rgba(255, 255, 255, 0.96);
+	--tow-divider: rgba(16, 25, 35, 0.12);
+	--tow-button-border: rgba(16, 25, 35, 0.22);
+	--tow-hero-wash: rgba(255, 255, 255, 0.84);
+	--tow-hero-wash-end: rgba(255, 255, 255, 0);
+	--tow-hero-wash-tablet: rgba(255, 255, 255, 0.94);
+	--tow-hero-wash-tablet-end: rgba(255, 255, 255, 0.58);
+	--tow-light-shadow: 0 22px 54px rgba(16, 25, 35, 0.12);
+}
+
+body.tow-theme-light .tow-theme-toggle{
+	background: var(--tow-white);
+	color: var(--tow-black);
+	box-shadow: var(--tow-light-shadow);
+}
+
+body.tow-theme-light .tow-theme-toggle:hover,
+body.tow-theme-light .tow-theme-toggle:focus{
+	background: var(--tow-yellow);
+	color: var(--tow-black);
 }
 
 .tow-page .topbar{
@@ -93,8 +106,25 @@ body.tow-theme-light{
 	background: var(--tow-header-bg-solid);
 }
 
+body.tow-theme-light header.main-header{
+	box-shadow: 0 14px 38px rgba(16, 25, 35, 0.08);
+	backdrop-filter: blur(16px);
+}
+
+body.tow-theme-light header.main-header .header-sticky.active{
+	box-shadow: 0 14px 38px rgba(16, 25, 35, 0.1);
+}
+
 .tow-page .navbar{
 	min-height: 100px;
+	padding: 0;
+}
+
+body.tow-theme-light .navbar-brand{
+	display: inline-flex;
+	align-items: center;
+	background: transparent;
+	border-radius: 0;
 	padding: 0;
 }
 
@@ -102,6 +132,10 @@ body.tow-theme-light{
 	width: 154px;
 	height: auto;
 	display: block;
+}
+
+body.tow-theme-light .navbar-brand img{
+	content: url('../images/Trading-on-wheels-logo.png');
 }
 
 .tow-page .main-menu .nav-menu-wrapper{
@@ -127,10 +161,20 @@ body.tow-theme-light{
 	padding: 39px 0 !important;
 }
 
+body.tow-theme-light .main-menu ul li a{
+	color: var(--tow-heading);
+}
+
 .tow-page .main-menu ul li a.active,
 .tow-page .main-menu ul li a:hover,
 .tow-page .main-menu ul li a:focus{
 	color: var(--tow-yellow);
+}
+
+body.tow-theme-light .main-menu ul li a.active,
+body.tow-theme-light .main-menu ul li a:hover,
+body.tow-theme-light .main-menu ul li a:focus{
+	color: var(--tow-blue);
 }
 
 .tow-page .main-menu ul li a.active::after{
@@ -157,6 +201,19 @@ body.tow-theme-light{
 
 .tow-page .header-btn{
 	align-items: center;
+}
+
+body.tow-theme-light .header-btn .btn-default:hover{
+	background: var(--tow-blue);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .header-btn .btn-default:hover::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-light .header-btn .btn-default:hover::after{
+	background: var(--tow-blue);
 }
 
 .tow-page .tow-theme-toggle{
@@ -188,6 +245,19 @@ body.tow-theme-light{
 	color: var(--tow-black);
 }
 
+.tow-page .our-scrolling-ticker{
+	background: var(--tow-yellow);
+}
+
+.tow-page .scrolling-content span{
+	color: var(--tow-black);
+	text-transform: uppercase;
+}
+
+.tow-page .scrolling-content span img{
+	filter: brightness(0);
+}
+
 .tow-page .hero.hero-image{
 	min-height: 818px;
 	display: flex;
@@ -198,9 +268,47 @@ body.tow-theme-light{
 	margin-top: 0;
 }
 
+body.tow-theme-light .hero.hero-image{
+	background-image: url('../images/hero-light-mode.png');
+}
+
+.tow-about-page .hero.hero-image,
+body.tow-theme-light.tow-about-page .hero.hero-image{
+	background-image: url('../images/tow/about-oscar.png');
+}
+
 .tow-page .hero.hero-image::before{
 	background: linear-gradient(90deg, var(--tow-black) 0%, var(--tow-black) 34%, var(--tow-hero-wash) 48%, var(--tow-hero-wash-end) 95%);
 	opacity: 1;
+}
+
+.tow-page .hero.hero-image::after{
+	content: '';
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/hombre-night.png');
+	background-repeat: no-repeat;
+	background-position: inherit;
+	background-size: cover;
+	pointer-events: none;
+	z-index: 1;
+}
+
+body.tow-theme-light .hero.hero-image::after{
+	background-image: url('../images/hombre-day.png');
+}
+
+.tow-about-page .hero.hero-image::after,
+body.tow-theme-light.tow-about-page .hero.hero-image::after{
+	background-image: url('../images/tow/oscar.png');
+	background-position: inherit;
+	background-size: cover;
+}
+
+body.tow-theme-light .hero.hero-image::before{
+	background: linear-gradient(90deg, var(--tow-white) 0%, rgba(255, 255, 255, 0.96) 36%, var(--tow-hero-wash) 56%, var(--tow-hero-wash-end) 90%);
 }
 
 .tow-page .hero.hero-image .hero-content{
@@ -240,6 +348,22 @@ body.tow-theme-light{
 	color: var(--tow-yellow);
 }
 
+body.tow-theme-light .hero.hero-image .hero-content .section-title h1{
+	color: var(--tow-blue);
+}
+
+body.tow-theme-light .hero-content .section-title h3{
+	color: var(--tow-heading);
+}
+
+body.tow-theme-light .hero-content .section-title h1 span{
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light .hero-content .section-title h1::after{
+	background: var(--tow-blue);
+}
+
 .tow-page .hero-content .section-title h1::after{
 	content: '';
 	display: block;
@@ -256,6 +380,10 @@ body.tow-theme-light{
 	font-size: 22px;
 	line-height: 1.55em;
 	color: var(--tow-white);
+}
+
+body.tow-theme-light .hero-content .section-title p{
+	color: var(--tow-text);
 }
 
 .tow-page .hero-content-btn{
@@ -290,6 +418,19 @@ body.tow-theme-light{
 	background: var(--tow-white);
 }
 
+body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover{
+	background: var(--tow-black);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::after{
+	background: var(--tow-black);
+}
+
 .tow-page .hero-content-btn .btn-default:nth-child(2){
 	width: 220px;
 	background: transparent;
@@ -297,8 +438,17 @@ body.tow-theme-light{
 	color: var(--tow-white);
 }
 
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2){
+	border-color: var(--tow-heading);
+	color: var(--tow-heading);
+}
+
 .tow-page .hero-content-btn .btn-default:nth-child(2)::before{
 	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2)::before{
+	filter: none;
 }
 
 .tow-page .hero-content-btn .btn-default:nth-child(2):hover{
@@ -311,6 +461,20 @@ body.tow-theme-light{
 }
 
 .tow-page .hero-content-btn .btn-default:nth-child(2):hover::after{
+	background: var(--tow-yellow);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover{
+	background: var(--tow-yellow);
+	border-color: var(--tow-yellow);
+	color: var(--tow-black);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover::before{
+	filter: none;
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover::after{
 	background: var(--tow-yellow);
 }
 
@@ -334,6 +498,18 @@ body.tow-theme-light{
 	max-width: 670px;
 }
 
+body.tow-theme-light .our-pricing .section-title h3{
+	color: var(--tow-heading);
+}
+
+body.tow-theme-light .our-pricing .section-title h2{
+	color: var(--tow-blue);
+}
+
+body.tow-theme-light .our-pricing .section-title h2 span{
+	color: var(--tow-yellow);
+}
+
 .tow-page .our-pricing .section-title-content p{
 	color: var(--tow-muted);
 }
@@ -342,7 +518,6 @@ body.tow-theme-light{
 	position: relative;
 	background: var(--tow-bg);
 
-	padding: 92px 0 78px;
 }
 
 .tow-page .our-pricing .section-row{
@@ -351,6 +526,262 @@ body.tow-theme-light{
 
 .tow-page .our-pricing .row:last-child{
 	row-gap: 30px;
+}
+
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card){
+	position: relative;
+	overflow: hidden;
+	transition:
+		background-color 0.32s ease,
+		border-color 0.32s ease,
+		box-shadow 0.32s ease,
+		transform 0.32s ease;
+}
+
+.tow-page .our-pricing .tow-plan-card::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
+	opacity: 0;
+	transform: scale(1.04);
+	transition: opacity 0.32s ease, transform 0.5s ease;
+	pointer-events: none;
+}
+
+.tow-page .our-pricing .tow-plan-card--membership::before{
+	background-image:
+		linear-gradient(90deg, rgba(247, 198, 0, 0.95) 0%, rgba(247, 198, 0, 0.85) 100%),
+		url('../images/tow/offer-card-membership.png');
+}
+
+.tow-page .our-pricing .tow-plan-card--course::before{
+	background-image:
+		linear-gradient(90deg, rgba(39, 87, 166, 0.95) 0%, rgba(39, 87, 166, 0.85) 100%),
+		url('../images/tow/course-card.png');
+}
+
+.tow-page .our-pricing .tow-plan-card--competitions::before{
+	background-image:
+		linear-gradient(90deg, rgba(73, 135, 52, 0.95) 0%, rgba(73, 135, 52, 0.85) 100%),
+		url('../images/tow/competition-card.png');
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership::before{
+	background-image:
+		linear-gradient(90deg, rgba(247, 198, 0, 0.88) 0%, rgba(247, 198, 0, 0.78) 100%),
+		url('../images/tow/offer-card-membership.png');
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--course::before{
+	background-image:
+		linear-gradient(90deg, rgba(39, 87, 166, 0.71) 0%, rgba(39, 87, 166, 0.64) 100%),
+		url('../images/tow/course-card.png');
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--competitions::before{
+	background-image:
+		linear-gradient(90deg, rgba(73, 135, 52, 0.71) 0%, rgba(73, 135, 52, 0.64) 100%),
+		url('../images/tow/competition-card.png');
+}
+
+.tow-page .our-pricing .tow-plan-card.highlighted-box::before,
+.tow-page .our-pricing .tow-plan-card.is-active::before{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.tow-page .our-pricing .tow-plan-card > *{
+	position: relative;
+	z-index: 1;
+}
+
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card).is-active{
+	transform: translateY(-8px);
+	box-shadow: 0 24px 54px rgba(39, 87, 166, 0.22);
+}
+
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li::before,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-footer .btn-highlighted{
+	transition:
+		color 0.32s ease,
+		border-color 0.32s ease,
+		background-color 0.32s ease,
+		transform 0.32s ease,
+		filter 0.32s ease;
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card){
+	background: #121314;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.26);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership:not(.highlighted-box):not(.is-active){
+	border-color: rgba(247, 198, 0, 0.62);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--course:not(.highlighted-box):not(.is-active){
+	border-color: rgba(39, 87, 166, 0.72);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--competitions:not(.highlighted-box):not(.is-active){
+	border-color: rgba(73, 135, 52, 0.72);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).is-active{
+	background: var(--tow-blue);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header{
+	border-color: rgba(255, 255, 255, 0.14);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box .pricing-box-header,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).is-active .pricing-box-header{
+	border-color: rgba(255, 255, 255, 0.16);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li{
+	color: var(--tow-white);
+}
+
+
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box,
+.tow-page .our-pricing .tow-plan-card--membership.is-active{
+	background: var(--tow-yellow);
+	box-shadow: 0 28px 60px rgba(247, 198, 0, 0.28);
+}
+
+.tow-page .our-pricing .tow-plan-card--course.highlighted-box,
+.tow-page .our-pricing .tow-plan-card--course.is-active{
+	background: var(--tow-blue);
+	box-shadow: 0 28px 60px rgba(39, 87, 166, 0.32);
+}
+
+.tow-page .our-pricing .tow-plan-card--competitions.highlighted-box,
+.tow-page .our-pricing .tow-plan-card--competitions.is-active{
+	background: var(--tow-green);
+	box-shadow: 0 28px 60px rgba(73, 135, 52, 0.3);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-title p,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2 sub,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-content p,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-title p,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2 sub,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-content p,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li{
+	color: var(--primary-color);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2{
+	color: var(--tow-blue);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-header,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-header{
+	border-color: rgba(39, 87, 166, 0.24);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li::before,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li::before{
+	color: var(--tow-blue);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted{
+	background: var(--tow-blue);
+	color: var(--tow-white);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted::before,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-white);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-title p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2 sub,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-content p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-title p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2 sub,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-content p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active{
+	background: var(--tow-yellow);
+	box-shadow: 0 28px 60px rgba(247, 198, 0, 0.28);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-header,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-header{
+	border-color: rgba(18, 19, 20, 0.16);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li::before,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li::before{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted{
+	background: var(--tow-blue);
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted::before,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-black);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted:hover,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted:hover{
+	color: var(--tow-white);
+}
+
+.tow-page .our-pricing .tow-plan-card--competitions.highlighted-box .pricing-box-header,
+.tow-page .our-pricing .tow-plan-card--competitions.is-active .pricing-box-header{
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce){
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card),
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li::before,
+	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-footer .btn-highlighted{
+		transition-duration: 0.01ms;
+	}
 }
 
 .tow-page .tow-offer-card{
@@ -402,6 +833,11 @@ body.tow-theme-light{
 .tow-page .tow-offer-card:hover,
 .tow-page .tow-offer-card.is-active{
 	border-color: var(--tow-card-accent);
+}
+
+body.tow-theme-light .tow-offer-card:hover,
+body.tow-theme-light .tow-offer-card.is-active{
+	transform: translateY(-4px);
 }
 
 .tow-page .tow-offer-card--membership:hover,
@@ -598,6 +1034,10 @@ body.tow-theme-light{
 	border-bottom: 1px solid var(--tow-yellow);
 }
 
+body.tow-theme-light .tow-about-oscar{
+	border-bottom-color: var(--tow-divider);
+}
+
 .tow-page .tow-about-oscar > .container{
 	max-width: 100%;
 	padding-left: 0;
@@ -613,12 +1053,20 @@ body.tow-theme-light{
 	overflow: hidden;
 }
 
+body.tow-theme-light .tow-about-oscar-card{
+	background: var(--tow-surface-2);
+}
+
 .tow-page .tow-about-oscar-card::before{
 	content: '';
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(90deg, var(--tow-black) 0%, var(--tow-black) 39%, rgba(7, 16, 18, 0.88) 63%, rgba(7, 16, 18, 0) 95%);
 	z-index: 1;
+}
+
+body.tow-theme-light .tow-about-oscar-card::before{
+	background: linear-gradient(270deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.72) 65%, rgba(255, 255, 255, 0.98) 100%);
 }
 
 .tow-page .tow-about-oscar-card__runner{
@@ -635,6 +1083,10 @@ body.tow-theme-light{
 	object-position: center center;
 }
 
+body.tow-theme-light .tow-about-oscar-card__runner img{
+	opacity: 0.52;
+}
+
 .tow-page .tow-about-oscar-card__portrait{
 	position: absolute;
 	left: max(40px, calc((110vw - 1320px) / 2));
@@ -645,6 +1097,7 @@ body.tow-theme-light{
 
 .tow-page .tow-about-oscar-card__portrait img{
 	width: 100%;
+	transform: translateY(30px);
 	display: block;
 }
 
@@ -652,7 +1105,7 @@ body.tow-theme-light{
 	position: relative;
 	z-index: 3;
 	max-width: 510px;
-	margin-left: max(44%, calc((100vw - 1320px) / 2 + 520px));
+	margin-left: max(40%, calc((100vw - 1320px) / 2 + 520px));
 	padding: 110px 0 70px;
 }
 
@@ -675,6 +1128,10 @@ body.tow-theme-light{
 	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
 }
 
+body.tow-theme-light .tow-about-oscar .section-title h3{
+	color: var(--tow-heading);
+}
+
 .tow-page .tow-about-oscar .section-title h2{
 	max-width: 510px;
 	font-size: 42px;
@@ -684,18 +1141,49 @@ body.tow-theme-light{
 	margin-bottom: 28px;
 }
 
+body.tow-theme-light .tow-about-oscar .section-title h2{
+	color: var(--tow-blue);
+}
+
 .tow-page .tow-about-oscar .section-title p{
 	max-width: 470px;
 	font-size: 18px;
 	line-height: 29px;
-	color: var(--tow-soft);
+	color: var(--tow-white);
 	margin: 0;
+}
+
+body.tow-theme-light .tow-about-oscar .section-title p{
+	color: #001b33;
 }
 
 .tow-page .tow-about-oscar-card__quote{
 	max-width: 440px;
 	margin-top: 24px;
 	color: var(--tow-yellow);
+}
+
+body.tow-theme-light .tow-about-oscar-card__quote{
+	color: var(--tow-blue);
+}
+
+.tow-page .tow-about-oscar-card__quote h3{
+	font-family: var(--accent-font);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	color: inherit;
+	margin: 0;
+}
+
+body.tow-theme-dark .tow-about-oscar-card__quote h3{
+	color: var(--tow-yellow);
+}
+
+.tow-page .tow-about-oscar-card__quote h3 + h3{
+	margin-top: 4px;
 }
 
 .tow-page .tow-about-oscar-card__quote p{
@@ -796,21 +1284,26 @@ body.tow-theme-light{
 }
 
 .tow-page .main-footer.bg-section{
-	background: var(--tow-black);
+	background: #121314;
 }
 
 .tow-page .main-footer.bg-section::before{
 	display: none;
 }
 
-.tow-page .footer-about-content p,
+.tow-page .about-footer p,
 .tow-page .footer-links ul li a,
 .tow-page .footer-copyright-text p,
 .tow-page .footer-social-links ul li a{
 	color: var(--tow-white);
 }
 
-.tow-page .footer-about-content p{
+.tow-page .about-footer p{
+	font-family: var(--accent-font);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	color: var(--tow-yellow);
 }
@@ -844,6 +1337,438 @@ body.tow-theme-light{
 
 .tow-page:not(.tow-index-page) .page-header{
 	margin-top: 0;
+	background:
+		linear-gradient(90deg, rgba(0, 0, 0, 0.96) 0%, rgba(7, 16, 18, 0.9) 48%, rgba(7, 16, 18, 0.62) 100%),
+		url('../images/hero-mountain-tow.png') no-repeat center center;
+	background-size: cover;
+	padding: 190px 0 92px;
+	border-bottom: 1px solid rgba(247, 198, 0, 0.32);
+}
+
+body.tow-theme-light:not(.tow-index-page) .page-header{
+	background:
+		linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0.68) 100%),
+		url('../images/hero-light-mode.png') no-repeat center center;
+	background-size: cover;
+	border-bottom-color: var(--tow-divider);
+}
+
+.tow-page:not(.tow-index-page) .page-header-box h1{
+	font-family: var(--accent-font);
+	font-size: 72px;
+	font-weight: 500;
+	line-height: 0.95;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light:not(.tow-index-page) .page-header-box h1{
+	color: var(--tow-blue);
+}
+
+.tow-page:not(.tow-index-page) .page-header-box ol li.breadcrumb-item,
+.tow-page:not(.tow-index-page) .page-header-box ol .breadcrumb-item + .breadcrumb-item::before{
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light:not(.tow-index-page) .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light:not(.tow-index-page) .page-header-box ol .breadcrumb-item + .breadcrumb-item::before{
+	color: var(--tow-heading);
+}
+
+.tow-contact-page .page-header,
+body.tow-theme-light.tow-contact-page .page-header,
+.tow-faq-page .page-header,
+body.tow-theme-light.tow-faq-page .page-header{
+	background:
+		linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(7, 16, 18, 0.82) 48%, rgba(7, 16, 18, 0.6) 100%),
+		url('../images/hero-mountain-tow.png') no-repeat center center;
+	background-size: cover;
+}
+
+body.tow-theme-light.tow-contact-page .page-header,
+body.tow-theme-light.tow-faq-page .page-header{
+	background:
+		linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0.68) 100%),
+		url('../images/hero-light-mode.png') no-repeat center center;
+	background-size: cover;
+}
+
+.tow-pricing-page .page-header,
+body.tow-theme-light.tow-pricing-page .page-header{
+	background:
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(247, 198, 0, 0.04) 0.01%, rgba(247, 198, 0, 0.96) 100%),
+		url('../images/section-bg-yellow.svg') no-repeat center center;
+	background-size: cover;
+	border-bottom-color: rgba(247, 198, 0, 0.3);
+}
+
+.tow-course-page .page-header,
+body.tow-theme-light.tow-course-page .page-header{
+	background:
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(39, 87, 166, 0.08) 0.01%, rgba(39, 87, 166, 0.96) 100%),
+		url('../images/section-bg-blue.svg') no-repeat center center;
+	background-size: cover;
+	border-bottom-color: rgba(39, 87, 166, 0.42);
+}
+
+.tow-competitions-page .page-header,
+body.tow-theme-light.tow-competitions-page .page-header{
+	background:
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(73, 135, 52, 0.08) 0.01%, rgba(73, 135, 52, 0.96) 100%),
+		url('../images/section-bg-green.svg') no-repeat center center;
+	background-size: cover;
+	border-bottom-color: rgba(73, 135, 52, 0.42);
+}
+
+.tow-pricing-page .page-header-box h1,
+.tow-course-page .page-header-box h1,
+.tow-competitions-page .page-header-box h1,
+body.tow-theme-light.tow-pricing-page .page-header-box h1,
+body.tow-theme-light.tow-course-page .page-header-box h1,
+body.tow-theme-light.tow-competitions-page .page-header-box h1{
+	color: var(--tow-white);
+}
+
+.tow-pricing-page .page-header-box ol li.breadcrumb-item,
+.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+.tow-course-page .page-header-box ol li.breadcrumb-item,
+.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+.tow-competitions-page .page-header-box ol li.breadcrumb-item,
+.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-pricing-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-course-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-competitions-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before{
+	color: var(--tow-white);
+}
+
+.tow-page .page-pricing{
+	background: var(--tow-bg);
+	padding: 92px 0;
+}
+
+.tow-page .page-services{
+	background: var(--tow-bg);
+	padding: 92px 0;
+}
+
+.tow-page .page-services .section-title h3{
+	font-family: var(--accent-font);
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light .page-services .section-title h3{
+	color: var(--tow-heading);
+}
+
+.tow-page .page-services .section-title h2{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .page-services .section-title h2{
+	color: var(--tow-blue);
+}
+
+.tow-page .page-services .section-title-content p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light .page-services .section-title-content p{
+	color: var(--tow-text);
+}
+
+.tow-page .page-services .service-item{
+	background: #121314;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+}
+
+body.tow-theme-light .page-services .service-item{
+	background: var(--tow-surface);
+	border-color: var(--tow-divider);
+	box-shadow: var(--tow-light-shadow);
+}
+
+.tow-page .page-services .service-content h3{
+	font-family: var(--accent-font);
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .page-services .service-content h3{
+	color: var(--tow-heading);
+}
+
+.tow-page .page-services .service-content p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light .page-services .service-content p{
+	color: var(--tow-text);
+}
+
+.tow-page:not(.tow-index-page) .cta-box.bg-section{
+	background: var(--tow-yellow);
+	padding: 72px 0;
+}
+
+.tow-page:not(.tow-index-page) .cta-box.bg-section::before{
+	display: none;
+}
+
+.tow-page:not(.tow-index-page) .cta-box .section-title h3,
+.tow-page:not(.tow-index-page) .cta-box .section-title h2,
+.tow-page:not(.tow-index-page) .cta-box .section-title p{
+	color: var(--tow-black);
+}
+
+.tow-page:not(.tow-index-page) .cta-box .section-title h3,
+.tow-page:not(.tow-index-page) .cta-box .section-title h2{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.tow-page:not(.tow-index-page) .section-title h3{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light:not(.tow-index-page) .section-title h3{
+	color: var(--tow-heading);
+}
+
+.tow-page:not(.tow-index-page) .section-title h2,
+.tow-page:not(.tow-index-page) .service-entry h2,
+.tow-page:not(.tow-index-page) .case-study-entry h2,
+.tow-page:not(.tow-index-page) .contact-form-title h2{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light:not(.tow-index-page) .section-title h2,
+body.tow-theme-light:not(.tow-index-page) .service-entry h2,
+body.tow-theme-light:not(.tow-index-page) .case-study-entry h2,
+body.tow-theme-light:not(.tow-index-page) .contact-form-title h2{
+	color: var(--tow-blue);
+}
+
+.tow-page:not(.tow-index-page) .section-title p,
+.tow-page:not(.tow-index-page) .section-title-content p,
+.tow-page:not(.tow-index-page) .service-entry p,
+.tow-page:not(.tow-index-page) .case-study-entry p,
+.tow-page:not(.tow-index-page) .faqs-item-content p,
+.tow-page:not(.tow-index-page) .contact-info-content p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light:not(.tow-index-page) .section-title p,
+body.tow-theme-light:not(.tow-index-page) .section-title-content p,
+body.tow-theme-light:not(.tow-index-page) .service-entry p,
+body.tow-theme-light:not(.tow-index-page) .case-study-entry p,
+body.tow-theme-light:not(.tow-index-page) .faqs-item-content p,
+body.tow-theme-light:not(.tow-index-page) .contact-info-content p{
+	color: var(--tow-text);
+}
+
+.tow-page .page-service-single,
+.tow-page .page-case-study,
+.tow-page .page-case-study-single,
+.tow-page .page-contact-us,
+.tow-page .page-faqs{
+	background: var(--tow-bg);
+}
+
+.tow-page .service-sidebar,
+.tow-page .case-study-sidebar,
+.tow-page .contact-info-item,
+.tow-page .contact-form,
+.tow-page .faqs-item-content{
+	background: #121314;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+}
+
+body.tow-theme-light .service-sidebar,
+body.tow-theme-light .case-study-sidebar,
+body.tow-theme-light .contact-info-item,
+body.tow-theme-light .contact-form,
+body.tow-theme-light .faqs-item-content{
+	background: var(--tow-surface);
+	border-color: var(--tow-divider);
+	box-shadow: var(--tow-light-shadow);
+}
+
+.tow-page .service-sidebar h3,
+.tow-page .case-study-sidebar h3,
+.tow-page .contact-info-content h3,
+.tow-page .faqs-item-content h3,
+.tow-page .service-entry h3,
+.tow-page .case-study-entry h3{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .service-sidebar h3,
+body.tow-theme-light .case-study-sidebar h3,
+body.tow-theme-light .contact-info-content h3,
+body.tow-theme-light .faqs-item-content h3,
+body.tow-theme-light .service-entry h3,
+body.tow-theme-light .case-study-entry h3{
+	color: var(--tow-heading);
+}
+
+.tow-page .faqs-item-content::before,
+.tow-page .service-entry ul li::before,
+.tow-page .case-study-entry ul li::before{
+	color: var(--tow-yellow);
+}
+
+.tow-page .contact-form .form-control{
+	background: #0e1115;
+	border-color: rgba(255, 255, 255, 0.12);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .contact-form .form-control{
+	background: var(--tow-white);
+	border-color: var(--tow-divider);
+	color: var(--tow-heading);
+}
+
+.tow-page .contact-form .form-control::placeholder{
+	color: rgba(255, 255, 255, 0.68);
+}
+
+body.tow-theme-light .contact-form .form-control::placeholder{
+	color: rgba(0, 27, 51, 0.58);
+}
+
+.tow-page .sidebar-cta-box{
+	background:
+		linear-gradient(180deg, rgba(247, 198, 0, 0.96) 0%, rgba(247, 198, 0, 0.86) 100%),
+		url('../images/section-bg-yellow.svg') no-repeat center center;
+	background-size: cover;
+	border-radius: 8px;
+}
+
+.tow-page .sidebar-cta-content h3{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--tow-black);
+}
+
+.tow-page .service-catagery-list ul li a,
+.tow-page .case-study-deatil-content p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light .service-catagery-list ul li a,
+body.tow-theme-light .case-study-deatil-content p{
+	color: var(--tow-text);
+}
+
+.tow-page .service-catagery-list ul li a:hover{
+	color: var(--tow-yellow);
+}
+
+.tow-page .service-entry-list,
+.tow-page .service-features-list,
+.tow-page .why-choose-service-item,
+.tow-page .case-study-approch-box,
+.tow-page .case-study-item{
+	background: #121314;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+}
+
+body.tow-theme-light .service-entry-list,
+body.tow-theme-light .service-features-list,
+body.tow-theme-light .why-choose-service-item,
+body.tow-theme-light .case-study-approch-box,
+body.tow-theme-light .case-study-item{
+	background: var(--tow-surface);
+	border-color: var(--tow-divider);
+	box-shadow: var(--tow-light-shadow);
+}
+
+.tow-page .why-choose-service-no h3{
+	color: var(--tow-yellow);
+}
+
+.tow-page .why-choose-service-content h3,
+.tow-page .case-study-content h3 a,
+.tow-page .case-study-approch-title h2,
+.tow-page .case-study-approch-item h3{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .why-choose-service-content h3,
+body.tow-theme-light .case-study-content h3 a,
+body.tow-theme-light .case-study-approch-title h2,
+body.tow-theme-light .case-study-approch-item h3{
+	color: var(--tow-heading);
+}
+
+.tow-page .why-choose-service-content p,
+.tow-page .case-study-approch-item p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light .why-choose-service-content p,
+body.tow-theme-light .case-study-approch-item p{
+	color: var(--tow-text);
+}
+
+.tow-page .case-study-content h3 a:hover{
+	color: var(--tow-green);
+}
+
+.tow-page .readmore-btn{
+	background: var(--tow-yellow);
+	border-color: var(--tow-yellow);
+}
+
+.tow-page .readmore-btn img{
+	filter: brightness(0);
+}
+
+.tow-competitions-page .readmore-btn{
+	background: var(--tow-green);
+	border-color: var(--tow-green);
+}
+
+.tow-competitions-page .readmore-btn img{
+	filter: brightness(0) invert(1);
 }
 
 @media only screen and (max-width: 1199px){
@@ -888,6 +1813,28 @@ body.tow-theme-light{
 		background: var(--tow-header-bg-tablet);
 	}
 
+	body.tow-theme-light .slicknav_icon .slicknav_icon-bar{
+		background-color: var(--tow-black);
+	}
+
+	body.tow-theme-light .slicknav_menu{
+		background: var(--tow-white);
+		border-top: 1px solid var(--tow-divider);
+		box-shadow: 0 18px 34px rgba(16, 25, 35, 0.12);
+	}
+
+	body.tow-theme-light .slicknav_nav .slicknav_row,
+	body.tow-theme-light .slicknav_nav li a{
+		color: var(--tow-heading);
+	}
+
+	body.tow-theme-light .slicknav_nav a:hover,
+	body.tow-theme-light .slicknav_nav a:focus,
+	body.tow-theme-light .slicknav_nav .slicknav_row:hover,
+	body.tow-theme-light .slicknav_open > a .slicknav_arrow:after{
+		color: var(--tow-blue);
+	}
+
 	.tow-page .navbar{
 		min-height: 82px;
 	}
@@ -906,6 +1853,10 @@ body.tow-theme-light{
 		background: linear-gradient(90deg, var(--tow-black) 0%, var(--tow-hero-wash-tablet) 44%, var(--tow-hero-wash-tablet-end) 100%);
 	}
 
+	body.tow-theme-light .hero.hero-image::before{
+		background: linear-gradient(90deg, var(--tow-white) 0%, var(--tow-hero-wash-tablet) 58%, var(--tow-hero-wash-tablet-end) 100%);
+	}
+
 	.tow-page .tow-about-oscar{
 		padding: 0;
 	}
@@ -919,9 +1870,17 @@ body.tow-theme-light{
 		background: rgba(0, 0, 0, 0.82);
 	}
 
+	body.tow-theme-light .tow-about-oscar-card::before{
+		background: rgba(255, 255, 255, 0.9);
+	}
+
 	.tow-page .tow-about-oscar-card__runner img{
 		width: 100%;
 		opacity: 0.42;
+	}
+
+	body.tow-theme-light .tow-about-oscar-card__runner img{
+		opacity: 0.28;
 	}
 
 	.tow-page .tow-about-oscar-card__portrait{
@@ -950,36 +1909,76 @@ body.tow-theme-light{
 }
 
 @media only screen and (max-width: 767px){
+	.tow-page .topbar{
+		height: auto;
+		min-height: 76px;
+	}
+
 	.tow-page .topbar-info-content p{
-		padding: 0 18px;
-		font-size: 13px;
+		min-height: 76px;
+		display: block;
+		padding: 8px 22px;
+		font-size: 14px;
+		line-height: 1.45;
+		text-align: center;
+	}
+
+	.tow-page .topbar-info-content p img{
+		display: inline-block;
+		width: 16px;
+		max-width: 16px;
+		margin: 0 4px 0 0;
+		vertical-align: -2px;
+	}
+
+	.tow-page .topbar-info-content p a{
+		color: inherit;
+		font-weight: 700;
+	}
+
+	.tow-page header.main-header{
+		top: 76px;
 	}
 
 	.tow-page .hero.hero-image{
 		min-height: 690px;
-		padding: 128px 0 70px;
+		padding: 154px 0 70px;
 		background-position: 64% center;
+	}
+
+	.tow-page .hero.hero-image::after{
+		display: none;
 	}
 
 	.tow-page .hero.hero-image .hero-content{
 		max-width: 100%;
+		text-align: center;
 	}
 
 	.tow-page .hero-content .section-title h3{
 		font-size: 16px;
+		display: inline-block;
 	}
 
 	.tow-page .hero.hero-image .hero-content .section-title h1{
 		font-size: 52px;
 	}
 
+	.tow-page .hero-content .section-title h1::after{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.tow-page .hero-content .section-title p{
 		max-width: 360px;
 		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.tow-page .hero-content-btn{
 		margin-top: 36px;
+		justify-content: center;
 	}
 
 	.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default,
@@ -993,12 +1992,46 @@ body.tow-theme-light{
 	}
 
 	.tow-page .tow-about-oscar-card{
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(112px, 34%);
+		align-items: end;
+		column-gap: 14px;
 		padding: 32px 20px;
 	}
 
 	.tow-page .tow-about-oscar-card__portrait{
-		width: 190px;
-		margin-bottom: 24px;
+		grid-column: 2;
+		grid-row: 2 / 4;
+		align-self: end;
+		justify-self: end;
+		width: min(150px, 34vw);
+		margin: 0;
+		z-index: 4;
+	}
+
+	.tow-page .tow-about-oscar-card__content{
+		display: contents;
+	}
+
+	.tow-page .tow-about-oscar-card__content .section-title{
+		grid-column: 1 / -1;
+		grid-row: 1;
+		min-width: 0;
+		z-index: 3;
+	}
+
+	.tow-page .tow-about-oscar-card__quote{
+		grid-column: 1;
+		grid-row: 2;
+		min-width: 0;
+		z-index: 3;
+	}
+
+	.tow-page .tow-about-oscar-card__btn{
+		grid-column: 1;
+		grid-row: 3;
+		min-width: 0;
+		z-index: 3;
 	}
 
 	.tow-page .tow-about-oscar .section-title h3{
@@ -1007,8 +2040,8 @@ body.tow-theme-light{
 	}
 
 	.tow-page .tow-about-oscar .section-title h2{
-		font-size: 32px;
-		line-height: 36px;
+		font-size: 29px;
+		line-height: 33px;
 		margin-bottom: 20px;
 	}
 
