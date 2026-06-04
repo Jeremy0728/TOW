@@ -89,26 +89,21 @@
 
 	function syncThemeToggleLayout(){
 		var isMobile = window.matchMedia('(max-width: 767px)').matches;
-		var mobileMount = document.querySelector('.main-header .navbar .container');
 
 		document.querySelectorAll('[data-tow-theme-toggle]').forEach(function(toggle){
 			if(isMobile){
 				var isDark = document.body.classList.contains('tow-theme-dark');
 
-				if(mobileMount && toggle.parentNode !== mobileMount){
-					mobileMount.appendChild(toggle);
+				if(toggle.parentNode !== document.body){
+					document.body.appendChild(toggle);
 				}
 
-				if(mobileMount){
-					mobileMount.style.position = 'relative';
-				}
-
-				toggle.style.position = 'absolute';
-				toggle.style.top = '50%';
-				toggle.style.right = '15px';
-				toggle.style.bottom = 'auto';
+				toggle.style.position = 'fixed';
+				toggle.style.top = 'auto';
+				toggle.style.right = '12px';
+				toggle.style.bottom = '12px';
 				toggle.style.left = 'auto';
-				toggle.style.transform = 'translateY(-50%)';
+				toggle.style.transform = 'none';
 				toggle.style.width = '70px';
 				toggle.style.height = '38px';
 				toggle.style.marginLeft = '0';

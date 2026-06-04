@@ -16,22 +16,6 @@ body.tow-page{
 	color: var(--tow-text);
 }
 
-body.tow-page .wow{
-	visibility: visible !important;
-	opacity: 1 !important;
-	transform: none !important;
-	animation-name: none !important;
-	animation-duration: 0s !important;
-	animation-delay: 0s !important;
-}
-
-body.tow-page .text-anime-style-3,
-body.tow-page .text-anime-style-3 *{
-	visibility: visible !important;
-	opacity: 1 !important;
-	transform: none !important;
-}
-
 body.tow-skin-default{
 	--tow-accent-primary: #f7c600;
 	--tow-accent-secondary: #2757a6;
@@ -40,6 +24,7 @@ body.tow-skin-default{
 
 body.tow-theme-dark{
 	--tow-bg: #000000;
+	--tow-preloader-color: #0c0d0f;
 	--tow-surface: #141414;
 	--tow-surface-2: #191919;
 	--tow-heading: #ffffff;
@@ -59,6 +44,7 @@ body.tow-theme-dark{
 
 body.tow-theme-light{
 	--tow-bg: #ffffff;
+	--tow-preloader-color: #ffffff;
 	--tow-surface: #ffffff;
 	--tow-surface-2: #f5f7fa;
 	--tow-heading: #101923;
@@ -75,6 +61,62 @@ body.tow-theme-light{
 	--tow-hero-wash-tablet: rgba(255, 255, 255, 0.94);
 	--tow-hero-wash-tablet-end: rgba(255, 255, 255, 0.58);
 	--tow-light-shadow: 0 22px 54px rgba(16, 25, 35, 0.12);
+}
+
+body.tow-preloader-active{
+	overflow: hidden;
+}
+
+body.tow-preloader-active .tow-theme-toggle{
+	visibility: hidden !important;
+	opacity: 0 !important;
+	pointer-events: none;
+}
+
+body.tow-page .preloader{
+	z-index: 2147483640;
+	background: var(--tow-preloader-color);
+	overflow: hidden;
+}
+
+body.tow-page .preloader.tow-preloader-ready{
+	background: transparent;
+}
+
+body.tow-page .preloader .loading-container{
+	z-index: 2;
+}
+
+.tow-preloader-reveal{
+	--tow-preloader-mask-radius: clamp(90px, 6vw, 130px);
+	--tow-preloader-mask-overscan: clamp(220px, 16vw, 360px);
+	position: fixed;
+	inset: 0;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	width: 100vw;
+	height: 100dvh;
+	min-height: 100vh;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.tow-preloader-mask{
+	display: block;
+	width: 100%;
+	height: calc(100dvh + var(--tow-preloader-mask-overscan) + var(--tow-preloader-mask-overscan));
+	min-height: calc(100vh + var(--tow-preloader-mask-overscan) + var(--tow-preloader-mask-overscan));
+	margin-top: calc(0px - var(--tow-preloader-mask-overscan));
+	border-radius: var(--tow-preloader-mask-radius);
+	background: var(--tow-preloader-color);
+	will-change: transform;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+}
+
+body.tow-theme-light .loading{
+	border-color: transparent rgba(16, 25, 35, 0.18) transparent rgba(16, 25, 35, 0.18);
 }
 
 body.tow-theme-light .tow-theme-toggle{
@@ -293,6 +335,12 @@ body.tow-theme-light.tow-about-page .hero.hero-image{
 	background-image: url('../images/tow/about-oscar.png');
 }
 
+.tow-about-page .hero.hero-image{
+	align-items: center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
 .tow-page .hero.hero-image::before{
 	background: linear-gradient(90deg, var(--tow-black) 0%, var(--tow-black) 34%, var(--tow-hero-wash) 48%, var(--tow-hero-wash-end) 95%);
 	opacity: 1;
@@ -359,9 +407,13 @@ body.tow-theme-light .hero.hero-image::before{
 	margin-bottom: 0;
 }
 
-.tow-page .hero-content .section-title h1 span{
+.tow-page .hero-content .section-title h1 .tow-title-highlight{
 	display: block;
 	color: var(--tow-yellow);
+}
+
+.tow-page .hero-content .section-title h1 .tow-title-highlight *{
+	color: inherit;
 }
 
 body.tow-theme-light .hero.hero-image .hero-content .section-title h1{
@@ -372,7 +424,7 @@ body.tow-theme-light .hero-content .section-title h3{
 	color: var(--tow-heading);
 }
 
-body.tow-theme-light .hero-content .section-title h1 span{
+body.tow-theme-light .hero-content .section-title h1 .tow-title-highlight{
 	color: var(--tow-yellow);
 }
 
@@ -1406,8 +1458,8 @@ body.tow-theme-light.tow-faq-page .page-header{
 body.tow-theme-light.tow-contact-page .page-header,
 body.tow-theme-light.tow-faq-page .page-header{
 	background:
-		linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0.68) 100%),
-		url('../images/hero-light-mode.png') no-repeat center center;
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(255, 255, 255, 0.04) 0.01%, rgba(255, 255, 255, 0.96) 100%),
+		url('../images/section-bg-grey.svg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -1462,9 +1514,7 @@ body.tow-theme-light.tow-competitions-page .page-header-box ol .breadcrumb-item 
 	color: var(--tow-white);
 }
 
-.tow-competitions-page .section-title h2 span{
-	color: var(--tow-yellow);
-}
+
 
 .tow-page .page-pricing{
 	background: var(--tow-bg);
@@ -1809,7 +1859,6 @@ body.tow-theme-light.tow-about-page .faqs-item{
 }
 
 .tow-about-page .about-company-item .icon-box{
-	background: rgba(247, 198, 0, 0.12);
 	border: 1px solid rgba(247, 198, 0, 0.32);
 }
 
@@ -1876,6 +1925,17 @@ body.tow-theme-light.tow-about-page .about-video-image{
 
 .tow-about-page .about-us-video figure::before{
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.18), rgba(247, 198, 0, 0.2));
+	pointer-events: none;
+	z-index: 1;
+}
+
+.tow-about-page .about-us-video video{
+	position: relative;
+	z-index: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .tow-about-page .about-approach{
@@ -2012,10 +2072,10 @@ body.tow-theme-light.tow-about-page .client-logo img{
 	}
 
 	.tow-page .tow-theme-toggle{
-		position: absolute !important;
-		top: 92px !important;
+		position: fixed !important;
+		top: auto !important;
 		right: 12px !important;
-		bottom: auto !important;
+		bottom: 12px !important;
 		left: auto !important;
 		width: 70px;
 		height: 38px;
