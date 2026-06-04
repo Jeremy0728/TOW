@@ -1,6 +1,47 @@
 (function(){
 	'use strict';
 
+	var themePages = {
+		'index.html': { light: 'index.html', dark: 'index-dark.html' },
+		'index-dark.html': { light: 'index.html', dark: 'index-dark.html' },
+		'about.html': { light: 'about.html', dark: 'about-dark.html' },
+		'about-dark.html': { light: 'about.html', dark: 'about-dark.html' },
+		'pricing.html': { light: 'pricing.html', dark: 'pricing-dark.html' },
+		'pricing-dark.html': { light: 'pricing.html', dark: 'pricing-dark.html' },
+		'service-single.html': { light: 'service-single.html', dark: 'service-single-dark.html' },
+		'service-single-dark.html': { light: 'service-single.html', dark: 'service-single-dark.html' },
+		'case-study.html': { light: 'case-study.html', dark: 'case-study-dark.html' },
+		'case-study-dark.html': { light: 'case-study.html', dark: 'case-study-dark.html' },
+		'contact.html': { light: 'contact.html', dark: 'contact-dark.html' },
+		'contact-dark.html': { light: 'contact.html', dark: 'contact-dark.html' },
+		'faqs.html': { light: 'faqs.html', dark: 'faqs-dark.html' },
+		'faqs-dark.html': { light: 'faqs.html', dark: 'faqs-dark.html' }
+	};
+
+	function updateThemeLinks(mode){
+		document.querySelectorAll('a[href]').forEach(function(link){
+			var href = link.getAttribute('href');
+
+			if(!href || href.charAt(0) === '#' || /^(mailto|tel|javascript):/i.test(href) || /^(https?:)?\/\//i.test(href)){
+				return;
+			}
+
+			var match = href.match(/^([^?#]*)(.*)$/);
+			var path = match ? match[1] : href;
+			var suffix = match ? match[2] : '';
+			var parts = path.split('/');
+			var file = parts.pop() || 'index.html';
+			var page = themePages[file];
+
+			if(!page){
+				return;
+			}
+
+			parts.push(page[mode]);
+			link.setAttribute('href', parts.join('/') + suffix);
+		});
+	}
+
 	function setTheme(mode){
 		var body = document.body;
 		var isDark = mode === 'dark';
@@ -19,6 +60,9 @@
 				label.textContent = isDark ? 'Light' : 'Dark';
 			}
 		});
+
+		updateThemeLinks(isDark ? 'dark' : 'light');
+		syncThemeToggleLayout();
 	}
 
 	function setActivePricingCard(card){
@@ -33,6 +77,64 @@
 		});
 
 		card.classList.add('highlighted-box', 'is-active');
+	}
+
+	function normalizeThemeToggles(){
+		document.querySelectorAll('[data-tow-theme-toggle]').forEach(function(toggle){
+			if(toggle.parentNode !== document.body){
+				document.body.appendChild(toggle);
+			}
+		});
+	}
+
+	function syncThemeToggleLayout(){
+		var isMobile = window.matchMedia('(max-width: 767px)').matches;
+		var mobileMount = document.querySelector('.main-header .navbar .container');
+
+		document.querySelectorAll('[data-tow-theme-toggle]').forEach(function(toggle){
+			if(isMobile){
+				var isDark = document.body.classList.contains('tow-theme-dark');
+
+				if(mobileMount && toggle.parentNode !== mobileMount){
+					mobileMount.appendChild(toggle);
+				}
+
+				if(mobileMount){
+					mobileMount.style.position = 'relative';
+				}
+
+				toggle.style.position = 'absolute';
+				toggle.style.top = '50%';
+				toggle.style.right = '15px';
+				toggle.style.bottom = 'auto';
+				toggle.style.left = 'auto';
+				toggle.style.transform = 'translateY(-50%)';
+				toggle.style.width = '70px';
+				toggle.style.height = '38px';
+				toggle.style.marginLeft = '0';
+				toggle.style.display = 'inline-flex';
+				toggle.style.alignItems = 'center';
+				toggle.style.justifyContent = 'center';
+				toggle.style.flexShrink = '0';
+				toggle.style.visibility = 'visible';
+				toggle.style.opacity = '1';
+				toggle.style.border = '1px solid #f7c600';
+				toggle.style.borderRadius = '50px';
+				toggle.style.background = isDark ? '#f7c600' : '#000000';
+				toggle.style.color = isDark ? '#000000' : '#ffffff';
+				toggle.style.boxShadow = '0 14px 30px rgba(0, 0, 0, 0.32)';
+				toggle.style.fontFamily = 'Bebas Neue, sans-serif';
+				toggle.style.fontSize = '13px';
+				toggle.style.lineHeight = '1';
+				toggle.style.zIndex = '2147483000';
+			}else{
+				if(toggle.parentNode !== document.body){
+					document.body.appendChild(toggle);
+				}
+
+				toggle.removeAttribute('style');
+			}
+		});
 	}
 
 	function initPricingCardActivation(){
@@ -70,6 +172,8 @@
 		var body = document.body;
 		var initialMode = body.classList.contains('tow-theme-dark') ? 'dark' : 'light';
 
+		normalizeThemeToggles();
+		syncThemeToggleLayout();
 		setTheme(initialMode);
 		initPricingCardActivation();
 
@@ -80,4 +184,6 @@
 			});
 		});
 	});
+
+	window.addEventListener('resize', syncThemeToggleLayout);
 })();

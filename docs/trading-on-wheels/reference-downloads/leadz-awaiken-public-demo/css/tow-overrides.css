@@ -16,6 +16,22 @@ body.tow-page{
 	color: var(--tow-text);
 }
 
+body.tow-page .wow{
+	visibility: visible !important;
+	opacity: 1 !important;
+	transform: none !important;
+	animation-name: none !important;
+	animation-duration: 0s !important;
+	animation-delay: 0s !important;
+}
+
+body.tow-page .text-anime-style-3,
+body.tow-page .text-anime-style-3 *{
+	visibility: visible !important;
+	opacity: 1 !important;
+	transform: none !important;
+}
+
 body.tow-skin-default{
 	--tow-accent-primary: #f7c600;
 	--tow-accent-secondary: #2757a6;
@@ -1552,6 +1568,10 @@ body.tow-theme-light .page-services .service-content p{
 	color: var(--tow-yellow);
 }
 
+.tow-page:not(.tow-index-page) .section-title h3::before{
+	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
+}
+
 body.tow-theme-light:not(.tow-index-page) .section-title h3{
 	color: var(--tow-heading);
 }
@@ -1769,6 +1789,293 @@ body.tow-theme-light .case-study-approch-item p{
 
 .tow-competitions-page .readmore-btn img{
 	filter: brightness(0) invert(1);
+}
+
+.tow-about-page .page-about-us,
+.tow-about-page .about-approach,
+.tow-about-page .our-faqs.bg-section{
+	background: var(--tow-bg);
+}
+
+.tow-about-page .page-about-us.bg-section::before,
+.tow-about-page .about-video-image.bg-section::before,
+.tow-about-page .our-process.bg-section::before,
+.tow-about-page .our-faqs.bg-section::before{
+	display: none;
+}
+
+.tow-about-page .page-about-us{
+	padding: 96px 0 0;
+}
+
+.tow-about-page .about-company-item,
+.tow-about-page .about-approach-content-box,
+.tow-about-page .about-approach-chart,
+.tow-about-page .approach-counter-box,
+.tow-about-page .about-approach-investment,
+.tow-about-page .process-step-item,
+.tow-about-page .client-logo,
+.tow-about-page .faqs-item{
+	background: #121314;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+}
+
+body.tow-theme-light.tow-about-page .about-company-item,
+body.tow-theme-light.tow-about-page .about-approach-content-box,
+body.tow-theme-light.tow-about-page .about-approach-chart,
+body.tow-theme-light.tow-about-page .approach-counter-box,
+body.tow-theme-light.tow-about-page .about-approach-investment,
+body.tow-theme-light.tow-about-page .process-step-item,
+body.tow-theme-light.tow-about-page .client-logo,
+body.tow-theme-light.tow-about-page .faqs-item{
+	background: var(--tow-surface);
+	border-color: var(--tow-divider);
+	box-shadow: var(--tow-light-shadow);
+}
+
+.tow-about-page .about-company-item:hover{
+	border-color: rgba(247, 198, 0, 0.52);
+	transform: translateY(-4px);
+}
+
+.tow-about-page .about-company-item .icon-box{
+	background: rgba(247, 198, 0, 0.12);
+	border: 1px solid rgba(247, 198, 0, 0.32);
+}
+
+.tow-about-page .about-company-item .icon-box::before{
+	background: var(--tow-yellow);
+}
+
+.tow-about-page .about-company-item .icon-box img{
+	filter: brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1278%) hue-rotate(191deg) brightness(90%) contrast(91%);
+}
+
+.tow-about-page .about-company-item:hover .icon-box img{
+	filter: brightness(0);
+}
+
+.tow-about-page .about-company-content h3,
+.tow-about-page .about-approach-progress-counter h2,
+.tow-about-page .process-counter-item h2,
+.tow-about-page .step-item-content h3,
+.tow-about-page .faqs-item-title h3{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light.tow-about-page .about-company-content h3,
+body.tow-theme-light.tow-about-page .step-item-content h3,
+body.tow-theme-light.tow-about-page .faqs-item-title h3{
+	color: var(--tow-heading);
+}
+
+.tow-about-page .about-company-content p,
+.tow-about-page .about-approach-box-title p,
+.tow-about-page .about-approach-info-list ul li,
+.tow-about-page .about-approach-progress-counter p,
+.tow-about-page .process-counter-item p,
+.tow-about-page .step-item-content p,
+.tow-about-page .faqs-item-body p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light.tow-about-page .about-company-content p,
+body.tow-theme-light.tow-about-page .about-approach-box-title p,
+body.tow-theme-light.tow-about-page .about-approach-info-list ul li,
+body.tow-theme-light.tow-about-page .about-approach-progress-counter p,
+body.tow-theme-light.tow-about-page .process-counter-item p,
+body.tow-theme-light.tow-about-page .step-item-content p,
+body.tow-theme-light.tow-about-page .faqs-item-body p{
+	color: var(--tow-text);
+}
+
+.tow-about-page .about-video-image{
+	margin-top: 72px;
+	background: #121314;
+	border-top: 1px solid var(--tow-divider);
+	border-bottom: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-light.tow-about-page .about-video-image{
+	background: var(--tow-surface-2);
+}
+
+.tow-about-page .about-us-video figure::before{
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.18), rgba(247, 198, 0, 0.2));
+}
+
+.tow-about-page .about-approach{
+	padding: 96px 0;
+}
+
+.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted{
+	font-family: var(--accent-font);
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	background: transparent;
+	border: 1px solid var(--tow-divider);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted{
+	color: var(--tow-heading);
+}
+
+.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted:hover,
+.tow-about-page .our-tab-nav ul li .nav-link.active{
+	background: var(--tow-yellow);
+	border-color: var(--tow-yellow);
+	color: var(--tow-black);
+}
+
+.tow-about-page .about-approach-content-box{
+	padding: 34px;
+}
+
+.tow-about-page .about-approach-info-list ul li:before{
+	color: var(--tow-yellow);
+}
+
+.tow-about-page .about-approach-progress-circle img{
+	opacity: 0.18;
+	filter: brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1278%) hue-rotate(191deg) brightness(90%) contrast(91%);
+}
+
+.tow-about-page .about-approach-chart img,
+.tow-about-page .about-approach-investment img{
+	filter: grayscale(0.15) hue-rotate(95deg) saturate(1.18);
+}
+
+.tow-about-page .approach-counter-box h2,
+.tow-about-page .about-approach-progress-counter h2,
+.tow-about-page .process-counter-item h2{
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light.tow-about-page .approach-counter-box h2,
+body.tow-theme-light.tow-about-page .about-approach-progress-counter h2,
+body.tow-theme-light.tow-about-page .process-counter-item h2{
+	color: var(--tow-blue);
+}
+
+.tow-about-page .our-process.bg-section{
+	background:
+		linear-gradient(180deg, rgba(18, 19, 20, 0.96) 0%, rgba(18, 19, 20, 0.92) 100%),
+		url('../images/section-bg-blue.svg') no-repeat center center;
+	background-size: cover;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.tow-theme-light.tow-about-page .our-process.bg-section{
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.88) 100%),
+		url('../images/section-bg-blue.svg') no-repeat center center;
+	background-size: cover;
+	border-color: var(--tow-divider);
+}
+
+.tow-about-page .step-item-number{
+	background: var(--tow-blue);
+}
+
+.tow-about-page .step-item-number h2{
+	color: var(--tow-white);
+}
+
+.tow-about-page .process-step-item:nth-of-type(odd),
+.tow-about-page .process-step-item:nth-of-type(even){
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.tow-about-page .our-process-steps{
+	gap: 22px;
+}
+
+.tow-about-page .our-faqs.bg-section{
+	padding: 96px 0;
+}
+
+.tow-about-page .faqs-client-slider{
+	border-top: 1px solid var(--tow-divider);
+	border-bottom: 1px solid var(--tow-divider);
+}
+
+.tow-about-page .client-logo img{
+	opacity: 0.78;
+	filter: grayscale(1) brightness(1.8);
+}
+
+body.tow-theme-light.tow-about-page .client-logo img{
+	opacity: 0.64;
+	filter: grayscale(1);
+}
+
+.tow-about-page .faqs-item{
+	border-radius: 8px;
+}
+
+.tow-about-page .faqs-item .icon-box{
+	background: var(--tow-yellow);
+}
+
+.tow-about-page .faqs-item .icon-box::before,
+.tow-about-page .faqs-item .icon-box::after{
+	background: var(--tow-black);
+}
+
+.tow-page:not(.tow-competitions-page) .case-study-content h3 a:hover{
+	color: var(--tow-yellow);
+}
+
+@media only screen and (max-width: 767px){
+	body.tow-page #magic-cursor,
+	body.tow-page #ball{
+		display: none !important;
+	}
+
+	.tow-page .tow-theme-toggle{
+		position: absolute !important;
+		top: 92px !important;
+		right: 12px !important;
+		bottom: auto !important;
+		left: auto !important;
+		width: 70px;
+		height: 38px;
+		display: inline-flex !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+		font-size: 13px;
+		background: var(--tow-yellow) !important;
+		color: var(--tow-black) !important;
+		border-color: var(--tow-yellow) !important;
+		box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+		transform: none !important;
+		z-index: 2147483000;
+	}
+
+	body.tow-theme-light .tow-theme-toggle{
+		background: var(--tow-black) !important;
+		color: var(--tow-white) !important;
+		border-color: var(--tow-yellow) !important;
+	}
+
+	.tow-page .contact-info-item{
+		width: 100%;
+	}
+
+	.tow-page .contact-info-item::before{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 1199px){
