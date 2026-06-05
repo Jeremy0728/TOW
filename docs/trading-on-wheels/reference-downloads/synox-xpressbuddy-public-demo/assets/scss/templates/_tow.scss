@@ -1,0 +1,374 @@
+/* Trading On Wheels Page - Start
+================================================== */
+
+.tow-page {
+	.tow_process_section {
+		z-index: 1;
+		position: relative;
+		padding: 110px 0 120px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		&:before {
+			inset: 0;
+			z-index: 0;
+			content: "";
+			position: absolute;
+			background:
+				linear-gradient(180deg, rgba(4, 4, 4, 0.88) 0%, rgba(4, 4, 4, 0.72) 44%, rgba(4, 4, 4, 0.94) 100%),
+				radial-gradient(circle at center, rgba(var(--bs-primary-rgb), 0.18), transparent 48%);
+		}
+		.container {
+			z-index: 1;
+			position: relative;
+		}
+		.heading_block {
+			.heading_text {
+				color: var(--bs-white);
+			}
+			.badge {
+				border-radius: 7px;
+				padding: 9px 18px;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	.tow_process_orbit {
+		height: 660px;
+		display: block;
+		margin-top: 58px;
+		position: relative;
+	}
+
+	.tow_process_grid {
+		top: 95px;
+		left: 50%;
+		width: 860px;
+		height: 520px;
+		opacity: 0.28;
+		position: absolute;
+		transform: translateX(-50%);
+		background-size: 26px 26px;
+		background-image:
+			linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+		mask-image: radial-gradient(circle at center, #000 0%, #000 55%, transparent 82%);
+		-webkit-mask-image: radial-gradient(circle at center, #000 0%, #000 55%, transparent 82%);
+	}
+
+	.tow_process_circle {
+		top: 55%;
+		left: 50%;
+		width: 600px;
+		height: 600px;
+		opacity: 0.9;
+		position: absolute;
+		border-radius: 50%;
+		border: 2px solid rgba(var(--bs-primary-rgb), 0.82);
+		transform: translate(-50%, -50%);
+		&:after {
+			inset: -8px;
+			content: "";
+			opacity: 0.2;
+			position: absolute;
+			border-radius: inherit;
+			border: 1px solid var(--bs-white);
+		}
+	}
+
+	.tow_process_connector {
+		z-index: 1;
+		position: absolute;
+		border-radius: 999px;
+		background-color: var(--bs-primary);
+		box-shadow: 0 0 28px rgba(var(--bs-primary-rgb), 0.32);
+	}
+
+	.tow_process_connector_vertical {
+		top: 138px;
+		left: 50%;
+		width: 3px;
+		height: 485px;
+		transform: translateX(-50%);
+	}
+
+	.tow_process_connector_horizontal {
+		top: 50%;
+		left: 96px;
+		width: calc(100% - 192px);
+		height: 4px;
+		transform: translateY(-50%);
+	}
+
+	.tow_process_logo {
+		top: 50%;
+		left: 50%;
+		z-index: 3;
+		width: 220px;
+		height: 92px;
+		display: flex;
+		padding: 18px 24px;
+		position: absolute;
+		align-items: center;
+		border-radius: 8px;
+		justify-content: center;
+		border: 1px solid rgba(var(--bs-primary-rgb), 0.9);
+		background-color: #0D0D0D;
+		box-shadow: 0 0 44px rgba(var(--bs-primary-rgb), 0.34);
+		transform: translate(-50%, -50%);
+		img {
+			width: 100%;
+			max-height: 60px;
+			object-fit: contain;
+		}
+	}
+
+	.tow_process_steps {
+		inset: 0;
+		margin: 0;
+		padding: 0;
+		z-index: 2;
+		position: absolute;
+		list-style: none;
+	}
+
+	.tow_process_card,
+	.tow_process_mobile_steps > li {
+		gap: 28px;
+		display: flex;
+		min-height: 150px;
+		align-items: center;
+		border-radius: 8px;
+		padding: 34px 44px;
+		border: 1px solid var(--bs-primary);
+		background-color: rgba(11, 11, 12, 0.96);
+		box-shadow: 0 22px 42px rgba(0, 0, 0, 0.36);
+	}
+
+	.tow_process_card {
+		position: absolute;
+	}
+
+	.tow_process_card_1 {
+		top: 0;
+		left: 50%;
+		width: 420px;
+		transform: translateX(-50%);
+		background-color: rgba(17, 16, 10, 0.96);
+	}
+
+	.tow_process_card_2 {
+		top: 252px;
+		right: 0;
+		width: 390px;
+	}
+
+	.tow_process_card_3 {
+		left: 50%;
+		bottom: 0;
+		width: 400px;
+		transform: translateX(-50%);
+	}
+
+	.tow_process_card_4 {
+		top: 252px;
+		left: 0;
+		width: 400px;
+	}
+
+	.tow_process_number {
+		line-height: 1;
+		font-size: 56px;
+		min-width: 70px;
+		font-family: 'SuisseIntl SemiBold';
+		background: linear-gradient(180deg, #FFDF14 0%, #C79700 60%, #272106 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.tow_process_title {
+		margin: 0;
+		color: var(--bs-white);
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+		font-family: 'SuisseIntl SemiBold';
+	}
+
+	.tow_process_timeline {
+		display: none;
+	}
+
+	.funfact_section {
+		.heading_block {
+			.badge {
+				color: #050505 !important;
+				padding: 9px 18px;
+				border-radius: 7px;
+				letter-spacing: 0;
+				background-color: var(--bs-primary) !important;
+				box-shadow: 0 0 22px rgba(var(--bs-primary-rgb), 0.22);
+			}
+			.heading_text {
+				color: var(--bs-white);
+			}
+			.heading_description {
+				color: #E4ECEF;
+			}
+		}
+
+		.funfact_block.style_2 {
+			filter: saturate(1.08) contrast(1.02);
+			.funfact_value {
+				color: #080808;
+			}
+			.funfact_title {
+				color: #151515;
+			}
+		}
+
+		.money_transactions_card {
+			border: 1px solid rgba(var(--bs-primary-rgb), 0.26);
+			box-shadow: 0 24px 50px rgba(0, 0, 0, 0.42);
+			.btn {
+				color: #050505;
+				box-shadow: 0 12px 26px rgba(var(--bs-primary-rgb), 0.22);
+			}
+		}
+
+		.shape_circle_image img {
+			filter: saturate(1.16) contrast(1.08);
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.tow-page {
+		.tow_process_card_2,
+		.tow_process_card_4 {
+			width: 350px;
+		}
+		.tow_process_connector_horizontal {
+			left: 50px;
+			width: calc(100% - 100px);
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.tow-page {
+		.tow_process_section {
+			padding: 85px 0 95px;
+			background-position: center center;
+		}
+		.tow_process_orbit {
+			display: none;
+		}
+		.tow_process_timeline {
+			display: block;
+			max-width: 390px;
+			margin: 42px auto 0;
+			position: relative;
+			.tow_process_logo {
+				top: auto;
+				left: auto;
+				width: 226px;
+				height: 96px;
+				margin: 0 auto 32px;
+				position: relative;
+				transform: none;
+			}
+		}
+		.tow_process_mobile_steps {
+			gap: 28px;
+			margin: 0;
+			padding: 0 0 0 68px;
+			position: relative;
+			list-style: none;
+			&:before {
+				top: 42px;
+				left: 18px;
+				width: 3px;
+				bottom: 42px;
+				content: "";
+				position: absolute;
+				border-radius: 999px;
+				background-color: var(--bs-primary);
+			}
+			>li {
+				z-index: 1;
+				position: relative;
+				min-height: 104px;
+				padding: 28px 24px;
+				&:before {
+					top: 50%;
+					left: -77px;
+					width: 18px;
+					height: 18px;
+					content: "";
+					position: absolute;
+					border-radius: 50%;
+					border: 2px solid var(--bs-primary);
+					background-color: var(--bs-dark);
+					transform: translateY(-50%);
+				}
+				&:after {
+					top: 50%;
+					left: -50px;
+					width: 50px;
+					height: 2px;
+					content: "";
+					position: absolute;
+					background-color: var(--bs-primary);
+					transform: translateY(-50%);
+				}
+				&:first-child:before {
+					background-color: var(--bs-primary);
+				}
+			}
+		}
+		.tow_process_number {
+			font-size: 42px;
+			min-width: 44px;
+		}
+		.tow_process_title {
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.tow-page {
+		.tow_process_section {
+			padding: 70px 0 78px;
+			.heading_block {
+				.heading_text {
+					font-size: 34px;
+					line-height: 40px;
+				}
+			}
+		}
+		.tow_process_timeline {
+			max-width: 100%;
+		}
+		.tow_process_mobile_steps {
+			padding-left: 58px;
+			>li {
+				gap: 18px;
+				padding: 24px 20px;
+				&:before {
+					left: -67px;
+				}
+				&:after {
+					left: -40px;
+					width: 40px;
+				}
+			}
+		}
+	}
+}
+
+/* Trading On Wheels Page - End
+================================================== */

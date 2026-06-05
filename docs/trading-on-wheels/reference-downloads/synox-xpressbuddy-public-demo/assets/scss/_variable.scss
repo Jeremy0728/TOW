@@ -1,0 +1,44 @@
+:root, [data-bs-theme=light] {
+	--bs-body-font-family: "DM Sans", sans-serif;
+	--bs-heading-font-family: 'SuisseIntl SemiBold';
+	--bs-body-font-size: 16px;
+	--bs-body-font-weight: 400;
+	--bs-body-line-height: 1.5;
+
+	--bs-body-bg: #FFFFFF;
+	--bs-body-bg-rgb: 255, 255, 255;
+	--bs-body-color: #AEB8BA;
+	--bs-body-color-rgb: 174, 184, 186;
+	--bs-secondary-color: #8E9A9D;
+	--bs-secondary-color-rgb: 142, 154, 157;
+	--bs-heading-color: #14202E;
+
+	--bs-primary: #F7C600;
+	--bs-dark: #0B0B0B;
+	--bs-light: #F7F4EA;
+	--bs-secondary: #040404;
+	
+	--bs-primary-rgb: 247, 198, 0;
+	--bs-dark-rgb: 11, 11, 11;
+	--bs-light-rgb: 247, 244, 234;
+	--bs-secondary-rgb: 4, 4, 4;
+
+	--bs-border-color: #E7E1D2;
+	--bs-border-color-translucent: rgba(20, 32, 46, 0.14);
+
+	--tow-header-ink: #14202E;
+	--tow-card: #0D0D0D;
+	--tow-course: #2757A6;
+	--tow-course-rgb: 39, 87, 166;
+	--tow-competitions: #498734;
+	--tow-competitions-rgb: 73, 135, 52;
+	--tow-competitions-alt: #488A32;
+	--tow-divider-10: rgba(255, 255, 255, 0.10);
+	--tow-divider-12: rgba(255, 255, 255, 0.12);
+
+	--bs-border-radius: 10px;
+	--bs-border-radius-sm: 5px;
+	--bs-border-radius-lg: 20px;
+
+	--bs-transition: 300ms ease;
+}

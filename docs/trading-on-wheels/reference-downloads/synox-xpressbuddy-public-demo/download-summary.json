@@ -1,0 +1,65 @@
+{
+    "start_url":  "https://html.xpressbuddy.com/synox/",
+    "output_dir":  "C:\\Users\\JEREMY\\Documents\\New project\\docs\\trading-on-wheels\\reference-downloads\\synox-xpressbuddy-public-demo",
+    "generated_at":  "2026-06-04T16:21:38",
+    "total_files":  472,
+    "internal_html_files":  17,
+    "external_html_files":  2,
+    "referenced_assets":  391,
+    "missing_referenced_assets":  0,
+    "scss_files":  45,
+    "by_extension":  [
+                         {
+                             "extension":  ".html",
+                             "count":  19
+                         },
+                         {
+                             "extension":  ".csv",
+                             "count":  3
+                         },
+                         {
+                             "extension":  ".txt",
+                             "count":  2
+                         },
+                         {
+                             "extension":  ".md",
+                             "count":  1
+                         },
+                         {
+                             "extension":  ".css",
+                             "count":  7
+                         },
+                         {
+                             "extension":  ".map",
+                             "count":  1
+                         },
+                         {
+                             "extension":  ".ttf",
+                             "count":  7
+                         },
+                         {
+                             "extension":  ".webp",
+                             "count":  177
+                         },
+                         {
+                             "extension":  ".png",
+                             "count":  15
+                         },
+                         {
+                             "extension":  ".svg",
+                             "count":  181
+                         },
+                         {
+                             "extension":  ".js",
+                             "count":  13
+                         },
+                         {
+                             "extension":  ".scss",
+                             "count":  45
+                         },
+                         {
+                             "extension":  ".1000_display_swap",
+                             "count":  1
+                         }
+                     ]
+}
