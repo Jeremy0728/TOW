@@ -63,10 +63,12 @@
 */
 /* Table Of Content - end
 ================================================== */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root, [data-bs-theme=light] {
   --bs-body-font-family: "DM Sans", sans-serif;
   --bs-heading-font-family: 'SuisseIntl SemiBold';
+  --tow-font-display: "Anton", sans-serif;
+  --tow-font-body: "Montserrat", sans-serif;
   --bs-body-font-size: 16px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -3033,7 +3035,7 @@ input[type=search]::-webkit-search-results-decoration {
 .hero_investment_solution h1 span {
   --bs-heading-color: var(--bs-dark);
   line-height: 1;
-  padding: 0 10px;
+  padding: 10px 10px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -6321,6 +6323,28 @@ input[type=search]::-webkit-search-results-decoration {
 ================================================== */
 /* Trading On Wheels Page - Start
 ================================================== */
+.tow-page {
+  --bs-body-font-family: var(--tow-font-body);
+  --bs-heading-font-family: var(--tow-font-body);
+}
+.tow-page .hero_title,
+.tow-page .page_title,
+.tow-page .tow_process_number {
+  font-family: var(--tow-font-display);
+  font-weight: 400;
+}
+.tow-page .main_menu_list > li > a,
+.tow-page .btn-link,
+.tow-page .hotline_btn,
+.tow-page .pricing_toggle_btn,
+.tow-page .pricing_block .pricing_info ul > li,
+.tow-page .pricing_block .pricing_info ul > li small,
+.tow-page .pricing_block .features_title,
+.tow-page .pricing_block .pricing_amount span,
+.tow-page .pricing_block .pricing_amount small,
+.tow-page .accordion-item .accordion-button {
+  font-family: var(--tow-font-body);
+}
 .tow-page .tow_process_section {
   z-index: 1;
   position: relative;
@@ -6334,7 +6358,6 @@ input[type=search]::-webkit-search-results-decoration {
   z-index: 0;
   content: "";
   position: absolute;
-  background: linear-gradient(180deg, rgba(4, 4, 4, 0.88) 0%, rgba(4, 4, 4, 0.72) 44%, rgba(4, 4, 4, 0.94) 100%), radial-gradient(circle at center, rgba(var(--bs-primary-rgb), 0.18), transparent 48%);
 }
 .tow-page .tow_process_section .container {
   z-index: 1;
@@ -6479,7 +6502,6 @@ input[type=search]::-webkit-search-results-decoration {
   line-height: 1;
   font-size: 56px;
   min-width: 70px;
-  font-family: "SuisseIntl SemiBold";
   background: linear-gradient(180deg, #FFDF14 0%, #C79700 60%, #272106 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -6490,7 +6512,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  font-family: "SuisseIntl SemiBold";
+  font-family: var(--tow-font-body);
 }
 .tow-page .tow_process_timeline {
   display: none;
@@ -6528,6 +6550,17 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .tow-page .funfact_section .shape_circle_image img {
   filter: saturate(1.16) contrast(1.08);
+}
+.tow-page .appstore_section .heading_block .badge {
+  color: var(--bs-white) !important;
+  background-color: #050505 !important;
+}
+.tow-page .appstore_section .heading_block .badge i,
+.tow-page .appstore_section .heading_block .badge b {
+  color: inherit;
+}
+.tow-page .appstore_section .heading_block .heading_text {
+  color: #050505;
 }
 
 @media screen and (max-width: 1199px) {

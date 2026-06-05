@@ -2,6 +2,29 @@
 ================================================== */
 
 .tow-page {
+	--bs-body-font-family: var(--tow-font-body);
+	--bs-heading-font-family: var(--tow-font-body);
+
+	.hero_title,
+	.page_title,
+	.tow_process_number {
+		font-family: var(--tow-font-display);
+		font-weight: 400;
+	}
+
+	.main_menu_list > li > a,
+	.btn-link,
+	.hotline_btn,
+	.pricing_toggle_btn,
+	.pricing_block .pricing_info ul > li,
+	.pricing_block .pricing_info ul > li small,
+	.pricing_block .features_title,
+	.pricing_block .pricing_amount span,
+	.pricing_block .pricing_amount small,
+	.accordion-item .accordion-button {
+		font-family: var(--tow-font-body);
+	}
+
 	.tow_process_section {
 		z-index: 1;
 		position: relative;
@@ -14,9 +37,6 @@
 			z-index: 0;
 			content: "";
 			position: absolute;
-			background:
-				linear-gradient(180deg, rgba(4, 4, 4, 0.88) 0%, rgba(4, 4, 4, 0.72) 44%, rgba(4, 4, 4, 0.94) 100%),
-				radial-gradient(circle at center, rgba(var(--bs-primary-rgb), 0.18), transparent 48%);
 		}
 		.container {
 			z-index: 1;
@@ -181,7 +201,6 @@
 		line-height: 1;
 		font-size: 56px;
 		min-width: 70px;
-		font-family: 'SuisseIntl SemiBold';
 		background: linear-gradient(180deg, #FFDF14 0%, #C79700 60%, #272106 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -193,7 +212,7 @@
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 32px;
-		font-family: 'SuisseIntl SemiBold';
+		font-family: var(--tow-font-body);
 	}
 
 	.tow_process_timeline {
@@ -239,6 +258,22 @@
 
 		.shape_circle_image img {
 			filter: saturate(1.16) contrast(1.08);
+		}
+	}
+
+	.appstore_section {
+		.heading_block {
+			.badge {
+				color: var(--bs-white) !important;
+				background-color: #050505 !important;
+				i,
+				b {
+					color: inherit;
+				}
+			}
+			.heading_text {
+				color: #050505;
+			}
 		}
 	}
 }
