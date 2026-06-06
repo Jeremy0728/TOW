@@ -115,11 +115,297 @@
 
   // Pricing Toggle Button - Start
   // --------------------------------------------------
+  var towMembershipPlans = {
+    premium: {
+      title: 'Premium Trading On Wheels',
+      description: '5-year premium access to Trading On Wheels and the private Discord area.',
+      features: [
+        '5-year premium access',
+        'Private Discord area',
+        'Trading ideas and monitoring',
+        'Market context briefings',
+        'Educational content library',
+        'Community reviews',
+        'Long-term member continuity'
+      ]
+    },
+    monthly: {
+      title: 'TOW Membership',
+      description: 'Monthly access to Trading On Wheels tools and the private Discord membership area.',
+      features: [
+        'Private community',
+        'Trading ideas',
+        'Discord access',
+        'Trade monitoring',
+        'Market context',
+        'Educational content',
+        'Community reviews'
+      ]
+    }
+  };
+
+  function renderTowMembershipPlan(pricingSection, planName) {
+    var plan = towMembershipPlans[planName];
+    if (!plan) {
+      return;
+    }
+
+    var pricingBlock = pricingSection.find('[data-tow-pricing]');
+    var toggleButton = pricingSection.find('[data-tow-pricing-toggle]');
+    var featuresList = pricingSection.find('[data-tow-plan-features]');
+    var checkIcon = 'assets/images/icons/icon_check.svg';
+
+    pricingSection.find('[data-tow-plan-title]').text(plan.title);
+    pricingSection.find('[data-tow-plan-description]').text(plan.description);
+    pricingBlock.toggleClass('active', planName === 'monthly');
+    toggleButton.toggleClass('active', planName === 'monthly');
+    toggleButton.attr('aria-pressed', planName === 'monthly' ? 'true' : 'false');
+    pricingSection.attr('data-active-plan', planName);
+
+    featuresList.empty();
+    $.each(plan.features, function(index, feature) {
+      featuresList.append(
+        '<li style="--tow-feature-index: ' + index + '">' +
+          '<span class="iconlist_icon"><img src="' + checkIcon + '" alt="Icon Check"></span>' +
+          '<span class="iconlist_text">' + feature + '</span>' +
+        '</li>'
+      );
+    });
+  }
+
+  function updateTowMembershipPlan(pricingSection, planName, options) {
+    options = options || {};
+
+    var plan = towMembershipPlans[planName];
+    if (!plan) {
+      return;
+    }
+
+    var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var shouldAnimate = options.animate && !prefersReducedMotion;
+
+    if (!shouldAnimate) {
+      renderTowMembershipPlan(pricingSection, planName);
+      return;
+    }
+
+    if (pricingSection.hasClass('is-plan-changing')) {
+      return;
+    }
+
+    var toggleButton = pricingSection.find('[data-tow-pricing-toggle]');
+    pricingSection.addClass('is-plan-changing is-plan-exiting');
+    toggleButton.prop('disabled', true);
+
+    window.setTimeout(function() {
+      renderTowMembershipPlan(pricingSection, planName);
+      pricingSection.removeClass('is-plan-exiting').addClass('is-plan-entering');
+
+      window.setTimeout(function() {
+        pricingSection.removeClass('is-plan-changing is-plan-entering');
+        toggleButton.prop('disabled', false);
+      }, 520);
+    }, 180);
+  }
+
+  $('[data-tow-pricing]').each(function() {
+    updateTowMembershipPlan($(this).closest('.pricing_section'), 'monthly');
+  });
+
   $(".pricing_toggle_btn").on('click', function(){
+    var pricingSection = $(this).closest('.pricing_section');
+    if (pricingSection.find('[data-tow-pricing]').length) {
+      var nextPlan = pricingSection.attr('data-active-plan') === 'monthly' ? 'premium' : 'monthly';
+      updateTowMembershipPlan(pricingSection, nextPlan, { animate: true });
+      return;
+    }
+
     $(this).toggleClass("active");
-    $(".pricing_block").toggleClass("active");
+    pricingSection.find(".pricing_block").toggleClass("active");
   });
   // Pricing Toggle Button - End
+  // --------------------------------------------------
+
+  // TOW Story Slider - Start
+  // --------------------------------------------------
+  document.querySelectorAll('[data-tow-story-slider]').forEach(function(slider) {
+    var track = slider.querySelector('.tow_story_slider_track');
+    if (!track) {
+      return;
+    }
+
+    var originalItems = Array.prototype.slice.call(track.children);
+    if (!originalItems.length) {
+      return;
+    }
+
+    var cardsPerPage = parseInt(slider.getAttribute('data-tow-slider-page-size'), 10) || 3;
+    var pages = [];
+    for (var startIndex = 0; startIndex < originalItems.length; startIndex += cardsPerPage) {
+      var pageItems = originalItems.slice(startIndex, startIndex + cardsPerPage);
+      var fillIndex = 0;
+      while (pageItems.length < cardsPerPage) {
+        pageItems.push(originalItems[fillIndex % originalItems.length]);
+        fillIndex += 1;
+      }
+      pages.push(pageItems.map(function(item) { return item.cloneNode(true); }));
+    }
+
+    if (pages.length < 2) {
+      pages.push(originalItems.slice(0, cardsPerPage).map(function(item) { return item.cloneNode(true); }));
+    }
+    var activePage = 0;
+    var isDragging = false;
+    var startX = 0;
+    var currentX = 0;
+    var isAnimating = false;
+    var swipeThreshold = 56;
+
+    slider.style.overflow = 'hidden';
+    slider.style.position = 'relative';
+    track.style.willChange = 'transform';
+
+    function setTrackItems(pageIndex) {
+      track.innerHTML = '';
+      pages[pageIndex].forEach(function(item) {
+        track.appendChild(item.cloneNode(true));
+      });
+      track.style.transition = '';
+      track.style.transform = 'translateX(0)';
+    }
+
+    function getNextPage(direction) {
+      var nextPage = activePage + direction;
+      if (nextPage < 0 || nextPage >= pages.length) {
+        return activePage;
+      }
+      return nextPage;
+    }
+
+    function animateToPage(nextPage, direction) {
+      if (nextPage === activePage || isAnimating) {
+        track.style.transition = 'transform 220ms ease';
+        track.style.transform = 'translateX(0)';
+        return;
+      }
+
+      isAnimating = true;
+      var nextTrack = track.cloneNode(false);
+      nextTrack.innerHTML = '';
+      pages[nextPage].forEach(function(item) {
+        nextTrack.appendChild(item.cloneNode(true));
+      });
+
+      nextTrack.style.position = 'absolute';
+      nextTrack.style.top = track.offsetTop + 'px';
+      nextTrack.style.left = '0';
+      nextTrack.style.width = '100%';
+      nextTrack.style.transform = 'translateX(' + (direction > 0 ? '100%' : '-100%') + ')';
+      nextTrack.style.transition = 'transform 320ms ease';
+      nextTrack.style.willChange = 'transform';
+      slider.appendChild(nextTrack);
+
+      track.style.transition = 'transform 320ms ease';
+
+      requestAnimationFrame(function() {
+        track.style.transform = 'translateX(' + (direction > 0 ? '-100%' : '100%') + ')';
+        nextTrack.style.transform = 'translateX(0)';
+      });
+
+      window.setTimeout(function() {
+        activePage = nextPage;
+        setTrackItems(activePage);
+        slider.removeChild(nextTrack);
+        isAnimating = false;
+      }, 340);
+    }
+
+    slider.addEventListener('pointerdown', function(event) {
+      if (isAnimating) {
+        return;
+      }
+
+      isDragging = true;
+      startX = event.clientX;
+      currentX = 0;
+      slider.classList.add('is-dragging');
+      track.style.transition = '';
+      slider.setPointerCapture(event.pointerId);
+    });
+
+    slider.addEventListener('pointermove', function(event) {
+      if (!isDragging) {
+        return;
+      }
+
+      currentX = event.clientX - startX;
+      track.style.transform = 'translateX(' + currentX + 'px)';
+      event.preventDefault();
+    });
+
+    function stopDragging(event) {
+      if (!isDragging) {
+        return;
+      }
+
+      isDragging = false;
+      slider.classList.remove('is-dragging');
+      if (slider.hasPointerCapture(event.pointerId)) {
+        slider.releasePointerCapture(event.pointerId);
+      }
+
+      if (Math.abs(currentX) < swipeThreshold) {
+        track.style.transition = 'transform 220ms ease';
+        track.style.transform = 'translateX(0)';
+        return;
+      }
+
+      var direction = currentX < 0 ? 1 : -1;
+      animateToPage(getNextPage(direction), direction);
+    }
+
+    slider.addEventListener('pointerup', stopDragging);
+    slider.addEventListener('pointercancel', stopDragging);
+    slider.addEventListener('pointerleave', stopDragging);
+
+    setTrackItems(activePage);
+  });
+  // TOW Story Slider - End
+  // --------------------------------------------------
+
+  // TOW Course Curriculum Slider - Start
+  // --------------------------------------------------
+  if (document.querySelector('.tow_course_curriculum_slider')) {
+    const towCourseCurriculumSlider = new Swiper('.tow_course_curriculum_slider', {
+      speed: 700,
+      spaceBetween: 28,
+      grabCursor: true,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 3200,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.tow_course_curriculum_dots',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 36,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 52,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 72,
+        },
+      },
+    });
+  }
+  // TOW Course Curriculum Slider - End
   // --------------------------------------------------
 
   // Videos & Images popup - Start

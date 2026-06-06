@@ -13,6 +13,7 @@ Este folder contiene la documentacion operativa para adaptar la descarga estatic
 7. `assets-plan.md`: assets Figma que se deben exportar y prioridad.
 8. `verification.md`: validacion minima antes de entregar cambios visuales.
 9. `html-section-inventory.md`: inventario de paginas HTML y secciones reutilizables.
+10. `svg-color-conversion.md`: referencia de color fuerte y luz para conversion de SVGs.
 
 ## Estado Actual
 

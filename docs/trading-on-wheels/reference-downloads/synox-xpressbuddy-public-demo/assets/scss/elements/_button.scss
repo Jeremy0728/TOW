@@ -55,6 +55,7 @@
 	}
 }
 .btn.btn-main {
+	--btn-main-shape: url(../images/shapes/btn_shape.webp);
 	padding: 26px 50px;
 	position: relative;
 	z-index: 1;
@@ -70,11 +71,28 @@
 		left: -302px;
 		width: 650px;
 		height: 650px;
-		background-image: url(../images/shapes/btn_shape.webp);
+		background-image: var(--btn-main-shape);
 		content: "";
 		z-index: -1;
 		background-repeat: no-repeat;
 		transition: .7s;
+	}
+	&.btn-main-blue {
+		--btn-main-shape: url(../images/shapes/btn_shape_blue.webp);
+		color: var(--bs-white) !important;
+		background-color: var(--tow-course) !important;
+	}
+	&.btn-main-green {
+		--btn-main-shape: url(../images/shapes/btn_shape_green.webp);
+		color: var(--bs-white) !important;
+		background-color: var(--tow-competitions-alt) !important;
+	}
+	&.btn-main-blue:hover,
+	&.btn-main-green:hover {
+		color: var(--bs-dark) !important;
+		svg path {
+			fill: var(--bs-dark);
+		}
 	}
 	&:hover::after {
 		transform: rotate(90deg);

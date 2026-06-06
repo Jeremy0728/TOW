@@ -3,11 +3,15 @@
 
 .tow-page {
 	--bs-body-font-family: var(--tow-font-body);
-	--bs-heading-font-family: var(--tow-font-body);
+	--bs-heading-font-family: var(--tow-font-display);
 
 	.hero_title,
 	.page_title,
 	.tow_process_number {
+		font-family: var(--tow-font-display);
+		font-weight: 400;
+	}
+	h2{
 		font-family: var(--tow-font-display);
 		font-weight: 400;
 	}

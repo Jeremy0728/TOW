@@ -47,6 +47,14 @@
 	}
 }
 
+@media screen and (min-width: 1800px) {
+	.tow-page {
+		.page_header {
+			background-position: center bottom;
+		}
+	}
+}
+
 .page_title {
 	font-size: 70px;
 	line-height: 90px;
@@ -68,11 +76,11 @@
 				width: 12px;
 				height: 2px;
 				position: absolute;
-				background-color: #C6C6C6;
+				background-color: #c6c6c6;
 			}
 		}
 		>a {
-			color: #C6C6C6;
+			color: var(--bs-secondary-color);
 		}
 		&:hover:not(.active) {
 			>a {

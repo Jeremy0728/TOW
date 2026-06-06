@@ -227,6 +227,245 @@
 		max-width: 370px;
 	}
 }
+.tow_pricing_section {
+	.pricing_blocks_wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.pricing_block.style_2 {
+		width: min(100%, 1290px);
+		align-items: center;
+	}
+	.pricing_info {
+		text-align: center;
+	}
+	.pricing_plan_description {
+		margin-top: 16px;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 26px;
+	}
+	.pricing_toggle_btn:disabled {
+		opacity: 1;
+		cursor: wait;
+	}
+	.pricing_amount,
+	.pricing_info,
+	.pricing_features {
+		will-change: opacity, transform, filter;
+		transition:
+			opacity 180ms ease,
+			transform 180ms ease,
+			filter 180ms ease;
+	}
+	&.is-plan-exiting {
+		.pricing_amount {
+			opacity: 0;
+			filter: blur(5px);
+			transform: translateX(-18px) scale(0.985);
+		}
+		.pricing_info {
+			opacity: 0;
+			filter: blur(4px);
+			transform: translateY(14px);
+		}
+		.pricing_features {
+			opacity: 0;
+			filter: blur(4px);
+			transform: translateX(18px);
+		}
+	}
+	&.is-plan-entering {
+		.pricing_amount {
+			animation: towPricingAmountIn 520ms cubic-bezier(0.2, 0.85, 0.25, 1) both;
+		}
+		.pricing_info {
+			animation: towPricingContentIn 460ms cubic-bezier(0.2, 0.85, 0.25, 1) 60ms both;
+		}
+		.pricing_features {
+			animation: towPricingFeaturesIn 460ms cubic-bezier(0.2, 0.85, 0.25, 1) 90ms both;
+			.iconlist_block > li {
+				animation: towPricingFeatureItemIn 360ms ease both;
+				animation-delay: calc(130ms + (var(--tow-feature-index, 0) * 42ms));
+			}
+		}
+	}
+	&[data-active-plan="premium"] {
+		.pricing_amount {
+			isolation: isolate;
+			overflow: hidden;
+			position: relative;
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.55),
+				inset 0 -22px 38px rgba(116, 72, 0, 0.24),
+				0 18px 46px rgba(var(--bs-primary-rgb), 0.18);
+			[class*="pricing_amount_"] {
+				z-index: 1;
+				position: relative;
+			}
+			&:before {
+				inset: -55% -45%;
+				content: "";
+				z-index: 0;
+				opacity: 1;
+				position: absolute;
+				transform: translateX(-48%) rotate(18deg);
+				will-change: transform;
+				background:
+					linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.42) 47%, transparent 62%),
+					linear-gradient(90deg, transparent 0%, rgba(105, 62, 0, 0.14) 52%, transparent 72%);
+				animation: towGoldLinearSheen 2.8s ease-in-out infinite;
+			}
+		}
+	}
+}
+
+.tow_course_pricing_section {
+	.pricing_amount {
+		isolation: isolate;
+		overflow: hidden;
+		position: relative;
+		color: var(--bs-white) !important;
+		background:
+			linear-gradient(135deg, #0b74d1 0%, var(--tow-course) 46%, #12326f 100%) !important;
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.28),
+			inset 0 -22px 40px rgba(0, 18, 60, 0.28),
+			0 18px 46px rgba(var(--tow-course-rgb), 0.24);
+		[class*="pricing_amount_"] {
+			z-index: 1;
+			position: relative;
+		}
+		&:before {
+			inset: -60% -48%;
+			content: "";
+			z-index: 0;
+			opacity: 0.95;
+			position: absolute;
+			transform: translateX(-48%) rotate(18deg);
+			will-change: transform;
+			background:
+				linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.34) 47%, transparent 64%),
+				linear-gradient(90deg, transparent 0%, rgba(10, 173, 193, 0.2) 50%, transparent 74%);
+			animation: towBlueLinearSheen 3s ease-in-out infinite;
+		}
+	}
+	.pricing_block .btn.bg-primary {
+		color: var(--bs-white) !important;
+		background-color: var(--tow-course) !important;
+		box-shadow: 0 14px 32px rgba(var(--tow-course-rgb), 0.28);
+		svg path {
+			fill: var(--bs-white);
+		}
+		&:hover {
+			color: var(--bs-dark) !important;
+			background-color: #0aadc1 !important;
+			svg path {
+				fill: var(--bs-dark);
+			}
+		}
+	}
+	.pricing_features .iconlist_block > li .iconlist_icon img {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+@keyframes towPricingAmountIn {
+	0% {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translateX(-22px) scale(0.985);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0) scale(1);
+	}
+}
+
+@keyframes towPricingContentIn {
+	0% {
+		opacity: 0;
+		filter: blur(4px);
+		transform: translateY(16px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes towPricingFeaturesIn {
+	0% {
+		opacity: 0;
+		filter: blur(4px);
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes towPricingFeatureItemIn {
+	0% {
+		opacity: 0;
+		transform: translateX(12px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes towBlueLinearSheen {
+	0% {
+		transform: translateX(-48%) rotate(18deg);
+	}
+	55% {
+		transform: translateX(48%) rotate(18deg);
+	}
+	100% {
+		transform: translateX(48%) rotate(18deg);
+	}
+}
+
+@keyframes towGoldLinearSheen {
+	0% {
+		transform: translateX(-48%) rotate(18deg);
+	}
+	55% {
+		transform: translateX(48%) rotate(18deg);
+	}
+	100% {
+		transform: translateX(48%) rotate(18deg);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tow_pricing_section[data-active-plan="premium"] {
+		.pricing_amount:before {
+			animation: none;
+		}
+	}
+	.tow_course_pricing_section {
+		.pricing_amount:before {
+			animation: none;
+		}
+	}
+	.tow_pricing_section {
+		.pricing_amount,
+		.pricing_info,
+		.pricing_features,
+		.pricing_features .iconlist_block > li {
+			transition: none;
+			animation: none;
+		}
+	}
+}
 .pricing_block {
 	.btn {
 		svg path {

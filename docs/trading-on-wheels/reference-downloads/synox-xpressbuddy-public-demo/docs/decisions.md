@@ -222,7 +222,25 @@ assets/scss/style.scss -> assets/css/style.css
 - Implicacion: el watch debe quedar corriendo mientras se editan parciales SCSS.
 - Nota: el template usa `@import`; Dart Sass lo compila, pero muestra warnings de deprecacion. No migrar a `@use` salvo tarea explicita porque cambiaria toda la arquitectura del SCSS.
 
+## 17. Referencia De Colores SVG
+
+- Estado: vigente.
+- Decision: `icon_discord.svg`, `icon_bars.svg` e `icon_learn.svg` son referencias de color para futuras conversiones de SVG.
+- Decision: conservar los paths del icono que se esta corrigiendo y cambiar solo `stop-color`, `fill` o `stroke`.
+- Decision: las conversiones de color de SVG deben quedar en degradado usando la luz y el color fuerte de la muestra; si el SVG original es plano, se le agrega un degradado SVG.
+- Mapeo vigente:
+  - Amarillo: fuerte `#FFC107`, luz `#FFDD75`.
+  - Azul: fuerte `#0754AE`, luz `#86DBE5`.
+  - Verde: fuerte `#07AE4D`, luz `#B4FBD2`.
+- Implicacion: cuando se pida cambiar un SVG a una familia de color, usar estos pares como guia.
+
 ## Registro De Cambios Importantes
+
+### 2026-06-06
+
+- Se documento `icon_discord.svg`, `icon_bars.svg` e `icon_learn.svg` como referencias de color fuerte y luz para conversiones futuras de SVG.
+- Se agrego `docs/svg-color-conversion.md` como guia para futuras conversiones de color de SVG.
+- Se enlazo la guia desde `docs/README.md`.
 
 ### 2026-06-05
 

@@ -295,7 +295,8 @@
 		align-items: center;
 		display: inline-flex;
 		justify-content: center;
-		background-color: var(--bs-dark);
+		background-color: var(--bs-secondary);
+		border: 2px solid var(--bs-border-color);
 		img {
 			max-height: 36px;
 		}
@@ -326,6 +327,57 @@
 				position: absolute;
 				display: inline-block;
 				background-color: var(--bs-border-color);
+			}
+		}
+	}
+}
+
+.tow_course_curriculum_slider {
+	overflow: hidden;
+	padding-bottom: 4px;
+	.policy_items.process_steps_block {
+		gap: 0;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		justify-content: flex-start !important;
+	}
+	.policy_items.process_steps_block > li {
+		width: auto;
+		height: auto;
+		display: block;
+		max-width: none;
+		padding-right: 40px;
+	}
+	.policy_items.process_steps_block > li:not(:last-child):after {
+		top: 0;
+		right: 0;
+		height: 100%;
+	}
+	.step_block_icon {
+		margin-bottom: 24px;
+	}
+	.step_block_title {
+		margin-top: 0;
+		max-width: 290px;
+	}
+	p {
+		max-width: 310px;
+	}
+	.tow_course_curriculum_dots.swiper-pagination-bullets {
+		gap: 9px;
+		padding-top: 42px;
+	}
+	.tow_course_curriculum_dots {
+		.swiper-pagination-bullet {
+			width: 9px;
+			height: 9px;
+			border-color: rgba(255, 255, 255, 0.52);
+			background-color: rgba(255, 255, 255, 0.18);
+			&.swiper-pagination-bullet-active {
+				width: 28px;
+				border-radius: 99px;
+				border-color: var(--bs-primary);
+				background-color: var(--bs-primary);
 			}
 		}
 	}

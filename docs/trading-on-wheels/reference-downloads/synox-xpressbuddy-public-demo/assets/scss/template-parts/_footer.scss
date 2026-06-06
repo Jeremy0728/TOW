@@ -23,6 +23,7 @@
 		margin-bottom: 30px;
 		a {
 			font-family: 'SuisseIntl Medium';
+			font-size: 16px;
 			&:hover {
 				.iconlist_text {
 					text-decoration: underline;
@@ -92,10 +93,10 @@
 		padding: 87px 0;
 	}
 	.footer_info_title {
-		color: #C6C6C6;
+		color: var(--bs-primary);
 		line-height: 1;
 		font-size: 16px;
-		font-weight: 600;
+		font-weight: 400;
 		margin-bottom: 29px;
 		padding-bottom: 27px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.1);

@@ -31,6 +31,18 @@
 	}
 }
 
+.tow-page {
+	.site_header .site_logo .site_link {
+		display: inline-flex;
+		align-items: center;
+		max-height: 45px;
+		img {
+			width: auto;
+			max-height: 45px;
+		}
+	}
+}
+
 @media screen and (min-width: 992px) {
 	.tow-page {
 		.site_header .site_logo .site_link {
