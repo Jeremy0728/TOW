@@ -14,6 +14,8 @@ Este folder contiene la documentacion operativa para adaptar la descarga estatic
 8. `verification.md`: validacion minima antes de entregar cambios visuales.
 9. `html-section-inventory.md`: inventario de paginas HTML y secciones reutilizables.
 10. `svg-color-conversion.md`: referencia de color fuerte y luz para conversion de SVGs.
+11. `synox-export-index.md`: indice del export de textos, secciones y assets candidatos.
+12. `future-project-intake.md`: primera pasada recomendada para los proximos templates.
 
 ## Estado Actual
 
@@ -42,3 +44,5 @@ Este folder contiene la documentacion operativa para adaptar la descarga estatic
 - Si cambia una decision, actualizar `docs/decisions.md`.
 - Si cambia la fase de trabajo, actualizar `docs/current-phase.md`.
 - Assets descargados desde Figma/MCP se guardan primero en `assets/images/figma/`.
+- Para reutilizar copy o secciones Synox, revisar primero `exports/synox-content/`.
+- Para elegir imagenes candidatas, revisar `exports/assets-candidates/*/manifest.md`.

@@ -1,0 +1,4131 @@
+# Synox Original Content Export
+
+Texto visible extraido desde `origin/*.html`, agrupado por pagina y seccion. El texto esta normalizado para lectura y el JSON conserva la misma estructura para busquedas o automatizacion.
+
+Paginas procesadas: 17
+Secciones detectadas: 106
+
+## blog_details.html
+
+- Title: Blog Details – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/blog_details.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/blog_details.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Blog Details
+- Links/buttons:
+  - Home -> index.html
+  - Blog Details -> #!
+- Text:
+  - Blog Details
+  - Home
+  - Blog Details
+
+### 3. section.blog_details_section.section_space.bg-light
+
+- Source: `origin/blog_details.html:200`
+- Images/media: `assets/images/blogs/blog_details_image_1.webp`, `assets/images/icons/icon_tag.svg`, `assets/images/icons/icon_calendar.svg`, `assets/images/icons/icon_user.svg`, `assets/images/icons/icon_comment.svg`, `assets/images/icons/icon_eye.svg`, `assets/images/icons/icon_link.svg`, `assets/images/icons/icon_bookmark.svg`, `assets/images/blogs/blog_image_10.webp`, `assets/images/blogs/blog_image_11.webp`, `assets/images/blogs/blog_image_12.webp`, `assets/images/avatar/avatar_image_7.webp`, `assets/images/avatar/avatar_image_8.webp`, `assets/images/avatar/avatar_image_9.webp`, `assets/images/avatar/avatar_image_10.webp`, `assets/images/icons/icon_search_2.svg`, `assets/images/blogs/recent_blog_post_image_1.webp`, `assets/images/blogs/recent_blog_post_image_2.webp`, `assets/images/blogs/recent_blog_post_image_3.webp`
+- Headings:
+  - h2: Tax Planning Made Easy Expert Tips to Minimize Your Tax Burden and Maximize Savings.
+  - h3: Practical Advice for Financial Freedom Finances Strategies for Effective Tax Management.
+  - h3: Sample Heading
+  - h3: 3 Reasons to investing at this moment
+  - h4: About Anderson
+  - h3: Comments (3)
+  - h4: John Smith
+  - h4: Daniel Garcia
+  - h4: John Smith
+  - h4: John Smith
+  - h3: Leave a reply
+  - h3: Search
+  - h3: Categories
+  - h3: Recent Posts
+  - h3: Tags
+- Links/buttons:
+  - Solution and Tips -> #!
+  - March 24, 2024 -> #!
+  - by Madura -> #!
+  - 50 Comments -> #!
+  - 20k Views -> #!
+  - Copy Link -> #!
+  - Bookmark -> #!
+  - 6:24 Listen to this article!
+  - Tax -> #!
+  - Retirement -> #!
+  - investments -> #!
+  - Investing in Your Child's for Future Save Dec 24, 2024 -> #!
+  - Expert Tips and Proven Strategies Nov 28, 2024 -> #!
+  - Reply -> #!
+  - Reply -> #!
+  - Reply -> #!
+  - Reply -> #!
+  - Post Comment
+  - Investment 05 -> #
+  - Financial Consulting 03 -> #
+  - Retainment Plane 05 -> #
+  - Tax-Efficient Investing 02 -> #
+  - Risk Management 04 -> #
+  - Marketing 05 -> #
+  - July 25, 2024 Valuable Insights and Expert from to.. -> #!
+  - July 25, 2024 Valuable Insights and Expert from to.. -> #!
+  - July 25, 2024 Valuable Insights and Expert from to.. -> #!
+  - Tax -> #!
+  - Retirement -> #!
+  - Investments -> #!
+  - Diversify -> #!
+  - Real Estate -> #!
+  - Finance -> #!
+  - Sustainable -> #!
+  - Advisor -> #!
+  - Planning -> #!
+  - GrowWealth -> #!
+  - RetirementGoals -> #!
+- Text:
+  - Solution and Tips
+  - March 24, 2024
+  - Tax Planning Made Easy Expert Tips to Minimize Your Tax Burden and Maximize Savings.
+  - Navigating the complexities of tax laws can be daunting, but with the right strategies, you can effectively minimize your tax burden and optimize your savings. Our expert team provides accessible and actionable tax planning a breeze.
+  - by Madura
+  - 50 Comments
+  - 20k Views
+  - Copy Link
+  - Bookmark
+  - 6:24
+  - Listen to this article!
+  - Practical Advice for Financial Freedom Finances Strategies for Effective Tax Management.
+  - Achieving financial freedom requires a strategic approach to managing your finances, and effective tax management plays a crucial role in this journey. By implementing, you can minimize your tax burden and maximize your savings, you closer to your goals of financial independence. From deductions and credits to optimizing retirement account contributions, advice equips you with the tools you need to navigate.
+  - In the pursuit of financial freedom, mastering the art of tax management is paramount. Our expert guidance provides actionable strategies to navigate the intricate tax landscape with ease. From leveraging tax-deferred investment vehicles to exploring deductions and credits, we equip you with the knowledge and tools to optimize your tax situation. By implementing these proven strategies, you can minimize your tax.
+  - Sample Heading
+  - Embark on a journey towards financial freedom with our comprehensive tax planning solutions. Our team of experts specializes in navigating the complexities of tax laws to ensure you're making the most of your hard-earned money. From personalized tax optimization strategies to proactive planning techniques, we empower you to minimize your tax burden and maximize your savings. With our guidance.
+  - Personalized Consultations
+  - Emphasis on Compliance
+  - Strategic Tax Planning
+  - Year-Round Support
+  - Emphasis on Compliance
+  - Dedicated Support Team
+  - 3 Reasons to investing at this moment
+  - Here are three key reasons emphasizing the importance of optimizing ICO infrastructure for efficiency and growth:
+  - 1. Growth Potential: Opportunities arise in undervalued assets.
+  - 2. Compound Returns: Early investment yields long-term gains.
+  - 3. Risk Mitigation: Diversifying assets minimizes risk.
+  - Tax
+  - Retirement
+  - investments
+  - About Anderson
+  - Content Editor
+  - A content editor plays a pivotal role in shaping and refining the narrative and quality of digital content. This role involves.
+  - Investing in Your Child's for Future Save
+  - Dec 24, 2024
+  - Expert Tips and Proven Strategies
+  - Nov 28, 2024
+  - Comments (3)
+  - John Smith
+  - Dec 24, 2024 at 10:21am
+  - "Working with Techco has been a game-changer. Their innovative IT solutions boosted our efficiency tenfold. Highly recommend!"
+  - Reply
+  - Daniel Garcia
+  - Dec 24, 2024 at 10:21am
+  - "Our experience with Techco has been exceptional. Their commitment to customer satisfaction stands out. Grateful for their partnership."
+  - Reply
+  - John Smith
+  - Dec 24, 2024 at 10:21am
+  - "Working with Techco has been a game-changer. Their innovative IT solutions boosted our efficiency tenfold. Highly recommend!"
+  - Reply
+  - John Smith
+  - Dec 24, 2024 at 10:21am
+  - "Working with Techco has been a game-changer. Their innovative IT solutions boosted our efficiency tenfold. Highly recommend!"
+  - Reply
+  - Leave a reply
+  - Your email address will not be published. Required fields are marked *
+  - Name
+  - Email
+  - Cover Letter
+  - Save my name, email, and website in this browser for the next time I comment.
+  - Post Comment
+  - Search
+  - Categories
+  - Investment
+  - 05
+  - Financial Consulting
+  - 03
+  - Retainment Plane
+  - 05
+  - Tax-Efficient Investing
+  - 02
+  - Risk Management
+  - 04
+  - Marketing
+  - 05
+  - Recent Posts
+  - July 25, 2024
+  - Valuable Insights and Expert from to..
+  - July 25, 2024
+  - Valuable Insights and Expert from to..
+  - July 25, 2024
+  - Valuable Insights and Expert from to..
+  - Tags
+  - Tax
+  - Retirement
+  - Investments
+  - Diversify
+  - Real Estate
+  - Finance
+  - Sustainable
+  - Advisor
+  - Planning
+  - GrowWealth
+  - RetirementGoals
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/blog_details.html:724`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## blog.html
+
+- Title: Blog – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/blog.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/blog.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Blog
+- Links/buttons:
+  - Home -> index.html
+  - Blog -> #!
+- Text:
+  - Blog
+  - Home
+  - Blog
+
+### 3. section.blog_section.section_space
+
+- Source: `origin/blog.html:200`
+- Images/media: `assets/images/blogs/blog_image_1.webp`, `assets/images/icons/icon_tag.svg`, `assets/images/icons/icon_calendar.svg`, `assets/images/blogs/blog_image_2.webp`, `assets/images/blogs/blog_image_3.webp`, `assets/images/blogs/blog_image_4.webp`, `assets/images/blogs/blog_image_5.webp`, `assets/images/blogs/blog_image_6.webp`, `assets/images/blogs/blog_image_7.webp`, `assets/images/blogs/blog_image_8.webp`, `assets/images/blogs/blog_image_9.webp`
+- Headings:
+  - h3: Comprehensive Guidance and Tactics from to Empower.
+  - h3: Tax Planning Made Easy Expert Tips to Minimize Your Tax.
+  - h3: Maximizing Strategies Effective for Wealth Management.
+  - h3: Comprehensive Financial and Forward-Thinking Strategies.
+  - h3: Expert Tips and Proven Strategies by Finto to Safeguard Your.
+  - h3: Investing in Your Child's for Future Save for Education Expenses.
+  - h3: Valuable Insights and Expert from to Propel Your Investment.
+  - h3: Maximizing Your Wealth Potential Strategies by Finto.
+  - h3: Actionable Steps and Tailored Solutions from to Accelerate.
+- Links/buttons:
+  - Help and Tips -> #!
+  - March 24, 2024 -> #!
+  - Comprehensive Guidance and Tactics from to Empower. -> blog_details.html
+  - Read More -> blog_details.html
+  - Help and Tips -> #!
+  - June 15, 2024 -> #!
+  - Tax Planning Made Easy Expert Tips to Minimize Your Tax. -> blog_details.html
+  - Read More -> blog_details.html
+  - Wealth and Tips -> #!
+  - July 22, 2024 -> #!
+  - Maximizing Strategies Effective for Wealth Management. -> blog_details.html
+  - Read More -> blog_details.html
+  - Finance -> #!
+  - August 15, 2024 -> #!
+  - Comprehensive Financial and Forward-Thinking Strategies. -> blog_details.html
+  - Read More -> blog_details.html
+  - Finance and Tips -> #!
+  - July 22, 2024 -> #!
+  - Expert Tips and Proven Strategies by Finto to Safeguard Your. -> blog_details.html
+  - Read More -> blog_details.html
+  - Help and Tips -> #!
+  - September 24, 2024 -> #!
+  - Investing in Your Child's for Future Save for Education Expenses. -> blog_details.html
+  - Read More -> blog_details.html
+  - Invest and Tips -> #!
+  - March 24, 2024 -> #!
+  - Valuable Insights and Expert from to Propel Your Investment. -> blog_details.html
+  - Read More -> blog_details.html
+  - Help and Tips -> #!
+  - August 12, 2024 -> #!
+  - Maximizing Your Wealth Potential Strategies by Finto. -> blog_details.html
+  - Read More -> blog_details.html
+  - Solution and Tips -> #!
+  - March 24, 2024 -> #!
+  - Actionable Steps and Tailored Solutions from to Accelerate. -> blog_details.html
+  - Read More -> blog_details.html
+- Text:
+  - Help and Tips
+  - March 24, 2024
+  - Comprehensive Guidance and Tactics from to Empower.
+  - Read More
+  - Help and Tips
+  - June 15, 2024
+  - Tax Planning Made Easy Expert Tips to Minimize Your Tax.
+  - Read More
+  - Wealth and Tips
+  - July 22, 2024
+  - Maximizing Strategies Effective for Wealth Management.
+  - Read More
+  - Finance
+  - August 15, 2024
+  - Comprehensive Financial and Forward-Thinking Strategies.
+  - Read More
+  - Finance and Tips
+  - July 22, 2024
+  - Expert Tips and Proven Strategies by Finto to Safeguard Your.
+  - Read More
+  - Help and Tips
+  - September 24, 2024
+  - Investing in Your Child's for Future Save for Education Expenses.
+  - Read More
+  - Invest and Tips
+  - March 24, 2024
+  - Valuable Insights and Expert from to Propel Your Investment.
+  - Read More
+  - Help and Tips
+  - August 12, 2024
+  - Maximizing Your Wealth Potential Strategies by Finto.
+  - Read More
+  - Solution and Tips
+  - March 24, 2024
+  - Actionable Steps and Tailored Solutions from to Accelerate.
+  - Read More
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/blog.html:557`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## career_details.html
+
+- Title: Career Details – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 5
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/career_details.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/career_details.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Career Details
+- Links/buttons:
+  - Home -> index.html
+  - Career Details -> #!
+- Text:
+  - Career Details
+  - Home
+  - Career Details
+
+### 3. section.career_details_section.section_space.pb-0
+
+- Source: `origin/career_details.html:200`
+- Headings:
+  - h2: Technical Project Manager - (Full-Time)
+  - h3: What you'll get to do...
+  - h3: Your experience should include...
+  - h3: You might also have...
+  - h3: Great Benefits...
+- Text:
+  - Technical Project Manager - (Full-Time)
+  - Department:
+  - Technical Project Manager
+  - No. of Openings:
+  - (3)
+  - Job Type:
+  - Full-Time
+  - Location:
+  - Warsaw, Poland
+  - Salary range:
+  - $80k to $100k (Based on your experience).
+  - Working days:
+  - Weekly 05 days. Sunday To Thursday. 09 AM to 06 PM.(Launch Break 01 Hour)
+  - Application Deadline:
+  - November 10, 2024
+  - Experience Required:
+  - 5+ Years
+  - We’re looking for a Technical Project Manager and knowledgeable Product Designer to join our technical team in Warsaw, Poland. You’ll be expected to utilize bleeding-edge technology and robust techniques. You should be an excellent communicator and comfortable managing multiple tasks. you also need to be a team player and have a problem-solving aptitude.
+  - Working quickly and creatively should come naturally to you, as well as being an innovative problem-solver who takes pride in producing logical, simple, and effective solutions to what are often very new and complex issues.
+  - What you'll get to do...
+  - Refactor current code to service-oriented architecture
+  - Collaborate with a unique background of engineering, product, and operations team members to deliver the best solution for our customers
+  - Solve technical problems that few have solved before – no one else helps local businesses the way we do
+  - Participate in the decision-making progress – we want you to speak up
+  - Mentor your team members to share your passion for software, your appreciation for engineering field, and your respect.
+  - Take on the challenge of making what you build higher quality, faster, and more scalable
+  - Participate in on-call rotation
+  - Your experience should include...
+  - 6+ years of previous professional Proficient Project Management experience
+  - Technical Expertise: Solid understanding for effective communication.
+  - Stakeholder Management: Track record of ensuring alignment and success.
+  - Agile Methodologies: Hands-on experience in Agile frameworks.
+  - Risk Management: Skill in identifying and mitigating project risks.
+  - Team Leadership: Ability to motivate diverse teams.
+  - Communication Skills: Strong ability to convey technical concepts.
+  - Problem-Solving: Proactive approach to implement solutions.
+  - Quality Assurance: Experience in ensuring deliverable standards.
+  - You might also have...
+  - Experience with AWS
+  - Experience building CI/CD and server/deployment automation solutions
+  - Experience with open-source puppet, infrastructure-as-code
+  - Passion for technology
+  - You have high standards and want to make a difference with your work
+  - You are always trying to improve
+  - Great Benefits...
+  - Company-wide 401(k) plan
+  - Life & disability insurance offered
+  - Competitive compensation—salary, bonus, equity
+  - Medical, dental, and vision; flex spending account
+  - Flexible paid time off & sick leave
+
+### 4. section.job_apply_section.section_space
+
+- Source: `origin/career_details.html:492`
+- Headings:
+  - h3: Apply for This Job
+- Links/buttons:
+  - Submit Now
+- Text:
+  - Apply for This Job
+  - Synox doesn’t accept unsolicited resumes from recruiters or employment agencies.
+  - Name
+  - Email
+  - Phone
+  - Address
+  - What is your expected salary?
+  - Cover Letter
+  - Resume / CV
+  - Accepted file types:
+  - pdf, doc, jpg, Max. file size: 15 MB.
+  - Submit Now
+
+### 5. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/career_details.html:566`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## career.html
+
+- Title: Career – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/career.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/career.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Career
+- Links/buttons:
+  - Home -> index.html
+  - Career -> #!
+- Text:
+  - Career
+  - Home
+  - Career
+
+### 3. section.career_section.section_space.bg-light
+
+- Source: `origin/career.html:200`
+- Headings:
+  - h2: Your Career Starts Here
+  - h3: Customer Success Manager
+  - h3: Technical Project Manager
+  - h3: Cybersecurity Analyst
+  - h3: Systems Administrator
+  - h3: Marketing Lead
+  - h3: Marketing Administrator
+- Links/buttons:
+  - View All
+  - Development
+  - Design
+  - Marketing
+  - Customer Services
+  - Management
+  - View Job -> career_details.html
+  - View Job -> career_details.html
+  - View Job -> career_details.html
+  - View Job -> career_details.html
+  - View Job -> career_details.html
+  - View Job -> career_details.html
+- Text:
+  - Your Career Starts Here
+  - View All
+  - Development
+  - Design
+  - Marketing
+  - Customer Services
+  - Management
+  - Customer Success Manager
+  - Remote
+  - Full-time
+  - View Job
+  - Technical Project Manager
+  - Remote
+  - Full-time
+  - View Job
+  - Cybersecurity Analyst
+  - Remote
+  - Full-time
+  - View Job
+  - Systems Administrator
+  - Remote
+  - Full-time
+  - View Job
+  - Marketing Lead
+  - Remote
+  - Full-time
+  - View Job
+  - Marketing Administrator
+  - Remote
+  - Full-time
+  - View Job
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/career.html:381`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## contact.html
+
+- Title: Contact Us – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/contact.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/contact.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Contact Us
+- Links/buttons:
+  - Home -> index.html
+  - Contact Us -> #!
+- Text:
+  - Contact Us
+  - Home
+  - Contact Us
+
+### 3. section.contact_section.section_space.bg-light
+
+- Source: `origin/contact.html:200`
+- Images/media: `assets/images/icons/icon_calling_3.svg`, `assets/images/icons/icon_email_3.svg`
+- Headings:
+  - h2: Send us a Message
+  - h3: Contact Info
+- Links/buttons:
+  - Send Message
+  - +88 (0) 101 0000 000 -> tel:+8801010000000
+  - synox@examplemail.com -> mailto:synox@examplemail.com
+- Text:
+  - Send us a Message
+  - Give us chance to serve and bring magic to your Finance.
+  - Name
+  - Email
+  - Phone
+  - Cover Letter
+  - Send Message
+  - Contact Info
+  - +88 (0) 101 0000 000
+  - synox@examplemail.com
+  - United states office:
+  - Sunshine Business park, Floor No 05A,Sector-94,
+  - United kingdom office:
+  - 12 Buckingham Rd, thorn Thwaite, HG3 4 TY, UK Contact
+  - Our Office Ppen Time:
+  - Mon - Sat: 8.00-5.00
+  - Sunday: Closed
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/contact.html:322`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## error.html
+
+- Title: 404 – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 1
+
+### 1. section.error_section.text-center.section_decoration
+
+- Source: `origin/error.html:52`
+- Images/media: `assets/images/404_error_image.webp`, `assets/images/icons/icon_search_2.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`
+- Headings:
+  - h1: Hi 👋 Sorry We Can’t Find That Page!
+- Links/buttons:
+  - Take Me Home -> index.html
+- Text:
+  - Hi 👋 Sorry We Can’t Find That Page!
+  - The page you are looking for was moved, removed, renamed or never existed.
+  - Take Me Home
+
+## index_car_insurance.html
+
+- Title: Car Insurance – Synox – Finance & Consulting Site Template.
+- Body class: car_insurance bg-light
+- Sections detected: 8
+
+### 1. header.site_header.header_layout_3
+
+- Source: `origin/index_car_insurance.html:56`
+- Images/media: `assets/images/site_logo/site_logo_black_2.svg`, `assets/images/icons/icon_calling_7.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.hero_section.hero_car_insurance.bg-primary.section_decoration
+
+- Source: `origin/index_car_insurance.html:164`
+- Images/media: `assets/images/shapes/shape_car_path_1.png`, `assets/images/hero/car.png`, `assets/images/clients/client_logo_30.webp`, `assets/images/clients/client_logo_31.webp`, `assets/images/shapes/shape_nate_36.svg`
+- Headings:
+  - h1: Elevate Your Drive with Trusted Car Insurance!
+  - h3: Get a Free Quote Now
+- Links/buttons:
+  - Find the Right Insurance -> contact.html
+  - Submit Now
+- Text:
+  - Elevate Your Drive with Trusted Car Insurance!
+  - Drive with Peace of Mind: Unleash the Power of Reliable Car Insurance!
+  - Find the Right Insurance
+  - Rated 4.8 stars by customers on
+  - Get a Free Quote Now
+  - State
+  - Volvo
+  - Saab
+  - Mercedes
+  - Audi
+  - Zip Code
+  - Volvo
+  - Saab
+  - Mercedes
+  - Audi
+  - Submit Now
+
+### 3. section.car_process_section.section_space.section_decoration
+
+- Source: `origin/index_car_insurance.html:249`
+- Images/media: `assets/images/icons/icon_phone.svg`, `assets/images/icons/icon_car_2.svg`, `assets/images/icons/icon_doc_2.svg`, `assets/images/shapes/shape_nate_37.svg`, `assets/images/shapes/shape_nate_38.svg`
+- Headings:
+  - h2: Get Insured In 3 Easy Steps
+  - h3: Create Your Account
+  - h3: Choose The Best Car
+  - h3: Manage Your Policy
+- Text:
+  - Get Insured In 3 Easy Steps
+  - Create Your Account
+  - Join Synox today! Creating your account is fast and easy.
+  - Choose The Best Car
+  - Choosing the best car depends on factors such as your budget
+  - Manage Your Policy
+  - We value the convenience and of comes managing your policy.
+
+### 4. section.car_insurance_feature_section.section_space.pb-0.section_decoration
+
+- Source: `origin/index_car_insurance.html:312`
+- Images/media: `assets/images/icons/icon_check_3.svg`, `assets/images/icons/icon_close.svg`, `assets/images/shapes/shape_car_path_2.webp`, `assets/images/shapes/shape_car_path_3.webp`
+- Headings:
+  - h2: That Makes Us the Best Car Insurance Provider
+- Text:
+  - That Makes Us the Best Car Insurance Provider
+  - Advance Features
+  - Comprehensive
+  - Third-Party
+  - Instant Online Buying
+  - No Hidden Fees
+  - Save Time And Money
+  - 100% Independent
+  - Compare Cost And Futures
+  - Aveilable 24/7
+  - No Claim Bonus
+  - Claim Settlement Ratio
+  - Own Damage Cover
+  - Third party’s death or injury
+
+### 5. section.car_insurance_cta_section.section_decoration.bg-gradient.bg-primary
+
+- Source: `origin/index_car_insurance.html:524`
+- Images/media: `assets/images/about/about_image_10.webp`, `assets/images/clients/client_logo_32.webp`, `assets/images/clients/client_logo_33.webp`, `assets/images/clients/client_logo_34.webp`, `assets/images/clients/client_logo_35.webp`, `assets/images/about/about_image_11.webp`, `assets/images/icons/icon_chat_2.svg`, `assets/images/avatar/avatar_image_8.webp`, `assets/images/shapes/shape_nate_38.svg`, `assets/images/shapes/shape_nate_39.svg`
+- Headings:
+  - h3: Do it Yourself
+  - h3: Full Service
+- Links/buttons:
+  - Compare Quotes Online -> contact.html
+  - Connect With an Expert -> contact.html
+- Text:
+  - Do it Yourself
+  - Compare quotes, choose your policy, and get same-day coverage in a few clicks.
+  - Compare Quotes Online
+  - $
+  - 99
+  - /mo
+  - $
+  - 80
+  - /mo
+  - $
+  - 95
+  - /mo
+  - $
+  - 85
+  - /mo
+  - Full Service
+  - Send us your current policy, and our agents will find a better fit for you.
+  - Connect With an Expert
+
+### 6. section.review_section.section_space.section_decoration.bg-primary
+
+- Source: `origin/index_car_insurance.html:622`
+- Images/media: `assets/images/clients/client_logo_9.webp`, `assets/images/clients/client_logo_36.webp`, `assets/images/avatar/avatar_image_1.webp`, `assets/images/avatar/avatar_image_2.webp`, `assets/images/avatar/avatar_image_3.webp`, `assets/images/avatar/avatar_image_4.webp`, `assets/images/shapes/shape_car_path_2.webp`, `assets/images/shapes/shape_car_path_3.webp`, `assets/images/shapes/shape_nate_36.svg`
+- Headings:
+  - h2: Highly rated 4.9 out of 5 by 1200+ entrepreneurs just like synox
+  - h3: Reynolds Anthony
+  - h3: Tomasz Adam
+  - h3: Reynolds Anthony
+  - h3: Tomasz Adam
+  - h3: Reynolds Anthony
+  - h3: Tomasz Adam
+  - h3: Tomasz Adam
+  - h3: Tomasz Adam
+  - h3: Tomasz Adam
+  - h3: Piotr Łukasz
+  - h3: Eleanor Emily
+  - h3: Piotr Łukasz
+  - h3: Eleanor Emily
+  - h3: Piotr Łukasz
+  - h3: Eleanor Emily
+  - h3: Eleanor Emily
+  - h3: Eleanor Emily
+  - h3: Eleanor Emily
+- Text:
+  - Highly rated 4.9 out of 5 by 1200+ entrepreneurs just like synox
+  - Join the ranks of over 1200 entrepreneurs who have entrusted us with their insurance needs and our exceptional service firsthand.
+  - 5.0
+  - 26 Reviews
+  - 4.8
+  - 26 Reviews
+  - Reynolds Anthony
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Reynolds Anthony
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Reynolds Anthony
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Piotr Łukasz
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Piotr Łukasz
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Piotr Łukasz
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+
+### 7. section.blog_section.section_space.section_decoration
+
+- Source: `origin/index_car_insurance.html:999`
+- Images/media: `assets/images/blogs/blog_image_19.webp`, `assets/images/blogs/blog_image_20.webp`, `assets/images/blogs/blog_image_21.webp`
+- Headings:
+  - h2: Our Latest Article
+  - h3: Subscription Billing Simplifying Recurring Payments for.
+  - h3: Global Payment Trends Adapting to the Changing Landscape.
+  - h3: The Role of Blockchain Technology in Payment Solutions.
+- Links/buttons:
+  - Business -> #!
+  - March 24, 2024 -> #!
+  - Subscription Billing Simplifying Recurring Payments for. -> blog_details.html
+  - Fintech -> #!
+  - March 24, 2024 -> #!
+  - Global Payment Trends Adapting to the Changing Landscape. -> blog_details.html
+  - Business -> #!
+  - March 24, 2024 -> #!
+  - The Role of Blockchain Technology in Payment Solutions. -> blog_details.html
+  - View All News -> blog.html
+- Text:
+  - Our Latest Article
+  - Business
+  - March 24, 2024
+  - Subscription Billing Simplifying Recurring Payments for.
+  - Fintech
+  - March 24, 2024
+  - Global Payment Trends Adapting to the Changing Landscape.
+  - Business
+  - March 24, 2024
+  - The Role of Blockchain Technology in Payment Solutions.
+  - View All News
+
+### 8. footer.site_footer.footer_layout_6.bg-secondary.section_space
+
+- Source: `origin/index_car_insurance.html:1110`
+- Images/media: `assets/images/shapes/shape_nate_40.svg`, `assets/images/site_logo/site_logo_white_2.svg`, `assets/images/about/hand_image.webp`, `assets/images/icons/icon_email_4.svg`, `assets/images/shapes/shape_car_path_4.webp`, `assets/images/shapes/shape_car_path_5.webp`
+- Headings:
+  - h2: Download and Enjoy the Experience
+  - h3: Write to Us
+  - h3: Call Us
+  - h3: Useful Links
+  - h3: Useful Links
+- Links/buttons:
+  - Apple iOS -> #!
+  - Android -> #!
+  - Process -> #!
+  - Features -> #!
+  - Testimonial -> #!
+  - News -> #!
+  - Contact -> #!
+  - Process -> #!
+  - Features -> #!
+  - Testimonial -> #!
+  - News -> #!
+  - Contact -> #!
+- Text:
+  - Mobile App 2.0
+  - NEW
+  - Download and Enjoy the Experience
+  - Apple iOS
+  - Android
+  - Write to Us
+  - Synox@gmail.com
+  - Call Us
+  - +(1) 1230 452 8597
+  - Useful Links
+  - Process
+  - Features
+  - Testimonial
+  - News
+  - Contact
+  - Useful Links
+  - Process
+  - Features
+  - Testimonial
+  - News
+  - Contact
+  - Copyright © 2024 Synox, All rights reserved.
+
+## index_financial_consulting.html
+
+- Title: Financial Consulting – Synox – Finance & Consulting Site Template.
+- Body class: financial_consulting
+- Sections detected: 12
+
+### 1. header.site_header.header_layout_2
+
+- Source: `origin/index_financial_consulting.html:56`
+- Images/media: `assets/images/site_logo/site_logo_black_3.svg`, `assets/images/icons/icon_calling_4.svg`, `assets/images/flags/flag_usa.webp`, `assets/images/flags/flag_saudi_arabia.webp`, `assets/images/flags/flag_bangladesh.webp`, `assets/images/flags/flag_portugal.webp`
+- Links/buttons:
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+  - English
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Login -> #!
+- Text:
+  - Working Hours: Monday - Friday 10:00 AM - 7:00 PM
+  - Hotline: (800) 555‑0199
+  - English
+  - Arabic
+  - Bangali
+  - English
+  - Portuguese
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Login
+
+### 2. section.offcanvas_wrapper
+
+- Source: `origin/index_financial_consulting.html:216`
+- Images/media: `assets/images/icons/icon_calling_4.svg`, `assets/images/icons/icon_mail.svg`
+- Headings:
+  - h2: Your Path to Financial Success Starts Here
+  - h3: Need Help?
+  - h3: Social Networks
+- Links/buttons:
+  - Book a Meeting -> contact.html
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+- Text:
+  - Your Path to Financial Success Starts Here
+  - Our expert team is here to guide you every step of the way, helping you navigate the complexities of personal finance.
+  - Book a Meeting
+  - Need Help?
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Social Networks
+
+### 3. section.container-fluid
+
+- Source: `origin/index_financial_consulting.html:277`
+- Images/media: `assets/images/backgrounds/hero_bg_pattern_1.webp`, `assets/images/hero/hero_image_2.webp`
+- Headings:
+  - h1: Your Path to Financial Success Starts Here
+- Links/buttons:
+  - Book a Meeting -> contact.html
+- Text:
+  - Your Path to
+  - Financial
+  - Success Starts Here
+  - Our expert team is here to guide you every step of the way, helping you navigate the complexities of personal finance.
+  - Book a Meeting
+
+### 4. section.about_section.section_space.section_decoration.pb-0
+
+- Source: `origin/index_financial_consulting.html:401`
+- Images/media: `assets/images/icons/icon_check_2.svg`, `assets/images/about/about_image_4.webp`, `assets/images/shapes/shape_nate_3.svg`, `assets/images/shapes/shape_nate_4.svg`
+- Headings:
+  - h2: Building Trust Through Financial Expertise
+  - h4: Year of Experience.
+  - h4: Happy Clients.
+  - h4: Projects Succeed.
+- Links/buttons:
+  - About Us -> contact.html
+- Text:
+  - About Company
+  - Building Trust Through Financial Expertise
+  - We believe in building trust through our unwavering commitment to financial expertise.
+  - 100% Better results.
+  - Promise TimeLine Guarantee.
+  - About Us
+  - 0
+  - Year of Experience.
+  - 0
+  - K+
+  - Happy Clients.
+  - 0
+  - K+
+  - Projects Succeed.
+  - Expert Advisor
+  - Tax Consulting
+  - Expert Advisor
+  - Tax Consulting
+
+### 5. section.service_section.section_space.section_decoration
+
+- Source: `origin/index_financial_consulting.html:493`
+- Images/media: `assets/images/icons/icon_cog.svg`, `assets/images/icons/icon_dollar_4.svg`, `assets/images/icons/icon_dollar_5.svg`, `assets/images/icons/icon_dollar_6.svg`, `assets/images/icons/icon_hand.svg`, `assets/images/icons/icon_chair.svg`
+- Headings:
+  - h2: We can help you with
+  - h3: Corporate Finance Advisory
+  - h3: Business Financial Consulting
+  - h3: Education Funding Planning
+  - h3: Insurance Planning and Analysis
+  - h3: Investment Management Solutions
+  - h3: Retirement Planning Services
+- Links/buttons:
+  - Corporate Finance Advisory -> service_details.html
+  - Business Financial Consulting -> service_details.html
+  - Education Funding Planning -> service_details.html
+  - Insurance Planning and Analysis -> service_details.html
+  - Investment Management Solutions -> service_details.html
+  - Retirement Planning Services -> service_details.html
+  - More Services -> services.html
+- Text:
+  - Our Core Servcies
+  - We can help you with
+  - Corporate Finance Advisory
+  - Our corporate finance advisory services provide strategic financial guidance.
+  - Business Financial Consulting
+  - Our business financial consulting services offer tailored solutions.
+  - Education Funding Planning
+  - Securing futures through individuals strategic with financial preparation.
+  - Insurance Planning and Analysis
+  - Our expert team conducts a analysis existing of your insurance needs.
+  - Investment Management Solutions
+  - We provide investment management comprehensive support every step.
+  - Retirement Planning Services
+  - We offer comprehensive support at every stage of the retirement process.
+  - More Services
+
+### 6. section.team_section.section_space.pt-0
+
+- Source: `origin/index_financial_consulting.html:626`
+- Images/media: `assets/images/team/team_member_image_5.webp`, `assets/images/team/team_member_image_6.webp`, `assets/images/team/team_member_image_7.webp`, `assets/images/team/team_member_image_8.webp`
+- Headings:
+  - h2: Meet Our Consultant
+  - h3: Pavlo Bohdan
+  - h3: Emma Sophia
+  - h3: Serhiy Yaroslav
+  - h3: Jordan Eugenio
+- Text:
+  - Our Professionals
+  - Meet Our Consultant
+  - Meet our team of expert financial consultants ready to assist you on your financial journey. With specialized management,
+  - Pavlo Bohdan
+  - Investment Analys
+  - Emma Sophia
+  - Financial Advisor
+  - Serhiy Yaroslav
+  - Retirement Planner
+  - Jordan Eugenio
+  - Tax Consultant
+
+### 7. section.portfolio_section
+
+- Source: `origin/index_financial_consulting.html:767`
+- Images/media: `assets/images/projects/project_image_8.webp`, `assets/images/projects/project_image_9.webp`, `assets/images/projects/project_image_10.webp`, `assets/images/projects/project_image_11.webp`
+- Headings:
+  - h2: Our some Completed project list
+- Links/buttons:
+  - Book a Meeting -> contact.html
+  - Finance Consultancy Advisory -> project_details.html
+  - Finance Consultancy Advisory -> project_details.html
+  - Finance Consultancy Advisory -> project_details.html
+  - Finance Consultancy Advisory -> project_details.html
+- Text:
+  - Complete Projects
+  - Our some Completed project list
+  - Within our financial consulting agency, we take pride in track of successfully completed projects.
+  - Book a Meeting
+  - Finance Consultancy
+  - Advisory
+  - Finance Consultancy
+  - Advisory
+  - Finance Consultancy
+  - Advisory
+  - Finance Consultancy
+  - Advisory
+
+### 8. section.pricing_section.section_space.section_decoration
+
+- Source: `origin/index_financial_consulting.html:862`
+- Images/media: `assets/images/shapes/shape_nate_3.svg`, `assets/images/shapes/shape_nate_4.svg`
+- Headings:
+  - h2: We Offered Best Pricing
+  - h3: Basic plan: Financial Assessment
+  - h3: Featured Include:
+  - h3: Team plan: Personalized Financial Plan
+  - h3: Featured Include:
+  - h3: Enterprise plan: Ongoing Support and Review
+  - h3: Featured Include:
+- Links/buttons:
+  - 30% Billed Annually Billed Monthly
+  - Get The Plan Now -> pricing.html
+  - Get The Plan Now -> pricing.html
+  - Get The Plan Now -> pricing.html
+- Text:
+  - Flexible Pricing Plan
+  - We Offered Best Pricing
+  - 30%
+  - Billed Annually
+  - Billed Monthly
+  - $29.00
+  - Per Month
+  - $19.00
+  - Month (billed annually)
+  - Basic plan: Financial Assessment
+  - Get The Plan Now
+  - Featured Include:
+  - Financial Planning
+  - Investment Management
+  - Retirement Planning
+  - Tax Planning
+  - Risk Management
+  - $59.00
+  - Per Month
+  - $49.00
+  - Month (billed annually)
+  - Team plan: Personalized Financial Plan
+  - Get The Plan Now
+  - Featured Include:
+  - Financial Planning
+  - Investment Management
+  - Retirement Planning
+  - Tax Planning
+  - Risk Management
+  - $119.00
+  - Per Month
+  - $99.00
+  - Month (billed annually)
+  - Enterprise plan: Ongoing Support and Review
+  - Get The Plan Now
+  - Featured Include:
+  - Financial Planning
+  - Investment Management
+  - Retirement Planning
+  - Tax Planning
+  - Risk Management
+
+### 9. section.review_section.section_space.pt-0
+
+- Source: `origin/index_financial_consulting.html:1055`
+- Images/media: `assets/images/shapes/shape_pattern_4.svg`, `assets/images/icons/icon_quote.svg`, `assets/images/avatar/avatar_image_1.webp`, `assets/images/avatar/avatar_image_3.webp`, `assets/images/avatar/avatar_image_2.webp`
+- Headings:
+  - h2: What Clients Say About Us
+  - h3: Hawthorn Sage
+  - h3: Rosemary Violet
+  - h3: Reynolds anthony
+  - h3: Hawthorn Sage
+  - h3: Rosemary Violet
+  - h3: Reynolds anthony
+- Text:
+  - Our Reviews
+  - What Clients Say About Us
+  - "Synox Consulting Agency exceeded my expectations. Their tailored plan aligned perfectly with my goals. Highly recommended!"
+  - Hawthorn Sage
+  - Our Clients
+  - "Exceptional service from Synox Their team's expert advice and personalized helped me achieve my financial goals quickly."
+  - Rosemary Violet
+  - Our Clients
+  - "Selecting Synox was among my best decisions. Their clear advice, their support empowered me to make informed financial..."
+  - Reynolds anthony
+  - Our Clients
+  - "Synox Consulting Agency exceeded my expectations. Their tailored plan aligned perfectly with my goals. Highly recommended!"
+  - Hawthorn Sage
+  - Our Clients
+  - "Exceptional service from Synox Their team's expert advice and personalized helped me achieve my financial goals quickly."
+  - Rosemary Violet
+  - Our Clients
+  - "Selecting Synox was among my best decisions. Their clear advice, their support empowered me to make informed financial..."
+  - Reynolds anthony
+  - Our Clients
+
+### 10. section.contact_section
+
+- Source: `origin/index_financial_consulting.html:1193`
+- Images/media: `assets/images/about/about_image_5.webp`, `assets/images/icons/icon_target.svg`, `assets/images/icons/icon_mail.svg`, `assets/images/about/about_image_6.webp`
+- Headings:
+  - h3: Build a career at Synox!
+  - h3: Do you have questions or went more information?
+- Links/buttons:
+  - I Want to be Part of the Team -> career.html
+  - Send Message
+- Text:
+  - Our Mission
+  - Build a career at Synox!
+  - Revealing the talents and leaders of tomorrow.
+  - I Want to be Part of the Team
+  - Contact Us
+  - Do you have questions or went more information?
+  - Send Message
+
+### 11. section.blog_section.section_space.section_decoration
+
+- Source: `origin/index_financial_consulting.html:1284`
+- Images/media: `assets/images/blogs/blog_image_16.webp`, `assets/images/icons/icon_tag.svg`, `assets/images/icons/icon_calendar.svg`, `assets/images/blogs/blog_image_17.webp`, `assets/images/blogs/blog_image_18.webp`, `assets/images/shapes/shape_nate_3.svg`, `assets/images/shapes/shape_nate_4.svg`
+- Headings:
+  - h2: Our Latest Updates
+  - h3: Maximizing Strategies Effective for Wealth Management..
+  - h3: Tax Planning Made Easy Expert Tips to Minimize Your Tax..
+  - h3: Investing in Your Child's for Future Save for Education Expenses..
+- Links/buttons:
+  - Help and Tips -> #!
+  - March 24, 2024 -> #!
+  - Maximizing Strategies Effective for Wealth Management.. -> blog_details.html
+  - Read More -> service_details.html
+  - Finance and tax -> #!
+  - July 22, 2024 -> #!
+  - Tax Planning Made Easy Expert Tips to Minimize Your Tax.. -> blog_details.html
+  - Read More -> service_details.html
+  - Help and Tips -> #!
+  - March 24, 2024 -> #!
+  - Investing in Your Child's for Future Save for Education Expenses.. -> blog_details.html
+  - Read More -> service_details.html
+- Text:
+  - Our Blog Post
+  - Our Latest Updates
+  - Help and Tips
+  - March 24, 2024
+  - Maximizing Strategies Effective for Wealth Management..
+  - Read More
+  - Finance and tax
+  - July 22, 2024
+  - Tax Planning Made Easy Expert Tips to Minimize Your Tax..
+  - Read More
+  - Help and Tips
+  - March 24, 2024
+  - Investing in Your Child's for Future Save for Education Expenses..
+  - Read More
+
+### 12. footer.site_footer.footer_layout_4.section_decoration
+
+- Source: `origin/index_financial_consulting.html:1436`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/icons/icon_calling_5.svg`, `assets/images/icons/icon_map_mark.svg`, `assets/images/backgrounds/newslatter_bg_image_1.webp`, `assets/images/shapes/shape_nate_3.svg`
+- Headings:
+  - h2: Shall We Discuss Your Task?
+  - h3: Write to us
+  - h3: Call Us (USA)
+  - h3: Our Office
+  - h2: Subscribe to The Free Newsletter to Receive The Latest News
+  - h3: Quick Links
+  - h3: Useful Links
+  - h3: Our Services
+  - h3: Sales Info
+- Links/buttons:
+  - Book a Meeting -> contact.html
+  - Subscribe
+  - About Us -> #!
+  - Services -> #!
+  - Cases -> #!
+  - Pricing -> #!
+  - Contact -> #!
+  - Privacy Policy -> #!
+  - Support -> #!
+  - Disclaimer -> #!
+  - Conditions -> #!
+  - FAQ -> #!
+  - Financial Planning -> #!
+  - Tax Planning -> #!
+  - Estate Planning -> #!
+  - Risk Management -> #!
+  - Cash Flow Analysis -> #!
+  - Consultancy -> #!
+  - Marketing -> #!
+  - Market Growth -> #!
+  - Collaboration -> #!
+  - Investment -> #!
+- Text:
+  - Shall We Discuss Your Task?
+  - Book a Meeting
+  - Write to us
+  - Synox@gmail.com
+  - Call Us (USA)
+  - +(1) 1230 452 8597
+  - Our Office
+  - Waterloo, Park, Australia
+  - Newsletter
+  - Subscribe to The Free Newsletter to
+  - Receive The Latest News
+  - Subscribe
+  - Quick Links
+  - About Us
+  - Services
+  - Cases
+  - Pricing
+  - Contact
+  - Useful Links
+  - Privacy Policy
+  - Support
+  - Disclaimer
+  - Conditions
+  - FAQ
+  - Our Services
+  - Financial Planning
+  - Tax Planning
+  - Estate Planning
+  - Risk Management
+  - Cash Flow Analysis
+  - Sales Info
+  - Consultancy
+  - Marketing
+  - Market Growth
+  - Collaboration
+  - Investment
+  - Copyright © 2024 Synox, All rights reserved.
+
+## index_insurance.html
+
+- Title: Insurance – Synox – Finance & Consulting Site Template.
+- Body class: index_insurance
+- Sections detected: 12
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/index_insurance.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+  - Login -> #!
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+  - Login
+
+### 2. section.hero_section.hero_insurance.bg-dark.section_decoration
+
+- Source: `origin/index_insurance.html:173`
+- Images/media: `assets/images/icons/icon_money_bag.svg`, `assets/images/icons/icon_mobile_network.svg`, `assets/images/hero/hero_image_3.webp`, `assets/images/shapes/shape_pattern_5.svg`, `assets/images/shapes/shape_pattern_6.svg`, `assets/images/shapes/shape_nate_28.svg`, `assets/images/shapes/shape_nate_29.svg`
+- Headings:
+  - h1: Insurance Plans for Life's Journey
+  - h3: Financial Protection
+  - h3: Online Payments
+- Links/buttons:
+  - Get Started Now -> pricing.html
+- Text:
+  - Reliable Insurance
+  - Insurance Plans for Life's Journey
+  - Explore Our Comprehensive Insurance Plans Tailored to Protect You Through Every Twist and Turn.
+  - Get Started Now
+  - 4.8
+  - 26 Reviews
+  - Financial Protection
+  - Secure your future with comprehensive coverage.
+  - Online Payments
+  - Enable users to make premium payments and manage
+
+### 3. section.about_section.section_space.pb-0
+
+- Source: `origin/index_insurance.html:266`
+- Images/media: `assets/images/about/about_image_7.webp`, `assets/images/icons/icon_user_2.svg`, `assets/images/icons/icon_trush_bin.svg`, `assets/images/icons/icon_support.svg`, `assets/images/icons/icon_tag_2.svg`
+- Headings:
+  - h2: Our Ultimate Insurance Solution Provider
+  - h3: Advice you can count on
+  - h3: No Salespeople
+  - h3: No Spam Ever
+  - h3: 30 Min Consultation
+  - h3: It’s Free
+- Links/buttons:
+  - Book a Free Call -> contact.html
+- Text:
+  - Who We Are?
+  - Our Ultimate Insurance Solution Provider
+  - Embark on a journey towards a brighter financial future with our online banking services. From managing accounts to convenient bill payments, our platform is designed to empower.
+  - Advice you can count on
+  - When you book a call with Synox, you get access to the best insurance advisors in town.
+  - No Salespeople
+  - No pushy salesmen, just exceptional advisors.
+  - No Spam Ever
+  - Finto Hotline offers a spam-free guarantee.
+  - 30 Min Consultation
+  - 30 minutes of undivided attention guaranteed.
+  - It’s Free
+  - Free consultations, zero pressure to purchase from Synox.
+  - Book a Free Call
+
+### 4. section.service_section.section_space
+
+- Source: `origin/index_insurance.html:361`
+- Images/media: `assets/images/shapes/shape_circle.svg`, `assets/images/icons/icon_car.svg`, `assets/images/icons/icon_house.svg`, `assets/images/icons/icon_dog.svg`, `assets/images/icons/icon_heart.svg`, `assets/images/icons/icon_umbrella.svg`, `assets/images/icons/icon_hand_2.svg`, `assets/images/icons/icon_diamond.svg`
+- Headings:
+  - h2: Get the Coverage you Need.
+  - h3: Car Insurance
+  - h3: Home Insurance
+  - h3: Pet Insurance
+  - h3: Life Insurance
+  - h3: Travel Insurance
+  - h3: Personal Loans
+  - h3: Business Insurance
+- Links/buttons:
+  - Book A Call -> contact.html
+  - Book A Call -> contact.html
+  - Book A Call -> contact.html
+  - Book A Call -> contact.html
+  - Book A Call -> contact.html
+  - Book A Call -> contact.html
+  - Book A Call -> contact.html
+- Text:
+  - Our Main Services
+  - Get the Coverage you Need.
+  - Car Insurance
+  - Our car insurance offers coverage and peace of mind.
+  - Book A Call
+  - Home Insurance
+  - Home insurance ensures your property is protected.
+  - Book A Call
+  - Pet Insurance
+  - Pet insurance ensures your pet's well-being, Our policies.
+  - Book A Call
+  - Life Insurance
+  - Life insurance provides financial security for you.
+  - Book A Call
+  - Travel Insurance
+  - Travel insurance ensures worry-free adventures.
+  - Book A Call
+  - Personal Loans
+  - Our options provide solutions with competitive.
+  - Book A Call
+  - Business Insurance
+  - Insurance offers peace of mind provide comprehensive.
+  - Book A Call
+
+### 5. section.funfact_section
+
+- Source: `origin/index_insurance.html:599`
+- Images/media: `assets/images/icons/icon_umbrella_2.svg`, `assets/images/icons/icon_medal_2.svg`, `assets/images/about/about_image_8.webp`
+- Headings:
+  - h2: Get the Coverage you Need.
+  - h3: Gave Insurance
+  - h3: Satisfied Customer
+  - h3: Professional Team
+  - h3: Our Success Rate
+- Text:
+  - our Achievement
+  - Get the Coverage you Need.
+  - 0
+  - K
+  - Gave Insurance
+  - 0
+  - K
+  - Satisfied Customer
+  - 0
+  - Professional Team
+  - 0
+  - %
+  - Our Success Rate
+
+### 6. section.review_section.section_space.section_decoration
+
+- Source: `origin/index_insurance.html:659`
+- Images/media: `assets/images/clients/client_logo_26.webp`, `assets/images/clients/client_logo_10.webp`, `assets/images/avatar/avatar_image_1.webp`, `assets/images/avatar/avatar_image_2.webp`, `assets/images/avatar/avatar_image_3.webp`, `assets/images/avatar/avatar_image_4.webp`, `assets/images/icons/icon_star_2.svg`, `assets/images/icons/icon_star_1.svg`, `assets/images/shapes/shape_arrow_3.webp`
+- Headings:
+  - h2: Highly rated 4.9 out of 5 by 1200+ entrepreneurs just like synox
+  - h3: Reynolds Anthony
+  - h3: Tomasz Adam
+  - h3: Reynolds Anthony
+  - h3: Tomasz Adam
+  - h3: Reynolds Anthony
+  - h3: Tomasz Adam
+  - h3: Tomasz Adam
+  - h3: Tomasz Adam
+  - h3: Tomasz Adam
+  - h3: Piotr Łukasz
+  - h3: Eleanor Emily
+  - h3: Piotr Łukasz
+  - h3: Eleanor Emily
+  - h3: Piotr Łukasz
+  - h3: Eleanor Emily
+  - h3: Eleanor Emily
+  - h3: Eleanor Emily
+  - h3: Eleanor Emily
+- Text:
+  - Our Client Feedback
+  - Highly rated 4.9 out of 5 by 1200+ entrepreneurs just like synox
+  - Join the ranks of over 1200 entrepreneurs who have entrusted us with their insurance needs and our exceptional service firsthand.
+  - 5.0
+  - 26 Reviews
+  - 4.8
+  - 26 Reviews
+  - Reynolds Anthony
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Reynolds Anthony
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Reynolds Anthony
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Tomasz Adam
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Piotr Łukasz
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Piotr Łukasz
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Piotr Łukasz
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+  - Eleanor Emily
+  - May 14, @TrustPilot
+  - "For years, I've trusted Finto Insurance. Their attentive team consistently finds me the perfect coverage. I'm confident in their protection of assets."
+
+### 7. section.client_feedback_section.section_space.section_decoration.bg-light
+
+- Source: `origin/index_insurance.html:1038`
+- Images/media: `assets/images/backgrounds/background_image_1.webp`, `assets/images/shapes/shape_nate_30.svg`, `assets/images/icons/icon_star_1.svg`, `assets/images/icons/icon_star_2.svg`, `assets/images/shapes/shape_arrow_4.webp`
+- Headings:
+  - h2: Understand Your Policy
+- Links/buttons:
+  - Check Now
+- Text:
+  - If You Have A Plan
+  - Understand Your Policy
+  - Select Product
+  - Health Insurance
+  - Term Insurance
+  - Select Insurer
+  - Bajaj Allianz Life
+  - ICICI Prudential
+  - LIC
+  - Max Life
+  - SBI Life
+  - TATA AIA
+  - Others
+  - Select The Policy
+  - Click2Protect Life
+  - Click2Protect Super
+  - Check Now
+  - Synox Life Insurance Co. Ltd will send you updates on your policy, new products & services, insurance solutions or related information. Select here to opt-in
+
+### 8. section.team_section.section_space.pb-0
+
+- Source: `origin/index_insurance.html:1116`
+- Images/media: `assets/images/team/team_member_image_9.webp`, `assets/images/team/team_member_image_10.webp`, `assets/images/team/team_member_image_11.webp`, `assets/images/team/team_member_image_12.webp`, `assets/images/team/team_member_image_13.webp`, `assets/images/team/team_member_image_14.webp`
+- Headings:
+  - h2: Certified Professionals
+  - h3: Kacper Mateusz
+  - h3: Charlotte Amelia
+  - h3: Serhiy Yaroslav
+  - h3: Pavlo Bohdan
+  - h3: Emma Sophia
+  - h3: Jordan Eugenio
+- Text:
+  - Team Members
+  - Certified Professionals
+  - Kacper Mateusz
+  - Founder & CEO of Synox
+  - 17 Years of Experience
+  - 4K Happy Clients
+  - Charlotte Amelia
+  - Loss Control Specialist
+  - 17 Years of Experience
+  - 4K Happy Clients
+  - Serhiy Yaroslav
+  - Claims Investigator
+  - Pavlo Bohdan
+  - Marketing Specialist
+  - Emma Sophia
+  - Compliance Officer
+  - Jordan Eugenio
+  - Account Manager
+
+### 9. section.clients_section.section_space
+
+- Source: `origin/index_insurance.html:1330`
+- Images/media: `assets/images/clients/brand_01.png`, `assets/images/clients/brand_02.png`, `assets/images/clients/brand_03.png`, `assets/images/clients/brand_04.png`, `assets/images/clients/brand_05.png`, `assets/images/clients/brand_06.png`, `assets/images/clients/brand_07.png`, `assets/images/clients/brand_08.png`, `assets/images/clients/brand_09.png`, `assets/images/clients/brand_10.png`
+- Headings:
+  - h2: Trusted for overall simplicity
+- Text:
+  - Trusted for overall simplicity
+  - Based on 2,8000+ reviews with customer satisfaction on
+
+### 10. section.contact_section.section_space.pb-0
+
+- Source: `origin/index_insurance.html:1411`
+- Images/media: `assets/images/site_logo/ins_favicon.png`, `assets/images/icons/icon_calling_6.svg`, `assets/images/icons/icon_sms_edit.svg`, `assets/images/icons/icon_messages.svg`, `assets/images/about/about_image_9.webp`
+- Headings:
+  - h2: Need a hand? we’ve got you
+  - h3: New to Synox?
+  - h3: Any Questions?
+  - h3: Prefer Writing?
+  - h3: Need Advice?
+  - h3: Already a customer?
+- Links/buttons:
+  - Call Now -> contact.html
+  - Write Now -> contact.html
+  - Book Now -> contact.html
+  - Log In -> #!
+- Text:
+  - Need Help?
+  - Need a hand? we’ve got you
+  - New to Synox?
+  - Our Synox team is happy to help you with all things insurance.
+  - Any Questions?
+  - Mon-Fri.9-5pm
+  - Call Now
+  - Prefer Writing?
+  - Send an email
+  - Write Now
+  - Need Advice?
+  - Talk to an expert
+  - Book Now
+  - Already a customer?
+  - Make a claim, manage your insurance or ask a question.
+  - Log In
+
+### 11. section.faq_section.section_space
+
+- Source: `origin/index_insurance.html:1509`
+- Headings:
+  - h2: Have a Question? Look Here
+- Links/buttons:
+  - What investment services do you offer?
+  - What types of investments do you recommend?
+  - How do I get started with investing?
+  - What is your approach to risk management?
+- Text:
+  - Faq
+  - Have a Question? Look Here
+  - What investment services do you offer?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - What types of investments do you recommend?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - How do I get started with investing?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - What is your approach to risk management?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+
+### 12. footer.site_footer.footer_layout_5.bg-dark.section_decoration
+
+- Source: `origin/index_insurance.html:1609`
+- Images/media: `assets/images/icons/icon_calling.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_nate_34.svg`, `assets/images/shapes/shape_nate_35.svg`, `assets/images/shapes/shape_pattern_5.svg`, `assets/images/shapes/shape_pattern_7.svg`
+- Headings:
+  - h3: Call Us Anytime - 24/7
+  - h3: Download App
+  - h3: Our Company
+  - h3: Insurance
+  - h3: Quick Links
+  - h3: General
+- Links/buttons:
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+  - About Us -> #!
+  - Careers -> #!
+  - Investors -> #!
+  - Payout Links -> #!
+  - Contact Us -> #!
+  - Car insurance -> #!
+  - Home insurance -> #!
+  - Pet insurance -> #!
+  - Life insurance -> #!
+  - Travel insurance -> #!
+  - Previous Quote -> #!
+  - Report a Claim -> #!
+  - Make a Payment -> #!
+  - PerkShare -> #!
+  - Site Map -> #!
+  - Synox Capital -> #!
+  - Health Insurers -> #!
+  - Term Insurers -> #!
+  - Claims Assistance -> #!
+  - Staff Intranet -> #!
+- Text:
+  - Call Us Anytime -
+  - 24/7
+  - Hotline: (800) 555‑0199
+  - Download App
+  - Our Company
+  - About Us
+  - Careers
+  - Investors
+  - Payout Links
+  - Contact Us
+  - Insurance
+  - Car insurance
+  - Home insurance
+  - Pet insurance
+  - Life insurance
+  - Travel insurance
+  - Quick Links
+  - Previous Quote
+  - Report a Claim
+  - Make a Payment
+  - PerkShare
+  - Site Map
+  - General
+  - Synox Capital
+  - Health Insurers
+  - Term Insurers
+  - Claims Assistance
+  - Staff Intranet
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## index_online_banking.html
+
+- Title: Online Banking – Synox – Finance & Consulting Site Template.
+- Body class: online_banking
+- Sections detected: 11
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/index_online_banking.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Login -> #!
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Login
+
+### 2. section.hero_section.hero_online_banking.overflow-hidden.section_decoration
+
+- Source: `origin/index_online_banking.html:165`
+- Images/media: `assets/images/backgrounds/hero_bg_noise.webp`, `assets/images/hero/hero_pattern.svg`, `assets/images/hero/hero_shape_1.svg`, `assets/images/hero/hero_hand_image.png`, `assets/images/hero/card.png`, `assets/images/clients/client_logo_2.webp`, `assets/images/clients/client_logo_3.webp`, `assets/images/clients/client_logo_4.webp`, `assets/images/clients/client_logo_5.webp`, `assets/images/clients/client_logo_6.webp`, `assets/images/clients/client_logo_7.webp`, `assets/images/clients/client_logo_8.webp`, `assets/images/icons/icon_star_4.svg`, `assets/images/icons/icon_star_3.svg`, `assets/images/shapes/shape_circle_2.svg`
+- Headings:
+  - h1: The Premier Finto Online Banking
+- Links/buttons:
+  - Get Started Free Now -> pricing.html
+- Text:
+  - All-in-one banking for everyone
+  - The Premier Finto Online Banking
+  - Discover online banking with Synox. Experience unmatched, security, and efficiency for managing your finances.
+  - Get Started Free Now
+  - 4.8
+  - 26 Reviews
+  - Some Several Companies
+
+### 3. section.feature_section.section_space
+
+- Source: `origin/index_online_banking.html:316`
+- Images/media: `assets/images/icons/icon_wallet.svg`, `assets/images/features/ob_feature_image_1.webp`, `assets/images/icons/icon_chart_2.svg`, `assets/images/features/ob_feature_image_2.webp`, `assets/images/icons/icon_global_search.svg`, `assets/images/features/ob_feature_image_3.webp`, `assets/images/icons/icon_color_swatch.svg`, `assets/images/features/ob_feature_image_4.webp`, `assets/images/icons/icon_bitcoin.svg`, `assets/images/features/ob_feature_image_5.webp`
+- Headings:
+  - h2: 5 Rapid Highlights of Our Synox Solution
+  - h3: Receive Early Payments Within 24 Hours
+  - h3: Monitor Your Essential Expenses Wisely
+  - h3: Send Money Anywhere, Anytime to here
+  - h3: Virtual or physical - it’s your choice
+  - h3: B2B & Cryptocurrency Payment System
+- Text:
+  - CORE FEATURES
+  - 5 Rapid Highlights of Our Synox Solution
+  - Receive Early Payments Within 24 Hours
+  - Experience the convenience of early payments arriving within just 24 hours. Say goodbye.
+  - Monitor Your Essential Expenses Wisely
+  - Take control of your financial journey by wisely monitoring your essential expenses.
+  - Send Money Anywhere, Anytime to here
+  - Send money to any destination, anytime, and from anywhere.
+  - Virtual or physical - it’s your choice
+  - Choice the convenience of virtual options the choice is yours.
+  - B2B & Cryptocurrency Payment System
+  - Streamline B2B payments with cryptocurrency integration.
+
+### 4. section.about_section.section_space.pb-0.bg-light
+
+- Source: `origin/index_online_banking.html:428`
+- Images/media: `assets/images/icons/icon_maximize.svg`, `assets/images/icons/icon_dollar_3.svg`, `assets/images/about/about_image_1.webp`, `assets/images/about/about_image_2.webp`, `assets/images/avatar/avatar_image_4.webp`, `assets/images/avatar/avatar_image_5.webp`, `assets/images/avatar/avatar_image_6.webp`, `assets/images/about/about_image_3.webp`
+- Headings:
+  - h2: Shaping Your Future with Online Banking
+  - h4: Daily Transactions
+  - h4: Unlimited Cashback
+- Text:
+  - Who we are
+  - Shaping Your Future with Online Banking
+  - Embark on a journey towards a brighter financial future with our online banking services. From managing accounts to convenient bill payments, our platform is designed to empower.
+  - 0
+  - M+
+  - Daily Transactions
+  - 0
+  - %
+  - Unlimited Cashback
+  - 9K+
+
+### 5. section.video_section.section_space.pb-0.bg-light
+
+- Source: `origin/index_online_banking.html:514`
+- Images/media: `assets/images/about/about_video_image_1.webp`
+- Headings:
+  - h2: Physical Card for Your Pocket
+- Text:
+  - Meet our new
+  - Physical Card for Your Pocket
+
+### 6. section.funfact_section.section_space.bg-light
+
+- Source: `origin/index_online_banking.html:538`
+- Images/media: `assets/images/shapes/funfact_bg_1.svg`, `assets/images/shapes/funfact_bg_2.svg`, `assets/images/shapes/shape_line.svg`, `assets/images/about/transactions_card_image.webp`, `assets/images/shapes/funfact_bg_3.svg`, `assets/images/shapes/funfact_bg_4.svg`, `assets/images/shapes/shape_circle_3.svg`
+- Headings:
+  - h2: Shaping Your Future with Online Banking
+  - h4: Users primarily access their accounts via mobile for with convenient banking on the go.
+  - h4: Gain access to a vast global network of over 300k+ partner ATMs located worldwide.
+  - h4: Wings quickly gained popularity among youth, attracting over 990k+ customers in first year.
+  - h4: Users enjoy 60% faster transaction processing times compared to traditional banks, providing them.
+- Links/buttons:
+  - Learn More -> pricing.html
+- Text:
+  - Our Achievements
+  - Shaping Your Future with Online Banking
+  - With our comprehensive banking solution, you'll find that one card is truly enough. Our all-in-one card combines the functionality of multiple cards into a single, convenient solution, clutter and simplifying your wallet.
+  - 0
+  - %
+  - Users primarily access their accounts via mobile for with convenient banking on the go.
+  - 0
+  - K+
+  - Gain access to a vast global network of over 300k+ partner ATMs located worldwide.
+  - Learn More
+  - 0
+  - K+
+  - Wings quickly gained popularity among youth, attracting over 990k+ customers in first year.
+  - 0
+  - %
+  - Users enjoy 60% faster transaction processing times compared to traditional banks, providing them.
+
+### 7. section.ob_process_section.section_space.section_decoration.overflow-hidden
+
+- Source: `origin/index_online_banking.html:619`
+- Images/media: `assets/images/backgrounds/hero_bg_noise.webp`, `assets/images/hero/hero_pattern.svg`, `assets/images/icons/icon_pen.svg`, `assets/images/icons/icon_web_design.svg`, `assets/images/shapes/shape_circle_2.svg`
+- Headings:
+  - h2: Take control your Money.
+  - h3: Register and Create Your Account
+  - h3: Effortlessly Manage Your Virtual Cards
+  - h3: ATM Withdrawals and Online Banking
+  - h3: The Start of Today Begins Now
+- Links/buttons:
+  - Apply Now -> contact.html
+- Text:
+  - CARD
+  - Take control your Money.
+  - /01
+  - Register and Create Your Account
+  - Start your journey by registering for an account and effortlessly creating it.
+  - /02
+  - Effortlessly Manage Your Virtual Cards
+  - Easily manage your virtual cards with our platform. Customize, track, and stay secure.
+  - /03
+  - ATM Withdrawals and Online Banking
+  - Easily withdraw cash from ATMs and conveniently manage your banking needs online.
+  - The Start of Today Begins Now
+  - Today marks the inception of a new journey, starting at this very moment.
+  - Apply Now
+
+### 8. section.review_section
+
+- Source: `origin/index_online_banking.html:702`
+- Images/media: `assets/images/clients/client_logo_9.webp`, `assets/images/clients/client_logo_10.webp`, `assets/images/avatar/avatar_image_2.webp`
+- Headings:
+  - h2: What clients say about us
+  - h3: Reynolds Anthony
+  - h3: Reynolds Anthony
+  - h3: Reynolds Anthony
+- Text:
+  - Testimonial
+  - What clients say about us
+  - 5.0
+  - 26 Reviews
+  - 4.8
+  - 26 Reviews
+  - Reynolds Anthony
+  - Our Clients
+  - 5.0
+  - "Switching to Synox online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
+  - Reynolds Anthony
+  - Our Clients
+  - 5.0
+  - "Switching to Synox online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
+  - Reynolds Anthony
+  - Our Clients
+  - 5.0
+  - "Switching to Synox online banking has been amazing. The seamless interface makes managing finances effortless. Whether tracking, paying bills, or transferring funds, Finto exceeds expectations. Highly recommended for anyone seeking a reliable banking solution."
+
+### 9. section.integrated_section.section_space
+
+- Source: `origin/index_online_banking.html:864`
+- Images/media: `assets/images/integrated/integrated_logo_1.webp`, `assets/images/integrated/integrated_logo_2.webp`, `assets/images/integrated/integrated_logo_3.webp`, `assets/images/integrated/integrated_logo_4.webp`, `assets/images/integrated/integrated_logo_5.webp`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/integrated/integrated_logo_6.webp`, `assets/images/integrated/integrated_logo_7.webp`, `assets/images/integrated/integrated_logo_8.webp`, `assets/images/integrated/integrated_logo_9.webp`, `assets/images/integrated/integrated_logo_10.webp`
+- Headings:
+  - h2: Mobile wallet integrations
+- Text:
+  - Integrated
+  - Mobile wallet integrations
+
+### 10. section.appstore_section.section_decoration
+
+- Source: `origin/index_online_banking.html:953`
+- Images/media: `assets/images/backgrounds/app_store_bg_1.webp`, `assets/images/about/mobile_app_image.webp`
+- Headings:
+  - h2: Download and enjoy the experience
+- Links/buttons:
+  - Apple iOS -> #!
+  - Android -> #!
+- Text:
+  - Mobile App 2.0
+  - NEW
+  - Download and enjoy the experience
+  - Don't miss out! Download now for seamless functionalities and endless possibilities.
+  - Apple iOS
+  - Android
+
+### 11. footer.site_footer.footer_layout_2.bg-secondary.section_decoration
+
+- Source: `origin/index_online_banking.html:998`
+- Images/media: `assets/images/backgrounds/hero_bg_noise.webp`, `assets/images/hero/hero_pattern.svg`, `assets/images/icons/icon_email.svg`, `assets/images/icons/icon_calling_5.svg`, `assets/images/icons/icon_map_mark.svg`, `assets/images/shapes/shape_circle_2.svg`
+- Headings:
+  - h3: Write to us
+  - h3: Call Us (USA)
+  - h3: Our Office
+  - h2: Newsletter
+  - h3: Solutions
+  - h3: Products
+- Links/buttons:
+  - finto@synos.com -> mailto:finto@synos.com
+  - +(1) 1230 452 8597 -> tel:+(1)12304528597
+  - Facebook -> #!
+  - Twitter -> #!
+  - Linkdin -> #!
+  - Digital & Neobanking -> #!
+  - B2B Payments -> #!
+  - Growth & Activation -> #!
+  - Cryptocurrency -> #!
+  - Embedded Finance -> #!
+  - Investing -> #!
+  - Cards shorts -> #!
+  - Deposits -> #!
+  - Transfers -> #!
+  - Credit & Lending -> #!
+  - Data & Analytics -> #!
+  - Risk & Compliance -> #!
+  - Terms & Conditions -> #!
+  - Privacy Policy -> #!
+- Text:
+  - Write to us
+  - finto@synos.com
+  - Call Us (USA)
+  - +(1) 1230 452 8597
+  - Our Office
+  - Waterloo, Park, Australia
+  - Newsletter
+  - Sign up to Synox weekly newsletter to get the latest updates.
+  - Facebook
+  - Twitter
+  - Linkdin
+  - Solutions
+  - Digital & Neobanking
+  - B2B Payments
+  - Growth & Activation
+  - Cryptocurrency
+  - Embedded Finance
+  - Investing
+  - Products
+  - Cards shorts
+  - Deposits
+  - Transfers
+  - Credit & Lending
+  - Data & Analytics
+  - Risk & Compliance
+  - Copyright © 2024 Synox, All rights reserved.
+  - Terms & Conditions
+  - Privacy Policy
+
+## index_payment_solutions.html
+
+- Title: Payment Solutions – Synox – Finance & Consulting Site Template.
+- Body class: payment_solutions
+- Sections detected: 10
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/index_payment_solutions.html:56`
+- Images/media: `assets/images/site_logo/is_logo.svg`, `assets/images/site_logo/site_logo_black.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Login -> #!
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Login
+
+### 2. section.hero_section.hero_payment_solutions.overflow-hidden.section_decoration
+
+- Source: `origin/index_payment_solutions.html:165`
+- Images/media: `assets/images/avatar/avatar_image_4.webp`, `assets/images/avatar/avatar_image_5.webp`, `assets/images/avatar/avatar_image_6.webp`, `assets/images/icons/icon_medal.svg`, `assets/images/hero/hero_hand_image_2.webp`, `assets/images/shapes/shape_pattern_1.svg`, `assets/images/shapes/shape_pattern_2.svg`, `assets/images/shapes/shape_nate_14.svg`, `assets/images/shapes/shape_nate_15.svg`
+- Headings:
+  - h1: Fast, Reliable Payment Solutions for Today's Needs
+  - h4: Our daily achievement
+  - h4: Daily Transactions
+  - h4: Unlimited Daily Cashback
+- Links/buttons:
+  - Sign Up For Free -> pricing.html
+- Text:
+  - easily send money anywhere
+  - Fast, Reliable Payment Solutions for Today's Needs
+  - In today's fast-paced world, businesses and individuals demand efficient and dependable payment solutions. That's where we come in.
+  - Sign Up For Free
+  - Over
+  - 9,000+
+  - Reviews
+  - 9K+
+  - Our daily achievement
+  - 0
+  - M+
+  - Daily Transactions
+  - 0
+  - %
+  - Unlimited Daily Cashback
+
+### 3. section.payment_methods_section
+
+- Source: `origin/index_payment_solutions.html:363`
+- Images/media: `assets/images/icons/icon_payment_card.svg`, `assets/images/icons/icon_face.svg`, `assets/images/icons/icon_visa.svg`, `assets/images/icons/icon_pay_24.svg`, `assets/images/icons/icon_google_pay.svg`, `assets/images/icons/icon_apple_pay.svg`, `assets/images/icons/icon_qr_code.svg`, `assets/images/icons/icon_chart_3.svg`, `assets/images/shapes/shape_nate_15.svg`, `assets/images/shapes/shape_nate_16.svg`
+- Headings:
+  - h2: Variety of Synox Payment Methods
+  - h3: Card
+  - h3: FacePay24
+  - h3: Visa Click to Pay
+  - h3: PrivatPay
+  - h3: Google Pay
+  - h3: Apple Pay
+  - h3: QR
+  - h3: Payment by Parts
+- Links/buttons:
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+  - Read More -> service_details.html
+- Text:
+  - CORE FEATURES
+  - Variety of Synox Payment Methods
+  - Card
+  - Providing Convenient & Secure Payment Options for Need.
+  - Read More
+  - FacePay24
+  - Simplifying Transactions with Facial Recognition.
+  - Read More
+  - Visa Click to Pay
+  - Streamlining Your Purchases with Seamless Transactions.
+  - Read More
+  - PrivatPay
+  - Your Trusted Partner in Secure and Seamless Transactions.
+  - Read More
+  - Google Pay
+  - Enhancing and Efficiency in Your Financial Transactions.
+  - Read More
+  - Apple Pay
+  - Seamlessly Streamlining Your Financial Transactions.
+  - Read More
+  - QR
+  - Instant Transactions with a Simple Scan Made Possible.
+  - Read More
+  - Payment by Parts
+  - Breakdown Your Purchases into Manageable Parts.
+  - Read More
+
+### 4. section.ps_contact_process_section.section_space.section_decoration
+
+- Source: `origin/index_payment_solutions.html:529`
+- Images/media: `assets/images/shapes/shape_pattern_3.svg`, `assets/images/site_logo/is_logo.svg`, `assets/images/shapes/process_line_shape_1.webp`, `assets/images/shapes/shape_arrow_1.webp`, `assets/images/shapes/shape_arrow_2.webp`, `assets/images/shapes/shape_nate_17.svg`, `assets/images/shapes/shape_nate_18.svg`
+- Headings:
+  - h2: How to Connect Synox
+  - h3: Create a New Merchant Account in Synox
+  - h3: Activate merchant four activation steps
+  - h3: Optimize the integration method with Synox
+- Text:
+  - Connect Process
+  - How to Connect Synox
+  - 1
+  - Create a New Merchant Account in Synox
+  - 2
+  - Activate merchant four activation steps
+  - 3
+  - Optimize the integration method with Synox
+
+### 5. section.powering_industry_section.section_space.section_decoration
+
+- Source: `origin/index_payment_solutions.html:610`
+- Images/media: `assets/images/icons/icon_box.svg`, `assets/images/icons/icon_graduation_cap.svg`, `assets/images/icons/icon_gadget.svg`, `assets/images/icons/icon_devices.svg`, `assets/images/about/transactions_card_image_2.webp`, `assets/images/shapes/shape_nate_19.svg`, `assets/images/shapes/shape_arrow_1.webp`
+- Headings:
+  - h2: Powering Every Industry.
+- Links/buttons:
+  - E-commerce
+  - Education
+  - SaaS
+  - Freelance
+- Text:
+  - Payment Solution
+  - Powering Every Industry.
+  - E-commerce
+  - Education is the cornerstone of personal and societal growth, serving as a catalyst for enlightenment, innovation, progress. Through education, individuals gain knowledge.
+  - Education
+  - Education is the cornerstone of personal and societal growth, serving as a catalyst for enlightenment, innovation, progress. Through education, individuals gain knowledge.
+  - SaaS
+  - Education is the cornerstone of personal and societal growth, serving as a catalyst for enlightenment, innovation, progress. Through education, individuals gain knowledge.
+  - Freelance
+  - Education is the cornerstone of personal and societal growth, serving as a catalyst for enlightenment, innovation, progress. Through education, individuals gain knowledge.
+
+### 6. section.ps_policy_section
+
+- Source: `origin/index_payment_solutions.html:710`
+- Images/media: `assets/images/shapes/shape_1.webp`, `assets/images/icons/icon_browser.svg`, `assets/images/shapes/shape_2.webp`, `assets/images/icons/icon_chat.svg`, `assets/images/shapes/shape_3.webp`, `assets/images/icons/icon_api.svg`, `assets/images/icons/icon_layer.svg`, `assets/images/shapes/shape_nate_17.svg`, `assets/images/shapes/shape_nate_18.svg`, `assets/images/shapes/shape_nate_20.svg`
+- Headings:
+  - h2: Elevate Your Payments with Us
+  - h3: Fast & Secure
+  - h3: 24/7 Live Support
+  - h3: Targeted Built API
+  - h3: Automated Flow
+- Text:
+  - Why Choose Us
+  - Elevate Your Payments with Us
+  - Fast & Secure
+  - Prioritizing Expediency, Safety in Every Transaction.
+  - 24/7 Live Support
+  - 24/7 Live Assistance: Support Always Available
+  - Targeted Built API
+  - Tailored API Customized Solutions for You
+  - Automated Flow
+  - Automated Workflow Processes for Efficiency
+
+### 7. section.pricing_section.section_space
+
+- Source: `origin/index_payment_solutions.html:776`
+- Headings:
+  - h2: Clear Pricing for Transactions
+  - h3: General
+  - h3: Individual
+- Links/buttons:
+  - Connect Now -> contact.html
+  - Apply now -> contact.html
+- Text:
+  - Tariffs
+  - Clear Pricing for Transactions
+  - General
+  - Our Commission Deducted, Your Money Deposited —
+  - Single Banking Day to Your Merchant Account.
+  - When the funds turnover reaches $300,000.
+  - Connect Now
+  - 1,9%
+  - Get everything you need to manage payments
+  - Finto mobile app is always available
+  - No setup fees, monthly/hidden
+  - Individual
+  - Apply or write to the Chat to reduce the tariff if:
+  - Quick Deposits—Optimal for Speedy Transactions.
+  - When the funds turnover reaches $300,000.
+  - Apply now
+  - Charity
+  - 0%
+  - Housing and public utilities, condominium associations
+  - 1%
+  - Online landing Working Process
+  - 1%
+
+### 8. section.ps_pntegrating_section.section_space.pb-0.section_decoration
+
+- Source: `origin/index_payment_solutions.html:903`
+- Images/media: `assets/images/about/integration_image_1.webp`, `assets/images/shapes/shape_nate_17.svg`, `assets/images/shapes/shape_nate_18.svg`
+- Headings:
+  - h2: Our popular e-commerce CMS
+- Text:
+  - Integrating
+  - Our popular e-commerce CMS
+
+### 9. section.ps_blog_section.section_space.section_decoration
+
+- Source: `origin/index_payment_solutions.html:931`
+- Images/media: `assets/images/blogs/blog_image_13.webp`, `assets/images/blogs/blog_image_14.webp`, `assets/images/blogs/blog_image_15.webp`, `assets/images/shapes/shape_nate_17.svg`, `assets/images/shapes/shape_nate_18.svg`
+- Headings:
+  - h2: Our Latest Article
+  - h3: Subscription Billing Simplifying Recurring Payments for.
+  - h3: Global Payment Trends Adapting to the Changing Landscape.
+  - h3: The Role of Blockchain Technology in Payment Solutions.
+- Links/buttons:
+  - Business -> #!
+  - March 24, 2024 -> #!
+  - Subscription Billing Simplifying Recurring Payments for. -> blog_details.html
+  - Fintech -> #!
+  - March 24, 2024 -> #!
+  - Global Payment Trends Adapting to the Changing Landscape. -> blog_details.html
+  - Business -> #!
+  - March 24, 2024 -> #!
+  - The Role of Blockchain Technology in Payment Solutions. -> blog_details.html
+- Text:
+  - Our Article
+  - Our Latest Article
+  - Business
+  - March 24, 2024
+  - Subscription Billing Simplifying Recurring Payments for.
+  - Fintech
+  - March 24, 2024
+  - Global Payment Trends Adapting to the Changing Landscape.
+  - Business
+  - March 24, 2024
+  - The Role of Blockchain Technology in Payment Solutions.
+
+### 10. footer.site_footer.footer_layout_3.bg-dark
+
+- Source: `origin/index_payment_solutions.html:1043`
+- Images/media: `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_nate_14.svg`, `assets/images/shapes/shape_nate_15.svg`, `assets/images/shapes/shape_nate_21.svg`
+- Headings:
+  - h2: Ready to level up your payment process?
+  - h3: Company
+  - h3: Accept Payments
+  - h3: Banking Plus
+  - h3: Download App
+- Links/buttons:
+  - Sign Up Now -> pricing.html
+  - About Us -> #!
+  - Careers -> #!
+  - Terms of Use -> #!
+  - Privacy Policy -> #!
+  - Contact Us -> #!
+  - Synox POS -> #!
+  - Payment Pages -> #!
+  - Payment Links -> #!
+  - QR Codes -> #!
+  - Payment Gateway -> #!
+  - Smart Collect -> #!
+  - Source to pay -> #!
+  - Current Accounts -> #!
+  - Payout Links -> #!
+  - Credit Card -> #!
+- Text:
+  - Ready to level up your payment process?
+  - Sign Up Now
+  - Company
+  - About Us
+  - Careers
+  - Terms of Use
+  - Privacy Policy
+  - Contact Us
+  - Accept Payments
+  - Synox POS
+  - Payment Pages
+  - Payment Links
+  - QR Codes
+  - Payment Gateway
+  - Banking Plus
+  - Smart Collect
+  - Source to pay
+  - Current Accounts
+  - Payout Links
+  - Credit Card
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+
+## index.html
+
+- Title: Investment Solution – Synox – Finance & Consulting Site Template.
+- Body class: investment_solution
+- Sections detected: 9
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/index.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.hero_section.hero_investment_solution.section_decoration.overflow-hidden
+
+- Source: `origin/index.html:165`
+- Images/media: `assets/images/backgrounds/hero_bg_1.webp`, `assets/images/clients/client_logo_1.webp`, `assets/images/hero/hero_image_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_6.webp`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_nate_7.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Synox is Secure Investments for the Future
+- Links/buttons:
+  - Invest Today -> pricing.html
+- Text:
+  - Synox is Secure
+  - Investments
+  - for the Future
+  - We help clients formulate and implement a long-term, diversified investment strategy based on our Outsourced CIO (OCIO) operational platform.
+  - Invest Today
+  - 4.8
+  - 26 Reviews
+
+### 3. section.about_section.section_decoration.overflow-hidden
+
+- Source: `origin/index.html:255`
+- Images/media: `assets/images/clients/client_logo_2.webp`, `assets/images/clients/client_logo_3.webp`, `assets/images/clients/client_logo_4.webp`, `assets/images/clients/client_logo_5.webp`, `assets/images/clients/client_logo_6.webp`, `assets/images/clients/client_logo_7.webp`, `assets/images/clients/client_logo_8.webp`, `assets/images/about/mac_image_1.webp`, `assets/images/about/chart_image_1.webp`, `assets/images/shapes/shape_circle_1.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/icons/icon_dollar_bag.svg`, `assets/images/icons/icon_overlap.svg`, `assets/images/icons/icon_chart_bar.svg`, `assets/images/shapes/shape_nate_8.svg`, `assets/images/shapes/shape_nate_9.svg`, `assets/images/shapes/shape_dollar_1.webp`
+- Headings:
+  - h2: Trusted by 100k+ Investors
+  - h3: We Value Data for Informed Investing
+  - h4: Projects Done
+  - h4: Years Experience
+  - h3: Funding & Investment
+  - h3: Capital Transparency
+  - h3: Secure Investment Plan
+- Links/buttons:
+  - About Us -> #!
+- Text:
+  - Trusted by
+  - 100k+ Investors
+  - We Value Data for Informed Investing
+  - At synox, we prioritize data for smarter investments. Our approach relies on thorough analysis of market trends, economic indicators, and company performance.
+  - 0
+  - K+
+  - Projects Done
+  - 0
+  - Years Experience
+  - About Us
+  - Funding & Investment
+  - At Synox we excel funding & investing, guiding strategic decisions.
+  - Capital Transparency
+  - We prioritize capital transparency Our commitment ensures clarity.
+  - Secure Investment Plan
+  - Our Secure Investment Plan at Synox ensures stability and growth.
+
+### 4. section.service_section.bg-secondary.section_decoration.overflow-hidden
+
+- Source: `origin/index.html:466`
+- Images/media: `assets/images/shapes/shape_nate_8.svg`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_6.webp`, `assets/images/icons/icon_rectangle.svg`, `assets/images/icons/icon_search.svg`, `assets/images/icons/icon_chart_bar_2.svg`, `assets/images/icons/icon_dollar_2.svg`, `assets/images/icons/icon_man.svg`, `assets/images/policy/policy_image_1.webp`, `assets/images/icons/icon_lock.svg`, `assets/images/policy/policy_image_2.webp`, `assets/images/icons/icon_users.svg`, `assets/images/policy/policy_image_3.webp`, `assets/images/icons/icon_odomitter.svg`, `assets/images/shapes/shape_nate_10.svg`, `assets/images/shapes/shape_nate_7.svg`, `assets/images/shapes/shape_nate_11.svg`
+- Headings:
+  - h2: What we can help you with
+  - h3: The best service we offer for you
+  - h3: Investment Research and Analysis
+  - h3: Risk Management Solutions
+  - h3: Financial Planning and Consultation
+  - h3: Retirement Planning Services
+  - h3: Safety First
+  - h3: Secure transactions with two-factor authentication
+  - h3: Trusted by 40+ million Investors worldwide
+  - h3: Data security with no compromises
+- Links/buttons:
+  - More Services -> services.html
+  - Investment Research and Analysis -> service_details.html
+  - Read More -> service_details.html
+  - Risk Management Solutions -> service_details.html
+  - Read More -> service_details.html
+  - Financial Planning and Consultation -> service_details.html
+  - Read More -> service_details.html
+  - Retirement Planning Services -> service_details.html
+  - Read More -> service_details.html
+- Text:
+  - What we can help you with
+  - We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance
+  - The best service we offer for you
+  - More Services
+  - Investment Research and Analysis
+  - Our Investment Research and Analysis team uncovers valuable insights.
+  - Read More
+  - Risk Management Solutions
+  - Our Risk Management Solutions ensure your investments are safeguarded.
+  - Read More
+  - Financial Planning and Consultation
+  - We offers personalized guidance to secure your financial future.
+  - Read More
+  - Retirement Planning Services
+  - Secure Your Future with Retirement Planning Services at Synox.
+  - Read More
+  - Safety First
+  - Safety First is our motto at Synox prioritizing your financial security. Trust us for stability as you pursue your goals.
+  - Secure transactions with two-factor authentication
+  - Trusted by 40+ million Investors worldwide
+  - Data security with no compromises
+
+### 5. section.review_section.section_space.section_decoration
+
+- Source: `origin/index.html:683`
+- Images/media: `assets/images/avatar/avatar_image_1.webp`, `assets/images/avatar/avatar_image_2.webp`, `assets/images/avatar/avatar_image_3.webp`, `assets/images/shapes/shape_circle_1.svg`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_1.webp`
+- Headings:
+  - h2: What Investors Say About Us
+  - h3: Hawthorn Sage
+  - h3: Reynolds Anthony
+  - h3: Rosemary Violet
+  - h3: Hawthorn Sage
+  - h3: Reynolds Anthony
+  - h3: Rosemary Violet
+- Text:
+  - What Investors Say About Us
+  - Investors praise our transparent approach, personalized guidance, and user-friendly platform. At Synox their trust is our greatest endorsement
+  - "Been with Synox for years, couldn't be happier. Their tailored plan expectations. Thanks to their guidance, my portfolio grew significantly."
+  - Hawthorn Sage
+  - Our Investors
+  - "Choosing Synox was one of my best decisions. Their transparent approach and regular keep and reassured about my investments."
+  - Reynolds Anthony
+  - Our Investors
+  - "I've worked with many firms, but none impressed me like Synox. Their expertise and commitment. I trust them with my financial future."
+  - Rosemary Violet
+  - Our Investors
+  - "Been with Synox for years, couldn't be happier. Their tailored plan expectations. Thanks to their guidance, my portfolio grew significantly."
+  - Hawthorn Sage
+  - Our Investors
+  - "Choosing Synox was one of my best decisions. Their transparent approach and regular keep and reassured about my investments."
+  - Reynolds Anthony
+  - Our Investors
+  - "I've worked with many firms, but none impressed me like Synox. Their expertise and commitment. I trust them with my financial future."
+  - Rosemary Violet
+  - Our Investors
+
+### 6. section.pricing_section.section_space.section_decoration
+
+- Source: `origin/index.html:793`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/icons/icon_rectangle.svg`, `assets/images/icons/icon_briefcase.svg`, `assets/images/icons/icon_dollar.svg`, `assets/images/icons/icon_chart.svg`, `assets/images/icons/icon_building.svg`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_nate_8.svg`
+- Headings:
+  - h2: Find the level that suits you
+  - h3: Featured Include:
+  - h3: Featured Include:
+  - h3: Featured Include:
+  - h3: Featured Include:
+- Links/buttons:
+  - Invest Today -> contact.html
+  - Invest Today -> contact.html
+  - Invest Today -> contact.html
+  - Invest Today -> contact.html
+- Text:
+  - Find the level that suits you
+  - Find your perfect fit at Synox We offer tailored solutions for investors at every stage. Let us guide you toward success.
+  - Perfect For:
+  - Business Line of Credit
+  - Funding Capacity
+  - Up To $250,00
+  - Term
+  - Up To 2 years
+  - Featured Include:
+  - Access to all Synox products
+  - Join Events, Meet Our Community
+  - Invest $250/yr in Synox Deal
+  - Access to exclusive Synox content
+  - 25% kickback in XKI on fees
+  - Invest Today
+  - Perfect For:
+  - Revenue based funding
+  - Funding Capacity
+  - up to $2000,00
+  - Term
+  - up to 2 years
+  - Featured Include:
+  - All Premium benefits, plus
+  - $2000/yr investment in Synox Deal
+  - 50% kickback in XKI on fees
+  - Instant Messaging Concierge Service
+  - 25% kickback in XKI on fees
+  - Invest Today
+  - Perfect For:
+  - Equipment financing
+  - Funding Capacity
+  - up to $750,00
+  - Term
+  - up to 3 - 5 years
+  - Featured Include:
+  - All the Titanium benefits, plus
+  - Unlimited investments
+  - 75% kickback in XKI on fees
+  - Private events
+  - Telephone concierge
+  - Invest Today
+  - Perfect For:
+  - SVA investment
+  - Funding Capacity
+  - up to $5,000.00
+  - Term
+  - up to 10 - 25 years
+  - Featured Include:
+  - All the Black benefits, plus
+  - 90% kickback in XKI on fees
+  - Invest $5,000.00/yr in Synox Deal
+  - 15 minute priority on deals
+  - 25% kickback in XKI on fees
+  - Invest Today
+
+### 7. section.team_section
+
+- Source: `origin/index.html:1065`
+- Images/media: `assets/images/team/team_member_image_1.webp`, `assets/images/team/team_member_image_2.webp`, `assets/images/team/team_member_image_3.webp`, `assets/images/team/team_member_image_4.webp`
+- Headings:
+  - h2: Meet Our Leadership Team
+  - h3: Serhiy Yaroslav
+  - h3: Pavlo Bohdan
+  - h3: Emma Sophia
+  - h3: Jordan Eugenio
+- Text:
+  - Meet Our Leadership Team
+  - Meet our leadership team at Synox With expertise in finance, technology, and strategy, they drive our success forward.
+  - Serhiy Yaroslav
+  - Investment Analys
+  - Pavlo Bohdan
+  - Financial Advisor
+  - Emma Sophia
+  - Fund Manager
+  - Jordan Eugenio
+  - Retirement Planner
+
+### 8. section.faq_section.section_decoration.overflow-hidden
+
+- Source: `origin/index.html:1201`
+- Images/media: `assets/images/about/faq_about_image.webp`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/about/chart_image_1.webp`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_nate_13.svg`
+- Headings:
+  - h2: have a question look here
+- Links/buttons:
+  - What investment services do you offer?
+  - What types of investments do you recommend?
+  - How do I get started with investing?
+  - What is your approach to risk management?
+- Text:
+  - have a question look here
+  - For quick answers, visit our FAQ section. Can't find what you need? Contact our support team.
+  - What investment services do you offer?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - What types of investments do you recommend?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - How do I get started with investing?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - What is your approach to risk management?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+
+### 9. footer.site_footer.footer_layout_1.bg-secondary.section_decoration
+
+- Source: `origin/index.html:1304`
+- Images/media: `assets/images/backgrounds/footer_bg_1.webp`, `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## pricing.html
+
+- Title: Our Pricing – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 5
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/pricing.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/pricing.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Our Pricing
+- Links/buttons:
+  - Home -> index.html
+  - Our Pricing -> #!
+- Text:
+  - Our Pricing
+  - Home
+  - Our Pricing
+
+### 3. section.policy_section.section_space
+
+- Source: `origin/pricing.html:200`
+- Images/media: `assets/images/icons/icon_doc.svg`, `assets/images/icons/icon_chart_5.svg`, `assets/images/icons/icon_headphone_2.svg`
+- Headings:
+  - h3: Celebrating Features discover What Sets Us
+  - h3: Rich Documentation
+  - h3: Fastest Delivery
+  - h3: Lifetime Support
+- Text:
+  - Celebrating Features discover What Sets Us
+  - Our team of experts, with their diverse backgrounds and specialized skills, collaborate seamlessly to deliver tailored solutions that exceed expectations, Furthermore, our cutting-edge.
+  - Rich Documentation
+  - Our commitment to providing you with unparalleled support.
+  - Fastest Delivery
+  - Fastest Delivery typically refers to service or process that emphasizes.
+  - Lifetime Support
+  - Lifetime Support refers to a by a product or service provider.
+
+### 4. section.service_section.section_space.section_decoration.bg-secondary
+
+- Source: `origin/pricing.html:252`
+- Images/media: `assets/images/shapes/shape_nate_8.svg`, `assets/images/shapes/shape_nate_10.svg`, `assets/images/shapes/shape_nate_7.svg`, `assets/images/shapes/shape_nate_11.svg`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: We Offered Best Pricing
+  - h3: Basic plan: Financial Assessment
+  - h3: Featured Include:
+  - h3: Team plan: Personalized Financial Plan
+  - h3: Featured Include:
+  - h3: Enterprise plan: Ongoing Support and Review
+  - h3: Featured Include:
+- Links/buttons:
+  - 30% Billed Annually Billed Monthly
+  - Get The Plan Now -> contact.html
+  - Get The Plan Now -> contact.html
+  - Get The Plan Now -> contact.html
+- Text:
+  - We Offered Best Pricing
+  - We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance
+  - 30%
+  - Billed Annually
+  - Billed Monthly
+  - $29.00
+  - Per Month
+  - $19.00
+  - Month (billed annually)
+  - Basic plan: Financial Assessment
+  - Get The Plan Now
+  - Featured Include:
+  - Financial Planning
+  - Investment Management
+  - Retirement Planning
+  - Tax Planning
+  - Risk Management
+  - $59.00
+  - Per Month
+  - $49.00
+  - Month (billed annually)
+  - Team plan: Personalized Financial Plan
+  - Get The Plan Now
+  - Featured Include:
+  - Financial Planning
+  - Investment Management
+  - Retirement Planning
+  - Tax Planning
+  - Risk Management
+  - $119.00
+  - Per Month
+  - $99.00
+  - Month (billed annually)
+  - Enterprise plan: Ongoing Support and Review
+  - Get The Plan Now
+  - Featured Include:
+  - Financial Planning
+  - Investment Management
+  - Retirement Planning
+  - Tax Planning
+  - Risk Management
+
+### 5. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/pricing.html:454`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## project_details.html
+
+- Title: Project Details – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/project_details.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/project_details.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Project Details
+- Links/buttons:
+  - Home -> index.html
+  - Project Details -> #!
+- Text:
+  - Project Details
+  - Home
+  - Project Details
+
+### 3. section.project_details_section.section_space.section_decoration.overflow-hidden
+
+- Source: `origin/project_details.html:200`
+- Images/media: `assets/images/projects/project_details_image_1.webp`, `assets/images/icons/icon_check.svg`, `assets/images/projects/project_image_3.webp`, `assets/images/projects/project_image_4.webp`, `assets/images/projects/project_image_5.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_nate_3.svg`, `assets/images/shapes/shape_nate_4.svg`, `assets/images/shapes/shape_nate_5.svg`, `assets/images/shapes/shape_nate_6.svg`
+- Headings:
+  - h2: Tax Planning Strategies for Optimal Business.
+  - h3: Project Requirement
+  - h3: solution & Result
+  - h3: Our Similar Projects
+- Links/buttons:
+  - Finance Consultancy Advisory -> project_details.html
+  - Minimizing Tax Burden Advisory -> project_details.html
+  - Retirement Planning Planning -> project_details.html
+- Text:
+  - Tax Planning Strategies for Optimal Business.
+  - Tax planning is a crucial aspect of effective financial management for any business seeking to maximize profitability and minimize tax liabilities. Implementing strategic tax planning strategies ensures that businesses can optimize their financial resources, enhance cash flow, and maintain compliance with tax regulations. By proactively identifying opportunities for deductions, structure their operations to minimize tax burdens while maximizing legitimate tax savings.
+  - Moreover, careful tax planning enables businesses to adapt to changing tax laws and regulations, ensuring continued financial stability and growth. From utilizing tax-efficient investment vehicles to timing income and expenses strategically, businesses can leverage various tactics to achieve optimal tax outcomes.
+  - client:
+  - Synox
+  - services:
+  - Tax Planning
+  - completed date:
+  - 20-11-2024
+  - location:
+  - New York,NY,USA
+  - Project Requirement
+  - Our client seeks comprehensive tax planning services to optimize their business's financial management and minimize tax liabilities effectively. They aim to enhance profitability, compliance with relevant tax regulations.
+  - Customized Tax Planning
+  - Proactive Tax Management
+  - Adaptability to Tax Changes
+  - Ethical and Legal Integrity
+  - Strategic Timing of Income
+  - Comprehensive Compliance Support
+  - Post-migration Support
+  - Tax-Efficient Investment Strategies
+  - solution & Result
+  - Implementing our comprehensive tax planning strategies, tailored to the specific needs and objectives of our client's business, yielded significant benefits and outcomes. By customizing tax planning approaches and proactively managing their tax investment obligations, we helped the client optimize their financial management and minimize tax liabilities effectively.
+  - Through strategic timing of income and expenses, we maximized tax savings while ensuring compliance with relevant regulations, allowing the client to enhance profitability and improve cash flow. Our proactive opportunities for deductions,
+  - Our Similar Projects
+  - Finance Consultancy
+  - Advisory
+  - Minimizing Tax Burden
+  - Advisory
+  - Retirement Planning
+  - Planning
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/project_details.html:370`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## projects.html
+
+- Title: Our Project – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/projects.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/projects.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Our Project
+- Links/buttons:
+  - Home -> index.html
+  - Our Project -> #!
+- Text:
+  - Our Project
+  - Home
+  - Our Project
+
+### 3. section.project_section.section_space.section_decoration.overflow-hidden
+
+- Source: `origin/projects.html:200`
+- Images/media: `assets/images/projects/project_image_1.webp`, `assets/images/projects/project_image_2.webp`, `assets/images/projects/project_image_3.webp`, `assets/images/projects/project_image_4.webp`, `assets/images/projects/project_image_5.webp`, `assets/images/projects/project_image_6.webp`, `assets/images/projects/project_image_7.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_nate_3.svg`, `assets/images/shapes/shape_nate_4.svg`, `assets/images/shapes/shape_nate_5.svg`, `assets/images/shapes/shape_nate_6.svg`
+- Headings:
+  - h2: Checkout our latest Completed project
+- Links/buttons:
+  - Finance Consultancy Advisory -> project_details.html
+  - Tax Planning for Business Advisory -> project_details.html
+  - Minimizing Tax Burden Advisory -> project_details.html
+  - Retirement Planning Planning -> project_details.html
+  - Investment Portfolio Portfolio -> project_details.html
+  - Employee Financial Education Financial -> project_details.html
+  - Finance Consultancy Advisory -> project_details.html
+- Text:
+  - Checkout our latest Completed project
+  - At Synox, we prioritize data for smarter investments. Our approach relies on thorough analysis of market trends, economic indicators, and company performance.
+  - Finance Consultancy
+  - Advisory
+  - Tax Planning for Business
+  - Advisory
+  - Minimizing Tax Burden
+  - Advisory
+  - Retirement Planning
+  - Planning
+  - Investment Portfolio
+  - Portfolio
+  - Employee Financial Education
+  - Financial
+  - Finance Consultancy
+  - Advisory
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/projects.html:322`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## service_details.html
+
+- Title: Service Details – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 4
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/service_details.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/service_details.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Service Details
+- Links/buttons:
+  - Home -> index.html
+  - Service Details -> #!
+- Text:
+  - Service Details
+  - Home
+  - Service Details
+
+### 3. section.service_details_section.section_space.section_decoration.overflow-hidden
+
+- Source: `origin/service_details.html:200`
+- Images/media: `assets/images/services/service_details_image_1.webp`, `assets/images/icons/icon_headphone.svg`, `assets/images/icons/icon_bulb.svg`, `assets/images/icons/icon_head.svg`, `assets/images/icons/icon_chart_4.svg`, `assets/images/icons/icon_check.svg`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_nate_3.svg`, `assets/images/shapes/shape_nate_4.svg`, `assets/images/shapes/shape_nate_5.svg`, `assets/images/shapes/shape_nate_6.svg`
+- Headings:
+  - h2: Risk Management Solutions for Financial Future.
+  - h3: Service Process
+  - h3: Listening Your Needs
+  - h3: Tailored Solutions
+  - h3: Tactical Alignment
+  - h3: Measurable Results
+  - h3: Services Outcome
+- Text:
+  - Risk Management Solutions for Financial Future.
+  - In today's dynamic economic landscape, safeguarding your financial future requires proactive risk management strategies. Our comprehensive risk management solutions empower you to navigate uncertainties and protect your assets effectively. From market volatility and economic downturns to unexpected life events, our tailored approach identifies and mitigates potential risks that could impact your financial well-being. By conducting thorough risk assessments and implementing strategic measures.
+  - We help you build resilience and preserve your wealth over the long term. With our expertise and dedication to your financial security, you can confidently pursue your goals and aspirations, knowing that your future is protected against unforeseen challenges. Partner with us to secure your path to prosperity and achieve peace of mind.
+  - Service Process
+  - Our client seeks comprehensive Risk Management Solutions services to optimize their business's financial management and minimize tax liabilities effectively. They aim to enhance profitability, compliance with relevant tax regulations.
+  - Listening Your Needs
+  - Our priority is understanding your planning needs swiftly.
+  - Tailored Solutions
+  - we pride ourselves on offering tailored solutions address.
+  - Tactical Alignment
+  - Tactical alignment refers to the synchronization of term.
+  - Measurable Results
+  - Tracking Success with Metrics indicators used to assess.
+  - Services Outcome
+  - Here are six key points that can be associated with a digital Transformation Risk Management Solutions. leader helping Fortune 500 companies on their innovation agenda:
+  - Customized Risk Assessments
+  - Comprehensive Coverage
+  - Continuous Monitoring
+  - Proactive Strategy Implementation
+  - Ensuring Financial Security
+  - Wealth for Future Generations
+
+### 4. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/service_details.html:346`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -
+
+## services.html
+
+- Title: Our Services – Synox – Finance & Consulting Site Template.
+- Body class: sin clase
+- Sections detected: 5
+
+### 1. header.site_header.header_layout_1
+
+- Source: `origin/services.html:56`
+- Images/media: `assets/images/site_logo/site_logo_white.svg`, `assets/images/site_logo/site_logo_black.svg`, `assets/images/icons/icon_calling.svg`
+- Links/buttons:
+  - Home -> #
+  - Investment Solution -> index.html
+  - Online Banking -> index_online_banking.html
+  - Payment Solutions -> index_payment_solutions.html
+  - Insurance -> index_insurance.html
+  - Car Insurance -> index_car_insurance.html
+  - Financial Consulting -> index_financial_consulting.html
+  - Services -> #
+  - Our Services -> services.html
+  - Service Details -> service_details.html
+  - Projects -> #
+  - Our Projects -> projects.html
+  - Project Details -> project_details.html
+  - Pages -> #
+  - Help Center -> contact.html
+  - Blogs -> #
+  - Our Blogs -> blog.html
+  - Blog Details -> blog_details.html
+  - Career -> #
+  - Join Us -> career.html
+  - Job Details -> career_details.html
+  - 404 Error -> error.html
+  - Pricing -> pricing.html
+  - Hotline: (800) 555‑0199 -> tel:8005550199
+- Text:
+  - Home
+  - Investment Solution
+  - Online Banking
+  - Payment Solutions
+  - Insurance
+  - Car Insurance
+  - Financial Consulting
+  - Services
+  - Our Services
+  - Service Details
+  - Projects
+  - Our Projects
+  - Project Details
+  - Pages
+  - Help Center
+  - Blogs
+  - Our Blogs
+  - Blog Details
+  - Career
+  - Join Us
+  - Job Details
+  - 404 Error
+  - Pricing
+  - Hotline: (800) 555‑0199
+
+### 2. section.page_header.text-center.bg-dark.section_decoration
+
+- Source: `origin/services.html:165`
+- Images/media: `assets/images/backgrounds/page_header_bg_1.webp`, `assets/images/shapes/shape_nate.svg`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`, `assets/images/shapes/shape_dollar_4.webp`, `assets/images/shapes/breadcrumb_shape_pattern_1.svg`, `assets/images/shapes/breadcrumb_shape_pattern_2.svg`
+- Headings:
+  - h1: Our Services
+- Links/buttons:
+  - Home -> index.html
+  - Our Services -> #!
+- Text:
+  - Our Services
+  - Home
+  - Our Services
+
+### 3. section.feature_section.section_space
+
+- Source: `origin/services.html:200`
+- Images/media: `assets/images/icons/icon_dollar_bag.svg`, `assets/images/icons/icon_overlap.svg`, `assets/images/icons/icon_chart_bar.svg`
+- Headings:
+  - h3: why our services are better than others?
+  - h3: Funding & Investment
+  - h3: Capital Transparency
+  - h3: Secure Investment Plan
+- Text:
+  - why our services are better than others?
+  - Our services stand out because we prioritize quality and value above all else. With a relentless customer satisfaction, innovative solution.,
+  - Funding & Investment
+  - At Synox we excel funding & investing, guiding strategic decisions.
+  - Capital Transparency
+  - We prioritize capital transparency Our commitment ensures clarity.
+  - Secure Investment Plan
+  - Our Secure Investment Plan at Synox ensures stability and growth.
+
+### 4. section.service_section.bg-secondary.section_decoration.overflow-hidden
+
+- Source: `origin/services.html:270`
+- Images/media: `assets/images/icons/icon_rectangle.svg`, `assets/images/icons/icon_home.svg`, `assets/images/icons/icon_search.svg`, `assets/images/icons/icon_chart_bar_2.svg`, `assets/images/icons/icon_dollar_2.svg`, `assets/images/icons/icon_man.svg`, `assets/images/icons/icon_discount.svg`, `assets/images/about/faq_about_image.webp`, `assets/images/shapes/shape_dollar_1.webp`, `assets/images/about/chart_image_1.webp`, `assets/images/shapes/shape_nate_8.svg`, `assets/images/shapes/shape_nate_10.svg`, `assets/images/shapes/shape_nate_7.svg`, `assets/images/shapes/shape_nate_11.svg`, `assets/images/shapes/shape_dollar_2.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: What we can help you with
+  - h3: Real Estate Investment Advisory
+  - h3: Investment Research and Analysis
+  - h3: Risk Management Solutions
+  - h3: Financial Planning and Consultation
+  - h3: Retirement Planning Services
+  - h3: Tax-Efficient Investing Solutions
+  - h2: have a question look here
+- Links/buttons:
+  - Real Estate Investment Advisory -> service_details.html
+  - Read More -> service_details.html
+  - Investment Research and Analysis -> service_details.html
+  - Read More -> service_details.html
+  - Risk Management Solutions -> service_details.html
+  - Read More -> service_details.html
+  - Financial Planning and Consultation -> service_details.html
+  - Read More -> service_details.html
+  - Retirement Planning Services -> service_details.html
+  - Read More -> service_details.html
+  - Tax-Efficient Investing Solutions -> service_details.html
+  - Read More -> service_details.html
+  - What investment services do you offer?
+  - What types of investments do you recommend?
+  - How do I get started with investing?
+  - What is your approach to risk management?
+- Text:
+  - What we can help you with
+  - We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance
+  - Real Estate Investment Advisory
+  - Real Estate Investment Advisory cater to individuals and organizations.
+  - Read More
+  - Investment Research and Analysis
+  - Our Investment Research and Analysis team uncovers valuable insights.
+  - Read More
+  - Risk Management Solutions
+  - Our Risk Management Solutions ensure your investments are safeguarded.
+  - Read More
+  - Financial Planning and Consultation
+  - We offers personalized guidance to secure your financial future.
+  - Read More
+  - Retirement Planning Services
+  - Secure Your Future with Retirement Planning Services at Finto.
+  - Read More
+  - Tax-Efficient Investing Solutions
+  - These solutions recognize the impact of taxes on investment performance.
+  - Read More
+  - have a question look here
+  - For quick answers, visit our FAQ section. Can't find what you need? Contact our support team.
+  - What investment services do you offer?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - What types of investments do you recommend?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - How do I get started with investing?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+  - What is your approach to risk management?
+  - We recommend a diversified portfolio tailored to your individual needs, This may include stocks, bonds, mutual funds, ETFs, real estate.
+
+### 5. footer.site_footer.footer_layout_1.bg-dark.section_decoration
+
+- Source: `origin/services.html:533`
+- Images/media: `assets/images/icons/icon_email.svg`, `assets/images/site_logo/site_logo_white.svg`, `assets/images/icons/icon_calling_2.svg`, `assets/images/icons/icon_email_2.svg`, `assets/images/app_store.webp`, `assets/images/google_play.webp`, `assets/images/shapes/shape_finto.svg`, `assets/images/shapes/shape_nate_2.svg`, `assets/images/shapes/shape_dollar_5.webp`, `assets/images/shapes/shape_dollar_3.webp`
+- Headings:
+  - h2: Subscribe for daily update
+  - h3: Quick LInk
+  - h3: Information
+  - h3: Download App
+- Links/buttons:
+  - +(1) 1230 452 8759 -> tel:+112304528759
+  - synox@mail.com -> mailto:synox@mail.com
+  - Gold Investment -> #!
+  - Property Investment -> #!
+  - Gold Investment -> #!
+  - Product Salute -> #!
+  - Digital Investment -> #!
+  - Career -> #!
+  - Privacy Policy -> #!
+  - Terms & condition -> #!
+  - Refund & News -> #!
+  - Awards & Partners -> #!
+- Text:
+  - Subscribe for daily update
+  - +(1) 1230 452 8759
+  - synox@mail.com
+  - Waterloo, Macquarie Park NSW 2113, Australia
+  - Quick LInk
+  - Gold Investment
+  - Property Investment
+  - Gold Investment
+  - Product Salute
+  - Digital Investment
+  - Information
+  - Career
+  - Privacy Policy
+  - Terms & condition
+  - Refund & News
+  - Awards & Partners
+  - Download App
+  - Available in any kind of ready version
+  - Copyright © 2024 Synox, All rights reserved.
+  - Follow Us -

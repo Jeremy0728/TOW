@@ -172,4 +172,9 @@ Cuando se cambie SCSS:
 3. Mantener `assets/scss/style.scss` como indice de imports.
 4. Verificar que la pagina afectada carga `assets/css/style.css`.
 
-No hay `package.json` ni comando Sass local documentado en esta descarga. Si se define un compilador en una fase posterior, documentarlo en `docs/decisions.md` y `docs/verification.md`.
+El proyecto ya tiene `package.json` con scripts Sass:
+
+- `npm run sass:build`: compila una vez `assets/scss/style.scss` hacia `assets/css/style.css`.
+- `npm run sass:watch`: mantiene compilacion activa mientras se editan parciales.
+
+Si se cambia SCSS, usar esos scripts y registrar verificaciones relevantes en `docs/verification.md`.

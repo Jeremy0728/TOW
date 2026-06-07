@@ -1,0 +1,261 @@
+[
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/about-oscar-2.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/about-oscar-2.png",
+    "bytes": 2599257,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/about-oscar-dark.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/about-oscar-dark.png",
+    "bytes": 1834705,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/about-oscar.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/about-oscar.png",
+    "bytes": 2978877,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/check-bullet-competitions.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/check-bullet-competitions.svg",
+    "bytes": 381,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/check-bullet-course.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/check-bullet-course.svg",
+    "bytes": 362,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/check-bullet-membership.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/check-bullet-membership.svg",
+    "bytes": 362,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/competition-card.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/competition-card.png",
+    "bytes": 1781444,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/course-card.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/course-card.png",
+    "bytes": 1420780,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/cta-oscar-p.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/cta-oscar-p.png",
+    "bytes": 790684,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/cta-oscar.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/cta-oscar.png",
+    "bytes": 623527,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/hero-light-mode.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/hero-light-mode.png",
+    "bytes": 2478262,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/hero-mountain-tow.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/hero-mountain-tow.png",
+    "bytes": 2411475,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/hombre-day.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/hombre-day.png",
+    "bytes": 365983,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/hombre-night.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/hombre-night.png",
+    "bytes": 321781,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/logo-tow-negative.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/logo-tow-negative.png",
+    "bytes": 8029,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/man-run.mp4",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/man-run.mp4",
+    "bytes": 5184242,
+    "ext": ".mp4"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-card-membership.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-card-membership.png",
+    "bytes": 1430210,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-divider-competitions.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-divider-competitions.svg",
+    "bytes": 294,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-divider-course.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-divider-course.svg",
+    "bytes": 288,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-divider-membership.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-divider-membership.svg",
+    "bytes": 292,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-icon-competitions.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-icon-competitions.svg",
+    "bytes": 7657,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-icon-course.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-icon-course.svg",
+    "bytes": 4206,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/offer-icon-membership.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/offer-icon-membership.svg",
+    "bytes": 5280,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/oscar-o.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/oscar-o.png",
+    "bytes": 443567,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/oscar-portrait.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/oscar-portrait.png",
+    "bytes": 1027308,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/oscar-wheel-overlay-o.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/oscar-wheel-overlay-o.png",
+    "bytes": 2339587,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/oscar-wheel-overlay.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/oscar-wheel-overlay.png",
+    "bytes": 1958594,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/oscar.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/oscar.png",
+    "bytes": 444166,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_bars_light.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_bars_light.png",
+    "bytes": 769442,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_funfact_bg_1.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_funfact_bg_1.svg",
+    "bytes": 1004,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_funfact_bg_2.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_funfact_bg_2.svg",
+    "bytes": 1003,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_funfact_bg_3.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_funfact_bg_3.svg",
+    "bytes": 1004,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_funfact_bg_4.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_funfact_bg_4.svg",
+    "bytes": 1010,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_shape_circle_3.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_shape_circle_3.svg",
+    "bytes": 601,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_shape_line.svg",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_shape_line.svg",
+    "bytes": 3895,
+    "ext": ".svg"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/tow_wheel_light.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/tow_wheel_light.png",
+    "bytes": 112423,
+    "ext": ".png"
+  },
+  {
+    "category": "tow/current",
+    "source": "assets/images/tow/Trading-on-wheels-logo.png",
+    "exportPath": "exports/assets-candidates/trading-on-wheels-current/tow/Trading-on-wheels-logo.png",
+    "bytes": 36904,
+    "ext": ".png"
+  }
+]

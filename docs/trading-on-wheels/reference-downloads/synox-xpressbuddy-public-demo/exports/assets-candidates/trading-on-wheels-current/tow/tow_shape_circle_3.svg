@@ -1,0 +1,13 @@
+<svg width="440" height="440" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="220" cy="220" r="220" fill="url(#paint0_tow_shape_circle_3)"/>
+<defs>
+<linearGradient id="paint0_tow_shape_circle_3" x1="0" y1="0" x2="440" y2="440" gradientUnits="userSpaceOnUse">
+<stop offset="0.139348" stop-color="#FFC107"/>
+<stop offset="0.287793" stop-color="#FFE063"/>
+<stop offset="0.408654" stop-color="#FFB300"/>
+<stop offset="0.576923" stop-color="#FFE36F"/>
+<stop offset="0.884615" stop-color="#FFC107"/>
+<stop offset="1" stop-color="#FFF2A6"/>
+</linearGradient>
+</defs>
+</svg>
