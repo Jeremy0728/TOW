@@ -79,6 +79,37 @@ sass-migrator module --dry-run assets/sass/style.scss
 
 ## Registro De Verificacion
 
+### 2026-06-07 - Membership complementada sobre base TOW
+
+- Se ajusto `membership.html` sin reemplazar su estructura base: header TOW, hero, servicios, about, offers, CTA y footer se mantienen.
+- Se corrigio el fondo del hero para mantener el asset propio existente de membership: `assets/images/banner/home4/1.png`.
+- Se actualizo el about para retirar texto/metrica generica de consultoria y usar `assets/figma/oscar-portrait.png`.
+- Se reviso estaticamente que no quedaran textos como `Consulting`, `Satisfied`, `guide structure`, `signup.html`, `index-tow`, `Synox` ni favicon viejo `20260601`.
+- Se validaron rutas/assets principales usados por membership: hero, retrato de Oscar, `legal.html`, `contact.html`, `course.html` y `competitions.html`.
+- Quedan `href="#"` solo en redes sociales placeholder y `scrollToTop`.
+- No se edito Sass en esta pasada. El CSS compilado no requiere build por estos cambios HTML.
+
+### 2026-06-07 - Course, competitions y About Oscar complementados
+
+- Se complemento `course.html` manteniendo su banner propio `assets/images/banner/home4/coursebanner.png`.
+- Se reemplazo el roadmap generico del curso por modulos: Options Foundations, Gurman Framework, Trade Selection, Risk Rules, Execution Routine y Review & Repetition.
+- Se reemplazaron FAQ/outcomes genericos de finanzas/insurance en `course.html` por contenido educativo del Gurman Method.
+- Se complemento `competitions.html` manteniendo su banner propio `assets/images/banner/home4/competitionbanner.png`.
+- En `competitions.html` se agrego un FAQ visible especifico de demo challenges; el FAQ viejo del template quedo oculto con `d-none` para preservar base sin mostrar contenido generico.
+- Se complemento `about-oscar.html` con copy de hero mas claro, CTA `Become a VIP` y enlaces legales reales.
+- Se validaron assets propios de membership/course/competitions/about y `legal.html`.
+- No se edito Sass en esta pasada.
+
+### 2026-06-07 - Transferencia Synox a Bitrader home
+
+- Se reconstruyo `index.html` con secciones nativas Bitrader y contenido Synox/TOW.
+- Se creo `legal.html` para cubrir el enlace legal del footer.
+- Se confirmo estaticamente que existen las rutas internas enlazadas desde home: `membership.html`, `course.html`, `competitions.html`, `about-oscar.html`, `contact.html` y `legal.html`.
+- Se confirmo que assets principales referenciados por la home existen: logo TOW, hero, iconos de ofertas, retrato de Oscar y fondo de pricing.
+- Se busco en `index.html` y `legal.html` referencias heredadas como `index-tow`, `Synox`, `Bitrader - Professional`, `signup.html` y `service-details.html`; no quedaron coincidencias relevantes.
+- Browser interno no pudo inicializar por `windows sandbox failed: spawn setup refresh`; queda pendiente revision visual real desktop/mobile.
+- No se corrio `npm run build` porque esta iteracion no edito Sass.
+
 ### 2026-06-01 - Sitemap TOW aislado
 
 - Se validaron estaticamente `index-tow.html`, `membership.html`, `course.html`, `competitions.html` y `about-oscar.html`.

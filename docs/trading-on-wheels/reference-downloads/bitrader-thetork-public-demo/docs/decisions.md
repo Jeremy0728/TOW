@@ -217,7 +217,27 @@ assets/sass/
 - Implicacion: decisiones sobre Astro, Kubernetes, S3, CloudFront, route registries, Unlighthouse, formularios Astro o componentes `.astro` no aplican a esta build.
 - Implicacion: si el proyecto migra en el futuro a otro stack, se abrira una decision nueva con evidencia local.
 
+## 16. Synox Es Fuente De Contenido, Bitrader Es Template Destino
+
+- Estado: vigente.
+- Decision: Bitrader/Thetork es la template visual y estructural donde se reconstruye el sitio.
+- Decision: Trading On Wheels es la marca y el contenido real del proyecto.
+- Decision: Synox no se copia visualmente; se usa como fuente de contenido, sitemap, copy, compliance y decisiones ya trabajadas.
+- Decision: el export canonico de Synox vive en `../synox-xpressbuddy-public-demo/exports/`.
+- Decision: el mapa operativo para esta transferencia vive en `docs/bitrader-synox-transfer-map.md`.
+- Implicacion: las secciones HTML deben salir primero de `origin/` de Bitrader y recibir contenido TOW/Synox.
+- Implicacion: las clases `tow-*` pueden usarse como modificadores locales, pero la reconstruccion debe apoyarse en clases nativas Bitrader cuando sea razonable.
+- Implicacion: no tratar Bitrader como una marca independiente; Bitrader es la base de template.
+
 ## Registro De Cambios Importantes
+
+### 2026-06-07
+
+- Se corrigio el enfoque de la fase: Bitrader queda como template destino, Trading On Wheels como marca real y Synox exports como fuente de contenido/arquitectura.
+- Se agrego `docs/bitrader-synox-transfer-map.md` para mapear contenido Synox/TOW a secciones Bitrader Origin.
+- Se actualizo `docs/README.md` y `docs/current-phase.md` para quitar la dependencia conceptual de `index-tow.html` y orientar la fase a la transferencia Synox -> Bitrader.
+- Se reconstruyo `index.html` con secciones Bitrader (`header-section`, `banner`, `partner`, `feature`, `roadmap`, `pricing`, `service`, `faq`, `cta`, `footer`) y contenido Synox/TOW v2.
+- Se creo `legal.html` minimo con el disclaimer de riesgo/educacion de Synox para no dejar roto el enlace legal del footer.
 
 ### 2026-06-01
 

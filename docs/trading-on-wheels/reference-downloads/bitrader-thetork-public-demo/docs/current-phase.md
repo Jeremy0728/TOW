@@ -2,98 +2,79 @@
 
 ## Fase Vigente
 
-Fase 1.5: crear una propuesta aislada de landing TOW sobre Bitrader, usando el tema dark ya orientado y los assets staged de Figma sin reemplazar todavia el index original.
+Fase 2: transferir la propuesta Trading On Wheels ya trabajada en Synox hacia
+Bitrader, usando Bitrader Origin como base visual y estructural.
 
 ## Objetivo
 
-Transformar el modo `[data-bs-theme="dark"]` crypto/green actual en una base visual TOW y validar una nueva propuesta de landing en `index-tow.html`:
+Reconstruir los HTML de Bitrader para TOW usando:
 
-- Fondo negro `#0c0c0d`.
-- Paneles/cards `#141414`.
-- Acento principal amarillo `#f7c600`.
-- Acento course azul `#2757a6`.
-- Acento competitions verde `#498734`.
-- Texto principal blanco.
-- Texto secundario gris `#908f8f`.
-- Tipografia `Montserrat` + `Anton`.
+- Bitrader como template destino.
+- `origin/` como banco de secciones reutilizables.
+- Synox como fuente de contenido, sitemap, copy, compliance y decisiones.
+- TOW previo en Bitrader como referencia de assets y trabajo ya existente.
 
-## Alcance De Fase 1
+La meta no es copiar Synox. La meta es que TOW funcione en Bitrader con una
+estructura limpia, editable y consistente con la template.
 
-Tocado primero:
+## Alcance Actual
 
-- `assets/sass/abstracts/_variables.scss`, seccion `[data-bs-theme="dark"]`
-- `assets/sass/base/_fonts.scss`
-- `assets/sass/base/_typography.scss`
-- `assets/sass/components/_button.scss`
-- `assets/sass/layout/_header.scss`
-- `assets/sass/layout/_banner.scss`
-- `assets/sass/components/_pricing.scss`
-- `assets/sass/components/_cta.scss`
-- `assets/sass/layout/_footer.scss`
-- `assets/sass/themes/_theme.scss`
+Primera pasada:
 
-Politica de fuentes:
+- Documentar el puente Synox -> Bitrader.
+- Reconstruir `index.html` con secciones Bitrader.
+- Mantener contenido TOW v2 de Synox:
+  - Hero `Stop Renting Your Time`.
+  - Credibility strip.
+  - Tres pilares.
+  - Proceso en 4 moves.
+  - Pricing.
+  - Risk First.
+  - FAQ con compliance.
+  - Footer con disclaimer.
 
-- Usar solo familias confirmadas en Figma: `Anton` y `Montserrat`.
-- Usar solo pesos necesarios del style frame: `Anton 400`; `Montserrat 400, 500, 600, 700, 800, 900`.
-- Mantener la base original de variables Sass; orientar `$title-font` y `$text-font` sin crear un sistema nuevo de fuentes.
+Siguiente pasada:
 
-No tocar todavia:
+- Complementar `membership.html` sin borrar su base TOW existente.
+- Complementar `course.html` sin borrar su base TOW existente.
+- Decidir si `gurman-method.html` existe como ruta propia.
+- Complementar `competitions.html`.
+- Complementar `about-oscar.html`.
+- Crear `legal.html`.
 
-- Reescritura completa de `:root` light si no es necesaria para el dark look.
-- Reemplazo masivo de imagenes en rutas finales.
-- Limpieza completa de secciones HTML originales.
-- Refactor de clases.
-- Introduccion de framework o build system nuevo.
-- Sustituir `index.html` o `index--theme_dark.html` con la propuesta.
+## Reglas Vigentes
 
-## Checklist De Implementacion
+- No introducir frameworks.
+- No copiar visualmente Synox.
+- No tratar Bitrader como marca nueva.
+- Usar clases Bitrader existentes siempre que sea razonable.
+- Agregar clases `tow-*` solo como modificadores locales.
+- No inventar testimonios ni metricas de rentabilidad.
+- Mantener disclaimer visible.
+- Si se edita Sass, compilar `assets/css/style.css` con `npm run build`.
 
-- [x] Confirmar familias y pesos desde Figma `161:557` y `2:2`.
-- [x] Confirmar que `Montserrat` queda como fuente base para `$title-font` y `$text-font`, dejando `Anton` solo para titulares display.
-- [x] Instalar Sass CLI global para compilar desde terminal: `sass 1.100.0`.
-- [x] Instalar Sass Migrator global para conversiones controladas: `sass-migrator 2.5.7`.
-- [x] Crear setup Node local de Bitrader con `package.json`, `package-lock.json`, `sass:build` y `sass:watch`.
-- [x] Restaurar imports SCSS faltantes con parciales vacios controlados: `vendors/_nice-select.scss` y `pages/_home.scss`.
-- [x] Mapear tokens dark actuales a paleta TOW.
-- [x] Ajustar `[data-bs-theme="dark"]` para que el fondo base sea negro TOW.
-- [x] Cubrir sombras/fondos verdes hardcodeados con overrides en `themes/_theme.scss` dentro de dark.
-- [x] Ajustar tipografia base y display headings.
-- [ ] Ajustar botones `.trk-btn` a yellow fill y yellow outline.
-- [ ] Ajustar header oscuro, borde amarillo y nav compacto.
-- [ ] Ajustar hero/banner a look Figma aunque use assets temporales.
-- [ ] Ajustar cards de pricing/ofertas a dark surfaces.
-- [ ] Ajustar CTA amarillo con boton negro.
-- [ ] Ajustar footer negro, links muted y titulos amarillos.
-- [x] Regenerar o sincronizar `assets/css/style.css`.
+## Checklist
+
+- [x] Identificar que Bitrader es template destino y TOW es marca real.
+- [x] Identificar que Synox exports es la fuente de contenido/estructura.
+- [x] Detectar docs Bitrader desactualizados que citaban `index-tow.html`.
+- [x] Crear `docs/bitrader-synox-transfer-map.md`.
+- [x] Reconstruir `index.html` con secciones Bitrader.
+- [x] Crear `legal.html` minimo con disclaimer Synox/TOW para evitar enlace roto.
+- [x] Complementar `membership.html` manteniendo header, hero, servicios, about, offers, CTA y footer base.
+- [x] Complementar `course.html` manteniendo banner y estructura base.
+- [x] Complementar `competitions.html` manteniendo banner y estructura base.
+- [x] Complementar `about-oscar.html` manteniendo hero, roadmap, CTA y footer base.
+- [x] Verificar estaticamente que assets principales y rutas internas existen.
 - [ ] Revisar desktop.
 - [ ] Revisar mobile.
-- [ ] Registrar cambios relevantes en `docs/decisions.md`.
+- [ ] Compilar Sass si se editan parciales.
+- [ ] Registrar decisiones nuevas en `docs/decisions.md`.
 
-## Definicion De Terminado
+## Pendientes
 
-La fase 1 se considera lista cuando:
-
-- `index--theme_dark.html` ya no se ve como Bitrader verde/crypto.
-- Los colores base y fuentes coinciden con la referencia TOW.
-- Header, hero, cards, CTA y footer comparten el nuevo tema.
-- El CSS compilado refleja los cambios Sass.
-- No hay assets visualmente rotos en la pagina principal.
-
-## Preparacion De Fase 2
-
-- [x] Crear `assets/figma/`.
-- [x] Crear `assets/figma/manifest.md`.
-- [x] Descargar assets MCP/Figma a staging.
-- [x] Crear `index-tow.html` como propuesta aislada basada en el index.
-- [x] Agregar `assets/sass/pages/_tow-index.scss` con estilos encapsulados bajo `.tow-page`.
-- [x] Usar en la propuesta: logo negativo, hero, cards/icons/bullets, Oscar portrait, wheel overlay y social icons desde `assets/figma/`.
-- [x] Armar sitemap minimo de primera prueba: `index-tow.html`, `membership.html`, `course.html`, `competitions.html`, `about-oscar.html` y CTA a `signup.html`.
-- [x] Documentar el sitemap en `docs/tow-sitemap.md`.
-- [ ] Definir primera tanda de reemplazos con backup `*-original`.
-- [ ] Revisar visualmente `index-tow.html` en desktop.
-- [ ] Revisar visualmente `index-tow.html` en mobile.
-
-## Siguiente Fase
-
-Fase 2: revisar la propuesta `index-tow.html`, aprobar o ajustar secciones y despues decidir que assets migran de `assets/figma/` a rutas finales.
+- Confirmar URLs reales de checkout.
+- Confirmar si `gurman-method.html` sera pagina propia en Bitrader.
+- Confirmar metricas `200K+` y `27+ years` antes de publicarlas.
+- Confirmar testimonios reales o mantener bloque oculto.
+- Migrar assets finales desde Synox exports si falta algun asset TOW en Bitrader.

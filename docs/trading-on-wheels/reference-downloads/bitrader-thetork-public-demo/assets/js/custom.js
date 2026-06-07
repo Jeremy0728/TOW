@@ -382,6 +382,58 @@ if (typeof Swiper !== 'undefined' && document.querySelector('.testimonial__slide
     });
 }
 
+if (typeof Swiper !== 'undefined' && document.querySelector('.tow-testimonial-marquee')) {
+    const testimonialMarquees = document.querySelectorAll('.tow-testimonial-marquee');
+    const testimonialMarqueeCardHeight = 340;
+
+    testimonialMarquees.forEach(function (slider) {
+        const reverseDirection = slider.classList.contains('tow-testimonial-marquee--reverse');
+        slider.style.minHeight = testimonialMarqueeCardHeight + 'px';
+        slider.querySelectorAll('.testimonial__item-inner').forEach(function (card) {
+            card.style.height = testimonialMarqueeCardHeight + 'px';
+        });
+
+        new Swiper(slider, {
+            spaceBetween: 24,
+            loop: true,
+            loopedSlides: 6,
+            allowTouchMove: false,
+            slidesPerView: 1,
+            speed: 6000,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+                reverseDirection: reverseDirection,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1.2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+                1600: {
+                    slidesPerView: 5,
+                },
+            },
+            on: {
+                init: function () {
+                    this.wrapperEl.style.transitionTimingFunction = 'linear';
+                },
+                slideChangeTransitionStart: function () {
+                    this.wrapperEl.style.transitionTimingFunction = 'linear';
+                },
+            },
+        });
+    });
+}
+
 // roadmap slider 
 if (typeof Swiper !== 'undefined' && document.querySelector('.roadmap__slider')) {
     const roadmapSlider = new Swiper('.roadmap__slider', {
