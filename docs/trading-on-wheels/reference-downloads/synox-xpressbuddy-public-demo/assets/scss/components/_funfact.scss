@@ -153,6 +153,8 @@
 .money_transactions_card {
 	display: flex;
 	height: 532px;
+	overflow: hidden;
+	position: relative;
 	background-size: auto;
 	flex-direction: column;
 	padding: 25px 25px 70px;
@@ -160,8 +162,50 @@
 	justify-content: space-between;
 	background-position: center bottom;
 	border-radius: var(--bs-border-radius-lg);
+	.image_block {
+		z-index: 1;
+		height: 315px;
+		position: relative;
+		margin: 0 -25px;
+	}
+	.tow_market_bars,
+	.tow_wheel_image {
+		left: 50%;
+		display: block;
+		position: absolute;
+		max-width: none;
+		transform: translateX(-50%);
+	}
+	.tow_market_bars {
+		top: 42px;
+		width: 330px;
+		opacity: 0.96;
+	}
+	.tow_wheel_image {
+		top: 52px;
+		width: 260px;
+		transform-origin: 50% 50%;
+		animation: towWheelSpin 14s linear infinite;
+		will-change: transform;
+	}
 	.btn {
+		z-index: 2;
 		align-self: center;
+	}
+}
+
+@keyframes towWheelSpin {
+	0% {
+		transform: translateX(-50%) rotate(0deg);
+	}
+	100% {
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.money_transactions_card .tow_wheel_image {
+		animation: none;
 	}
 }
 
