@@ -17,3 +17,8 @@ docs/trading-on-wheels/reference-downloads/*
 !docs/trading-on-wheels/reference-downloads/bitrader-thetork-public-demo/**
 !docs/trading-on-wheels/reference-downloads/leadz-awaiken-public-demo/
 !docs/trading-on-wheels/reference-downloads/leadz-awaiken-public-demo/**
+!docs/trading-on-wheels/reference-downloads/synox-xpressbuddy-public-demo/
+!docs/trading-on-wheels/reference-downloads/synox-xpressbuddy-public-demo/**
+docs/trading-on-wheels/reference-downloads/synox-xpressbuddy-public-demo/.vscode/
+docs/trading-on-wheels/reference-downloads/synox-xpressbuddy-public-demo/node_modules/
+docs/trading-on-wheels/reference-downloads/synox-xpressbuddy-public-demo/origin/
