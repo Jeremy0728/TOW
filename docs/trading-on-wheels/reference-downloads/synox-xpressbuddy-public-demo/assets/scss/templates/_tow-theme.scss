@@ -339,8 +339,36 @@ html[data-tow-theme="light"] body.tow-page .tow_course_learning_section .service
 	color: var(--tow-blue) !important;
 }
 
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .service_title,
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .service_title a {
+	color: var(--tow-heading) !important;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .service_title a:hover,
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .btn-link,
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .btn-link .btn_label,
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .btn-link .btn_icon {
+	color: var(--tow-blue) !important;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .btn-link:hover,
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .btn-link:hover .btn_label,
+html[data-tow-theme="light"] body.tow-page .tow_course_choice_section .service_block .btn-link:hover .btn_icon {
+	color: var(--tow-heading) !important;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_process_card,
+html[data-tow-theme="light"] body.tow-page .tow_process_mobile_steps > li,
 html[data-tow-theme="light"] body.tow-page .tow_process_card_1 {
-	background-color: #fff9dd !important;
+	background-color: var(--tow-white) !important;
+	border-color: rgba(var(--bs-primary-rgb), 0.62) !important;
+	box-shadow: 0 20px 42px rgba(20, 32, 46, 0.12);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_process_number {
+	background: linear-gradient(180deg, #ffc400 0%, #d7a100 48%, #ffffff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 html[data-tow-theme="light"] body.tow-page .tow_process_section .heading_block .heading_text {
