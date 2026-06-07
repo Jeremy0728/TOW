@@ -7417,7 +7417,13 @@ html[data-tow-theme=light] body.tow-page .pricing_block .pricing_amount {
 }
 
 html[data-tow-theme=light] body.tow-page .tow_course_pricing_section .pricing_amount {
+  color: var(--tow-white) !important;
   box-shadow: 0 18px 42px rgba(var(--tow-course-rgb), 0.24);
+}
+
+html[data-tow-theme=light] body.tow-page .tow_course_pricing_section .pricing_amount span,
+html[data-tow-theme=light] body.tow-page .tow_course_pricing_section .pricing_amount small {
+  color: var(--tow-white) !important;
 }
 
 html[data-tow-theme=light] body.tow-page .pricing_toggle_btn {
