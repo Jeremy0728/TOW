@@ -1,0 +1,534 @@
+﻿/*
+Trading On Wheels Membership page overrides
+Loaded after tow-overrides.css only on matching pages.
+*/
+
+/* Extracted shared section rules */
+
+.tow-page .our-pricing .section-title h3{
+	font-family: var(--accent-font);
+	font-size: 16px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	color: var(--tow-yellow);
+	padding-left: 24px;
+	margin-bottom: 14px;
+}
+
+.tow-page .our-pricing .section-title h3::before{
+	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
+}
+
+.tow-page .our-pricing .section-title h2{
+	color: var(--tow-heading);
+	text-transform: uppercase;
+	max-width: 670px;
+}
+
+body.tow-theme-light .our-pricing .section-title h3{
+	color: var(--tow-heading);
+}
+
+body.tow-theme-light .our-pricing .section-title h2{
+	color: var(--tow-blue);
+}
+
+body.tow-theme-light .our-pricing .section-title h2 span{
+	color: var(--tow-yellow);
+}
+
+.tow-page .our-pricing .section-title-content p{
+	color: var(--tow-muted);
+}
+
+.tow-page .our-pricing{
+	position: relative;
+	background: var(--tow-bg);
+
+}
+
+.tow-page .our-pricing .section-row{
+	margin-bottom: 42px;
+}
+
+.tow-page .our-pricing .row:last-child{
+	row-gap: 30px;
+}
+
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card){
+	position: relative;
+	overflow: hidden;
+	transition:
+		background-color 0.32s ease,
+		border-color 0.32s ease,
+		box-shadow 0.32s ease,
+		transform 0.32s ease;
+}
+
+.tow-page .our-pricing .tow-plan-card::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
+	opacity: 0;
+	transform: scale(1.04);
+	transition: opacity 0.32s ease, transform 0.5s ease;
+	pointer-events: none;
+}
+
+.tow-page .our-pricing .tow-plan-card--membership::before{
+	background-image:
+		linear-gradient(90deg, rgba(247, 198, 0, 0.95) 0%, rgba(247, 198, 0, 0.85) 100%),
+		url('../images/tow/offer-card-membership.png');
+}
+
+.tow-page .our-pricing .tow-plan-card--course::before{
+	background-image:
+		linear-gradient(90deg, rgba(39, 87, 166, 0.95) 0%, rgba(39, 87, 166, 0.85) 100%),
+		url('../images/tow/course-card.png');
+}
+
+.tow-page .our-pricing .tow-plan-card--competitions::before{
+	background-image:
+		linear-gradient(90deg, rgba(73, 135, 52, 0.95) 0%, rgba(73, 135, 52, 0.85) 100%),
+		url('../images/tow/competition-card.png');
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership::before{
+	background-image:
+		linear-gradient(90deg, rgba(247, 198, 0, 0.88) 0%, rgba(247, 198, 0, 0.78) 100%),
+		url('../images/tow/offer-card-membership.png');
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--course::before{
+	background-image:
+		linear-gradient(90deg, rgba(39, 87, 166, 0.71) 0%, rgba(39, 87, 166, 0.64) 100%),
+		url('../images/tow/course-card.png');
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--competitions::before{
+	background-image:
+		linear-gradient(90deg, rgba(73, 135, 52, 0.71) 0%, rgba(73, 135, 52, 0.64) 100%),
+		url('../images/tow/competition-card.png');
+}
+
+.tow-page .our-pricing .tow-plan-card.highlighted-box::before,
+.tow-page .our-pricing .tow-plan-card.is-active::before{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.tow-page .our-pricing .tow-plan-card > *{
+	position: relative;
+	z-index: 1;
+}
+
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card).is-active{
+	transform: translateY(-8px);
+	box-shadow: 0 24px 54px rgba(39, 87, 166, 0.22);
+}
+
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li::before,
+.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-footer .btn-highlighted{
+	transition:
+		color 0.32s ease,
+		border-color 0.32s ease,
+		background-color 0.32s ease,
+		transform 0.32s ease,
+		filter 0.32s ease;
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card){
+	background: #121314;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.26);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership:not(.highlighted-box):not(.is-active){
+	border-color: rgba(247, 198, 0, 0.62);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--course:not(.highlighted-box):not(.is-active){
+	border-color: rgba(39, 87, 166, 0.72);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--competitions:not(.highlighted-box):not(.is-active){
+	border-color: rgba(73, 135, 52, 0.72);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).is-active{
+	background: var(--tow-blue);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header{
+	border-color: rgba(255, 255, 255, 0.14);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box .pricing-box-header,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).is-active .pricing-box-header{
+	border-color: rgba(255, 255, 255, 0.16);
+}
+
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
+body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li{
+	color: var(--tow-white);
+}
+
+
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box,
+.tow-page .our-pricing .tow-plan-card--membership.is-active{
+	background: var(--tow-yellow);
+	box-shadow: 0 28px 60px rgba(247, 198, 0, 0.28);
+}
+
+.tow-page .our-pricing .tow-plan-card--course.highlighted-box,
+.tow-page .our-pricing .tow-plan-card--course.is-active{
+	background: var(--tow-blue);
+	box-shadow: 0 28px 60px rgba(39, 87, 166, 0.32);
+}
+
+.tow-page .our-pricing .tow-plan-card--competitions.highlighted-box,
+.tow-page .our-pricing .tow-plan-card--competitions.is-active{
+	background: var(--tow-green);
+	box-shadow: 0 28px 60px rgba(73, 135, 52, 0.3);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-title p,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2 sub,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-content p,
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-title p,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2 sub,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-content p,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li{
+	color: var(--primary-color);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2{
+	color: var(--tow-blue);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-header,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-header{
+	border-color: rgba(39, 87, 166, 0.24);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li::before,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li::before{
+	color: var(--tow-blue);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted{
+	background: var(--tow-blue);
+	color: var(--tow-white);
+}
+
+.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted::before,
+.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-white);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-title p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2 sub,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-content p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-title p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2 sub,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-content p,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active{
+	background: var(--tow-yellow);
+	box-shadow: 0 28px 60px rgba(247, 198, 0, 0.28);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-header,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-header{
+	border-color: rgba(18, 19, 20, 0.16);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li::before,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li::before{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted{
+	background: var(--tow-blue);
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted::before,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-black);
+}
+
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted:hover,
+body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted:hover{
+	color: var(--tow-white);
+}
+
+.tow-page .our-pricing .tow-plan-card--competitions.highlighted-box .pricing-box-header,
+.tow-page .our-pricing .tow-plan-card--competitions.is-active .pricing-box-header{
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.tow-page .tow-offer-card .pricing-box-header{
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 24px;
+}
+
+.tow-page .tow-offer-card .pricing-box-title{
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-bottom: 14px;
+	margin-bottom: 12px;
+}
+
+.tow-page .tow-offer-card .pricing-box-title p{
+	font-family: var(--accent-font);
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 0.95em;
+	text-transform: uppercase;
+	color: var(--tow-card-accent);
+}
+
+.tow-page .tow-offer-card .pricing-box-title::after{
+	content: '';
+	position: absolute;
+	left: 56px;
+	bottom: 0;
+	width: 120px;
+	height: 3px;
+	background: var(--tow-card-accent);
+}
+
+.tow-page .tow-offer-card .pricing-box-price{
+	margin-bottom: 14px;
+}
+
+.tow-page .tow-offer-card .pricing-box-price h2{
+	font-size: 18px;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	color: var(--tow-white);
+	margin: 0;
+}
+
+.tow-page .tow-offer-card .pricing-box-price h2 sub{
+	display: block;
+	font-family: var(--default-font);
+	font-size: 13px;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	color: var(--tow-card-accent);
+	margin-top: 2px;
+}
+
+.tow-page .tow-offer-card .pricing-box-content{
+	display: none;
+}
+
+.tow-page .tow-offer-card .pricing-box-body{
+	margin-bottom: 28px;
+}
+
+.tow-page .tow-offer-card .pricing-box-body ul li{
+	color: var(--tow-white);
+	font-size: 14px;
+	line-height: 1.35em;
+	text-transform: capitalize;
+	padding-left: 24px;
+	margin-bottom: 12px;
+}
+
+.tow-page .tow-offer-card .pricing-box-body ul li::before{
+	content: '';
+	width: 13px;
+	height: 13px;
+	top: 2px;
+	background: url('../images/tow/check-bullet-membership.svg') no-repeat center center;
+	background-size: contain;
+}
+
+.tow-page .tow-offer-card--course .pricing-box-body ul li::before{
+	background-image: url('../images/tow/check-bullet-course.svg');
+}
+
+.tow-page .tow-offer-card--competitions .pricing-box-body ul li::before{
+	background-image: url('../images/tow/check-bullet-competitions.svg');
+}
+
+.tow-page .tow-offer-card .pricing-box-footer{
+	margin-top: auto;
+}
+
+.tow-page .tow-offer-card .pricing-box-footer .btn-highlighted{
+	width: auto;
+	min-width: 132px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: var(--tow-black);
+	background: var(--tow-yellow);
+	padding: 13px 32px 13px 20px;
+}
+
+.tow-page .tow-offer-card .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-white);
+}
+
+.tow-page .tow-offer-card .pricing-box-footer .btn-highlighted:hover{
+	color: var(--tow-black);
+}
+
+.tow-page .tow-offer-card--course .pricing-box-footer .btn-highlighted,
+.tow-page .tow-offer-card--competitions .pricing-box-footer .btn-highlighted{
+	background: var(--tow-white);
+	color: var(--tow-black);
+}
+
+.tow-page .tow-offer-card--course .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-blue);
+}
+
+.tow-page .tow-offer-card--competitions .pricing-box-footer .btn-highlighted::before{
+	background: var(--tow-green);
+}
+
+.tow-page .tow-offer-card--course .pricing-box-footer .btn-highlighted:hover,
+.tow-page .tow-offer-card--competitions .pricing-box-footer .btn-highlighted:hover{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-pricing-page .page-header{
+	background-image:
+		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
+		url('../images/tow/membership-banner.png') !important;
+}
+
+.tow-pricing-page .page-header,
+body.tow-theme-light.tow-pricing-page .page-header{
+	background:
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(247, 198, 0, 0.04) 0.01%, rgba(247, 198, 0, 0.96) 100%),
+		url('../images/section-bg-yellow.svg') no-repeat center center;
+	background-size: cover;
+	border-bottom-color: rgba(247, 198, 0, 0.3);
+}
+
+.tow-pricing-page .page-header-box h1,
+.tow-course-page .page-header-box h1,
+.tow-competitions-page .page-header-box h1,
+body.tow-theme-light.tow-pricing-page .page-header-box h1,
+body.tow-theme-light.tow-course-page .page-header-box h1,
+body.tow-theme-light.tow-competitions-page .page-header-box h1{
+	color: var(--tow-white);
+}
+
+.tow-pricing-page .page-header-box ol li.breadcrumb-item,
+.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+.tow-course-page .page-header-box ol li.breadcrumb-item,
+.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+.tow-competitions-page .page-header-box ol li.breadcrumb-item,
+.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-pricing-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-course-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-competitions-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before{
+	color: var(--tow-white);
+}
+
+.tow-pricing-page .cta-box-image{
+	min-height: 440px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.tow-pricing-page .cta-box-image figure{
+	width: 100%;
+	margin: 0;
+}
+
+.tow-pricing-page .cta-box-image img{
+	width: min(100%, 440px);
+	max-height: 540px;
+	display: block;
+	object-fit: contain;
+	border-radius: 0;
+}
+
+body.tow-theme-dark.tow-pricing-page .our-process.bg-section .step-item-content h3{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-pricing-page .our-process.bg-section .step-item-content p{
+	color: rgba(5, 10, 18, 0.72);
+}
+
+body.tow-pricing-page .our-process.bg-section .section-title h2,
+body.tow-pricing-page .our-process.bg-section .section-title h2 *,
+body.tow-competitions-page .our-process.bg-section .section-title h2,
+body.tow-competitions-page .our-process.bg-section .section-title h2 *{
+	color: var(--tow-white) !important;
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-images{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-chart,
+body.tow-theme-dark.tow-pricing-page .approach-counter-box{
+	background: var(--tow-surface-2);
+}
+
+body.tow-theme-dark.tow-pricing-page .approach-counter-box p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-box-title p{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-info-list ul li{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-progress-counter h2{
+	color: rgba(255, 255, 255, 0.08);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-progress-counter p{
+	color: var(--tow-white);
+}
+

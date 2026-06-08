@@ -1,4 +1,4 @@
-/*
+﻿/*
 Trading On Wheels page scope.
 - .tow-page scopes TOW overrides without touching custom.css.
 - .tow-skin-* owns replaceable brand accents.
@@ -179,24 +179,6 @@ body.tow-theme-dark.tow-page .page-header{
 	background-size: cover;
 }
 
-body.tow-theme-dark.tow-pricing-page .page-header{
-	background-image:
-		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
-		url('../images/tow/membership-banner.png') !important;
-}
-
-body.tow-theme-dark.tow-course-page .page-header{
-	background-image:
-		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
-		url('../images/tow/course-banner.png') !important;
-}
-
-body.tow-theme-dark.tow-competitions-page .page-header{
-	background-image:
-		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
-		url('../images/tow/competition-banner.png') !important;
-}
-
 .tow-page .navbar{
 	min-height: 100px;
 	padding: 0;
@@ -327,541 +309,6 @@ body.tow-theme-light .header-btn .btn-default:hover::after{
 	color: var(--tow-black);
 }
 
-.tow-page .our-scrolling-ticker{
-	background: var(--tow-yellow);
-}
-
-.tow-page .scrolling-content span{
-	color: var(--tow-black);
-	text-transform: uppercase;
-}
-
-.tow-page .scrolling-content span img{
-	filter: brightness(0);
-}
-
-.tow-page .hero.hero-image{
-	min-height: 818px;
-	display: flex;
-	align-items: flex-start;
-	background: url('../images/hero-mountain-tow.png') no-repeat center center;
-	background-size: cover;
-	padding: 180px 0 116px;
-	margin-top: 0;
-}
-
-body.tow-theme-light .hero.hero-image{
-	background-image: url('../images/hero-light-mode.png');
-}
-
-.tow-about-page .hero.hero-image,
-body.tow-theme-light.tow-about-page .hero.hero-image{
-	background-image: url('../images/tow/about-oscar.png');
-}
-
-.tow-about-page .hero.hero-image{
-	align-items: center;
-	padding-top: 120px;
-	padding-bottom: 120px;
-}
-
-.tow-page .hero.hero-image::before{
-	background: linear-gradient(90deg, var(--tow-black) 0%, var(--tow-black) 34%, var(--tow-hero-wash) 48%, var(--tow-hero-wash-end) 95%);
-	opacity: 1;
-}
-
-.tow-page .hero.hero-image::after{
-	content: '';
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url('../images/hombre-night.png');
-	background-repeat: no-repeat;
-	background-position: inherit;
-	background-size: cover;
-	pointer-events: none;
-	z-index: 1;
-}
-
-body.tow-theme-light .hero.hero-image::after{
-	background-image: url('../images/hombre-day.png');
-}
-
-.tow-about-page .hero.hero-image::after,
-body.tow-theme-light.tow-about-page .hero.hero-image::after{
-	background-image: url('../images/tow/oscar.png');
-	background-position: inherit;
-	background-size: cover;
-}
-
-body.tow-theme-light .hero.hero-image::before{
-	background: linear-gradient(90deg, var(--tow-white) 0%, rgba(255, 255, 255, 0.96) 36%, var(--tow-hero-wash) 56%, var(--tow-hero-wash-end) 90%);
-}
-
-.tow-page .hero.hero-image .hero-content{
-	max-width: 650px;
-	margin: 0;
-	text-align: left;
-}
-
-.tow-page .hero-content .section-title{
-	margin-bottom: 0;
-}
-
-.tow-page .hero-content .section-title h3{
-	font-family: var(--accent-font);
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 22px;
-	text-transform: uppercase;
-	color: var(--tow-yellow);
-	padding-left: 24px;
-	margin-bottom: 8px;
-}
-
-.tow-page .hero-content .section-title h3::before{
-	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
-}
-
-.tow-page .hero.hero-image .hero-content .section-title h1{
-	font-size: 104px;
-	line-height: 0.92em;
-	text-transform: uppercase;
-	margin-bottom: 0;
-}
-
-.tow-page .hero-content .section-title h1 .tow-title-highlight{
-	display: block;
-	color: var(--tow-yellow);
-}
-
-.tow-page .hero-content .section-title h1 .tow-title-highlight *{
-	color: inherit;
-}
-
-body.tow-theme-light .hero.hero-image .hero-content .section-title h1{
-	color: var(--tow-blue);
-}
-
-body.tow-theme-light .hero-content .section-title h3{
-	color: var(--tow-heading);
-}
-
-body.tow-theme-light .hero-content .section-title h1 .tow-title-highlight{
-	color: var(--tow-yellow);
-}
-
-body.tow-theme-light .hero-content .section-title h1::after{
-	background: var(--tow-blue);
-}
-
-.tow-page .hero-content .section-title h1::after{
-	content: '';
-	display: block;
-	width: 60px;
-	height: 4px;
-	margin-top: 26px;
-	border-radius: 2px;
-	background: var(--tow-yellow);
-}
-
-.tow-page .hero-content .section-title p{
-	max-width: 505px;
-	margin-top: 30px;
-	font-size: 22px;
-	line-height: 1.55em;
-	color: var(--tow-white);
-}
-
-body.tow-theme-light .hero-content .section-title p{
-	color: var(--tow-text);
-}
-
-.tow-page .hero-content-btn{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 28px 18px;
-	margin-top: 52px;
-}
-
-.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default{
-	width: 230px;
-	height: 56px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 0;
-	padding: 0 48px 0 28px;
-	font-size: 18px;
-	text-transform: uppercase;
-}
-
-.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default:hover{
-	background: var(--tow-white);
-	color: var(--tow-black);
-}
-
-.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::before{
-	filter: none;
-}
-
-.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::after{
-	background: var(--tow-white);
-}
-
-body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover{
-	background: var(--tow-black);
-	color: var(--tow-white);
-}
-
-body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::before{
-	filter: brightness(0) invert(1);
-}
-
-body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::after{
-	background: var(--tow-black);
-}
-
-.tow-page .hero-content-btn .btn-default:nth-child(2){
-	width: 220px;
-	background: transparent;
-	border: 1px solid var(--tow-yellow);
-	color: var(--tow-white);
-}
-
-body.tow-theme-light .hero-content-btn .btn-default:nth-child(2){
-	border-color: var(--tow-heading);
-	color: var(--tow-heading);
-}
-
-.tow-page .hero-content-btn .btn-default:nth-child(2)::before{
-	filter: brightness(0) invert(1);
-}
-
-body.tow-theme-light .hero-content-btn .btn-default:nth-child(2)::before{
-	filter: none;
-}
-
-.tow-page .hero-content-btn .btn-default:nth-child(2):hover{
-	background: var(--tow-yellow);
-	color: var(--tow-black);
-}
-
-.tow-page .hero-content-btn .btn-default:nth-child(2):hover::before{
-	filter: none;
-}
-
-.tow-page .hero-content-btn .btn-default:nth-child(2):hover::after{
-	background: var(--tow-yellow);
-}
-
-body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover{
-	background: var(--tow-yellow);
-	border-color: var(--tow-yellow);
-	color: var(--tow-black);
-}
-
-body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover::before{
-	filter: none;
-}
-
-body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover::after{
-	background: var(--tow-yellow);
-}
-
-.tow-page .our-pricing .section-title h3{
-	font-family: var(--accent-font);
-	font-size: 16px;
-	line-height: 1.2em;
-	text-transform: uppercase;
-	color: var(--tow-yellow);
-	padding-left: 24px;
-	margin-bottom: 14px;
-}
-
-.tow-page .our-pricing .section-title h3::before{
-	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
-}
-
-.tow-page .our-pricing .section-title h2{
-	color: var(--tow-heading);
-	text-transform: uppercase;
-	max-width: 670px;
-}
-
-body.tow-theme-light .our-pricing .section-title h3{
-	color: var(--tow-heading);
-}
-
-body.tow-theme-light .our-pricing .section-title h2{
-	color: var(--tow-blue);
-}
-
-body.tow-theme-light .our-pricing .section-title h2 span{
-	color: var(--tow-yellow);
-}
-
-.tow-page .our-pricing .section-title-content p{
-	color: var(--tow-muted);
-}
-
-.tow-page .our-pricing{
-	position: relative;
-	background: var(--tow-bg);
-
-}
-
-.tow-page .our-pricing .section-row{
-	margin-bottom: 42px;
-}
-
-.tow-page .our-pricing .row:last-child{
-	row-gap: 30px;
-}
-
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card){
-	position: relative;
-	overflow: hidden;
-	transition:
-		background-color 0.32s ease,
-		border-color 0.32s ease,
-		box-shadow 0.32s ease,
-		transform 0.32s ease;
-}
-
-.tow-page .our-pricing .tow-plan-card::before{
-	content: '';
-	position: absolute;
-	inset: 0;
-	z-index: 0;
-	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: cover;
-	opacity: 0;
-	transform: scale(1.04);
-	transition: opacity 0.32s ease, transform 0.5s ease;
-	pointer-events: none;
-}
-
-.tow-page .our-pricing .tow-plan-card--membership::before{
-	background-image:
-		linear-gradient(90deg, rgba(247, 198, 0, 0.95) 0%, rgba(247, 198, 0, 0.85) 100%),
-		url('../images/tow/offer-card-membership.png');
-}
-
-.tow-page .our-pricing .tow-plan-card--course::before{
-	background-image:
-		linear-gradient(90deg, rgba(39, 87, 166, 0.95) 0%, rgba(39, 87, 166, 0.85) 100%),
-		url('../images/tow/course-card.png');
-}
-
-.tow-page .our-pricing .tow-plan-card--competitions::before{
-	background-image:
-		linear-gradient(90deg, rgba(73, 135, 52, 0.95) 0%, rgba(73, 135, 52, 0.85) 100%),
-		url('../images/tow/competition-card.png');
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership::before{
-	background-image:
-		linear-gradient(90deg, rgba(247, 198, 0, 0.88) 0%, rgba(247, 198, 0, 0.78) 100%),
-		url('../images/tow/offer-card-membership.png');
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--course::before{
-	background-image:
-		linear-gradient(90deg, rgba(39, 87, 166, 0.71) 0%, rgba(39, 87, 166, 0.64) 100%),
-		url('../images/tow/course-card.png');
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--competitions::before{
-	background-image:
-		linear-gradient(90deg, rgba(73, 135, 52, 0.71) 0%, rgba(73, 135, 52, 0.64) 100%),
-		url('../images/tow/competition-card.png');
-}
-
-.tow-page .our-pricing .tow-plan-card.highlighted-box::before,
-.tow-page .our-pricing .tow-plan-card.is-active::before{
-	opacity: 1;
-	transform: scale(1);
-}
-
-.tow-page .our-pricing .tow-plan-card > *{
-	position: relative;
-	z-index: 1;
-}
-
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card).is-active{
-	transform: translateY(-8px);
-	box-shadow: 0 24px 54px rgba(39, 87, 166, 0.22);
-}
-
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li::before,
-.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-footer .btn-highlighted{
-	transition:
-		color 0.32s ease,
-		border-color 0.32s ease,
-		background-color 0.32s ease,
-		transform 0.32s ease,
-		filter 0.32s ease;
-}
-
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card){
-	background: #121314;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.26);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership:not(.highlighted-box):not(.is-active){
-	border-color: rgba(247, 198, 0, 0.62);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--course:not(.highlighted-box):not(.is-active){
-	border-color: rgba(39, 87, 166, 0.72);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--competitions:not(.highlighted-box):not(.is-active){
-	border-color: rgba(73, 135, 52, 0.72);
-}
-
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box,
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).is-active{
-	background: var(--tow-blue);
-}
-
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header{
-	border-color: rgba(255, 255, 255, 0.14);
-}
-
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).highlighted-box .pricing-box-header,
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card).is-active .pricing-box-header{
-	border-color: rgba(255, 255, 255, 0.16);
-}
-
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-title p,
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2,
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-price h2 sub,
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-content p,
-body.tow-theme-dark .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-body ul li{
-	color: var(--tow-white);
-}
-
-
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box,
-.tow-page .our-pricing .tow-plan-card--membership.is-active{
-	background: var(--tow-yellow);
-	box-shadow: 0 28px 60px rgba(247, 198, 0, 0.28);
-}
-
-.tow-page .our-pricing .tow-plan-card--course.highlighted-box,
-.tow-page .our-pricing .tow-plan-card--course.is-active{
-	background: var(--tow-blue);
-	box-shadow: 0 28px 60px rgba(39, 87, 166, 0.32);
-}
-
-.tow-page .our-pricing .tow-plan-card--competitions.highlighted-box,
-.tow-page .our-pricing .tow-plan-card--competitions.is-active{
-	background: var(--tow-green);
-	box-shadow: 0 28px 60px rgba(73, 135, 52, 0.3);
-}
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-title p,
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2 sub,
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-content p,
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-title p,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2 sub,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-content p,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li{
-	color: var(--primary-color);
-}
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2{
-	color: var(--tow-blue);
-}
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-header,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-header{
-	border-color: rgba(39, 87, 166, 0.24);
-}
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li::before,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li::before{
-	color: var(--tow-blue);
-}
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted{
-	background: var(--tow-blue);
-	color: var(--tow-white);
-}
-
-.tow-page .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted::before,
-.tow-page .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted::before{
-	background: var(--tow-white);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-title p,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-price h2 sub,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-content p,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-title p,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-price h2 sub,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-content p,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li{
-	color: var(--tow-black);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active{
-	background: var(--tow-yellow);
-	box-shadow: 0 28px 60px rgba(247, 198, 0, 0.28);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-header,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-header{
-	border-color: rgba(18, 19, 20, 0.16);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-body ul li::before,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-body ul li::before{
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted{
-	background: var(--tow-blue);
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted::before,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted::before{
-	background: var(--tow-black);
-}
-
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.highlighted-box .pricing-box-footer .btn-highlighted:hover,
-body.tow-theme-dark .our-pricing .tow-plan-card--membership.is-active .pricing-box-footer .btn-highlighted:hover{
-	color: var(--tow-white);
-}
-
-.tow-page .our-pricing .tow-plan-card--competitions.highlighted-box .pricing-box-header,
-.tow-page .our-pricing .tow-plan-card--competitions.is-active .pricing-box-header{
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
 @media (prefers-reduced-motion: reduce){
 	.tow-page .our-pricing .pricing-box:not(.tow-offer-card),
 	.tow-page .our-pricing .pricing-box:not(.tow-offer-card) .pricing-box-header,
@@ -947,21 +394,6 @@ body.tow-theme-light .tow-offer-card.is-active{
 	box-shadow: 0 0 0 1px rgba(73, 135, 52, 0.22);
 }
 
-.tow-page .tow-offer-card .pricing-box-header{
-	border-bottom: none;
-	padding-bottom: 0;
-	margin-bottom: 24px;
-}
-
-.tow-page .tow-offer-card .pricing-box-title{
-	position: relative;
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	padding-bottom: 14px;
-	margin-bottom: 12px;
-}
-
 .tow-page .tow-offer-card__icon{
 	position: relative;
 	width: 46px;
@@ -1002,122 +434,6 @@ body.tow-theme-light .tow-offer-card.is-active{
 .tow-page .tow-offer-card:hover .tow-offer-card__icon img,
 .tow-page .tow-offer-card.is-active .tow-offer-card__icon img{
 	filter: none;
-}
-
-.tow-page .tow-offer-card .pricing-box-title p{
-	font-family: var(--accent-font);
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 0.95em;
-	text-transform: uppercase;
-	color: var(--tow-card-accent);
-}
-
-.tow-page .tow-offer-card .pricing-box-title::after{
-	content: '';
-	position: absolute;
-	left: 56px;
-	bottom: 0;
-	width: 120px;
-	height: 3px;
-	background: var(--tow-card-accent);
-}
-
-.tow-page .tow-offer-card .pricing-box-price{
-	margin-bottom: 14px;
-}
-
-.tow-page .tow-offer-card .pricing-box-price h2{
-	font-size: 18px;
-	line-height: 1.25em;
-	text-transform: uppercase;
-	color: var(--tow-white);
-	margin: 0;
-}
-
-.tow-page .tow-offer-card .pricing-box-price h2 sub{
-	display: block;
-	font-family: var(--default-font);
-	font-size: 13px;
-	line-height: 1.4em;
-	text-transform: uppercase;
-	color: var(--tow-card-accent);
-	margin-top: 2px;
-}
-
-.tow-page .tow-offer-card .pricing-box-content{
-	display: none;
-}
-
-.tow-page .tow-offer-card .pricing-box-body{
-	margin-bottom: 28px;
-}
-
-.tow-page .tow-offer-card .pricing-box-body ul li{
-	color: var(--tow-white);
-	font-size: 14px;
-	line-height: 1.35em;
-	text-transform: capitalize;
-	padding-left: 24px;
-	margin-bottom: 12px;
-}
-
-.tow-page .tow-offer-card .pricing-box-body ul li::before{
-	content: '';
-	width: 13px;
-	height: 13px;
-	top: 2px;
-	background: url('../images/tow/check-bullet-membership.svg') no-repeat center center;
-	background-size: contain;
-}
-
-.tow-page .tow-offer-card--course .pricing-box-body ul li::before{
-	background-image: url('../images/tow/check-bullet-course.svg');
-}
-
-.tow-page .tow-offer-card--competitions .pricing-box-body ul li::before{
-	background-image: url('../images/tow/check-bullet-competitions.svg');
-}
-
-.tow-page .tow-offer-card .pricing-box-footer{
-	margin-top: auto;
-}
-
-.tow-page .tow-offer-card .pricing-box-footer .btn-highlighted{
-	width: auto;
-	min-width: 132px;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: var(--tow-black);
-	background: var(--tow-yellow);
-	padding: 13px 32px 13px 20px;
-}
-
-.tow-page .tow-offer-card .pricing-box-footer .btn-highlighted::before{
-	background: var(--tow-white);
-}
-
-.tow-page .tow-offer-card .pricing-box-footer .btn-highlighted:hover{
-	color: var(--tow-black);
-}
-
-.tow-page .tow-offer-card--course .pricing-box-footer .btn-highlighted,
-.tow-page .tow-offer-card--competitions .pricing-box-footer .btn-highlighted{
-	background: var(--tow-white);
-	color: var(--tow-black);
-}
-
-.tow-page .tow-offer-card--course .pricing-box-footer .btn-highlighted::before{
-	background: var(--tow-blue);
-}
-
-.tow-page .tow-offer-card--competitions .pricing-box-footer .btn-highlighted::before{
-	background: var(--tow-green);
-}
-
-.tow-page .tow-offer-card--course .pricing-box-footer .btn-highlighted:hover,
-.tow-page .tow-offer-card--competitions .pricing-box-footer .btn-highlighted:hover{
-	color: var(--tow-white);
 }
 
 .tow-page .tow-about-oscar{
@@ -1469,75 +785,6 @@ body.tow-theme-light:not(.tow-index-page) .page-header-box ol .breadcrumb-item +
 	color: var(--tow-heading);
 }
 
-.tow-contact-page .page-header,
-body.tow-theme-light.tow-contact-page .page-header,
-.tow-faq-page .page-header,
-body.tow-theme-light.tow-faq-page .page-header{
-	background:
-		linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(7, 16, 18, 0.82) 48%, rgba(7, 16, 18, 0.6) 100%),
-		url('../images/hero-mountain-tow.png') no-repeat center center;
-	background-size: cover;
-}
-
-body.tow-theme-light.tow-contact-page .page-header,
-body.tow-theme-light.tow-faq-page .page-header{
-	background:
-		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(255, 255, 255, 0.04) 0.01%, rgba(255, 255, 255, 0.96) 100%),
-		url('../images/section-bg-grey.svg') no-repeat center center;
-	background-size: cover;
-}
-
-.tow-pricing-page .page-header,
-body.tow-theme-light.tow-pricing-page .page-header{
-	background:
-		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(247, 198, 0, 0.04) 0.01%, rgba(247, 198, 0, 0.96) 100%),
-		url('../images/section-bg-yellow.svg') no-repeat center center;
-	background-size: cover;
-	border-bottom-color: rgba(247, 198, 0, 0.3);
-}
-
-.tow-course-page .page-header,
-body.tow-theme-light.tow-course-page .page-header{
-	background:
-		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(39, 87, 166, 0.08) 0.01%, rgba(39, 87, 166, 0.96) 100%),
-		url('../images/section-bg-blue.svg') no-repeat center center;
-	background-size: cover;
-	border-bottom-color: rgba(39, 87, 166, 0.42);
-}
-
-.tow-competitions-page .page-header,
-body.tow-theme-light.tow-competitions-page .page-header{
-	background:
-		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(73, 135, 52, 0.08) 0.01%, rgba(73, 135, 52, 0.96) 100%),
-		url('../images/section-bg-green.svg') no-repeat center center;
-	background-size: cover;
-	border-bottom-color: rgba(73, 135, 52, 0.42);
-}
-
-.tow-pricing-page .page-header-box h1,
-.tow-course-page .page-header-box h1,
-.tow-competitions-page .page-header-box h1,
-body.tow-theme-light.tow-pricing-page .page-header-box h1,
-body.tow-theme-light.tow-course-page .page-header-box h1,
-body.tow-theme-light.tow-competitions-page .page-header-box h1{
-	color: var(--tow-white);
-}
-
-.tow-pricing-page .page-header-box ol li.breadcrumb-item,
-.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
-.tow-course-page .page-header-box ol li.breadcrumb-item,
-.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
-.tow-competitions-page .page-header-box ol li.breadcrumb-item,
-.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
-body.tow-theme-light.tow-pricing-page .page-header-box ol li.breadcrumb-item,
-body.tow-theme-light.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
-body.tow-theme-light.tow-course-page .page-header-box ol li.breadcrumb-item,
-body.tow-theme-light.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
-body.tow-theme-light.tow-competitions-page .page-header-box ol li.breadcrumb-item,
-body.tow-theme-light.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before{
-	color: var(--tow-white);
-}
-
 
 
 .tow-page .page-pricing{
@@ -1624,26 +871,6 @@ body.tow-theme-light
 	font-family: var(--accent-font);
 	font-weight: 500;
 	text-transform: uppercase;
-}
-
-.tow-pricing-page .cta-box-image{
-	min-height: 440px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-}
-
-.tow-pricing-page .cta-box-image figure{
-	width: 100%;
-	margin: 0;
-}
-
-.tow-pricing-page .cta-box-image img{
-	width: min(100%, 440px);
-	max-height: 540px;
-	display: block;
-	object-fit: contain;
-	border-radius: 0;
 }
 
 .tow-page:not(.tow-index-page) .section-title h3{
@@ -1830,310 +1057,12 @@ body.tow-theme-light .case-study-approch-item p{
 	filter: brightness(0);
 }
 
-.tow-competitions-page .readmore-btn{
-	background: var(--tow-green);
-	border-color: var(--tow-green);
-}
-
-.tow-competitions-page .readmore-btn img{
-	filter: brightness(0) invert(1);
-}
-
-.tow-about-page .page-about-us,
-.tow-about-page .about-approach,
-.tow-about-page .our-faqs.bg-section{
-	background: var(--tow-bg);
-}
-
-.tow-about-page .page-about-us.bg-section::before,
-.tow-about-page .about-video-image.bg-section::before,
-.tow-about-page .our-process.bg-section::before,
-.tow-about-page .our-faqs.bg-section::before{
-	display: none;
-}
-
-.tow-about-page .page-about-us{
-	padding: 96px 0 0;
-}
-
-.tow-about-page .about-company-item,
-.tow-about-page .about-approach-content-box,
-.tow-about-page .about-approach-chart,
-.tow-about-page .approach-counter-box,
-.tow-about-page .about-approach-investment,
-.tow-about-page .process-step-item,
-.tow-about-page .client-logo,
-.tow-about-page .faqs-item{
-	border-radius: 8px;
-}
-
-body.tow-theme-light.tow-about-page .about-company-item,
-body.tow-theme-light.tow-about-page .about-approach-content-box,
-body.tow-theme-light.tow-about-page .about-approach-chart,
-body.tow-theme-light.tow-about-page .approach-counter-box,
-body.tow-theme-light.tow-about-page .about-approach-investment,
-body.tow-theme-light.tow-about-page .process-step-item,
-body.tow-theme-light.tow-about-page .client-logo,
-body.tow-theme-light.tow-about-page .faqs-item{
-	border-color: var(--tow-divider);
-}
-
-.tow-about-page .about-company-item:hover{
-	transform: translateY(-4px);
-}
-
-.tow-about-page .about-company-item .icon-box{
-	border: 1px solid rgba(247, 198, 0, 0.32);
-}
-
-.tow-about-page .about-company-item .icon-box::before{
-	background: var(--tow-yellow);
-}
-
-.tow-about-page .about-company-item .icon-box img{
-	filter: brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1278%) hue-rotate(191deg) brightness(90%) contrast(91%);
-}
-
-.tow-about-page .about-company-item:hover .icon-box img{
-	filter: brightness(0);
-}
-
-.tow-about-page .about-company-content h3,
-.tow-about-page .about-approach-progress-counter h2,
-.tow-about-page .process-counter-item h2,
-.tow-about-page .step-item-content h3,
-.tow-about-page .faqs-item-title h3{
-	font-family: var(--accent-font);
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0;
-	color: var(--tow-white);
-}
-
-body.tow-theme-light.tow-about-page .about-company-content h3,
-body.tow-theme-light.tow-about-page .step-item-content h3,
-body.tow-theme-light.tow-about-page .faqs-item-title h3{
-	color: var(--tow-heading);
-}
-
-.tow-about-page .about-company-content p,
-.tow-about-page .about-approach-box-title p,
-.tow-about-page .about-approach-info-list ul li,
-.tow-about-page .about-approach-progress-counter p,
-.tow-about-page .process-counter-item p,
-.tow-about-page .step-item-content p,
-.tow-about-page .faqs-item-body p{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-light.tow-about-page .about-company-content p,
-body.tow-theme-light.tow-about-page .about-approach-box-title p,
-body.tow-theme-light.tow-about-page .about-approach-info-list ul li,
-body.tow-theme-light.tow-about-page .about-approach-progress-counter p,
-body.tow-theme-light.tow-about-page .process-counter-item p,
-body.tow-theme-light.tow-about-page .step-item-content p,
-body.tow-theme-light.tow-about-page .faqs-item-body p{
-	color: var(--tow-text);
-}
-
-.tow-about-page .about-video-image{
-	margin-top: 72px;
-	background: #121314;
-	border-top: 1px solid var(--tow-divider);
-	border-bottom: 1px solid var(--tow-divider);
-}
-
-body.tow-theme-light.tow-about-page .about-video-image{
-	background: var(--tow-surface-2);
-}
-
-.tow-about-page .about-us-video figure::before{
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.18), rgba(247, 198, 0, 0.2));
-	pointer-events: none;
-	z-index: 1;
-}
-
 body.tow-page .our-process.bg-section .section-title h3{
 	color: var(--tow-yellow);
 }
 
 body.tow-page .our-process.bg-section .section-title p{
 	color: rgba(255, 255, 255, 0.76);
-}
-
-body.tow-course-page .sidebar-cta-box{
-	background: var(--tow-black);
-}
-
-body.tow-course-page .sidebar-cta-box::before{
-	background: rgba(255, 255, 255, 0.04);
-	opacity: 0.18;
-}
-
-body.tow-course-page .sidebar-cta-content h3{
-	color: var(--tow-white);
-}
-
-body.tow-course-page .sidebar-cta-btn .btn-default{
-	color: var(--tow-white);
-	border-color: rgba(255, 255, 255, 0.35);
-}
-
-body.tow-course-page .sidebar-cta-btn .btn-default::before{
-	filter: brightness(0) invert(1);
-}
-
-body.tow-course-page .sidebar-cta-box{
-	background: var(--tow-black);
-}
-
-body.tow-course-page .sidebar-cta-box::before{
-	background: rgba(255, 255, 255, 0.04);
-	opacity: 0.18;
-}
-
-body.tow-course-page .sidebar-cta-content h3{
-	color: var(--tow-white);
-}
-
-body.tow-course-page .sidebar-cta-btn .btn-default{
-	color: var(--tow-white);
-	border-color: rgba(255, 255, 255, 0.35);
-}
-
-body.tow-course-page .sidebar-cta-btn .btn-default::before{
-	filter: brightness(0) invert(1);
-}
-
-.tow-about-page .about-us-video video{
-	position: relative;
-	z-index: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.tow-about-page .about-approach{
-	padding: 96px 0;
-}
-
-.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted{
-	font-family: var(--accent-font);
-	font-size: 18px;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0;
-	background: transparent;
-	border: 1px solid var(--tow-divider);
-	color: var(--tow-white);
-}
-
-body.tow-theme-light.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted{
-	color: var(--tow-heading);
-}
-
-.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted:hover,
-.tow-about-page .our-tab-nav ul li .nav-link.active{
-	background: var(--tow-yellow);
-	border-color: var(--tow-yellow);
-	color: var(--tow-black);
-}
-
-.tow-about-page .about-approach-content-box{
-	padding: 34px;
-}
-
-.tow-about-page .about-approach-info-list ul li:before{
-	color: var(--tow-yellow);
-}
-
-.tow-about-page .about-approach-progress-circle img{
-	opacity: 0.18;
-	filter: brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1278%) hue-rotate(191deg) brightness(90%) contrast(91%);
-}
-
-.tow-about-page .about-approach-chart img,
-.tow-about-page .about-approach-investment img{
-	filter: grayscale(0.15) hue-rotate(95deg) saturate(1.18);
-}
-
-.tow-about-page .approach-counter-box h2,
-.tow-about-page .about-approach-progress-counter h2,
-.tow-about-page .process-counter-item h2{
-	color: var(--tow-yellow);
-}
-
-body.tow-theme-light.tow-about-page .approach-counter-box h2,
-body.tow-theme-light.tow-about-page .about-approach-progress-counter h2,
-body.tow-theme-light.tow-about-page .process-counter-item h2{
-	color: var(--tow-blue);
-}
-
-.tow-about-page .our-process.bg-section{
-	background:
-		linear-gradient(180deg, rgba(18, 19, 20, 0.96) 0%, rgba(18, 19, 20, 0.92) 100%),
-		url('../images/section-bg-blue.svg') no-repeat center center;
-	background-size: cover;
-	border-top: 1px solid rgba(255, 255, 255, 0.08);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-body.tow-theme-light.tow-about-page .our-process.bg-section{
-	background:
-		linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.88) 100%),
-		url('../images/section-bg-blue.svg') no-repeat center center;
-	background-size: cover;
-	border-color: var(--tow-divider);
-}
-
-.tow-about-page .step-item-number{
-	background: var(--tow-blue);
-}
-
-.tow-about-page .step-item-number h2{
-	color: var(--tow-white);
-}
-
-.tow-about-page .process-step-item:nth-of-type(odd),
-.tow-about-page .process-step-item:nth-of-type(even){
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.tow-about-page .our-process-steps{
-	gap: 22px;
-}
-
-.tow-about-page .our-faqs.bg-section{
-	padding: 96px 0;
-}
-
-.tow-about-page .faqs-client-slider{
-	border-bottom: 1px solid var(--tow-divider);
-}
-
-.tow-about-page .client-logo img{
-	opacity: 0.78;
-	filter: grayscale(1) brightness(1.8);
-}
-
-body.tow-theme-light.tow-about-page .client-logo img{
-	opacity: 0.64;
-	filter: grayscale(1);
-}
-
-.tow-about-page .faqs-item{
-	border-radius: 8px;
-}
-
-.tow-about-page .faqs-item .icon-box{
-	background: var(--tow-yellow);
-}
-
-.tow-about-page .faqs-item .icon-box::before,
-.tow-about-page .faqs-item .icon-box::after{
-	background: var(--tow-black);
 }
 
 .tow-page:not(.tow-competitions-page) .case-study-content h3 a:hover{
@@ -2499,31 +1428,6 @@ body.tow-page .our-process.bg-section .section-title p{
 	color: rgba(255, 255, 255, 0.76);
 }
 
-body.tow-course-page .sidebar-cta-box{
-	background: var(--tow-black);
-}
-
-body.tow-course-page .sidebar-cta-box::before{
-	opacity: 0.18;
-}
-
-body.tow-course-page .sidebar-cta-content h3{
-	color: var(--tow-white);
-}
-
-body.tow-course-page .sidebar-cta-btn .btn-default{
-	color: var(--tow-white);
-	border-color: rgba(255, 255, 255, 0.35);
-}
-
-body.tow-course-page .sidebar-cta-btn .btn-default::before{
-	filter: brightness(0) invert(1);
-}
-
-body.tow-course-page .sidebar-cta-box::before{
-	background: rgba(255, 255, 255, 0.04);
-}
-
 body.tow-theme-dark .our-faqs.bg-section{
 	background: var(--tow-surface);
 	color: var(--tow-white);
@@ -2536,218 +1440,6 @@ body.tow-theme-dark .our-faqs.bg-section .faqs-item-content h3{
 
 body.tow-theme-dark .our-faqs.bg-section .faqs-item-content p{
 	color: var(--tow-soft);
-}
-
-body.tow-theme-dark.tow-course-page .service-catagery-list{
-	background: var(--tow-surface);
-	border: 1px solid var(--tow-divider);
-}
-
-body.tow-theme-dark.tow-course-page .service-catagery-list h3{
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark.tow-course-page .service-catagery-list ul li a{
-	background: var(--tow-surface-2);
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark.tow-course-page .service-catagery-list ul li a::before{
-	filter: brightness(0) invert(1);
-}
-
-body.tow-course-page .service-catagery-list ul li a::after{
-	background: var(--tow-blue);
-	-webkit-mask: url('../images/icon-arrow.svg') no-repeat center / 18px auto;
-	mask: url('../images/icon-arrow.svg') no-repeat center / 18px auto;
-	filter: none;
-}
-
-body.tow-course-page .service-catagery-list ul li:hover a::after{
-	background: var(--tow-white);
-	filter: none;
-}
-
-body.tow-theme-dark.tow-course-page .sidebar-cta-box{
-	background: var(--tow-yellow);
-}
-
-body.tow-theme-dark.tow-course-page .sidebar-cta-box::before{
-	background: rgba(0, 0, 0, 0.08);
-	opacity: 1;
-}
-
-body.tow-theme-dark.tow-course-page .sidebar-cta-content h3{
-	color: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default{
-	background: var(--tow-black);
-	color: var(--tow-white);
-	border-color: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default::after{
-	background: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default::before{
-	filter: brightness(0) invert(1);
-}
-
-body.tow-theme-dark.tow-course-page .service-entry-title h2,
-body.tow-theme-dark.tow-course-page .why-choose-service-content h3{
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark.tow-course-page .service-entry > p,
-body.tow-theme-dark.tow-course-page .service-entry-title p,
-body.tow-theme-dark.tow-course-page .why-choose-service-content p,
-body.tow-theme-dark.tow-course-page .service-features-list ul li{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-dark.tow-course-page .why-choose-service-item{
-	background: var(--tow-surface);
-	border: 1px solid var(--tow-divider);
-}
-
-body.tow-theme-dark.tow-course-page .why-choose-service-no h3{
-	color: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-competitions-page .case-study-detail-box{
-	background: var(--tow-surface);
-	border: 1px solid var(--tow-divider);
-}
-
-body.tow-theme-dark.tow-competitions-page .case-study-deatil-content{
-	background: var(--tow-surface-2);
-	border: 1px solid var(--tow-divider);
-}
-
-body.tow-theme-dark.tow-competitions-page .case-study-deatil-content h3{
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark.tow-competitions-page .case-study-deatil-content p{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-box{
-	background: var(--tow-yellow);
-}
-
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-box::before{
-	background: rgba(0, 0, 0, 0.08);
-	opacity: 1;
-}
-
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-content h3{
-	color: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-highlighted,
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-black{
-	background: var(--tow-black);
-	color: var(--tow-white);
-	border-color: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-highlighted::before,
-body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-black::before{
-	background: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-competitions-page .case-study-entry h2,
-body.tow-theme-dark.tow-competitions-page .case-study-approch-title h2,
-body.tow-theme-dark.tow-competitions-page .case-study-approch-item h3{
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark.tow-competitions-page .case-study-entry p,
-body.tow-theme-dark.tow-competitions-page .case-study-approch-item p{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content h3,
-body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content h3 *{
-	color: var(--tow-black) !important;
-}
-
-body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content p,
-body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content p *{
-	color: rgba(5, 10, 18, 0.72) !important;
-}
-
-body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content h3,
-body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content h3 *{
-	color: var(--tow-black) !important;
-}
-
-body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content p,
-body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content p *{
-	color: rgba(5, 10, 18, 0.72) !important;
-}
-
-body.tow-theme-dark.tow-contact-page .contact-info-content h3,
-body.tow-theme-dark.tow-contact-page .contact-info-content h3 *{
-	color: var(--tow-black) !important;
-}
-
-body.tow-theme-dark.tow-contact-page .contact-info-content p,
-body.tow-theme-dark.tow-contact-page .contact-info-content p *{
-	color: rgba(5, 10, 18, 0.62) !important;
-}
-
-body.tow-theme-dark.tow-pricing-page .our-process.bg-section .step-item-content h3{
-	color: var(--tow-black);
-}
-
-body.tow-theme-dark.tow-pricing-page .our-process.bg-section .step-item-content p{
-	color: rgba(5, 10, 18, 0.72);
-}
-
-body.tow-pricing-page .our-process.bg-section .section-title h2,
-body.tow-pricing-page .our-process.bg-section .section-title h2 *,
-body.tow-competitions-page .our-process.bg-section .section-title h2,
-body.tow-competitions-page .our-process.bg-section .section-title h2 *{
-	color: var(--tow-white) !important;
-}
-
-body.tow-theme-dark.tow-pricing-page .about-approach-images{
-	background: var(--tow-surface);
-	border: 1px solid var(--tow-divider);
-}
-
-body.tow-theme-dark.tow-pricing-page .about-approach-chart,
-body.tow-theme-dark.tow-pricing-page .approach-counter-box{
-	background: var(--tow-surface-2);
-}
-
-body.tow-theme-dark.tow-pricing-page .approach-counter-box p{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-dark.tow-pricing-page .about-approach-box-title p{
-	color: var(--tow-white);
-}
-
-body.tow-theme-dark.tow-pricing-page .about-approach-info-list ul li{
-	color: var(--tow-soft);
-}
-
-body.tow-theme-dark.tow-pricing-page .about-approach-progress-counter h2{
-	color: rgba(255, 255, 255, 0.08);
-}
-
-body.tow-theme-dark.tow-pricing-page .about-approach-progress-counter p{
-	color: var(--tow-white);
-}
-
-body.tow-theme-light.tow-about-page .our-process.bg-section .section-title p,
-body.tow-theme-light.tow-about-page .our-process.bg-section .section-title p *{
-	color: rgba(5, 10, 18, 0.72) !important;
 }
 
 body.tow-theme-dark .page-company-history .section-title h2,
@@ -2782,6 +1474,471 @@ body.tow-roadmap-motion-ready .page-company-history .company-history-item:last-c
 	opacity: var(--tow-roadmap-end-opacity);
 }
 
+.tow-page .tow-checkout-section{
+	background: var(--tow-bg);
+	overflow: hidden;
+}
+
+.tow-page .tow-checkout-section .section-title h2 span{
+	color: var(--tow-yellow);
+}
+
+.tow-page .tow-checkout{
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 370px;
+	gap: 30px;
+	align-items: start;
+}
+
+.tow-page .tow-checkout__panel,
+.tow-page .tow-checkout__summary-card{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+	border-radius: 30px;
+	box-shadow: 0 28px 70px rgba(0, 0, 0, 0.16);
+}
+
+.tow-page .tow-checkout__panel{
+	padding: 34px;
+}
+
+.tow-page .tow-checkout__summary{
+	position: sticky;
+	top: 110px;
+}
+
+.tow-page .tow-checkout__summary-card{
+	padding: 30px;
+}
+
+.tow-page .tow-checkout__group:not(:last-child){
+	margin-bottom: 34px;
+}
+
+.tow-page .tow-checkout__heading{
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	margin-bottom: 22px;
+}
+
+.tow-page .tow-checkout__icon{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: rgba(247, 198, 0, 0.14);
+	color: var(--tow-yellow);
+	font-size: 18px;
+}
+
+.tow-page .tow-checkout__heading h2,
+.tow-page .tow-checkout__summary-card h2,
+.tow-page .tow-checkout__pricebox h3,
+.tow-page .tow-checkout__includes h3,
+.tow-page .tow-checkout__total h3,
+.tow-page .tow-checkout__total p,
+.tow-page .tow-checkout__security h3{
+	color: var(--tow-heading);
+	font-family: var(--accent-font);
+	font-weight: 500;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+
+.tow-page .tow-checkout__heading h2{
+	font-size: 30px;
+	margin: 0 0 6px;
+}
+
+.tow-page .tow-checkout__heading p,
+.tow-page .tow-checkout__secure,
+.tow-page .tow-checkout__terms,
+.tow-page .tow-checkout__total span,
+.tow-page .tow-checkout__security p{
+	color: var(--tow-muted);
+	font-size: 15px;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.tow-page .tow-checkout__grid{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.tow-page .tow-checkout__field--wide{
+	grid-column: 1 / -1;
+}
+
+.tow-page .tow-checkout__field{
+	display: grid;
+	gap: 8px;
+}
+
+.tow-page .tow-checkout__field span{
+	color: var(--tow-heading);
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+.tow-page .tow-checkout__field input{
+	width: 100%;
+	height: 54px;
+	border: 1px solid var(--tow-divider);
+	border-radius: 14px;
+	background: var(--tow-surface-2);
+	color: var(--tow-heading);
+	font-size: 15px;
+	padding: 0 16px;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.tow-page .tow-checkout__field input::placeholder{
+	color: color-mix(in srgb, var(--tow-muted) 72%, transparent);
+}
+
+.tow-page .tow-checkout__field input:focus{
+	border-color: var(--tow-yellow);
+	box-shadow: 0 0 0 4px rgba(247, 198, 0, 0.12);
+	outline: none;
+}
+
+.tow-page .tow-checkout__plans{
+	display: grid;
+	gap: 14px;
+}
+
+.tow-page .tow-checkout__plan{
+	cursor: pointer;
+	display: block;
+	margin: 0;
+	position: relative;
+}
+
+.tow-page .tow-checkout__plan input{
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.tow-page .tow-checkout__plan-body{
+	display: grid;
+	grid-template-columns: 22px minmax(0, 1fr) auto;
+	gap: 14px;
+	align-items: center;
+	min-height: 88px;
+	border: 1px solid var(--tow-divider);
+	border-radius: 18px;
+	background: var(--tow-surface-2);
+	padding: 18px;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.tow-page .tow-checkout__plan-marker{
+	width: 22px;
+	height: 22px;
+	border: 2px solid rgba(247, 198, 0, 0.5);
+	border-radius: 50%;
+	position: relative;
+}
+
+.tow-page .tow-checkout__plan-marker::after{
+	content: '';
+	position: absolute;
+	inset: 4px;
+	border-radius: 50%;
+	background: var(--tow-yellow);
+	opacity: 0;
+	transform: scale(0.6);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tow-page .tow-checkout__plan strong,
+.tow-page .tow-checkout__plan b{
+	color: var(--tow-heading);
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.3em;
+}
+
+.tow-page .tow-checkout__plan strong small{
+	display: inline-flex;
+	align-items: center;
+	height: 22px;
+	margin-left: 8px;
+	border-radius: 50px;
+	background: var(--tow-yellow);
+	color: var(--tow-black);
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 1;
+	padding: 0 9px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.tow-page .tow-checkout__plan em,
+.tow-page .tow-checkout__plan b small{
+	color: var(--tow-muted);
+	display: block;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.45em;
+	margin-top: 4px;
+}
+
+.tow-page .tow-checkout__plan input:checked + .tow-checkout__plan-body{
+	border-color: var(--tow-yellow);
+	box-shadow: 0 18px 42px rgba(247, 198, 0, 0.16);
+	transform: translateY(-2px);
+}
+
+.tow-page .tow-checkout__plan input:checked + .tow-checkout__plan-body .tow-checkout__plan-marker::after{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.tow-page .tow-checkout__methods{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+
+.tow-page .tow-checkout__methods button{
+	border: 1px solid var(--tow-divider);
+	border-radius: 50px;
+	background: var(--tow-surface-2);
+	color: var(--tow-heading);
+	font-size: 13px;
+	font-weight: 800;
+	height: 40px;
+	line-height: 1;
+	padding: 0 18px;
+	text-transform: uppercase;
+}
+
+.tow-page .tow-checkout__methods button.active{
+	background: var(--tow-yellow);
+	border-color: var(--tow-yellow);
+	color: var(--tow-black);
+}
+
+.tow-page .tow-checkout__terms{
+	display: flex;
+	gap: 10px;
+	margin-top: 18px;
+}
+
+.tow-page .tow-checkout__terms input{
+	accent-color: var(--tow-yellow);
+	block-size: 18px;
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	height: 18px;
+	inline-size: 18px;
+	margin-top: 4px;
+	max-block-size: 18px;
+	max-inline-size: 18px;
+	min-block-size: 18px;
+	min-inline-size: 18px;
+	padding: 0;
+	width: 18px;
+}
+
+.tow-page .tow-checkout__submit.btn-highlighted{
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	text-align: center;
+}
+
+.tow-page .tow-checkout__secure{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 14px;
+}
+
+.tow-page .tow-checkout__summary-kicker{
+	color: var(--tow-yellow);
+	display: block;
+	font-size: 13px;
+	font-weight: 800;
+	line-height: 1.2em;
+	margin-bottom: 14px;
+	text-transform: uppercase;
+}
+
+.tow-page .tow-checkout__pricebox{
+	border-bottom: 1px solid var(--tow-divider);
+	margin-bottom: 22px;
+	padding-bottom: 22px;
+}
+
+.tow-page .tow-checkout__pricebox h3{
+	font-size: 32px;
+	margin: 0 0 8px;
+}
+
+.tow-page .tow-checkout__pricebox p{
+	color: var(--tow-yellow);
+	font-family: var(--accent-font);
+	font-size: 54px;
+	font-weight: 500;
+	line-height: 0.95em;
+	margin: 0;
+}
+
+.tow-page .tow-checkout__pricebox small{
+	color: var(--tow-muted);
+	display: block;
+	font-family: var(--default-font);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.3em;
+	margin-top: 8px;
+	text-transform: uppercase;
+}
+
+.tow-page .tow-checkout__includes h3,
+.tow-page .tow-checkout__total h3,
+.tow-page .tow-checkout__security h3{
+	font-size: 22px;
+	margin: 0 0 14px;
+}
+
+.tow-page .tow-checkout__includes ul{
+	display: grid;
+	gap: 12px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tow-page .tow-checkout__includes li{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--tow-heading);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+
+.tow-page .tow-checkout__feature-icon{
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.tow-page .tow-checkout__feature-icon img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.tow-page .tow-checkout__total{
+	border-top: 1px solid var(--tow-divider);
+	margin-top: 24px;
+	padding-top: 22px;
+}
+
+.tow-page .tow-checkout__total p{
+	color: var(--tow-yellow);
+	font-size: 34px;
+	margin: 0 0 5px;
+}
+
+.tow-page .tow-checkout__security{
+	display: flex;
+	gap: 14px;
+	align-items: flex-start;
+	border: 1px solid var(--tow-divider);
+	border-radius: 18px;
+	background: var(--tow-surface-2);
+	margin-top: 22px;
+	padding: 16px;
+}
+
+.tow-page .tow-checkout__security > i{
+	color: var(--tow-yellow);
+	font-size: 24px;
+	line-height: 1;
+	margin-top: 2px;
+}
+
+.tow-page .tow-checkout__security h3{
+	margin-bottom: 4px;
+}
+
+.tow-page .tow-checkout__support{
+	color: var(--tow-yellow);
+	display: inline-flex;
+	font-weight: 800;
+	margin-top: 18px;
+	text-transform: uppercase;
+}
+
+body.tow-theme-light .tow-checkout__panel,
+body.tow-theme-light .tow-checkout__summary-card{
+	box-shadow: var(--tow-light-shadow);
+}
+
+body.tow-theme-dark .tow-checkout__field input,
+body.tow-theme-dark .tow-checkout__plan-body,
+body.tow-theme-dark .tow-checkout__methods button,
+body.tow-theme-dark .tow-checkout__security{
+	background: #101214;
+}
+
+@media only screen and (max-width: 991px){
+	.tow-page .tow-checkout{
+		grid-template-columns: 1fr;
+	}
+
+	.tow-page .tow-checkout__summary{
+		position: static;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.tow-page .tow-checkout__panel,
+	.tow-page .tow-checkout__summary-card{
+		border-radius: 22px;
+		padding: 24px;
+	}
+
+	.tow-page .tow-checkout__grid,
+	.tow-page .tow-checkout__plan-body{
+		grid-template-columns: 1fr;
+	}
+
+	.tow-page .tow-checkout__plan-marker{
+		display: none;
+	}
+
+	.tow-page .tow-checkout__heading h2,
+	.tow-page .tow-checkout__pricebox h3{
+		font-size: 26px;
+	}
+
+	.tow-page .tow-checkout__pricebox p{
+		font-size: 44px;
+	}
+}
+
 @media (min-width: 768px){
 	body.tow-roadmap-motion-ready .page-company-history .company-history-info{
 		--tow-roadmap-path-progress: 0%;
@@ -2814,3 +1971,4 @@ body.tow-roadmap-motion-ready .page-company-history .company-history-item:last-c
 		clip-path: inset(0 0 calc(100% - var(--tow-roadmap-path-progress)) 0);
 	}
 }
+

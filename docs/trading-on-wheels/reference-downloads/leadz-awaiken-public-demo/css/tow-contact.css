@@ -1,0 +1,33 @@
+﻿/*
+Trading On Wheels Contact and FAQ page overrides
+Loaded after tow-overrides.css only on matching pages.
+*/
+
+.tow-contact-page .page-header,
+body.tow-theme-light.tow-contact-page .page-header,
+.tow-faq-page .page-header,
+body.tow-theme-light.tow-faq-page .page-header{
+	background:
+		linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(7, 16, 18, 0.82) 48%, rgba(7, 16, 18, 0.6) 100%),
+		url('../images/hero-mountain-tow.png') no-repeat center center;
+	background-size: cover;
+}
+
+body.tow-theme-light.tow-contact-page .page-header,
+body.tow-theme-light.tow-faq-page .page-header{
+	background:
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(255, 255, 255, 0.04) 0.01%, rgba(255, 255, 255, 0.96) 100%),
+		url('../images/section-bg-grey.svg') no-repeat center center;
+	background-size: cover;
+}
+
+body.tow-theme-dark.tow-contact-page .contact-info-content h3,
+body.tow-theme-dark.tow-contact-page .contact-info-content h3 *{
+	color: var(--tow-black) !important;
+}
+
+body.tow-theme-dark.tow-contact-page .contact-info-content p,
+body.tow-theme-dark.tow-contact-page .contact-info-content p *{
+	color: rgba(5, 10, 18, 0.62) !important;
+}
+

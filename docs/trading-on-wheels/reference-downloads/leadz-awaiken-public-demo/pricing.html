@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zxx">
 <head>
 	<!-- Meta -->
@@ -9,7 +9,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-    <title>Membership - Trading On Wheels</title>
+    <title>Pricing - Trading On Wheels</title>
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/png" href="images/favicon.png?v=20260601">
 	<!-- Google Fonts Css-->
@@ -34,6 +34,7 @@
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<!-- Trading On Wheels scoped overrides -->
 	<link href="css/tow-overrides.css" rel="stylesheet" media="screen">
+	<link href="css/tow-membership.css" rel="stylesheet" media="screen">
 </head>
 <body class="tow-page tow-pricing-page tow-theme-light tow-skin-default">
 
@@ -77,7 +78,8 @@
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="pricing.html">Membership</a></li>
+                                <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service-single.html">Course</a></li>
                                 <li class="nav-item"><a class="nav-link" href="case-study.html">Competitions</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Oscar</a></li>
@@ -85,7 +87,7 @@
                         </div>
                         <!-- Header Btn Start -->
                         <div class="header-btn d-inline-flex">
-                            <a href="contact.html" class="btn-default btn-signup">join now</a>
+                            <a href="#checkout" class="btn-default btn-signup">join now</a>
                         </div>
                         <!-- Header Btn End -->
 					</div>
@@ -104,11 +106,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-3" data-cursor="-opaque">Membership</h1>
+						<h1 class="text-anime-style-3" data-cursor="-opaque">Pricing</h1>
 						<nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">membership</li>
+								<li class="breadcrumb-item active" aria-current="page">pricing</li>
 							</ol>
 						</nav>
 					</div>
@@ -119,15 +121,15 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Our Pricing Section Start -->
-    <div class="our-pricing">
+    <!-- Membership Checkout Section Start -->
+    <div class="our-pricing tow-checkout-section" id="checkout" data-tow-checkout data-active-plan="monthly" data-tow-checkout-icon="images/tow/check-bullet-membership.svg">
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-7">
                     <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">start with the wheel</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Choose the path that fits your next move</h2>
+                        <h3 class="wow fadeInUp">membership checkout</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Complete your <span>TOW Membership</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -135,154 +137,163 @@
                 <div class="col-lg-5">
                     <!-- Section Title Content Start -->
                     <div class="section-title-content">
-                        <p class="wow fadeInUp" data-wow-delay="0.25s">Pick the access level that fits where you are now: learn the method, join the membership, or compete with structure and discipline.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Create your account, choose monthly or 5-year access, and get ready for the private Trading On Wheels community.</p>
                     </div>
                     <!-- Section Title Content End -->
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Box Start -->
-                    <div class="pricing-box tow-plan-card tow-plan-card--membership wow fadeInUp">
-                        <!-- Pricing Box Header Start -->
-                        <div class="pricing-box-header">
-                            <!-- Pricing Box Title Start -->
-                            <div class="pricing-box-title">
-                                <p>Membership</p>
+            <div class="tow-checkout">
+                <form class="tow-checkout__form wow fadeInUp" action="#" method="post">
+                    <div class="tow-checkout__panel">
+                        <div class="tow-checkout__group">
+                            <div class="tow-checkout__heading">
+                                <span class="tow-checkout__icon"><i class="fa-solid fa-user"></i></span>
+                                <div>
+                                    <h2>1. Account details</h2>
+                                    <p>Use the same email you want connected to Discord access.</p>
+                                </div>
                             </div>
-                            <!-- Pricing Box Title End -->
 
-                            <!-- Pricing Box Price Start -->
-                            <div class="pricing-box-price">
-                                <h2>$100<sub> / month</sub></h2>
+                            <div class="tow-checkout__grid">
+                                <label class="tow-checkout__field">
+                                    <span>First name</span>
+                                    <input type="text" name="first_name" placeholder="Oscar" required>
+                                </label>
+                                <label class="tow-checkout__field">
+                                    <span>Last name</span>
+                                    <input type="text" name="last_name" placeholder="Gurman" required>
+                                </label>
+                                <label class="tow-checkout__field">
+                                    <span>Email address</span>
+                                    <input type="email" name="email" placeholder="you@example.com" required>
+                                </label>
+                                <label class="tow-checkout__field">
+                                    <span>Phone</span>
+                                    <input type="tel" name="phone" placeholder="+1 555 000 0000">
+                                </label>
                             </div>
-                            <!-- Pricing Box Price End -->
-
-                            <!-- Pricing Box Content Start -->
-                            <div class="pricing-box-content">
-                                <p>Join the Trading On Wheels community for signals, trade cards, live support, and structured accountability.</p>
-                            </div>
-                            <!-- Pricing Box Content End -->
                         </div>
-                        <!-- Pricing Box Header End -->
 
-                        <!-- Pricing Box Body Start -->
-                        <div class="pricing-box-body">
-                            <ul>
-                                <li>Gurman Dome</li>
-                                <li>Weekly Signals</li>
-                                <li>Trade Cards</li>
-                                <li>Private Community</li>
-                                <li>Live Support</li>
+                        <div class="tow-checkout__group">
+                            <div class="tow-checkout__heading">
+                                <span class="tow-checkout__icon"><i class="fa-solid fa-crown"></i></span>
+                                <div>
+                                    <h2>2. Choose your access</h2>
+                                    <p>Select the membership option that fits your commitment.</p>
+                                </div>
+                            </div>
+
+                            <div class="tow-checkout__plans">
+                                <label class="tow-checkout__plan">
+                                    <input type="radio" name="tow_checkout_plan" value="premium" data-tow-checkout-plan>
+                                    <span class="tow-checkout__plan-body">
+                                        <span class="tow-checkout__plan-marker"></span>
+                                        <span>
+                                            <strong>Premium Trading On Wheels <small>Best value</small></strong>
+                                            <em>5-year premium access to Trading On Wheels and the private Discord area.</em>
+                                        </span>
+                                        <b>$2,000 <small>/ 5 years</small></b>
+                                    </span>
+                                </label>
+
+                                <label class="tow-checkout__plan">
+                                    <input type="radio" name="tow_checkout_plan" value="monthly" data-tow-checkout-plan checked>
+                                    <span class="tow-checkout__plan-body">
+                                        <span class="tow-checkout__plan-marker"></span>
+                                        <span>
+                                            <strong>TOW Membership</strong>
+                                            <em>Monthly access to Trading On Wheels tools and the private Discord membership area.</em>
+                                        </span>
+                                        <b>$100 <small>/ month</small></b>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="tow-checkout__group">
+                            <div class="tow-checkout__heading">
+                                <span class="tow-checkout__icon"><i class="fa-solid fa-credit-card"></i></span>
+                                <div>
+                                    <h2>3. Payment details</h2>
+                                    <p>Card information is encrypted for secure processing.</p>
+                                </div>
+                            </div>
+
+                            <div class="tow-checkout__methods" aria-label="Payment method">
+                                <button type="button" class="active">Card</button>
+                                <button type="button">Apple Pay</button>
+                                <button type="button">PayPal</button>
+                            </div>
+
+                            <div class="tow-checkout__grid">
+                                <label class="tow-checkout__field tow-checkout__field--wide">
+                                    <span>Card number</span>
+                                    <input type="text" name="card_number" placeholder="4242 4242 4242 4242" inputmode="numeric">
+                                </label>
+                                <label class="tow-checkout__field">
+                                    <span>Expiration</span>
+                                    <input type="text" name="card_expiration" placeholder="MM / YY" inputmode="numeric">
+                                </label>
+                                <label class="tow-checkout__field">
+                                    <span>CVC</span>
+                                    <input type="text" name="card_cvc" placeholder="123" inputmode="numeric">
+                                </label>
+                            </div>
+
+                            <label class="tow-checkout__terms">
+                                <input type="checkbox" name="terms" checked required>
+                                <span>I understand Trading On Wheels is educational content and agree to be contacted about membership access.</span>
+                            </label>
+
+                            <button class="btn-highlighted tow-checkout__submit" type="submit">complete registration</button>
+                            <p class="tow-checkout__secure"><i class="fa-solid fa-lock"></i> Your payment details are encrypted and never shared.</p>
+                        </div>
+                    </div>
+                </form>
+
+                <aside class="tow-checkout__summary wow fadeInUp" data-wow-delay="0.2s" aria-label="Your access">
+                    <div class="tow-checkout__summary-card">
+                        <span class="tow-checkout__summary-kicker">your access</span>
+                        <div class="tow-checkout__pricebox">
+                            <h3 data-tow-checkout-title>TOW Membership</h3>
+                            <p><span data-tow-checkout-price>$100</span> <small data-tow-checkout-period>/ month</small></p>
+                        </div>
+
+                        <div class="tow-checkout__includes">
+                            <h3>Includes:</h3>
+                            <ul data-tow-checkout-features>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Private community</span></li>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Trading ideas</span></li>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Discord access</span></li>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Trade monitoring</span></li>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Market context</span></li>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Educational content</span></li>
+                                <li><span class="tow-checkout__feature-icon"><img src="images/tow/check-bullet-membership.svg" alt=""></span><span>Community reviews</span></li>
                             </ul>
                         </div>
-                        <!-- Pricing Box Body End -->
 
-                        <!-- Pricing Box Footer Start -->
-                        <div class="pricing-box-footer">
-                            <a href="contact.html" class="btn-highlighted">join membership</a>
+                        <div class="tow-checkout__total">
+                            <h3>Today's total</h3>
+                            <p data-tow-checkout-total>$100</p>
+                            <span data-tow-checkout-note>Recurring monthly payment. Cancel anytime.</span>
                         </div>
-                        <!-- Pricing Box Footer End -->
+
+                        <div class="tow-checkout__security">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <div>
+                                <h3>Protected registration</h3>
+                                <p>Your information is used only for membership onboarding.</p>
+                            </div>
+                        </div>
+
+                        <a href="faqs.html" class="tow-checkout__support">Questions before joining?</a>
                     </div>
-                    <!-- Pricing Box End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Box Start -->
-                    <div class="pricing-box highlighted-box tow-plan-card tow-plan-card--course wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Pricing Box Header Start -->
-                        <div class="pricing-box-header">
-                            <!-- Pricing Box Title Start -->
-                            <div class="pricing-box-title">
-                                <p>Course</p>
-                            </div>
-                            <!-- Pricing Box Title End -->
-
-                            <!-- Pricing Box Price Start -->
-                            <div class="pricing-box-price">
-                                <h2>Gurman Method</h2>
-                            </div>
-                            <!-- Pricing Box Price End -->
-
-                            <!-- Pricing Box Content Start -->
-                            <div class="pricing-box-content">
-                                <p>Learn the Gurman Method step by step, from options foundations to the Wheel Strategy.</p>
-                            </div>
-                            <!-- Pricing Box Content End -->
-                        </div>
-                        <!-- Pricing Box Header End -->
-
-                        <!-- Pricing Box Body Start -->
-                        <div class="pricing-box-body">
-                            <ul>
-                                <li>Step-by-step Training</li>
-                                <li>Options Foundations</li>
-                                <li>Wheel Strategy</li>
-                                <li>Risk Management</li>
-                                <li>Lifetime Access</li>
-                            </ul>
-                        </div>
-                        <!-- Pricing Box Body End -->
-
-                        <!-- Pricing Box Footer Start -->
-                        <div class="pricing-box-footer">
-                            <a href="service-single.html" class="btn-highlighted">explore course</a>
-                        </div>
-                        <!-- Pricing Box Footer End -->
-                    </div>
-                    <!-- Pricing Box End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Box Start -->
-                    <div class="pricing-box tow-plan-card tow-plan-card--competitions wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Pricing Box Header Start -->
-                        <div class="pricing-box-header">
-                            <!-- Pricing Box Title Start -->
-                            <div class="pricing-box-title">
-                                <p>Competitions</p>
-                            </div>
-                            <!-- Pricing Box Title End -->
-
-                            <!-- Pricing Box Price Start -->
-                            <div class="pricing-box-price">
-                                <h2>Trading Cup</h2>
-                            </div>
-                            <!-- Pricing Box Price End -->
-
-                            <!-- Pricing Box Content Start -->
-                            <div class="pricing-box-content">
-                                <p>Put your process under pressure with structured community challenges, rankings, and clear rules.</p>
-                            </div>
-                            <!-- Pricing Box Content End -->
-                        </div>
-                        <!-- Pricing Box Header End -->
-
-                        <!-- Pricing Box Body Start -->
-                        <div class="pricing-box-body">
-                            <ul>
-                                <li>University Challenges</li>
-                                <li>Global Championship</li>
-                                <li>Rankings</li>
-                                <li>Hall of Fame</li>
-                                <li>Rules-Based Practice</li>
-                            </ul>
-                        </div>
-                        <!-- Pricing Box Body End -->
-
-                        <!-- Pricing Box Footer Start -->
-                        <div class="pricing-box-footer">
-                            <a href="case-study.html" class="btn-highlighted">join competition</a>
-                        </div>
-                        <!-- Pricing Box Footer End -->
-                    </div>
-                    <!-- Pricing Box End -->
-                </div>
+                </aside>
             </div>
         </div>
     </div>
-    <!-- Our Pricing Section End -->
+    <!-- Membership Checkout Section End -->
 
     <!-- Our Process Section Start -->
     <div class="our-process bg-section">
@@ -326,7 +337,7 @@
 
                         <!-- Process Button Start -->
                         <div class="process-btn wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="contact.html" class="btn-default">become a VIP</a>
+                            <a href="#checkout" class="btn-default">become a VIP</a>
                         </div>
                         <!-- Process Button End -->
                     </div>
@@ -706,7 +717,7 @@
 
                         <!-- CTA Box Button Start -->
                         <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.75s">
-                            <a href="contact.html" class="btn-highlighted btn-black">get started today</a>
+                            <a href="#checkout" class="btn-highlighted btn-black">get started today</a>
                             <a href="service-single.html" class="btn-highlighted btn-cta-2">explore course</a>
                         </div>
                         <!-- CTA Box Button End -->
@@ -741,7 +752,8 @@
                         <h3>Links</h3>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="pricing.html">Membership</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
                             <li><a href="service-single.html">Course</a></li>
                             <li><a href="case-study.html">Competitions</a></li>
                             <li><a href="about.html">About Oscar</a></li>
@@ -770,7 +782,7 @@
                         <h3>Contact</h3>
                         <ul>
                             <li><a href="mailto:support@tradingonwheels.com">support@tradingonwheels.com</a></li>
-                            <li><a href="contact.html">Join Now</a></li>
+                            <li><a href="#checkout">Join Now</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links End -->

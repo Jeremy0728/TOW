@@ -1,0 +1,191 @@
+﻿/*
+Trading On Wheels Course page overrides
+Loaded after tow-overrides.css only on matching pages.
+*/
+
+body.tow-theme-dark.tow-course-page .page-header{
+	background-image:
+		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
+		url('../images/tow/course-banner.png') !important;
+}
+
+.tow-course-page .page-header,
+body.tow-theme-light.tow-course-page .page-header{
+	background:
+		radial-gradient(50.37% 27.86% at 49.08% 54.61%, rgba(39, 87, 166, 0.08) 0.01%, rgba(39, 87, 166, 0.96) 100%),
+		url('../images/section-bg-blue.svg') no-repeat center center;
+	background-size: cover;
+	border-bottom-color: rgba(39, 87, 166, 0.42);
+}
+
+.tow-pricing-page .page-header-box h1,
+.tow-course-page .page-header-box h1,
+.tow-competitions-page .page-header-box h1,
+body.tow-theme-light.tow-pricing-page .page-header-box h1,
+body.tow-theme-light.tow-course-page .page-header-box h1,
+body.tow-theme-light.tow-competitions-page .page-header-box h1{
+	color: var(--tow-white);
+}
+
+.tow-pricing-page .page-header-box ol li.breadcrumb-item,
+.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+.tow-course-page .page-header-box ol li.breadcrumb-item,
+.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+.tow-competitions-page .page-header-box ol li.breadcrumb-item,
+.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-pricing-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-pricing-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-course-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-course-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before,
+body.tow-theme-light.tow-competitions-page .page-header-box ol li.breadcrumb-item,
+body.tow-theme-light.tow-competitions-page .page-header-box ol .breadcrumb-item + .breadcrumb-item::before{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-box{
+	background: var(--tow-black);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	background: rgba(255, 255, 255, 0.04);
+	opacity: 0.18;
+}
+
+body.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default{
+	color: var(--tow-white);
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .sidebar-cta-box{
+	background: var(--tow-black);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	background: rgba(255, 255, 255, 0.04);
+	opacity: 0.18;
+}
+
+body.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default{
+	color: var(--tow-white);
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .sidebar-cta-box{
+	background: var(--tow-black);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	opacity: 0.18;
+}
+
+body.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default{
+	color: var(--tow-white);
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	background: rgba(255, 255, 255, 0.04);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list ul li a{
+	background: var(--tow-surface-2);
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list ul li a::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .service-catagery-list ul li a::after{
+	background: var(--tow-blue);
+	-webkit-mask: url('../images/icon-arrow.svg') no-repeat center / 18px auto;
+	mask: url('../images/icon-arrow.svg') no-repeat center / 18px auto;
+	filter: none;
+}
+
+body.tow-course-page .service-catagery-list ul li:hover a::after{
+	background: var(--tow-white);
+	filter: none;
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-box{
+	background: var(--tow-yellow);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-box::before{
+	background: rgba(0, 0, 0, 0.08);
+	opacity: 1;
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default{
+	background: var(--tow-black);
+	color: var(--tow-white);
+	border-color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default::after{
+	background: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-dark.tow-course-page .service-entry-title h2,
+body.tow-theme-dark.tow-course-page .why-choose-service-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-course-page .service-entry > p,
+body.tow-theme-dark.tow-course-page .service-entry-title p,
+body.tow-theme-dark.tow-course-page .why-choose-service-content p,
+body.tow-theme-dark.tow-course-page .service-features-list ul li{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-course-page .why-choose-service-item{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-course-page .why-choose-service-no h3{
+	color: var(--tow-black);
+}
+

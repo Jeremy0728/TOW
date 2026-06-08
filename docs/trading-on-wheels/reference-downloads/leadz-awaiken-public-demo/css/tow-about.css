@@ -1,0 +1,497 @@
+﻿/*
+Trading On Wheels About Oscar page overrides
+Loaded after tow-overrides.css only on matching pages.
+*/
+
+/* Extracted shared section rules */
+
+.tow-page .hero.hero-image{
+	min-height: 818px;
+	display: flex;
+	align-items: flex-start;
+	background: url('../images/hero-mountain-tow.png') no-repeat center center;
+	background-size: cover;
+	padding: 180px 0 116px;
+	margin-top: 0;
+}
+
+body.tow-theme-light .hero.hero-image{
+	background-image: url('../images/hero-light-mode.png');
+}
+
+.tow-page .hero.hero-image::before{
+	background: linear-gradient(90deg, var(--tow-black) 0%, var(--tow-black) 34%, var(--tow-hero-wash) 48%, var(--tow-hero-wash-end) 95%);
+	opacity: 1;
+}
+
+.tow-page .hero.hero-image::after{
+	content: '';
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/hombre-night.png');
+	background-repeat: no-repeat;
+	background-position: inherit;
+	background-size: cover;
+	pointer-events: none;
+	z-index: 1;
+}
+
+body.tow-theme-light .hero.hero-image::after{
+	background-image: url('../images/hombre-day.png');
+}
+
+body.tow-theme-light .hero.hero-image::before{
+	background: linear-gradient(90deg, var(--tow-white) 0%, rgba(255, 255, 255, 0.96) 36%, var(--tow-hero-wash) 56%, var(--tow-hero-wash-end) 90%);
+}
+
+.tow-page .hero.hero-image .hero-content{
+	max-width: 650px;
+	margin: 0;
+	text-align: left;
+}
+
+.tow-page .hero-content .section-title{
+	margin-bottom: 0;
+}
+
+.tow-page .hero-content .section-title h3{
+	font-family: var(--accent-font);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: var(--tow-yellow);
+	padding-left: 24px;
+	margin-bottom: 8px;
+}
+
+.tow-page .hero-content .section-title h3::before{
+	background: url(../images/icon-sub-heading-accent.svg) no-repeat;
+}
+
+.tow-page .hero.hero-image .hero-content .section-title h1{
+	font-size: 104px;
+	line-height: 0.92em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.tow-page .hero-content .section-title h1 .tow-title-highlight{
+	display: block;
+	color: var(--tow-yellow);
+}
+
+.tow-page .hero-content .section-title h1 .tow-title-highlight *{
+	color: inherit;
+}
+
+body.tow-theme-light .hero.hero-image .hero-content .section-title h1{
+	color: var(--tow-blue);
+}
+
+body.tow-theme-light .hero-content .section-title h3{
+	color: var(--tow-heading);
+}
+
+body.tow-theme-light .hero-content .section-title h1 .tow-title-highlight{
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light .hero-content .section-title h1::after{
+	background: var(--tow-blue);
+}
+
+.tow-page .hero-content .section-title h1::after{
+	content: '';
+	display: block;
+	width: 60px;
+	height: 4px;
+	margin-top: 26px;
+	border-radius: 2px;
+	background: var(--tow-yellow);
+}
+
+.tow-page .hero-content .section-title p{
+	max-width: 505px;
+	margin-top: 30px;
+	font-size: 22px;
+	line-height: 1.55em;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .hero-content .section-title p{
+	color: var(--tow-text);
+}
+
+.tow-page .hero-content-btn{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 28px 18px;
+	margin-top: 52px;
+}
+
+.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default{
+	width: 230px;
+	height: 56px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0;
+	padding: 0 48px 0 28px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default:hover{
+	background: var(--tow-white);
+	color: var(--tow-black);
+}
+
+.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::before{
+	filter: none;
+}
+
+.tow-page .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::after{
+	background: var(--tow-white);
+}
+
+body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover{
+	background: var(--tow-black);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-light .hero.hero-image .hero-content .hero-content-btn .btn-default:hover::after{
+	background: var(--tow-black);
+}
+
+.tow-page .hero-content-btn .btn-default:nth-child(2){
+	width: 220px;
+	background: transparent;
+	border: 1px solid var(--tow-yellow);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2){
+	border-color: var(--tow-heading);
+	color: var(--tow-heading);
+}
+
+.tow-page .hero-content-btn .btn-default:nth-child(2)::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2)::before{
+	filter: none;
+}
+
+.tow-page .hero-content-btn .btn-default:nth-child(2):hover{
+	background: var(--tow-yellow);
+	color: var(--tow-black);
+}
+
+.tow-page .hero-content-btn .btn-default:nth-child(2):hover::before{
+	filter: none;
+}
+
+.tow-page .hero-content-btn .btn-default:nth-child(2):hover::after{
+	background: var(--tow-yellow);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover{
+	background: var(--tow-yellow);
+	border-color: var(--tow-yellow);
+	color: var(--tow-black);
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover::before{
+	filter: none;
+}
+
+body.tow-theme-light .hero-content-btn .btn-default:nth-child(2):hover::after{
+	background: var(--tow-yellow);
+}
+
+.tow-about-page .hero.hero-image,
+body.tow-theme-light.tow-about-page .hero.hero-image{
+	background-image: url('../images/tow/about-oscar.png');
+}
+
+.tow-about-page .hero.hero-image{
+	align-items: center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.tow-about-page .hero.hero-image::after,
+body.tow-theme-light.tow-about-page .hero.hero-image::after{
+	background-image: url('../images/tow/oscar.png');
+	background-position: inherit;
+	background-size: cover;
+}
+
+.tow-about-page .page-about-us,
+.tow-about-page .about-approach,
+.tow-about-page .our-faqs.bg-section{
+	background: var(--tow-bg);
+}
+
+.tow-about-page .page-about-us.bg-section::before,
+.tow-about-page .about-video-image.bg-section::before,
+.tow-about-page .our-process.bg-section::before,
+.tow-about-page .our-faqs.bg-section::before{
+	display: none;
+}
+
+.tow-about-page .page-about-us{
+	padding: 96px 0 0;
+}
+
+.tow-about-page .about-company-item,
+.tow-about-page .about-approach-content-box,
+.tow-about-page .about-approach-chart,
+.tow-about-page .approach-counter-box,
+.tow-about-page .about-approach-investment,
+.tow-about-page .process-step-item,
+.tow-about-page .client-logo,
+.tow-about-page .faqs-item{
+	border-radius: 8px;
+}
+
+body.tow-theme-light.tow-about-page .about-company-item,
+body.tow-theme-light.tow-about-page .about-approach-content-box,
+body.tow-theme-light.tow-about-page .about-approach-chart,
+body.tow-theme-light.tow-about-page .approach-counter-box,
+body.tow-theme-light.tow-about-page .about-approach-investment,
+body.tow-theme-light.tow-about-page .process-step-item,
+body.tow-theme-light.tow-about-page .client-logo,
+body.tow-theme-light.tow-about-page .faqs-item{
+	border-color: var(--tow-divider);
+}
+
+.tow-about-page .about-company-item:hover{
+	transform: translateY(-4px);
+}
+
+.tow-about-page .about-company-item .icon-box{
+	border: 1px solid rgba(247, 198, 0, 0.32);
+}
+
+.tow-about-page .about-company-item .icon-box::before{
+	background: var(--tow-yellow);
+}
+
+.tow-about-page .about-company-item .icon-box img{
+	filter: brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1278%) hue-rotate(191deg) brightness(90%) contrast(91%);
+}
+
+.tow-about-page .about-company-item:hover .icon-box img{
+	filter: brightness(0);
+}
+
+.tow-about-page .about-company-content h3,
+.tow-about-page .about-approach-progress-counter h2,
+.tow-about-page .process-counter-item h2,
+.tow-about-page .step-item-content h3,
+.tow-about-page .faqs-item-title h3{
+	font-family: var(--accent-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: var(--tow-white);
+}
+
+body.tow-theme-light.tow-about-page .about-company-content h3,
+body.tow-theme-light.tow-about-page .step-item-content h3,
+body.tow-theme-light.tow-about-page .faqs-item-title h3{
+	color: var(--tow-heading);
+}
+
+.tow-about-page .about-company-content p,
+.tow-about-page .about-approach-box-title p,
+.tow-about-page .about-approach-info-list ul li,
+.tow-about-page .about-approach-progress-counter p,
+.tow-about-page .process-counter-item p,
+.tow-about-page .step-item-content p,
+.tow-about-page .faqs-item-body p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-light.tow-about-page .about-company-content p,
+body.tow-theme-light.tow-about-page .about-approach-box-title p,
+body.tow-theme-light.tow-about-page .about-approach-info-list ul li,
+body.tow-theme-light.tow-about-page .about-approach-progress-counter p,
+body.tow-theme-light.tow-about-page .process-counter-item p,
+body.tow-theme-light.tow-about-page .step-item-content p,
+body.tow-theme-light.tow-about-page .faqs-item-body p{
+	color: var(--tow-text);
+}
+
+.tow-about-page .about-video-image{
+	margin-top: 72px;
+	background: #121314;
+	border-top: 1px solid var(--tow-divider);
+	border-bottom: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-light.tow-about-page .about-video-image{
+	background: var(--tow-surface-2);
+}
+
+.tow-about-page .about-us-video figure::before{
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.18), rgba(247, 198, 0, 0.2));
+	pointer-events: none;
+	z-index: 1;
+}
+
+.tow-about-page .about-us-video video{
+	position: relative;
+	z-index: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tow-about-page .about-approach{
+	padding: 96px 0;
+}
+
+.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted{
+	font-family: var(--accent-font);
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	background: transparent;
+	border: 1px solid var(--tow-divider);
+	color: var(--tow-white);
+}
+
+body.tow-theme-light.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted{
+	color: var(--tow-heading);
+}
+
+.tow-about-page .our-tab-nav ul li .nav-link.btn-highlighted:hover,
+.tow-about-page .our-tab-nav ul li .nav-link.active{
+	background: var(--tow-yellow);
+	border-color: var(--tow-yellow);
+	color: var(--tow-black);
+}
+
+.tow-about-page .about-approach-content-box{
+	padding: 34px;
+}
+
+.tow-about-page .about-approach-info-list ul li:before{
+	color: var(--tow-yellow);
+}
+
+.tow-about-page .about-approach-progress-circle img{
+	opacity: 0.18;
+	filter: brightness(0) saturate(100%) invert(28%) sepia(70%) saturate(1278%) hue-rotate(191deg) brightness(90%) contrast(91%);
+}
+
+.tow-about-page .about-approach-chart img,
+.tow-about-page .about-approach-investment img{
+	filter: grayscale(0.15) hue-rotate(95deg) saturate(1.18);
+}
+
+.tow-about-page .approach-counter-box h2,
+.tow-about-page .about-approach-progress-counter h2,
+.tow-about-page .process-counter-item h2{
+	color: var(--tow-yellow);
+}
+
+body.tow-theme-light.tow-about-page .approach-counter-box h2,
+body.tow-theme-light.tow-about-page .about-approach-progress-counter h2,
+body.tow-theme-light.tow-about-page .process-counter-item h2{
+	color: var(--tow-blue);
+}
+
+.tow-about-page .our-process.bg-section{
+	background:
+		linear-gradient(180deg, rgba(18, 19, 20, 0.96) 0%, rgba(18, 19, 20, 0.92) 100%),
+		url('../images/section-bg-blue.svg') no-repeat center center;
+	background-size: cover;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.tow-theme-light.tow-about-page .our-process.bg-section{
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.88) 100%),
+		url('../images/section-bg-blue.svg') no-repeat center center;
+	background-size: cover;
+	border-color: var(--tow-divider);
+}
+
+.tow-about-page .step-item-number{
+	background: var(--tow-blue);
+}
+
+.tow-about-page .step-item-number h2{
+	color: var(--tow-white);
+}
+
+.tow-about-page .process-step-item:nth-of-type(odd),
+.tow-about-page .process-step-item:nth-of-type(even){
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.tow-about-page .our-process-steps{
+	gap: 22px;
+}
+
+.tow-about-page .our-faqs.bg-section{
+	padding: 96px 0;
+}
+
+.tow-about-page .faqs-client-slider{
+	border-bottom: 1px solid var(--tow-divider);
+}
+
+.tow-about-page .client-logo img{
+	opacity: 0.78;
+	filter: grayscale(1) brightness(1.8);
+}
+
+body.tow-theme-light.tow-about-page .client-logo img{
+	opacity: 0.64;
+	filter: grayscale(1);
+}
+
+.tow-about-page .faqs-item{
+	border-radius: 8px;
+}
+
+.tow-about-page .faqs-item .icon-box{
+	background: var(--tow-yellow);
+}
+
+.tow-about-page .faqs-item .icon-box::before,
+.tow-about-page .faqs-item .icon-box::after{
+	background: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content h3,
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content h3 *{
+	color: var(--tow-black) !important;
+}
+
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content p,
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content p *{
+	color: rgba(5, 10, 18, 0.72) !important;
+}
+
+body.tow-theme-light.tow-about-page .our-process.bg-section .section-title p,
+body.tow-theme-light.tow-about-page .our-process.bg-section .section-title p *{
+	color: rgba(5, 10, 18, 0.72) !important;
+}
+

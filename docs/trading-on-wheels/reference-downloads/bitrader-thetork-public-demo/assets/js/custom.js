@@ -527,6 +527,119 @@ if (typeof PureCounter !== 'undefined') {
 
 
 
+// =================== TOW checkout plan start here =================== //
+var towMembershipPlans = {
+    premium: {
+        title: 'Premium Trading On Wheels',
+        price: '$2,000',
+        period: '/ 5 years',
+        total: '$2,000',
+        note: '5-year premium access. Renewal is not due today.',
+        features: [
+            '5-year premium access',
+            'Private Discord area',
+            'Trading ideas and monitoring',
+            'Market context briefings',
+            'Educational content library',
+            'Community reviews',
+            'Long-term member continuity'
+        ]
+    },
+    monthly: {
+        title: 'TOW Membership',
+        price: '$100',
+        period: '/ month',
+        total: '$100',
+        note: 'Recurring monthly payment. Cancel anytime.',
+        features: [
+            'Private community',
+            'Trading ideas',
+            'Discord access',
+            'Trade monitoring',
+            'Market context',
+            'Educational content',
+            'Community reviews'
+        ]
+    }
+};
+
+function renderTowCheckoutPlan(section, planName) {
+    var plan = towMembershipPlans[planName];
+    var featuresList = section.querySelector('[data-tow-checkout-features]');
+    var iconPath = section.getAttribute('data-tow-checkout-icon') || './assets/figma/check-bullet-membership.svg';
+
+    if (!plan) {
+        return;
+    }
+
+    section.setAttribute('data-active-plan', planName);
+
+    var title = section.querySelector('[data-tow-checkout-title]');
+    var price = section.querySelector('[data-tow-checkout-price]');
+    var period = section.querySelector('[data-tow-checkout-period]');
+    var total = section.querySelector('[data-tow-checkout-total]');
+    var note = section.querySelector('[data-tow-checkout-note]');
+    var checkedPlan = section.querySelector('[data-tow-checkout-plan][value="' + planName + '"]');
+
+    if (title) {
+        title.textContent = plan.title;
+    }
+
+    if (price) {
+        price.textContent = plan.price;
+    }
+
+    if (period) {
+        period.textContent = plan.period;
+    }
+
+    if (total) {
+        total.textContent = plan.total;
+    }
+
+    if (note) {
+        note.textContent = plan.note;
+    }
+
+    if (checkedPlan) {
+        checkedPlan.checked = true;
+    }
+
+    if (featuresList) {
+        featuresList.innerHTML = '';
+
+        plan.features.forEach(function (feature) {
+            var item = document.createElement('li');
+            var icon = document.createElement('span');
+            var image = document.createElement('img');
+            var text = document.createElement('span');
+
+            icon.className = 'tow-checkout__feature-icon';
+            image.src = iconPath;
+            image.alt = '';
+            text.textContent = feature;
+
+            icon.appendChild(image);
+            item.appendChild(icon);
+            item.appendChild(text);
+            featuresList.appendChild(item);
+        });
+    }
+}
+
+document.querySelectorAll('[data-tow-checkout]').forEach(function (section) {
+    var checkedPlan = section.querySelector('[data-tow-checkout-plan]:checked');
+    renderTowCheckoutPlan(section, checkedPlan ? checkedPlan.value : 'monthly');
+
+    section.addEventListener('change', function (event) {
+        if (event.target && event.target.matches('[data-tow-checkout-plan]')) {
+            renderTowCheckoutPlan(section, event.target.value);
+        }
+    });
+});
+// =================== TOW checkout plan end here =================== //
+
+
 // =================== rtl icon direction chnage start here =================== //
 // Get the HTML tag
 const htmlTag = document.querySelector('html');
