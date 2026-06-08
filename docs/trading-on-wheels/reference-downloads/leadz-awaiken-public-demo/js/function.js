@@ -207,6 +207,108 @@
 		});
 	}
 
+	function initTowRoadmapMotion(){
+		var roadmapSections = document.querySelectorAll('.tow-page .page-company-history');
+		var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+		if (!roadmapSections.length || !window.gsap || !window.ScrollTrigger || reduceMotion) {
+			return;
+		}
+
+		gsap.registerPlugin(ScrollTrigger);
+		$body.addClass('tow-roadmap-motion-ready');
+
+		roadmapSections.forEach(function(section){
+			var items = Array.prototype.slice.call(section.querySelectorAll('.company-history-item'));
+
+			if (!items.length) {
+				return;
+			}
+
+			gsap.set(section, {
+				'--tow-roadmap-marker-opacity': 0,
+				'--tow-roadmap-end-opacity': 0
+			});
+
+			items.forEach(function(item){
+				var info = item.querySelector('.company-history-info');
+				var wowChildren = item.querySelectorAll('.wow');
+				var revealParts = [
+					item.querySelector('.company-history-year'),
+					item.querySelector('.company-history-content'),
+					item.querySelector('.company-history-image')
+				].filter(Boolean);
+
+				if (info) {
+					gsap.set(info, { '--tow-roadmap-path-progress': '0%' });
+				}
+
+				if (wowChildren.length) {
+					gsap.set(wowChildren, { visibility: 'visible' });
+				}
+
+				if (revealParts.length) {
+					gsap.set(revealParts, { autoAlpha: 0, y: 26 });
+				}
+			});
+
+			gsap.set(items, { autoAlpha: 1, y: 0 });
+
+			var roadmapTimeline = gsap.timeline({
+				defaults: { ease: 'power3.out' },
+				scrollTrigger: {
+					trigger: section,
+					start: 'top 68%',
+					end: 'bottom 58%',
+					scrub: 0.7
+				}
+			});
+
+			roadmapTimeline.to(section, {
+				'--tow-roadmap-marker-opacity': 1,
+				duration: 0.12,
+				ease: 'none'
+			}, 0);
+
+			items.forEach(function(item, index){
+				var info = item.querySelector('.company-history-info');
+				var revealParts = [
+					item.querySelector('.company-history-year'),
+					item.querySelector('.company-history-content'),
+					item.querySelector('.company-history-image')
+				].filter(Boolean);
+				var position = index * 0.62;
+
+				if (info) {
+					roadmapTimeline.to(info, {
+						'--tow-roadmap-path-progress': '100%',
+						duration: 0.52,
+						ease: 'none'
+					}, position);
+				}
+
+				if (revealParts.length) {
+					roadmapTimeline.to(revealParts, {
+						autoAlpha: 1,
+						y: 0,
+						duration: 0.42,
+						stagger: 0.08
+					}, position + 0.38);
+				}
+			});
+
+			roadmapTimeline.to(section, {
+				'--tow-roadmap-end-opacity': 1,
+				duration: 0.14,
+				ease: 'none'
+			}, (items.length * 0.62) + 0.2);
+		});
+
+		$window.on('load', function(){
+			ScrollTrigger.refresh();
+		});
+	}
+
 	setupTowPreloader();
 	initTowPageTransitions();
 
@@ -558,6 +660,7 @@
 
 	/* Animated Wow Js */	
 	new WOW().init();
+	initTowRoadmapMotion();
 
 	/* Popup Video */
 	if ($('.popup-video').length) {

@@ -645,6 +645,133 @@ html[data-tow-theme="light"] body.tow-page .tow-theme-toggle:focus {
 	color: var(--tow-black);
 }
 
+html[data-tow-theme="light"] body.tow-page .tow_checkout_section {
+	--tow-checkout-panel: rgba(255, 255, 255, 0.94);
+	--tow-checkout-panel-strong: #ffffff;
+	--tow-checkout-field: #ffffff;
+	--tow-checkout-border: rgba(17, 27, 38, 0.14);
+	--tow-checkout-border-strong: rgba(var(--bs-primary-rgb), 0.92);
+	--tow-checkout-text: #111b26;
+	--tow-checkout-muted: #62717d;
+	--tow-checkout-grid: rgba(17, 27, 38, 0.045);
+	background-color: #f4f7fb !important;
+	background-image: none !important;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_page_header {
+	--tow-checkout-text: #111b26;
+	--tow-checkout-muted: #62717d;
+	--tow-checkout-blue: var(--tow-blue);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_steps li:not(:last-child):after {
+	background-color: rgba(var(--tow-course-rgb), 0.64);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_steps li span {
+	color: var(--tow-blue);
+	border-color: rgba(var(--tow-course-rgb), 0.35);
+	background-color: rgba(255, 255, 255, 0.42);
+	box-shadow: 0 8px 18px rgba(20, 32, 46, 0.08);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_steps li.active span {
+	color: var(--tow-white);
+	border-color: var(--tow-blue);
+	background-color: var(--tow-blue);
+	box-shadow: 0 12px 28px rgba(var(--tow-course-rgb), 0.28);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_section:before {
+	display: none;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_section .overlay {
+	display: none;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_card,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_summary_card {
+	box-shadow: var(--tow-shadow);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_group_icon {
+	background-color: rgba(var(--tow-course-rgb), 0.12);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_group_icon img,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_security img {
+	filter: none;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_subtitle,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_steps li,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_group_heading p,
+html[data-tow-theme="light"] body.tow-page .tow_plan_option_text,
+html[data-tow-theme="light"] body.tow-page .tow_plan_option_price small,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_includes .iconlist_block > li,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_total span,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_disclaimer,
+html[data-tow-theme="light"] body.tow-page .tow_payment_secure,
+html[data-tow-theme="light"] body.tow-page .tow_terms_check {
+	color: var(--tow-checkout-muted);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_steps li b,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_group_heading h2,
+html[data-tow-theme="light"] body.tow-page .tow_field label,
+html[data-tow-theme="light"] body.tow-page .tow_plan_option_title,
+html[data-tow-theme="light"] body.tow-page .tow_plan_option_price,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_includes h3 {
+	color: var(--tow-checkout-text);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_group_heading h2,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_summary_card h2,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_total h3,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_total p,
+html[data-tow-theme="light"] body.tow-page .tow_terms_check a,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_security h3,
+html[data-tow-theme="light"] body.tow-page .tow_checkout_title span {
+	color: var(--tow-blue);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_field input,
+html[data-tow-theme="light"] body.tow-page .tow_field select {
+	color: var(--tow-checkout-text);
+	background-color: var(--tow-checkout-field);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_plan_option_input:checked + .tow_plan_option_body {
+	background:
+		linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.2), rgba(var(--bs-primary-rgb), 0.06)),
+		#ffffff;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_payment_methods button {
+	color: var(--tow-checkout-text);
+	background-color: #ffffff;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_payment_methods button.active,
+html[data-tow-theme="light"] body.tow-page .tow_payment_methods button:hover,
+html[data-tow-theme="light"] body.tow-page .tow_payment_methods button:focus {
+	color: var(--tow-blue);
+	background-color: rgba(var(--tow-course-rgb), 0.08);
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_card_badges img,
+html[data-tow-theme="light"] body.tow-page .tow_card_badges span {
+	color: var(--tow-checkout-text);
+	border-color: rgba(17, 27, 38, 0.12);
+	background-color: #f3f6fb;
+}
+
+html[data-tow-theme="light"] body.tow-page .tow_checkout_security {
+	background-color: #e8f1ff;
+	border-color: rgba(var(--tow-course-rgb), 0.18);
+}
+
 @media screen and (max-width: 991px) {
 	html[data-tow-theme="light"] body.tow-page .main_menu_list {
 		background-color: var(--tow-surface);

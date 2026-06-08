@@ -173,6 +173,30 @@ body.tow-theme-light header.main-header .header-sticky.active{
 	box-shadow: 0 14px 38px rgba(16, 25, 35, 0.1);
 }
 
+body.tow-theme-dark.tow-page .page-header{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body.tow-theme-dark.tow-pricing-page .page-header{
+	background-image:
+		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
+		url('../images/tow/membership-banner.png') !important;
+}
+
+body.tow-theme-dark.tow-course-page .page-header{
+	background-image:
+		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
+		url('../images/tow/course-banner.png') !important;
+}
+
+body.tow-theme-dark.tow-competitions-page .page-header{
+	background-image:
+		linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(5, 10, 18, 0.72) 46%, rgba(5, 10, 18, 0.5) 100%),
+		url('../images/tow/competition-banner.png') !important;
+}
+
 .tow-page .navbar{
 	min-height: 100px;
 	padding: 0;
@@ -1718,7 +1742,7 @@ body.tow-theme-light .case-study-entry h3{
 }
 
 body.tow-theme-light .contact-form .form-control{
-	background: var(--tow-white);
+	background: var(--secondary-color);
 	border-color: var(--tow-divider);
 	color: var(--tow-heading);
 }
@@ -1929,6 +1953,58 @@ body.tow-theme-light.tow-about-page .about-video-image{
 	z-index: 1;
 }
 
+body.tow-page .our-process.bg-section .section-title h3{
+	color: var(--tow-yellow);
+}
+
+body.tow-page .our-process.bg-section .section-title p{
+	color: rgba(255, 255, 255, 0.76);
+}
+
+body.tow-course-page .sidebar-cta-box{
+	background: var(--tow-black);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	background: rgba(255, 255, 255, 0.04);
+	opacity: 0.18;
+}
+
+body.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default{
+	color: var(--tow-white);
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .sidebar-cta-box{
+	background: var(--tow-black);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	background: rgba(255, 255, 255, 0.04);
+	opacity: 0.18;
+}
+
+body.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default{
+	color: var(--tow-white);
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
 .tow-about-page .about-us-video video{
 	position: relative;
 	z-index: 0;
@@ -2034,7 +2110,6 @@ body.tow-theme-light.tow-about-page .our-process.bg-section{
 }
 
 .tow-about-page .faqs-client-slider{
-	border-top: 1px solid var(--tow-divider);
 	border-bottom: 1px solid var(--tow-divider);
 }
 
@@ -2413,5 +2488,329 @@ body.tow-theme-light.tow-about-page .client-logo img{
 	.tow-page .tow-final-cta__button.btn-default{
 		width: 190px;
 		height: 56px;
+	}
+}
+
+body.tow-page .our-process.bg-section .section-title h3{
+	color: var(--tow-yellow);
+}
+
+body.tow-page .our-process.bg-section .section-title p{
+	color: rgba(255, 255, 255, 0.76);
+}
+
+body.tow-course-page .sidebar-cta-box{
+	background: var(--tow-black);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	opacity: 0.18;
+}
+
+body.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default{
+	color: var(--tow-white);
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .sidebar-cta-box::before{
+	background: rgba(255, 255, 255, 0.04);
+}
+
+body.tow-theme-dark .our-faqs.bg-section{
+	background: var(--tow-surface);
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark .our-faqs.bg-section .section-title h2,
+body.tow-theme-dark .our-faqs.bg-section .faqs-item-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark .our-faqs.bg-section .faqs-item-content p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list ul li a{
+	background: var(--tow-surface-2);
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-course-page .service-catagery-list ul li a::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-course-page .service-catagery-list ul li a::after{
+	background: var(--tow-blue);
+	-webkit-mask: url('../images/icon-arrow.svg') no-repeat center / 18px auto;
+	mask: url('../images/icon-arrow.svg') no-repeat center / 18px auto;
+	filter: none;
+}
+
+body.tow-course-page .service-catagery-list ul li:hover a::after{
+	background: var(--tow-white);
+	filter: none;
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-box{
+	background: var(--tow-yellow);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-box::before{
+	background: rgba(0, 0, 0, 0.08);
+	opacity: 1;
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-content h3{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default{
+	background: var(--tow-black);
+	color: var(--tow-white);
+	border-color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default::after{
+	background: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-course-page .sidebar-cta-btn .btn-default::before{
+	filter: brightness(0) invert(1);
+}
+
+body.tow-theme-dark.tow-course-page .service-entry-title h2,
+body.tow-theme-dark.tow-course-page .why-choose-service-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-course-page .service-entry > p,
+body.tow-theme-dark.tow-course-page .service-entry-title p,
+body.tow-theme-dark.tow-course-page .why-choose-service-content p,
+body.tow-theme-dark.tow-course-page .service-features-list ul li{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-course-page .why-choose-service-item{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-course-page .why-choose-service-no h3{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-competitions-page .case-study-detail-box{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-competitions-page .case-study-deatil-content{
+	background: var(--tow-surface-2);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-competitions-page .case-study-deatil-content h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-competitions-page .case-study-deatil-content p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-box{
+	background: var(--tow-yellow);
+}
+
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-box::before{
+	background: rgba(0, 0, 0, 0.08);
+	opacity: 1;
+}
+
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-content h3{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-highlighted,
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-black{
+	background: var(--tow-black);
+	color: var(--tow-white);
+	border-color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-highlighted::before,
+body.tow-theme-dark.tow-competitions-page .sidebar-cta-btn .btn-black::before{
+	background: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-competitions-page .case-study-entry h2,
+body.tow-theme-dark.tow-competitions-page .case-study-approch-title h2,
+body.tow-theme-dark.tow-competitions-page .case-study-approch-item h3{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-competitions-page .case-study-entry p,
+body.tow-theme-dark.tow-competitions-page .case-study-approch-item p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content h3,
+body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content h3 *{
+	color: var(--tow-black) !important;
+}
+
+body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content p,
+body.tow-theme-dark.tow-competitions-page .our-process.bg-section .step-item-content p *{
+	color: rgba(5, 10, 18, 0.72) !important;
+}
+
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content h3,
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content h3 *{
+	color: var(--tow-black) !important;
+}
+
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content p,
+body.tow-theme-dark.tow-about-page .our-process.bg-section .step-item-content p *{
+	color: rgba(5, 10, 18, 0.72) !important;
+}
+
+body.tow-theme-dark.tow-contact-page .contact-info-content h3,
+body.tow-theme-dark.tow-contact-page .contact-info-content h3 *{
+	color: var(--tow-black) !important;
+}
+
+body.tow-theme-dark.tow-contact-page .contact-info-content p,
+body.tow-theme-dark.tow-contact-page .contact-info-content p *{
+	color: rgba(5, 10, 18, 0.62) !important;
+}
+
+body.tow-theme-dark.tow-pricing-page .our-process.bg-section .step-item-content h3{
+	color: var(--tow-black);
+}
+
+body.tow-theme-dark.tow-pricing-page .our-process.bg-section .step-item-content p{
+	color: rgba(5, 10, 18, 0.72);
+}
+
+body.tow-pricing-page .our-process.bg-section .section-title h2,
+body.tow-pricing-page .our-process.bg-section .section-title h2 *,
+body.tow-competitions-page .our-process.bg-section .section-title h2,
+body.tow-competitions-page .our-process.bg-section .section-title h2 *{
+	color: var(--tow-white) !important;
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-images{
+	background: var(--tow-surface);
+	border: 1px solid var(--tow-divider);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-chart,
+body.tow-theme-dark.tow-pricing-page .approach-counter-box{
+	background: var(--tow-surface-2);
+}
+
+body.tow-theme-dark.tow-pricing-page .approach-counter-box p{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-box-title p{
+	color: var(--tow-white);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-info-list ul li{
+	color: var(--tow-soft);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-progress-counter h2{
+	color: rgba(255, 255, 255, 0.08);
+}
+
+body.tow-theme-dark.tow-pricing-page .about-approach-progress-counter p{
+	color: var(--tow-white);
+}
+
+body.tow-theme-light.tow-about-page .our-process.bg-section .section-title p,
+body.tow-theme-light.tow-about-page .our-process.bg-section .section-title p *{
+	color: rgba(5, 10, 18, 0.72) !important;
+}
+
+body.tow-theme-dark .page-company-history .section-title h2,
+body.tow-theme-dark .page-company-history .section-title h2 *,
+body.tow-theme-dark .page-company-history .company-history-content h3,
+body.tow-theme-dark .page-company-history .company-history-content h3 *{
+	color: var(--tow-white) !important;
+}
+
+body.tow-theme-dark .page-company-history .section-title h3,
+body.tow-theme-dark .page-company-history .section-title h3 *{
+	color: var(--tow-yellow) !important;
+}
+
+body.tow-theme-dark .page-company-history .section-title-content p,
+body.tow-theme-dark .page-company-history .section-title-content p *,
+body.tow-theme-dark .page-company-history .company-history-content p,
+body.tow-theme-dark .page-company-history .company-history-content p *{
+	color: rgba(255, 255, 255, 0.78) !important;
+}
+
+body.tow-roadmap-motion-ready .page-company-history{
+	--tow-roadmap-marker-opacity: 0;
+	--tow-roadmap-end-opacity: 0;
+}
+
+body.tow-roadmap-motion-ready .page-company-history .company-history-item:first-child::before{
+	opacity: var(--tow-roadmap-marker-opacity);
+}
+
+body.tow-roadmap-motion-ready .page-company-history .company-history-item:last-child::after{
+	opacity: var(--tow-roadmap-end-opacity);
+}
+
+@media (min-width: 768px){
+	body.tow-roadmap-motion-ready .page-company-history .company-history-info{
+		--tow-roadmap-path-progress: 0%;
+		position: relative;
+		border-color: transparent !important;
+	}
+
+	body.tow-roadmap-motion-ready .page-company-history .company-history-info > *{
+		position: relative;
+		z-index: 2;
+	}
+
+	body.tow-roadmap-motion-ready .page-company-history .company-history-info::before{
+		content: '';
+		position: absolute;
+		inset: -6px 0 -6px -6px;
+		border: 6px solid var(--tow-yellow);
+		border-right: none;
+		border-radius: 500px 0 0 500px;
+		clip-path: inset(0 0 calc(100% - var(--tow-roadmap-path-progress)) 0);
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	body.tow-roadmap-motion-ready .page-company-history .company-history-item:nth-of-type(even) .company-history-info::before{
+		inset: -6px -6px -6px 0;
+		border-right: 6px solid var(--tow-yellow);
+		border-left: none;
+		border-radius: 0 500px 500px 0;
+		clip-path: inset(0 0 calc(100% - var(--tow-roadmap-path-progress)) 0);
 	}
 }

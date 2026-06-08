@@ -118,6 +118,10 @@
   var towMembershipPlans = {
     premium: {
       title: 'Premium Trading On Wheels',
+      price: '$2,000',
+      period: '/ 5 years',
+      total: '$2,000',
+      note: '5-year premium access. Renewal is not due today.',
       description: '5-year premium access to Trading On Wheels and the private Discord area.',
       features: [
         '5-year premium access',
@@ -131,6 +135,10 @@
     },
     monthly: {
       title: 'TOW Membership',
+      price: '$100',
+      period: '/ month',
+      total: '$100',
+      note: 'Recurring monthly payment. Cancel anytime.',
       description: 'Monthly access to Trading On Wheels tools and the private Discord membership area.',
       features: [
         'Private community',
@@ -224,6 +232,48 @@
     pricingSection.find(".pricing_block").toggleClass("active");
   });
   // Pricing Toggle Button - End
+  // --------------------------------------------------
+
+  // TOW Checkout Plan - Start
+  // --------------------------------------------------
+  function renderTowCheckoutPlan(checkoutSection, planName) {
+    var plan = towMembershipPlans[planName];
+    if (!plan) {
+      return;
+    }
+
+    var checkIcon = 'assets/images/icons/icon_check.svg';
+    var featuresList = checkoutSection.find('[data-tow-checkout-features]');
+
+    checkoutSection.attr('data-active-plan', planName);
+    checkoutSection.find('[data-tow-checkout-title]').text(plan.title);
+    checkoutSection.find('[data-tow-checkout-price]').text(plan.price);
+    checkoutSection.find('[data-tow-checkout-period]').text(plan.period);
+    checkoutSection.find('[data-tow-checkout-total]').text(plan.total);
+    checkoutSection.find('[data-tow-checkout-note]').text(plan.note);
+    checkoutSection.find('[data-tow-checkout-plan][value="' + planName + '"]').prop('checked', true);
+
+    featuresList.empty();
+    $.each(plan.features, function(index, feature) {
+      featuresList.append(
+        '<li style="--tow-feature-index: ' + index + '">' +
+          '<span class="iconlist_icon"><img src="' + checkIcon + '" alt="Icon Check"></span>' +
+          '<span class="iconlist_text">' + feature + '</span>' +
+        '</li>'
+      );
+    });
+  }
+
+  $('[data-tow-checkout]').each(function() {
+    var checkoutSection = $(this);
+    var selectedPlan = checkoutSection.find('[data-tow-checkout-plan]:checked').val() || 'monthly';
+    renderTowCheckoutPlan(checkoutSection, selectedPlan);
+  });
+
+  $('[data-tow-checkout-plan]').on('change', function() {
+    renderTowCheckoutPlan($(this).closest('[data-tow-checkout]'), $(this).val());
+  });
+  // TOW Checkout Plan - End
   // --------------------------------------------------
 
   // TOW Story Slider - Start
